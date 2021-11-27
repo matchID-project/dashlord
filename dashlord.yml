@@ -1,6 +1,6 @@
-title: DashLord example
+title: matchID audit
 description: Bonnes pratiques techniques
-entity: Ministères sociaux
+entity: République Française
 footer: Powered by SocialGouv
 tools:
   404: true
@@ -18,7 +18,13 @@ tools:
   codescan: true
   stats: false
 urls:
-  - url: https://www.fabrique.social.gouv.fr
+  - url: https://www.matchid.io
     repositories:
-      - socialgouv/www
-  - url: https://beta.gouv.fr
+      - matchID-project/matchID-project.github.io
+  - url: https://deces.matchid.io
+    repositories:
+      - matchID-project/deces-ui
+      - matchID-project/deces-backend
+      - matchID-project/deces-dataprep
+      - matchID-project/backend
+      - matchID-project/frontend
