@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sat, 27 Nov 2021 12:34:11",
+	"@generated": "Sun, 28 Nov 2021 00:44:52",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -115,14 +115,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"39cf9cfcfe361874790c9210-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"39cf9cfcfe361874790c9210-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -197,7 +197,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10017",
@@ -214,14 +214,14 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/1/1.0.7/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"39cf9cfcfe361874790c9210-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"39cf9cfcfe361874790c9210-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
 						}
 					],
 					"count": "2",
@@ -299,37 +299,30 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BDKw1m8IIKwcS7EtuXzMJFMzUX4eqedrbw0DgXUXEFzKeTiA796RpdeqnMSvs4KoJmiwxuDtsjvbP3qcwj5qCXyVo0b9IxHdZRoo80vqSaLdQ"
+							"evidence": "2BAHIQlYYWmcBJLqdvwXkDiCJLKW6x"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BbeRLbopD1w3gVmuxHWPJh5Ht6M31J6cS95ql"
-						},
-						{
-							"uri": "https://www.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "e2zUdTCp8SfAqqR2aH1bRNdOdvX3uSCCBjNQmbTeNrZnUZJxzKfSUC4wj3eKgtQcLbzZO1NRWOjCtqTEh77"
+							"evidence": "2FcLlhVr6Dfa9iV41KJGALwOiLbD6GyUJNcBZQrAAxckTLWwd5QFQmVfMKApebamN03lIyf"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fliy60WevPgEufccflbpAYEyJcHq04T8z1fr6sRcvHvDSaA4CFhLKEB1zZO7tXusPhxCZorvBSqVJM5SN9LkMmk1smhJXJalNzRKJe"
+							"evidence": "2FhHxIaaHAuPmeAU2ZDEjFeA8yjgp4XwOtDvZ5cFdMYnbNqw"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0010\uFFFD\uFFFDY\uFFFD \uFFFD\uFFFDq.\u0136\uFFFD\uFFFD0\uFFFDL\uFFFDE\uFFFDz\uFFFD\uFFFD\uFFFD\uFFFD4\\x000e\\x0005\uFFFD\\As)\uFFFD\uFFFD\\x0003\uFFFDzF\uFFFD^\uFFFDs\\x0012\uFFFD\uFFFD</p><p>\uFFFD\uFFFD\uFFFD\uFFFD\\x001b\uFFFD\uFFFD\uFFFD\uFFFDl\uFFFD\uFFFDs\\x0008\uFFFD\uFFFD%\uFFFDV\uFFFD\\x001b\uFFFDGu\uFFFDh\uFFFD\uFFFD/\uFFFD&\uFFFDu</p>",
+					"otherinfo": "<p>\uFFFD\\x0010\\x0007!\tXai\uFFFD\\x0004\uFFFD\uFFFDv\uFFFD\\x0017\uFFFD8\uFFFD$\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10109",
@@ -353,21 +346,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4b637bcec657b2\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4f91d34a6e5955\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4b637bef8857f6\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4f91d36f2f5860\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4b637cbff357b2\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4f91d39ad15955\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						}
 					],
 					"count": "4",
@@ -393,14 +386,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
-						},
-						{
-							"uri": "https://www.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 72"
+							"evidence": "HIT"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
@@ -410,9 +396,9 @@
 							"evidence": "Age: 0"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
-					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
+					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
