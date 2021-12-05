@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.0",
-	"@generated": "Sun, 28 Nov 2021 00:44:52",
+	"@generated": "Sun, 5 Dec 2021 00:47:42",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -61,32 +61,6 @@
 					"sourceid": "1"
 				},
 				{
-					"pluginid": "10108",
-					"alertRef": "10108",
-					"alert": "Reverse Tabnabbing",
-					"name": "Reverse Tabnabbing",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>At least one link on this page is vulnerable to Reverse tabnabbing as it uses a target attribute without using both of the \"noopener\" and \"noreferrer\" keywords in the \"rel\" attribute, which allows the target page to take control of this page.</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"rf-link\" href=\"https://deces.matchid.io/search\" target=\"_self\">\nMoteur de recherche des d\u00E9c\u00E8s\n</a>"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Do not use a target attribute, or if you have to then also add the attribute: rel=\"noopener noreferrer\".</p>",
-					"otherinfo": "",
-					"reference": "<p>https://owasp.org/www-community/attacks/Reverse_Tabnabbing</p><p>https://dev.to/ben/the-targetblank-vulnerability-by-example</p><p>https://mathiasbynens.github.io/rel-noopener/</p><p>https://medium.com/@jitbit/target-blank-the-most-underestimated-vulnerability-ever-96e328301f4c</p>",
-					"cweid": "-1",
-					"wascid": "-1",
-					"sourceid": "1"
-				},
-				{
 					"pluginid": "90003",
 					"alertRef": "90003",
 					"alert": "Sub Resource Integrity Attribute Missing",
@@ -115,14 +89,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"f91c69823666ddaaf2a1c7ca-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"f91c69823666ddaaf2a1c7ca-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -197,7 +171,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10017",
@@ -214,14 +188,14 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/1/1.0.7/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"f91c69823666ddaaf2a1c7ca-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"ee992d39b4a2da792266ab83-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"f91c69823666ddaaf2a1c7ca-text/javascript\"></script>"
 						}
 					],
 					"count": "2",
@@ -299,30 +273,37 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BAHIQlYYWmcBJLqdvwXkDiCJLKW6x"
+							"evidence": "2Bq2CMEiqt20lCAxLS8TXMO9bUuHmY"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FcLlhVr6Dfa9iV41KJGALwOiLbD6GyUJNcBZQrAAxckTLWwd5QFQmVfMKApebamN03lIyf"
+							"evidence": "2B5CtSWfdP8xZqXhuQgmT3oB9Wo7fCWmShLSBIxWnQ"
+						},
+						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FghjUk3ivyVruha8tfTDENufhx3Wn"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FhHxIaaHAuPmeAU2ZDEjFeA8yjgp4XwOtDvZ5cFdMYnbNqw"
+							"evidence": "TfusM3vXflbb2z1zLa6C1VNmCw6lsK"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0010\\x0007!\tXai\uFFFD\\x0004\uFFFD\uFFFDv\uFFFD\\x0017\uFFFD8\uFFFD$\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x001a\uFFFD\\x0008\uFFFD\"\uFFFD\u0774\uFFFD 1-/\\x0013\\\u00FDmK\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10109",
@@ -346,21 +327,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4f91d34a6e5955\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b8943b1ff09c7e6\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4f91d36f2f5860\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b8943b1fc0e67a8\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b4f91d39ad15955\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597\" integrity=\"sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==\" data-cf-beacon='{\"rayId\":\"6b8943b2bfe5c7e6\",\"version\":\"2021.11.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						}
 					],
 					"count": "4",
@@ -389,6 +370,13 @@
 							"evidence": "HIT"
 						},
 						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 58"
+						},
+						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -396,7 +384,7 @@
 							"evidence": "Age: 0"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
