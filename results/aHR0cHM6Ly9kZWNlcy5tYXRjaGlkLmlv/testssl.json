@@ -220,7 +220,7 @@
               "ip"           : "deces.matchid.io/172.67.177.138",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "off by -3 seconds from your localtime"
+              "finding"      : "off by -4 seconds from your localtime"
           }
 ,         {
               "id"           : "certificate_compression",
@@ -353,7 +353,7 @@
               "ip"           : "deces.matchid.io/172.67.177.138",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "207 >= 60 days"
+              "finding"      : "200 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -514,7 +514,7 @@
               "ip"           : "deces.matchid.io/172.67.177.138",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1321,14 +1321,14 @@
               "ip"           : "deces.matchid.io/104.21.72.81",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
               "ip"           : "deces.matchid.io/104.21.72.81",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -1468,7 +1468,7 @@
               "ip"           : "deces.matchid.io/104.21.72.81",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "207 >= 60 days"
+              "finding"      : "200 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -2234,6 +2234,6 @@
               "ip"           : "deces.matchid.io/104.21.72.81",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "103"
+              "finding"      : "126"
           }
 ]
