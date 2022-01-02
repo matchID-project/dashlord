@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 26 Dec 2021 00:49:34",
+	"@generated": "Sun, 2 Jan 2022 00:49:42",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -89,14 +89,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"7dc6c3f2ade41bf8719e07b4-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"bcafb71a46f523e45144a4f3-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"7dc6c3f2ade41bf8719e07b4-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"bcafb71a46f523e45144a4f3-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -186,16 +186,16 @@
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
-							"param": "https://code.iconify.design/1/1.0.7/iconify.min.js",
+							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/1/1.0.7/iconify.min.js\" type=\"7dc6c3f2ade41bf8719e07b4-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"bcafb71a46f523e45144a4f3-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"7dc6c3f2ade41bf8719e07b4-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"bcafb71a46f523e45144a4f3-text/javascript\"></script>"
 						}
 					],
 					"count": "2",
@@ -273,30 +273,37 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BMwSS0vOab0dRLcKLsG99a0ND3Yr0cJgJPBro2dBaxG42rPCU6NZ20MR4Q0JkLRWy4F31OGuP5Ouc"
+							"evidence": "2BYZCmbkUm2DdJz5BE4Y12WIaj3IoT108czZ0RoLOTkBQYpScoJF"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "7mKyk4ToRBf-9PLRfeJwO3N0NPLroTzdstUmkdrU0jE"
+							"evidence": "2FdKT7nMQrl9ZG0O25EbFZIPgGP0PuHcpWOi8F"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BAnvIlCpqCYbtImcVh4B99qY2TDmU67148HtTga5RBUqKygTd7XXctKMCthQuJ4jXEkEckQvkuEpG8ouMb5nJlrIrWZCPrbsY9Ewvw"
+							"evidence": "2FEKk6PW5TFjE4jdFiVXbuBgD5Sb2aJmEzeLOCGH"
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "LIoa2rVE2qNzpQjRDUeapzH88JCCmeSY5drNG0XL6C3Et3kOWiYx1nBs60aNkDlIl3iokd7gjbS9o77Tjny"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x00130I-/9\uFFFD\uFFFDu\\x0012\uFFFD(\uFFFD\\x0006\uFFFD\u05B44=\u062FG\t\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFDF\uFFFDj\uFFFD\tN\uFFFDgm\\x000cG\uFFFD4&B\uFFFD[.\\x0005\uFFFDS\uFFFD\uFFFD\uFFFDN\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0016\\x0019</p><p>f\uFFFDRm\uFFFDt\uFFFD\uFFFD\\x0004N\\x0018\uFFFDe\uFFFDj=\u0221=t\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\\x000b99\\x0001A\uFFFDRr\uFFFDE</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -313,28 +320,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"rf-link\" href=\"slides/#/3/8\" target=\"_self\">\nD\u00E9velopper des algorithmes d'appariement\n</a>"
+							"evidence": "<a class=\"fr-nav__link\" href=\"slides/#/3/8\" target=\"_self\">\nD\u00E9velopper des algorithmes d'appariement\n</a>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6c364f500a6f5a1b\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6c6ffd2008ea7fd6\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6c364f501aa637f9\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6c6ffd200aa85773\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6c364f50cb2c37f9\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6c6ffd20ba087fd6\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						}
 					],
 					"count": "4",
