@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 9 Jan 2022 00:50:16",
+	"@generated": "Sun, 16 Jan 2022 00:50:39",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -152,7 +152,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "32"
+					"sourceid": "30"
 				},
 				{
 					"pluginid": "10020",
@@ -319,7 +319,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "34"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10096",
@@ -397,89 +397,89 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BLpb52tooCVXL6Jc1zItL7QxlQ9k7RAieKzBh1BspOtiLpM5F"
+							"evidence": "2B7dtYKUcm0pg2vGp9SDmRbMQloYEP8CouoSFJ0H"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BwroOuaX95eUKaSWbnXynXcvw2W8ov1GoqhsdDfHwJCLIyg7vOYJD7ScyRF91XMDP1VvLosaNjRt61kLFNTDnfmyiW"
-						},
-						{
-							"uri": "https://deces.matchid.io/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2BnyxDhcxHzUUVHx4psL0MysRHisnaRcXCszNKeCAxyDzQLFqxoWqQP45Pg0uZ5DPetEW5C227jQ8zVg7Nlm68SY9GYgqg7LtO3HSq2toOz8w6fd"
-						},
-						{
-							"uri": "https://deces.matchid.io/build/module/bundle.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2FePJPG9VB1DPkn1v0eNxwnJ0jLSFawufAFCh7FO26"
+							"evidence": "2FP83RiFtTZfafKmOewzQLhUXUMtgyrd"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/dsfr.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "d09GRgABAAAAABCcAAsAAAAAJfAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADsAAABUIIslek9TLzIAAAFEAAAAPQAAAFY7SEfbY21hcAAAAYQAAAFkAAAFGhya/KBnbHlmAAAC6AAACagAABbYJ+XvP2hlYWQAAAyQAAAALQAAADYWJh79aGhlYQAADMAAAAAWAAAAJADJAKpobXR4AAAM2AAAAA8AAAEUGpAAAGxvY2EAAAzoAAAAjAAAAIytpLPUbWF4cAAADXQAAAAfAAAAIAFUAEpuYW1lAAANlAAAAR0AAAHyFNvC+HBvc3QAAA60AAAB5wAABIHhBIGpeJxjYGRgYOBiMGCwY2BycfMJYeDLSSzJY5BiYGGAAJA8MpsxJzM9kYEDxgPKsYBpDiBmg4gCACY7BUgAeJxjYGRIZpzAwMrAwMDP4AYk+aC0AQMLgyQDAxMDKzMDVhCQ5prC4PCR8aMLQwqQywkmGRgYQQQA+BgGogAAAHic7dNnTuRAAAXhGsYMacg555xzhgF82D3Q/uIWPgG4/PYYa+nrkltOUreBfqBdO6kV0PqmhcfferbVzLcZbuYL/jTXFM5X5c9PPbYc6/OiGfvqa4v6iR0GGGSovm+ELqOMMc4Ek0wxzQyzzDHPAossscwKq6yxzgabbLHNDrvssc8BhxxxXL//lDPOueCSK6654ZY77nngkSeeeeGVN97p8cEnX5T1h3T4f3Qd2r1/Z6VrFc3q9QW2He6CqgjXs+oPd0jVCexAYAcDOxTY4XDnVCOB7YZfV40Gdiyw44GdCOxkYKcCOx3YmcDOBnYusPOBXQjsYmCXArsc2JXArgZ2LbDrgd0I7GZgtwK7HdidwO4Gdi+w+4E9COxhYI8CexzYk/Bvr04DexbY88BeBPYysFeBvQ7sTWBvA3sX2PvAPgT2MbBPgX0O7EtgXwP7Ftj3wPYC+xHYz8B+BbYMyl+QuK8oeJyVWG1zm0gSZgaYGV4FMiOCZcuWsEVZTpQEWeAoFftWqmyuStnaq40r5bry1uXD/v/fcN0DksCWnV1ZvAiGfp7p7nm6saZr+HmAP1fraSeaVuYDEvlkNCVXN4QPSF6UUzJiZX5DxiMW9XLnwHUPerjzTa/jG6bn+5HJibA5f6jvwO6aC8FN0/S4w+GLKGYDK9LOtDfaNeBVSBVq1qvQMrjQi2/IlPq0F5ej8VWR9yKWAYkrvN+icWrHtum4js28wDdNytwwcE1q9rlt+7bNqUGpAUzEjlwgiDAMGMOZyYPA0Q0nCHhgezZ8BYw24Jaiu/OPo73SzoHvfCZnMpXpPJ3HLe41OZ9EAzIVYShCuSPpWB3L6nRxV+CtUEx3dDZ3YLfD/J/2X8DsaAeAGffYJRmNb0mRczmbZ7AVGaH0P5SSjBpMCHH/mRoG/Uw/CDGQUjMaNnytC7FtW5llHGYBc0mbhka/DA3RMPb5+rUYS7RElL1v2p0mNO2WxDwr4/msiM3TU9YTwx7DY74Z95u2xGhX43JpHh6abyTr91l9/w4sgZ0S4JWlYZ4rC4XAAzqeqnFr+NM1cEqJXGMOg4fikknJDtfzOZMRO9yO/R1QTZgtzBNNphmPy2yhUBPcyVydq9MNz6V6pn6iYohsn/DM1Ih0vqrnuZn3Hp6zeQo043L1c56VVbWfKOxpxQBG99UzWx6rmmf1RM2T9Q/N+j7iI09FEpy6OmNnp1PxCQ5i2o4dehJny2tfr2rXa7vYrRSWGlR5o0Ks+T9oP2CmfRU9WJIpG8/LWd47Jun8qvhIcHnMZ+JOJ2uq34ZEv9NpYCWiOKc6ITr9otMoojok2XZt/dBiLdUytIh2IpWln8jOGlfLDV0L+QLHL2BW2a9Mi8Ryl66Ilst7nS4pfJYKIBQiCEQ43OXvd+3rLi8nY/a6z85xb2pNHUyUDj67tjEKZZzvXdtml7kxE3uXdgD3XrGWpiDW+UtYyBS4qjTZj2i5zN189+NmjRHbGP+GGdiyLs1IQsbi/npzAvsW31CTwFitW7kJEyQcRAjDBNsXaVG6oNSSk6EQ1jdxA0Eit8I6HsEHrBiPbB3vFHVnMAZLKE+IczzZmAzzcwioZX2zrI1ZsVi4ld0qN+/Brg5eVQy3KuWt1xcJS1OWCClOE/PszEzetp6xQSM1WDplkZ+QXtQh8PggfEsM4hLyy3qddN9S6kACX1tbf+BzRqXPtyTjMm4/3p+widUwMbxkl0y07Gzw70Gf+2plKi/u8n9WL9Z0PpFTQWmBuf3FOmWnB2sxlQn+hGve6AAuWbVvf4A9Hzw70i6rah77FPIru6FxXcuhqjdKanG1qesemILcUQfHk7ouD3HnCccJHEcYjAnG7u3QcULLwr29CjwvwM3GEYFj4QjBtrX+B1QgVzvUTrV3WgFsfIJESKVjwIMWZcamtIwzNqBxBvR0nhVwCrwGVK7tWPqUcOaxP9itpVM36HLBPIvosFCIyc4Y1HbLCzi3o65L6WuDMz3ixOo63DPVU8KxPEFMoRPLY5GvM5MARy5c8CcziB3a9rHOuNHKBw/6E6gKzVDESnzKlUSJAeE5F14YPsgFnq+JPgnh08oNpmYOmcgziGqp5CtDTduYnRdgwRPWZBHklObKMM3BTLDMJdEr01qLVxfWDFjsFZ+IkkqfoKFsfkuklxD9AjILxY8SEt2C1ia1SOZCypYdH+d3S1pyW6Wfl7zBJ2CKA7lYbQwUQTRdNubmAY8T5aENA/QQptIlkaDiSsguyUrWdHQ6hGaMh5ZQzRgVD/IjSvhXon+EHm2UQLthKHrGFoODQsTaWK3LmUpVOaukMa2dOW44M5uD5wCjUyN46FXArd1KhiPASQKFk+z8S74+0uNARb6lx3XD1ZDfDvZIO62dJgmUmqa2uUrZhi9WEZQ82J6pI6IN0ZDzQlhJM8+SZu3s1cG8IVA7K2DJ5xXoMUFd/d1Q8ViqVDGEF3hCMMu1WChAZC8w2hcUul9fCF9A22zDlxkBJrfRwMTZXb6IutHwLfoe5MUCqkSi4J+Cu8MhFO8Ng23+PgCDTrUO2t1CrDo+b73pDbJD7G8aLcF5zI6O2C7eaCeCHNtawmZGWeIQ8Cwud7b+PRwu/3Vycl/Rr2bRHQzeL46OdrG4gzOuOrs6trhB8cnz9foblB4pfj4WP+2xL+XlrJ2XMZTcRtKUCXy0f5iXWV139+elrirw/sScIhptYL16jDOBLIh6t+Td1fuG+ZDARzZsfiBHcMVXpv5Br1TG76L3fEIwgs+wlxIM72f/zod3zT4hLX/pkB19haoyGSrApjGtEiZV4rDtfo8nk3wh6oqgk5VrTEDR6bG0pKR0gtfgwoUQI514HtG15jtxqr3X5toH7RMq3rb/3WBtc31Tkyik6azAO0ALXzvUiyHQTFwkAMUQoDyE9NSp2ollAO3S1HUrOqqNDhUpxTowquQ2RqPCdeF7LB7HIID39id5iCtfNRbxVQHX2Igh4aZemowIB1+6TR0EuKlsA8ti1LIFNwmAw30oy3ty9v3PtBRbJYh7AReZzNQw9oK2QiHQTUMoVs/0zdLqUEYpDAOXEJNzx3qcj+NHrEr0A4+hg4FeATub+SzzyYA0iEAJdKVlmLZlekZ1cPFSg4PkvZCZHDBt87A6qEu7XuBP+PO1AaDfkAFl0GHgtHkM/RW0VHEKPoFDLA6igOvMc51uxPPWL+MPZpr+QWS9skNh8OvWL97sTUOltc3cVzUXprbOhepAQ8ic0cgbDpXKhtCRJludu4d3zp7qg5RYZanMZs2+CkvS8US4UwPNoFLHiUySqbtYhUWt21DZ6/eWP1UPpN7XfZJuPQ/21l3WNV1md227G4W2cQK/DcMOI7xgM7fpO7SR7rXCb8h8m1UzaJcfm3WNumR6gj0FoYbNBN6EEYZR491BF8yVetcwWTNjQpVqQ/VPMh93wgKBDaxx/RN2tS/RTkc7UmpUW0orrvLRyqg7+sq0UDaSHQCv/i1W43CXMZc30ATe9O1m3/kdcuC4qUplUZXLEtbZ1Tgrcc2fBxitoIeSEjEdljkzmTnUySHRu4SSJWwBoxyWHtMd1270yt9BBWMVEXjRn8XZiziF3+n44V6wX93A1V8ArObz1wvz2bwMw/t9UoljD3oVMu6wTsf0fbPTYe0ZpXin/tbz+etvzKeBM1HzeQbs6YxagFsf/qjndPGzKL0lu/PmDEf4SgSbJXpMBxEGOXgUO8LMThCYjMM6EO04GlsO1bzf/r1INrk88cI+Qk+98Syp/wObBszmeJxjYGRgYADigld5IvH8Nl8ZuBlSgCIMtwM/zEOmgaIJQJKDgQnEAQAzTAovAAAAeJxjYGRgYEhhYEAiGRlQgSsAHekBdAAAeJxjYACClFGMjAE49hqRAAAAAAAANgCQAMoA7AEUASgBOAFMAWIBfAGMAaABtgHQAeAB8gIGAhYCPgJ0AoQCugL4AxIDOANkA34DmgO+A+YELASGBKgE0gT2BRYFSAWCBaYF3AYWBlYGegaiBrgGzgbyBygHUAeKB8AIEghMCJgI2AkMCSwJVAl2Ca4J0goOCj4KdgqmCuALIgtseJxjYGRgYHBlsGNgZQABJiDmAkIGhv9gPgMAFhIBnwB4nF2OvU7DMBSFT/qHaBACITGbpQtS+jP2AdqZDtnTxElbJXHkuJUqMTPzFMw8Bc/FiXslKmzp+jvnHl8bwAN+EKBbAYa+dquHG6oL90l3wgPyo/AQIZ6FR1QvwmO8YiIc4glvnBAMbumMkQn3cI9auE//XXhA/hAecvqn8Ij+l/AYMb6FQ0yC0T41dbvRxbFMrGdfYm3bvanVPJp5vda1tonTmdqeVXsqFs7lKremUitTO12WRjXWHHTqop1zzXI6zcWPUlNhjxSGf26xgUaBI0oksFf+H8VMWO90WmGOCLOr/pr92mcSOJ4ZM1ucWVucOHtB1yGnzpkxqEgrf7dLl9yGTuN7Bzop/Qg7f6vBElPu/F8+8q9XvzD1U2IAAAB4nG1S53qcMBBknOZy5/Odk9hO750Up1enOe8hw5Lji0BEHC5vH2kXOLDDr5nZ3VlpULAQyIfg/98uFnAKp3EGZ3EOi1jCMlYwwBCrGGENY0ywjvO4gIvYwCa2cAmXcQVXcQ3XcQM3cQu3cQd3cQ/38QAP8QiP8QQhnuIZnuMFtvESr/Aab/AW7/AeH/ARn/AZX7CDr/iG7/iBn9jFr2CgoshU+SxMUq1botOcRiqOwyi1kSbmy0qTlb4aSpe15iCMzUHOfNzhZbdDUyITGx1eOjtbir7Z073iXKo93Vh2Cmui2PT3tOcpgutRtefWMX1uOjlZWe9KVcHaULSajVomE8PIBZHHynIqc8ZxRVOK/tRtHu6ZQ0ko0qakXrKieLgSk6YZsV+D2cIHqo2KmS1RnMqfEOS1CR3OyOZKeyZ7F+lIpgcemCSRRjdHYevnXY5JvIIlXsGID8GoiBO5bsv4l6R5YmymZqnJudwT2FEblwc7MmItU6kWjRFHkFFehdu16rFH40JV89ROKuxWaHUkc4z46oVNcxeMvO+G8G3+VlS2x50znrKUWCqnMtUQ3lGq/ToXRnzikpSNpLnB3OvOJ4sFcU77RleZhC05dYVuR1bV76An+I7VWnDv0Nc71FeD4B84C3AKAA=="
+							"evidence": "2FP21I7ArhLUltYlspLqTigovhVqJ0"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "GXSydCOPjD6lDVgnwo7pZfHvjXJtpaU1pf7"
+							"evidence": "2BhYwT3IHP7Zdlp4iHjKBe1Vp6MlMwNAi1UGHImZ"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Bk1QKgpgLFtAb6b1BgANIRPnREkk89TsEyUe0"
+							"evidence": "2B1ELKlKj7ZvGyJxoR0G0D8Ihzyv2u6bjBaCVJEHXDdG46x8Sbbk5vkFzmul8AoNVV"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BTjdBGLWafBopPZ1GvFBQqPxtaIuzOPIJRwfSHmv2uXmv87czjVfmJcMaVSBAFamlRCR6xahVhYLe4yhJ987fB9xch4Mg0vs9Y8ciXpFVgk3O"
+							"evidence": "2BkmKSfXTftmdRe6V5LlsJTLlmofWM"
+						},
+						{
+							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FtK7jzMhbvALqADeIRSHAyEVCOviMZ7xFSCcCVHfpvuYHBgoq6yV6zMLoWSY85"
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F1VHN2SDKZVCg2lZCE80ORDfJ1NCoc5w84xA3gSkd0RUizlJZNT7hD"
+							"evidence": "kBFmBRuwt8oNJJYjt8exl8QbwuAgp0iL3Qn3XGorKp"
+						},
+						{
+							"uri": "https://deces.matchid.io/js/dsfr.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FrkiqCoiEVujf0YsXwh21wQZdw0LA"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "eqhVOCPl5NNrilz23W1MqMMQlorR0ew6GHW"
+							"evidence": "2FOeQyFCuxOwQ3Qn12hD0F7BREWBaYC2daiksyjAHdmmpyM"
 						},
 						{
 							"uri": "https://deces.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Ftc2UWg4CEBp8MXm8qf2VKnhOFh5kqOjOT"
+							"evidence": "2B4tFB3oPA1gvFotDqh1NJxkclqepvVLR15HtnuR1tkFnmdna30UGG"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "IvLCCMVQOFA99VtOzxXyTI6uDWNV1k"
+							"evidence": "3BYsH5UrMgua9Jy8R1fDSZWMLlCflE8nrtKlVYw7WCwpVjDOuC8QeOVBPFu6ygEhbjfqlgC1"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0012\uFFFDo\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\\uFFFD\uFFFDs\\\u0234\uFFFD\uFFFD\uFFFDT=\uFFFD\uFFFD@\uFFFD\uFFFD\\x0006\\x001dA\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDL\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x001e\u0775\uFFFD\uFFFDrm)\uFFFDk\u01A7\u0503\uFFFD\\x0016\uFFFDBZ\\x0018\\x0010\uFFFD\\x0002\uFFFD\uFFFD\\x0012\\x0014\uFFFD\\x0007</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -509,7 +509,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "34"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10109",
@@ -526,21 +526,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"5817937b370d132262a44287-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"8f516a71fa1fa6d3848a2284-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"b5cc0bd346047756dda60811-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"e9fb0e533bd7435828e49e99-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"b8a2c134baa4894d349eca2c-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"23f75f16e16d5bf398a53cd4-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/dsfr.min.js",
@@ -554,7 +554,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"e8bf4336d27e6bdbc5bcfc19-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"d457a8d74df814a584ec2015-text/javascript\"></script>"
 						}
 					],
 					"count": "5",
@@ -563,7 +563,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10050",
@@ -576,62 +576,55 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
-							"uri": "https://deces.matchid.io/build/module/bundle.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 93"
-						},
-						{
 							"uri": "https://deces.matchid.io/css/dsfr.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 93"
+							"evidence": "Age: 83"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 93"
+							"evidence": "Age: 84"
 						},
 						{
-							"uri": "https://deces.matchid.io/favicon-apple.png",
+							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 106"
+							"evidence": "Age: 84"
+						},
+						{
+							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 83"
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 106"
+							"evidence": "Age: 83"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/dsfr.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 106"
-						},
-						{
-							"uri": "https://deces.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 106"
+							"evidence": "Age: 3869"
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "27"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "10049",
@@ -658,13 +651,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/build/module/bundle.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=86400"
-						},
-						{
 							"uri": "https://deces.matchid.io/css/dsfr.min.css",
 							"method": "GET",
 							"param": "",
@@ -687,6 +673,13 @@
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=86400"
+						},
+						{
+							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
