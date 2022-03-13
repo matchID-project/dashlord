@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 6 Mar 2022 00:54:14",
+	"@generated": "Sun, 13 Mar 2022 00:53:28",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -62,7 +62,7 @@
 				},
 				{
 					"pluginid": "10020",
-					"alertRef": "10020",
+					"alertRef": "10020-1",
 					"alert": "Missing Anti-clickjacking Header",
 					"name": "Missing Anti-clickjacking Header",
 					"riskcode": "2",
@@ -115,14 +115,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"a2fb50538c87ad9c699673ae-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"47a92872c174ba39e631bb16-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"a2fb50538c87ad9c699673ae-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"47a92872c174ba39e631bb16-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -188,14 +188,14 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"a2fb50538c87ad9c699673ae-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"47a92872c174ba39e631bb16-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"a2fb50538c87ad9c699673ae-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"47a92872c174ba39e631bb16-text/javascript\"></script>"
 						}
 					],
 					"count": "2",
@@ -204,32 +204,6 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10015",
-					"alertRef": "10015",
-					"alert": "Incomplete or No Cache-control Header Set",
-					"name": "Incomplete or No Cache-control Header Set",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content.</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.matchid.io",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "max-age=600"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with no-cache, no-store, must-revalidate.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
-					"cweid": "525",
-					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -259,32 +233,6 @@
 					"sourceid": "1"
 				},
 				{
-					"pluginid": "10096",
-					"alertRef": "10096",
-					"alert": "Timestamp Disclosure - Unix",
-					"name": "Timestamp Disclosure - Unix",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.matchid.io/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "62240634"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>62240634, which evaluates to: 1971-12-22 09:03:54</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "8"
-				},
-				{
 					"pluginid": "10094",
 					"alertRef": "10094",
 					"alert": "Base64 Disclosure",
@@ -299,33 +247,26 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "xUz7gK6Cqpz1LGiYMSltkWcf5Vg2ZtQZicpAStScTtXTNwbnes6Znv6qtyr1I0w"
-						},
-						{
-							"uri": "https://www.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2FBtx652e8Ot1smmwnITYlIKJGpB00KTAurerxcAM9lg5Vj1suWVUDwVuNGyKNQMXkcVmU3xNzpxPykCVZYGWjJH1BbC82eXon53"
+							"evidence": "MOriORRbsUX8EYxGP1jp0WC9Bpc5kbZ"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "k6FnoL5o25X5b2mrYKDMiUSsXwM36LeglJIpH6"
+							"evidence": "2FpCzMoqJsfJWWaksXmhxstRSyd6dM"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "LyrFaYyRy8Az21CS9XZaBzwQWlE5JiZifH12ZL"
+							"evidence": "2FApA1Nuin3GRG81jo90zRAWlPEEzIuLDOjia7Jau3OBeEQHw9FDNSFuzsmdx1pONMmc6xtcci5FNMKFG5HR1BEwJUr2MB8"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFDL\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD,h\uFFFD1)m\uFFFDg\\x001f\uFFFDX6f\uFFFD\\x0019\uFFFD\uFFFD@J\u051CN\uFFFD\uFFFD7\\x0006\uFFFDz\u0399\uFFFD\uFFFD\uFFFD\uFFFD*\uFFFD#L</p>",
+					"otherinfo": "<p>0\uFFFD\uFFFD9\\x0014[\uFFFDE\uFFFD\\x0011\uFFFDF?X\uFFFD\uFFFD`\uFFFD\\x0006\uFFFD9\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -353,21 +294,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6e771e64b84d577c\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6eb0cae9fd207e44\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6e771e64a8b67fe7\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6eb0caea0d845355\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6e771e65793e577c\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"6eb0caeace137e44\",\"version\":\"2021.12.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						}
 					],
 					"count": "4",
@@ -376,6 +317,32 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Re-examine Cache-control Directives",
+					"name": "Re-examine Cache-control Directives",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "max-age=600"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
+					"cweid": "525",
+					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -400,7 +367,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "HIT"
+							"evidence": "Age: 61"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
