@@ -213,7 +213,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -352,8 +352,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "60 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (53)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -366,7 +366,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2022-06-23 23:59"
           }
 ,         {
@@ -521,21 +521,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+213 seconds from localtime"
+              "finding"      : "+1498 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1650762288"
+              "finding"      : "1651368763"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "213 seconds"
+              "finding"      : "1498 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -605,7 +605,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000071-IAD"
+              "finding"      : "cache-iad-kiad7000132-IAD"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1328,7 +1328,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -1467,8 +1467,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "60 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (53)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1481,7 +1481,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2022-06-23 23:59"
           }
 ,         {
@@ -1636,21 +1636,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+259 seconds from localtime"
+              "finding"      : "+1556 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1650762334"
+              "finding"      : "1651368821"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "259 seconds"
+              "finding"      : "1556 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1720,7 +1720,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000157-IAD"
+              "finding"      : "cache-iad-kiad7000127-IAD"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -2234,6 +2234,6 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "94"
+              "finding"      : "118"
           }
 ]
