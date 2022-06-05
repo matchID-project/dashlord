@@ -8,43 +8,43 @@
     "http": {
       "url": "https://www.matchid.io",
       "algorithm_version": 2,
-      "end_time": "Sun, 29 May 2022 01:16:09 GMT",
+      "end_time": "Sun, 05 Jun 2022 01:17:18 GMT",
       "grade": "D+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
         "Access-Control-Allow-Origin": "*",
-        "Age": "137",
+        "Age": "0",
         "CF-Cache-Status": "DYNAMIC",
-        "CF-RAY": "712b6204de0a7bf5-LAX",
+        "CF-RAY": "716511571fa1aaaf-SJC",
         "Cache-Control": "max-age=600",
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 29 May 2022 01:16:07 GMT",
+        "Date": "Sun, 05 Jun 2022 01:17:17 GMT",
         "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
         "Last-Modified": "Sun, 02 Jan 2022 22:08:26 GMT",
         "NEL": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=ATPKG%2BMbcI4Y2QTbE2GYzNI1glg04lM2%2BwZB1bgbLMoosVNlcnpOEBlwRxyWTMeB0c%2FFNjiQ6sIM4YRFxlYW15vgZYXR58OVQ74Kg55JnInSaBHOdMihAJ3apNdNa6wh6slo%2BPqphUB%2F\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "Report-To": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QudQP7zBJxO7nueDxDO5jR1RZeD8jeMeV%2Fw%2F3btPZlfc4%2BOLqi27oM6Q%2BfknznqevNC%2F98xCTo0ihgDtMUxWhBH8ycWBnRb7y3%2BI0jtcL8njwM0JR6Xjg3a2Aj8FxbhJScPMStvYfKa2\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
         "Server": "cloudflare",
         "Strict-Transport-Security": "max-age=15552000; includeSubDomains; preload",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "Via": "1.1 varnish",
-        "X-Cache": "HIT",
-        "X-Cache-Hits": "1",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
         "X-Content-Type-Options": "nosniff",
-        "X-Fastly-Request-ID": "6c7e2d950be449cd6a8789dd88b0c874dd4ccfc7",
-        "X-GitHub-Request-Id": "A040:6617:465625:759B9E:6292A649",
-        "X-Served-By": "cache-lax10632-LGB",
-        "X-Timer": "S1653786968.829935,VS0,VE0",
+        "X-Fastly-Request-ID": "3debd847b9c26a1914edd80e1552ceadc94f524b",
+        "X-GitHub-Request-Id": "1E90:5EA9:A4ED01:111A161:629BEA14",
+        "X-Served-By": "cache-pao17452-PAO",
+        "X-Timer": "S1654391837.318406,VS0,VE73",
         "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
-        "expires": "Sat, 28 May 2022 22:56:33 GMT",
+        "expires": "Sat, 04 Jun 2022 23:36:12 GMT",
         "x-proxy-cache": "MISS"
       },
-      "scan_id": 26742818,
+      "scan_id": 26914822,
       "score": 40,
-      "start_time": "Sun, 29 May 2022 01:16:03 GMT",
+      "start_time": "Sun, 05 Jun 2022 01:17:15 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 4,
@@ -270,1121 +270,6 @@
     "testssl": [
       {
         "id": "service",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "HTTP"
-      },
-      {
-        "id": "pre_128cipher",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No 128 cipher limit bug"
-      },
-      {
-        "id": "SSLv2",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "not offered"
-      },
-      {
-        "id": "SSLv3",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1_1",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1_2",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "TLS1_3",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered with final"
-      },
-      {
-        "id": "ALPN_HTTP2",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "h2"
-      },
-      {
-        "id": "ALPN",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "http/1.1"
-      },
-      {
-        "id": "cipherlist_NULL",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_aNULL",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_EXPORT",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_LOW",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_3DES_IDEA",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "cwe": "CWE-310",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_AVERAGE",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "LOW",
-        "cwe": "CWE-310",
-        "finding": "offered"
-      },
-      {
-        "id": "cipherlist_GOOD",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_STRONG",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "cipherorder_TLSv1_2",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "cipher_order",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server -- TLS 1.3 client determined"
-      },
-      {
-        "id": "protocol_negotiated",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Default protocol TLS1.3"
-      },
-      {
-        "id": "cipher_negotiated",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
-      },
-      {
-        "id": "FS",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "FS_ciphers",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-ECDSA-AES128-GCM-SHA256 ECDHE-ECDSA-AES128-SHA256 ECDHE-ECDSA-AES128-SHA ECDHE-ECDSA-AES256-GCM-SHA384 ECDHE-ECDSA-AES256-SHA384 ECDHE-ECDSA-AES256-SHA ECDHE-ECDSA-CHACHA20-POLY1305-OLD"
-      },
-      {
-        "id": "FS_ECDHE_curves",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "prime256v1"
-      },
-      {
-        "id": "TLS_extensions",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
-      },
-      {
-        "id": "TLS_session_ticket",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "valid for 64800 seconds only (<daily)"
-      },
-      {
-        "id": "SSL_sessionID_support",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "yes"
-      },
-      {
-        "id": "sessionresumption_ticket",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "supported"
-      },
-      {
-        "id": "sessionresumption_ID",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "supported"
-      },
-      {
-        "id": "TLS_timestamp",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "off by -3 seconds from your localtime"
-      },
-      {
-        "id": "certificate_compression",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "0002/Brotli"
-      },
-      {
-        "id": "clientAuth",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "none"
-      },
-      {
-        "id": "cert_numbers",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "1"
-      },
-      {
-        "id": "cert_signatureAlgorithm",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ECDSA with SHA256"
-      },
-      {
-        "id": "cert_keySize",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "EC 256 bits (curve P-256)"
-      },
-      {
-        "id": "cert_keyUsage",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Digital Signature"
-      },
-      {
-        "id": "cert_extKeyUsage",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
-      },
-      {
-        "id": "cert_serialNumber",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "09BE09F81701A19CEC5C6DD15B7E69F8"
-      },
-      {
-        "id": "cert_serialNumberLen",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "16"
-      },
-      {
-        "id": "cert_fingerprintSHA1",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "369EC4EF497C0A22C82B6C66764815CEEA9B28D2"
-      },
-      {
-        "id": "cert_fingerprintSHA256",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "FEBB1E9A0774BDBCA39CC71A712F69B7E2ECA50A587C118B48A98D5D8AB74DCF"
-      },
-      {
-        "id": "cert",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFMzCCBNqgAwIBAgIQCb4J+BcBoZzsXG3RW35p+DAKBggqhkjOPQQDAjBKMQsw CQYDVQQGEwJVUzEZMBcGA1UEChMQQ2xvdWRmbGFyZSwgSW5jLjEgMB4GA1UEAxMX Q2xvdWRmbGFyZSBJbmMgRUNDIENBLTMwHhcNMjIwNTI0MDAwMDAwWhcNMjMwNTI0 MjM1OTU5WjB1MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQG A1UEBxMNU2FuIEZyYW5jaXNjbzEZMBcGA1UEChMQQ2xvdWRmbGFyZSwgSW5jLjEe MBwGA1UEAxMVc25pLmNsb3VkZmxhcmVzc2wuY29tMFkwEwYHKoZIzj0CAQYIKoZI zj0DAQcDQgAE9JAYVIDSEx26WQvBabrpog7lo6CJ2h+9wnJEXrzt1N4i5DFw3LD6 MI/q6ajfZ81jQLs81EdgH8ExrxL6GcGfeqOCA3UwggNxMB8GA1UdIwQYMBaAFKXO N+rrsHUOlGeItEX62SQQh5YfMB0GA1UdDgQWBBSaGZVB2w2RgwjtiBv5Il+FeKWj azA6BgNVHREEMzAxggptYXRjaGlkLmlvggwqLm1hdGNoaWQuaW+CFXNuaS5jbG91 ZGZsYXJlc3NsLmNvbTAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUH AwEGCCsGAQUFBwMCMHsGA1UdHwR0MHIwN6A1oDOGMWh0dHA6Ly9jcmwzLmRpZ2lj ZXJ0LmNvbS9DbG91ZGZsYXJlSW5jRUNDQ0EtMy5jcmwwN6A1oDOGMWh0dHA6Ly9j cmw0LmRpZ2ljZXJ0LmNvbS9DbG91ZGZsYXJlSW5jRUNDQ0EtMy5jcmwwPgYDVR0g BDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2Vy dC5jb20vQ1BTMHYGCCsGAQUFBwEBBGowaDAkBggrBgEFBQcwAYYYaHR0cDovL29j c3AuZGlnaWNlcnQuY29tMEAGCCsGAQUFBzAChjRodHRwOi8vY2FjZXJ0cy5kaWdp Y2VydC5jb20vQ2xvdWRmbGFyZUluY0VDQ0NBLTMuY3J0MAwGA1UdEwEB/wQCMAAw ggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB2AOg+0No+9QY1MudXKLyJa8kD08vR EWvs62nhd31tBr1uAAABgPO4BwsAAAQDAEcwRQIhAIC8lv6WaF4YbC7DwS0ntUUa JyM/iCUn4pPrk6GbEcsRAiBqxksHfSDpxGnSUYnpQMnAzzvksznZfiPT4q8LLHNn OgB3ADXPGRu/sWxXvw+tTG1Cy7u2JyAmUeo/4SrvqAPDO9ZMAAABgPO4B0cAAAQD AEgwRgIhANdGo6N9T4dr+4dwqOCJWg1ae0IjGPfUn3yKhLwMa0b6AiEA+dHdx5Zo sEs+lNnu3V2mPsG3Y8o/Bvic3Pz10lew7boAdgC3Pvsk35xNunXyOcW6WPRsXfxC z3qfNcSeHQmBJe20mQAAAYDzuAcxAAAEAwBHMEUCIQDxAvHD/vHKTpX4BbmW8cXT hRHfTRPxA0tIFzMzymz+YgIgWqGoSUUIoaimMExYFhLXooRSBHyr/9s3hg/EYoKU a3AwCgYIKoZIzj0EAwIDRwAwRAIgLdnHbbeb0Uf+Jfv+aZBbjk6Pr+4/abXXq6An 5XVKTcMCIF7Quilw2n87m2ZfBE3m9zmS6bsRjyYO+vO5UvjjIhEC -----END CERTIFICATE-----"
-      },
-      {
-        "id": "cert_commonName",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "sni.cloudflaressl.com"
-      },
-      {
-        "id": "cert_commonName_wo_SNI",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "request w/o SNI didn't succeed, usual for EC certificates"
-      },
-      {
-        "id": "cert_subjectAltName",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "matchid.io *.matchid.io sni.cloudflaressl.com"
-      },
-      {
-        "id": "cert_trust",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Ok via SAN wildcard (SNI mandatory)"
-      },
-      {
-        "id": "cert_chain_of_trust",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "passed."
-      },
-      {
-        "id": "cert_certificatePolicies_EV",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no"
-      },
-      {
-        "id": "cert_expirationStatus",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "360 >= 60 days"
-      },
-      {
-        "id": "cert_notBefore",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2022-05-24 00:00"
-      },
-      {
-        "id": "cert_notAfter",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2023-05-24 23:59"
-      },
-      {
-        "id": "cert_extlifeSpan",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "certificate has no extended life time according to browser forum"
-      },
-      {
-        "id": "cert_eTLS",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not present"
-      },
-      {
-        "id": "cert_crlDistributionPoints",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "http://crl3.digicert.com/CloudflareIncECCCA-3.crl http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
-      },
-      {
-        "id": "cert_ocspURL",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "http://ocsp.digicert.com"
-      },
-      {
-        "id": "OCSP_stapling",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "cert_ocspRevoked",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "not revoked"
-      },
-      {
-        "id": "cert_mustStapleExtension",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "--"
-      },
-      {
-        "id": "DNS_CAArecord",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "--"
-      },
-      {
-        "id": "certificate_transparency",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "yes (certificate extension)"
-      },
-      {
-        "id": "certs_countServer",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2"
-      },
-      {
-        "id": "certs_list_ordering_problem",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no"
-      },
-      {
-        "id": "cert_caIssuers",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Cloudflare Inc ECC CA-3 (Cloudflare, Inc. from US)"
-      },
-      {
-        "id": "intermediate_cert <#1>",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIDzTCCArWgAwIBAgIQCjeHZF5ftIwiTv0b7RQMPDANBgkqhkiG9w0BAQsFADBa MQswCQYDVQQGEwJJRTESMBAGA1UEChMJQmFsdGltb3JlMRMwEQYDVQQLEwpDeWJl clRydXN0MSIwIAYDVQQDExlCYWx0aW1vcmUgQ3liZXJUcnVzdCBSb290MB4XDTIw MDEyNzEyNDgwOFoXDTI0MTIzMTIzNTk1OVowSjELMAkGA1UEBhMCVVMxGTAXBgNV BAoTEENsb3VkZmxhcmUsIEluYy4xIDAeBgNVBAMTF0Nsb3VkZmxhcmUgSW5jIEVD QyBDQS0zMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEua1NZpkUC0bsH4HRKlAe nQMVLzQSfS2WuIg4m4Vfj7+7Te9hRsTJc9QkT+DuHM5ss1FxL2ruTAUJd9NyYqSb 16OCAWgwggFkMB0GA1UdDgQWBBSlzjfq67B1DpRniLRF+tkkEIeWHzAfBgNVHSME GDAWgBTlnVkwgkdYzKz6CFQ2hns6tQRN8DAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0l BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBIGA1UdEwEB/wQIMAYBAf8CAQAwNAYI KwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5j b20wOgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL09t bmlyb290MjAyNS5jcmwwbQYDVR0gBGYwZDA3BglghkgBhv1sAQEwKjAoBggrBgEF BQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzALBglghkgBhv1sAQIw CAYGZ4EMAQIBMAgGBmeBDAECAjAIBgZngQwBAgMwDQYJKoZIhvcNAQELBQADggEB AAUkHd0bsCrrmNaF4zlNXmtXnYJX/OvoMaJXkGUFvhZEOFp3ArnPEELG4ZKk40Un +ABHLGioVplTVI+tnkDB0A+21w0LOEhsUCxJkAZbZB2LzEgwLt4I4ptJIsCSDBFe lpKU1fwg3FZs5ZKTv3ocwDfjhUkV+ivhdDkYD7fa86JXWGBPzI6UAPxGezQxPk1H goE6y/SJXQ7vTQ1unBuCJN0yJV0ReFEQPaA1IwQvZW+cwdFD19Ae8zFnWSfda9J1 CZMRJCQUzym+5iPDuI9yP+kHyCREU3qzuWFloUwOxkgAyXVjBYdwRVKD05WdRerw 6DEdfgkfCv4+3ao8XnTSrLE= -----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#1>",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "3ABBE63DAF756C5016B6B85F52015FD8E8ACBE277C5087B127A60563A841ED8A"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#1>",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2020-01-27 12:48"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#1>",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2024-12-31 23:59"
-      },
-      {
-        "id": "intermediate_cert_expiration <#1>",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#1>",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Cloudflare Inc ECC CA-3 <-- Baltimore CyberTrust Root"
-      },
-      {
-        "id": "intermediate_cert_badOCSP",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "intermediate certificate(s) is/are ok"
-      },
-      {
-        "id": "insecure_redirect",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "HIGH",
-        "finding": "Redirect to insecure URL: 'http://matchid.io/'"
-      },
-      {
-        "id": "HTTP_status_code",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "301 Moved Permanently ('/')"
-      },
-      {
-        "id": "HTTP_clock_skew",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "+129 seconds from localtime"
-      },
-      {
-        "id": "HTTP_headerTime",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "1653787040"
-      },
-      {
-        "id": "HTTP_headerAge",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "129 seconds"
-      },
-      {
-        "id": "HSTS_time",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "180 days (=15552000 seconds) > 15552000 seconds"
-      },
-      {
-        "id": "HSTS_subdomains",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "includes subdomains"
-      },
-      {
-        "id": "HSTS_preload",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "domain IS marked for preloading"
-      },
-      {
-        "id": "HPKP",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No support for HTTP Public Key Pinning"
-      },
-      {
-        "id": "banner_server",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "cloudflare"
-      },
-      {
-        "id": "banner_application",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No application banner found"
-      },
-      {
-        "id": "cookie_count",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "0 at '/' (30x detected, better try target URL of 30x)"
-      },
-      {
-        "id": "X-Content-Type-Options",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "nosniff"
-      },
-      {
-        "id": "Expect-CT",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "max-age=604800, report-uri='https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct'"
-      },
-      {
-        "id": "X-Served-By",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "cache-bur-kbur8200069-BUR"
-      },
-      {
-        "id": "banner_reverseproxy",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "cwe": "CWE-200",
-        "finding": "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 2"
-      },
-      {
-        "id": "heartbleed",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-0160",
-        "cwe": "CWE-119",
-        "finding": "not vulnerable, no heartbeat extension"
-      },
-      {
-        "id": "CCS",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-0224",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "ticketbleed",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-9244",
-        "cwe": "CWE-200",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "ROBOT",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
-        "cwe": "CWE-203",
-        "finding": "not vulnerable, no RSA key transport cipher"
-      },
-      {
-        "id": "secure_renego",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "WARN",
-        "cwe": "CWE-310",
-        "finding": "OpenSSL handshake didn't succeed"
-      },
-      {
-        "id": "secure_client_renego",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2011-1473",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "CRIME_TLS",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2012-4929",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "BREACH",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2013-3587",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
-      },
-      {
-        "id": "POODLE_SSL",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-3566",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, no SSLv3"
-      },
-      {
-        "id": "fallback_SCSV",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "no protocol below TLS 1.2 offered"
-      },
-      {
-        "id": "SWEET32",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-2183 CVE-2016-6329",
-        "cwe": "CWE-327",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "FREAK",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-0204",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "DROWN",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-0800 CVE-2016-0703",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable on this host and port"
-      },
-      {
-        "id": "DROWN_hint",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "cve": "CVE-2016-0800 CVE-2016-0703",
-        "cwe": "CWE-310",
-        "finding": "no RSA certificate, can't be used with SSLv2 elsewhere"
-      },
-      {
-        "id": "LOGJAM",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, no DH EXPORT ciphers,"
-      },
-      {
-        "id": "LOGJAM-common_primes",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "no DH key with <= TLS 1.2"
-      },
-      {
-        "id": "BEAST",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2011-3389",
-        "cwe": "CWE-20",
-        "finding": "not vulnerable, no SSL3 or TLS1"
-      },
-      {
-        "id": "LUCKY13",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "LOW",
-        "cve": "CVE-2013-0169",
-        "cwe": "CWE-310",
-        "finding": "potentially vulnerable, uses TLS CBC ciphers"
-      },
-      {
-        "id": "winshock",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-6321",
-        "cwe": "CWE-94",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "RC4",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2013-2566 CVE-2015-2808",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "clientsimulation-android_442",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_500",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305-OLD"
-      },
-      {
-        "id": "clientsimulation-android_60",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305-OLD"
-      },
-      {
-        "id": "clientsimulation-android_70",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_81",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_90",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-android_X",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-chrome_74_win10",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-chrome_79_win10",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-firefox_66_win81",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-firefox_71_win10",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_6_xp",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_win7",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_xp",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_11_win7",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_win81",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_winphone81",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_win10",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-edge_15_win10",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-edge_17_win10",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-opera_66_win10",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_9_ios9",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_9_osx1011",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_10_osx1012",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_121_ios_122",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_130_osx_10146",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
-      },
-      {
-        "id": "clientsimulation-apple_ats_9_ios9",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-java_6u45",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-java_7u25",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-java_8u161",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-java1102",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-java1201",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-openssl_102e",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-openssl_110l",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305"
-      },
-      {
-        "id": "clientsimulation-openssl_111d",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-thunderbird_68_3_1",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "rating_spec",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
-      },
-      {
-        "id": "rating_doc",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
-      },
-      {
-        "id": "protocol_support_score",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "100"
-      },
-      {
-        "id": "protocol_support_score_weighted",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "30"
-      },
-      {
-        "id": "key_exchange_score",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "100"
-      },
-      {
-        "id": "key_exchange_score_weighted",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "30"
-      },
-      {
-        "id": "cipher_strength_score",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "60"
-      },
-      {
-        "id": "cipher_strength_score_weighted",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "24"
-      },
-      {
-        "id": "final_score",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "84"
-      },
-      {
-        "id": "overall_grade",
-        "ip": "www.matchid.io/104.21.64.91",
-        "port": "443",
-        "severity": "OK",
-        "finding": "A+"
-      },
-      {
-        "id": "service",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
@@ -1597,7 +482,7 @@
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -1737,7 +622,7 @@
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "OK",
-        "finding": "360 >= 60 days"
+        "finding": "353 >= 60 days"
       },
       {
         "id": "cert_notBefore",
@@ -1905,21 +790,21 @@
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
-        "finding": "+169 seconds from localtime"
+        "finding": "+177 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
-        "finding": "1653787081"
+        "finding": "1654391912"
       },
       {
         "id": "HTTP_headerAge",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
-        "finding": "169 seconds"
+        "finding": "177 seconds"
       },
       {
         "id": "HSTS_time",
@@ -1989,7 +874,7 @@
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
-        "finding": "cache-bur-kbur8200108-BUR"
+        "finding": "cache-bur-kbur8200123-BUR"
       },
       {
         "id": "banner_reverseproxy",
@@ -2177,20 +1062,6 @@
         "finding": "not vulnerable"
       },
       {
-        "id": "clientsimulation-android_442",
-        "ip": "www.matchid.io/172.67.179.218",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_500",
-        "ip": "www.matchid.io/172.67.179.218",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305-OLD"
-      },
-      {
         "id": "clientsimulation-android_60",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
@@ -2226,7 +1097,14 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-chrome_74_win10",
+        "id": "clientsimulation-android_11",
+        "ip": "www.matchid.io/172.67.179.218",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-android_12",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
@@ -2240,6 +1118,13 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
+        "id": "clientsimulation-chrome_101_win10",
+        "ip": "www.matchid.io/172.67.179.218",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
         "id": "clientsimulation-firefox_66_win81",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
@@ -2247,7 +1132,7 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-firefox_71_win10",
+        "id": "clientsimulation-firefox_100_win10",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
@@ -2310,39 +1195,11 @@
         "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
       },
       {
-        "id": "clientsimulation-edge_17_win10",
-        "ip": "www.matchid.io/172.67.179.218",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-opera_66_win10",
+        "id": "clientsimulation-edge_101_win10_21h2",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_9_ios9",
-        "ip": "www.matchid.io/172.67.179.218",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_9_osx1011",
-        "ip": "www.matchid.io/172.67.179.218",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-safari_10_osx1012",
-        "ip": "www.matchid.io/172.67.179.218",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-safari_121_ios_122",
@@ -2359,18 +1216,11 @@
         "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
       },
       {
-        "id": "clientsimulation-apple_ats_9_ios9",
+        "id": "clientsimulation-safari_154_osx_1231",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-java_6u45",
-        "ip": "www.matchid.io/172.67.179.218",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
         "id": "clientsimulation-java_7u25",
@@ -2394,11 +1244,25 @@
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
       },
       {
-        "id": "clientsimulation-java1201",
+        "id": "clientsimulation-java1703",
+        "ip": "www.matchid.io/172.67.179.218",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-go_1178",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-libressl_283",
+        "ip": "www.matchid.io/172.67.179.218",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305"
       },
       {
         "id": "clientsimulation-openssl_102e",
@@ -2422,7 +1286,21 @@
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
-        "id": "clientsimulation-thunderbird_68_3_1",
+        "id": "clientsimulation-openssl_303",
+        "ip": "www.matchid.io/172.67.179.218",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-apple_mail_16_0",
+        "ip": "www.matchid.io/172.67.179.218",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-thunderbird_91_9",
         "ip": "www.matchid.io/172.67.179.218",
         "port": "443",
         "severity": "INFO",
@@ -2499,11 +1377,1119 @@
         "finding": "A+"
       },
       {
-        "id": "scanTime",
-        "ip": "www.matchid.io/172.67.179.218",
+        "id": "service",
+        "ip": "www.matchid.io/104.21.64.91",
         "port": "443",
         "severity": "INFO",
-        "finding": "83"
+        "finding": "HTTP"
+      },
+      {
+        "id": "pre_128cipher",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No 128 cipher limit bug"
+      },
+      {
+        "id": "SSLv2",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not offered"
+      },
+      {
+        "id": "SSLv3",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1_1",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1_2",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "TLS1_3",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered with final"
+      },
+      {
+        "id": "ALPN_HTTP2",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "h2"
+      },
+      {
+        "id": "ALPN",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "http/1.1"
+      },
+      {
+        "id": "cipherlist_NULL",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_aNULL",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_EXPORT",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_LOW",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_3DES_IDEA",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "cwe": "CWE-310",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_AVERAGE",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "LOW",
+        "cwe": "CWE-310",
+        "finding": "offered"
+      },
+      {
+        "id": "cipherlist_GOOD",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_STRONG",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cipherorder_TLSv1_2",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "cipher_order",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "server -- TLS 1.3 client determined"
+      },
+      {
+        "id": "protocol_negotiated",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "Default protocol TLS1.3"
+      },
+      {
+        "id": "cipher_negotiated",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
+      },
+      {
+        "id": "FS",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "FS_ciphers",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "ECDHE-ECDSA-AES128-GCM-SHA256 ECDHE-ECDSA-AES128-SHA256 ECDHE-ECDSA-AES128-SHA ECDHE-ECDSA-AES256-GCM-SHA384 ECDHE-ECDSA-AES256-SHA384 ECDHE-ECDSA-AES256-SHA ECDHE-ECDSA-CHACHA20-POLY1305-OLD"
+      },
+      {
+        "id": "FS_ECDHE_curves",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "prime256v1"
+      },
+      {
+        "id": "TLS_extensions",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
+      },
+      {
+        "id": "TLS_session_ticket",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "valid for 64800 seconds only (<daily)"
+      },
+      {
+        "id": "SSL_sessionID_support",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "yes"
+      },
+      {
+        "id": "sessionresumption_ticket",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "supported"
+      },
+      {
+        "id": "sessionresumption_ID",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not supported"
+      },
+      {
+        "id": "TLS_timestamp",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "off by -2 seconds from your localtime"
+      },
+      {
+        "id": "certificate_compression",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "0002/Brotli"
+      },
+      {
+        "id": "clientAuth",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "none"
+      },
+      {
+        "id": "cert_numbers",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "1"
+      },
+      {
+        "id": "cert_signatureAlgorithm",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "ECDSA with SHA256"
+      },
+      {
+        "id": "cert_keySize",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "EC 256 bits (curve P-256)"
+      },
+      {
+        "id": "cert_keyUsage",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Digital Signature"
+      },
+      {
+        "id": "cert_extKeyUsage",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
+      },
+      {
+        "id": "cert_serialNumber",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "09BE09F81701A19CEC5C6DD15B7E69F8"
+      },
+      {
+        "id": "cert_serialNumberLen",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "16"
+      },
+      {
+        "id": "cert_fingerprintSHA1",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "369EC4EF497C0A22C82B6C66764815CEEA9B28D2"
+      },
+      {
+        "id": "cert_fingerprintSHA256",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "FEBB1E9A0774BDBCA39CC71A712F69B7E2ECA50A587C118B48A98D5D8AB74DCF"
+      },
+      {
+        "id": "cert",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-----BEGIN CERTIFICATE----- MIIFMzCCBNqgAwIBAgIQCb4J+BcBoZzsXG3RW35p+DAKBggqhkjOPQQDAjBKMQsw CQYDVQQGEwJVUzEZMBcGA1UEChMQQ2xvdWRmbGFyZSwgSW5jLjEgMB4GA1UEAxMX Q2xvdWRmbGFyZSBJbmMgRUNDIENBLTMwHhcNMjIwNTI0MDAwMDAwWhcNMjMwNTI0 MjM1OTU5WjB1MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQG A1UEBxMNU2FuIEZyYW5jaXNjbzEZMBcGA1UEChMQQ2xvdWRmbGFyZSwgSW5jLjEe MBwGA1UEAxMVc25pLmNsb3VkZmxhcmVzc2wuY29tMFkwEwYHKoZIzj0CAQYIKoZI zj0DAQcDQgAE9JAYVIDSEx26WQvBabrpog7lo6CJ2h+9wnJEXrzt1N4i5DFw3LD6 MI/q6ajfZ81jQLs81EdgH8ExrxL6GcGfeqOCA3UwggNxMB8GA1UdIwQYMBaAFKXO N+rrsHUOlGeItEX62SQQh5YfMB0GA1UdDgQWBBSaGZVB2w2RgwjtiBv5Il+FeKWj azA6BgNVHREEMzAxggptYXRjaGlkLmlvggwqLm1hdGNoaWQuaW+CFXNuaS5jbG91 ZGZsYXJlc3NsLmNvbTAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUH AwEGCCsGAQUFBwMCMHsGA1UdHwR0MHIwN6A1oDOGMWh0dHA6Ly9jcmwzLmRpZ2lj ZXJ0LmNvbS9DbG91ZGZsYXJlSW5jRUNDQ0EtMy5jcmwwN6A1oDOGMWh0dHA6Ly9j cmw0LmRpZ2ljZXJ0LmNvbS9DbG91ZGZsYXJlSW5jRUNDQ0EtMy5jcmwwPgYDVR0g BDcwNTAzBgZngQwBAgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2Vy dC5jb20vQ1BTMHYGCCsGAQUFBwEBBGowaDAkBggrBgEFBQcwAYYYaHR0cDovL29j c3AuZGlnaWNlcnQuY29tMEAGCCsGAQUFBzAChjRodHRwOi8vY2FjZXJ0cy5kaWdp Y2VydC5jb20vQ2xvdWRmbGFyZUluY0VDQ0NBLTMuY3J0MAwGA1UdEwEB/wQCMAAw ggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB2AOg+0No+9QY1MudXKLyJa8kD08vR EWvs62nhd31tBr1uAAABgPO4BwsAAAQDAEcwRQIhAIC8lv6WaF4YbC7DwS0ntUUa JyM/iCUn4pPrk6GbEcsRAiBqxksHfSDpxGnSUYnpQMnAzzvksznZfiPT4q8LLHNn OgB3ADXPGRu/sWxXvw+tTG1Cy7u2JyAmUeo/4SrvqAPDO9ZMAAABgPO4B0cAAAQD AEgwRgIhANdGo6N9T4dr+4dwqOCJWg1ae0IjGPfUn3yKhLwMa0b6AiEA+dHdx5Zo sEs+lNnu3V2mPsG3Y8o/Bvic3Pz10lew7boAdgC3Pvsk35xNunXyOcW6WPRsXfxC z3qfNcSeHQmBJe20mQAAAYDzuAcxAAAEAwBHMEUCIQDxAvHD/vHKTpX4BbmW8cXT hRHfTRPxA0tIFzMzymz+YgIgWqGoSUUIoaimMExYFhLXooRSBHyr/9s3hg/EYoKU a3AwCgYIKoZIzj0EAwIDRwAwRAIgLdnHbbeb0Uf+Jfv+aZBbjk6Pr+4/abXXq6An 5XVKTcMCIF7Quilw2n87m2ZfBE3m9zmS6bsRjyYO+vO5UvjjIhEC -----END CERTIFICATE-----"
+      },
+      {
+        "id": "cert_commonName",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "sni.cloudflaressl.com"
+      },
+      {
+        "id": "cert_commonName_wo_SNI",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "request w/o SNI didn't succeed, usual for EC certificates"
+      },
+      {
+        "id": "cert_subjectAltName",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "matchid.io *.matchid.io sni.cloudflaressl.com"
+      },
+      {
+        "id": "cert_trust",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "Ok via SAN wildcard (SNI mandatory)"
+      },
+      {
+        "id": "cert_chain_of_trust",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "passed."
+      },
+      {
+        "id": "cert_certificatePolicies_EV",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no"
+      },
+      {
+        "id": "cert_expirationStatus",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "353 >= 60 days"
+      },
+      {
+        "id": "cert_notBefore",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2022-05-24 00:00"
+      },
+      {
+        "id": "cert_notAfter",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "2023-05-24 23:59"
+      },
+      {
+        "id": "cert_extlifeSpan",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "certificate has no extended life time according to browser forum"
+      },
+      {
+        "id": "cert_eTLS",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not present"
+      },
+      {
+        "id": "cert_crlDistributionPoints",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "http://crl3.digicert.com/CloudflareIncECCCA-3.crl http://crl4.digicert.com/CloudflareIncECCCA-3.crl"
+      },
+      {
+        "id": "cert_ocspURL",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "http://ocsp.digicert.com"
+      },
+      {
+        "id": "OCSP_stapling",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cert_ocspRevoked",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not revoked"
+      },
+      {
+        "id": "cert_mustStapleExtension",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "--"
+      },
+      {
+        "id": "DNS_CAArecord",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "--"
+      },
+      {
+        "id": "certificate_transparency",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "yes (certificate extension)"
+      },
+      {
+        "id": "certs_countServer",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2"
+      },
+      {
+        "id": "certs_list_ordering_problem",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no"
+      },
+      {
+        "id": "cert_caIssuers",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Cloudflare Inc ECC CA-3 (Cloudflare, Inc. from US)"
+      },
+      {
+        "id": "intermediate_cert <#1>",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-----BEGIN CERTIFICATE----- MIIDzTCCArWgAwIBAgIQCjeHZF5ftIwiTv0b7RQMPDANBgkqhkiG9w0BAQsFADBa MQswCQYDVQQGEwJJRTESMBAGA1UEChMJQmFsdGltb3JlMRMwEQYDVQQLEwpDeWJl clRydXN0MSIwIAYDVQQDExlCYWx0aW1vcmUgQ3liZXJUcnVzdCBSb290MB4XDTIw MDEyNzEyNDgwOFoXDTI0MTIzMTIzNTk1OVowSjELMAkGA1UEBhMCVVMxGTAXBgNV BAoTEENsb3VkZmxhcmUsIEluYy4xIDAeBgNVBAMTF0Nsb3VkZmxhcmUgSW5jIEVD QyBDQS0zMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEua1NZpkUC0bsH4HRKlAe nQMVLzQSfS2WuIg4m4Vfj7+7Te9hRsTJc9QkT+DuHM5ss1FxL2ruTAUJd9NyYqSb 16OCAWgwggFkMB0GA1UdDgQWBBSlzjfq67B1DpRniLRF+tkkEIeWHzAfBgNVHSME GDAWgBTlnVkwgkdYzKz6CFQ2hns6tQRN8DAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0l BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMBIGA1UdEwEB/wQIMAYBAf8CAQAwNAYI KwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5j b20wOgYDVR0fBDMwMTAvoC2gK4YpaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL09t bmlyb290MjAyNS5jcmwwbQYDVR0gBGYwZDA3BglghkgBhv1sAQEwKjAoBggrBgEF BQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzALBglghkgBhv1sAQIw CAYGZ4EMAQIBMAgGBmeBDAECAjAIBgZngQwBAgMwDQYJKoZIhvcNAQELBQADggEB AAUkHd0bsCrrmNaF4zlNXmtXnYJX/OvoMaJXkGUFvhZEOFp3ArnPEELG4ZKk40Un +ABHLGioVplTVI+tnkDB0A+21w0LOEhsUCxJkAZbZB2LzEgwLt4I4ptJIsCSDBFe lpKU1fwg3FZs5ZKTv3ocwDfjhUkV+ivhdDkYD7fa86JXWGBPzI6UAPxGezQxPk1H goE6y/SJXQ7vTQ1unBuCJN0yJV0ReFEQPaA1IwQvZW+cwdFD19Ae8zFnWSfda9J1 CZMRJCQUzym+5iPDuI9yP+kHyCREU3qzuWFloUwOxkgAyXVjBYdwRVKD05WdRerw 6DEdfgkfCv4+3ao8XnTSrLE= -----END CERTIFICATE-----"
+      },
+      {
+        "id": "intermediate_cert_fingerprintSHA256 <#1>",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "3ABBE63DAF756C5016B6B85F52015FD8E8ACBE277C5087B127A60563A841ED8A"
+      },
+      {
+        "id": "intermediate_cert_notBefore <#1>",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2020-01-27 12:48"
+      },
+      {
+        "id": "intermediate_cert_notAfter <#1>",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "2024-12-31 23:59"
+      },
+      {
+        "id": "intermediate_cert_expiration <#1>",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "ok > 40 days"
+      },
+      {
+        "id": "intermediate_cert_chain <#1>",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Cloudflare Inc ECC CA-3 <-- Baltimore CyberTrust Root"
+      },
+      {
+        "id": "intermediate_cert_badOCSP",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "intermediate certificate(s) is/are ok"
+      },
+      {
+        "id": "insecure_redirect",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "HIGH",
+        "finding": "Redirect to insecure URL: 'http://matchid.io/'"
+      },
+      {
+        "id": "HTTP_status_code",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "301 Moved Permanently ('/')"
+      },
+      {
+        "id": "HTTP_clock_skew",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "+217 seconds from localtime"
+      },
+      {
+        "id": "HTTP_headerTime",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "1654391951"
+      },
+      {
+        "id": "HTTP_headerAge",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "217 seconds"
+      },
+      {
+        "id": "HSTS_time",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "180 days (=15552000 seconds) > 15552000 seconds"
+      },
+      {
+        "id": "HSTS_subdomains",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "includes subdomains"
+      },
+      {
+        "id": "HSTS_preload",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "domain IS marked for preloading"
+      },
+      {
+        "id": "HPKP",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No support for HTTP Public Key Pinning"
+      },
+      {
+        "id": "banner_server",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "cloudflare"
+      },
+      {
+        "id": "banner_application",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No application banner found"
+      },
+      {
+        "id": "cookie_count",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "0 at '/' (30x detected, better try target URL of 30x)"
+      },
+      {
+        "id": "X-Content-Type-Options",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "nosniff"
+      },
+      {
+        "id": "Expect-CT",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "max-age=604800, report-uri='https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct'"
+      },
+      {
+        "id": "X-Served-By",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "cache-bur-kbur8200115-BUR"
+      },
+      {
+        "id": "banner_reverseproxy",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "cwe": "CWE-200",
+        "finding": "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
+      },
+      {
+        "id": "heartbleed",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-0160",
+        "cwe": "CWE-119",
+        "finding": "not vulnerable, no heartbeat extension"
+      },
+      {
+        "id": "CCS",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-0224",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "ticketbleed",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-9244",
+        "cwe": "CWE-200",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "ROBOT",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
+        "cwe": "CWE-203",
+        "finding": "not vulnerable, no RSA key transport cipher"
+      },
+      {
+        "id": "secure_renego",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "WARN",
+        "cwe": "CWE-310",
+        "finding": "OpenSSL handshake didn't succeed"
+      },
+      {
+        "id": "secure_client_renego",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2011-1473",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "CRIME_TLS",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2012-4929",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "BREACH",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2013-3587",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+      },
+      {
+        "id": "POODLE_SSL",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-3566",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, no SSLv3"
+      },
+      {
+        "id": "fallback_SCSV",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "no protocol below TLS 1.2 offered"
+      },
+      {
+        "id": "SWEET32",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-2183 CVE-2016-6329",
+        "cwe": "CWE-327",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "FREAK",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-0204",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "DROWN",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-0800 CVE-2016-0703",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable on this host and port"
+      },
+      {
+        "id": "DROWN_hint",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "cve": "CVE-2016-0800 CVE-2016-0703",
+        "cwe": "CWE-310",
+        "finding": "no RSA certificate, can't be used with SSLv2 elsewhere"
+      },
+      {
+        "id": "LOGJAM",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, no DH EXPORT ciphers,"
+      },
+      {
+        "id": "LOGJAM-common_primes",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "no DH key with <= TLS 1.2"
+      },
+      {
+        "id": "BEAST",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2011-3389",
+        "cwe": "CWE-20",
+        "finding": "not vulnerable, no SSL3 or TLS1"
+      },
+      {
+        "id": "LUCKY13",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "LOW",
+        "cve": "CVE-2013-0169",
+        "cwe": "CWE-310",
+        "finding": "potentially vulnerable, uses TLS CBC ciphers"
+      },
+      {
+        "id": "winshock",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-6321",
+        "cwe": "CWE-94",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "RC4",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2013-2566 CVE-2015-2808",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "clientsimulation-android_60",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305-OLD"
+      },
+      {
+        "id": "clientsimulation-android_70",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-android_81",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-android_90",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-android_X",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-android_11",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-android_12",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-chrome_79_win10",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-chrome_101_win10",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-firefox_66_win81",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-firefox_100_win10",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_6_xp",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_8_win7",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_8_xp",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_11_win7",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_win81",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_winphone81",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_win10",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-edge_15_win10",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-edge_101_win10_21h2",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_121_ios_122",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_130_osx_10146",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
+      },
+      {
+        "id": "clientsimulation-safari_154_osx_1231",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-java_7u25",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-java_8u161",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-java1102",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-java1703",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-go_1178",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "clientsimulation-libressl_283",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-openssl_102e",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-openssl_110l",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-openssl_111d",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-openssl_303",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-apple_mail_16_0",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-ECDSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-thunderbird_91_9",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_128_GCM_SHA256"
+      },
+      {
+        "id": "rating_spec",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+      },
+      {
+        "id": "rating_doc",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
+      },
+      {
+        "id": "protocol_support_score",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "100"
+      },
+      {
+        "id": "protocol_support_score_weighted",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "30"
+      },
+      {
+        "id": "key_exchange_score",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "100"
+      },
+      {
+        "id": "key_exchange_score_weighted",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "30"
+      },
+      {
+        "id": "cipher_strength_score",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "60"
+      },
+      {
+        "id": "cipher_strength_score_weighted",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "24"
+      },
+      {
+        "id": "final_score",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "84"
+      },
+      {
+        "id": "overall_grade",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "OK",
+        "finding": "A+"
+      },
+      {
+        "id": "scanTime",
+        "ip": "www.matchid.io/104.21.64.91",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "82"
       }
     ],
     "thirdparties": {
@@ -2518,14 +2504,6 @@
         },
         {
           "type": "unknown",
-          "url": "https://matchid.io/assets/fonts/Marianne-Bold.woff2"
-        },
-        {
-          "type": "unknown",
-          "url": "https://matchid.io/assets/fonts/Marianne-Regular.woff2"
-        },
-        {
-          "type": "unknown",
           "url": "https://matchid.io/assets/dsfr/dsfr.min.css"
         },
         {
@@ -2534,11 +2512,15 @@
         },
         {
           "type": "unknown",
-          "url": "https://matchid.io/assets/dsfr/artwork/light.svg"
+          "url": "https://matchid.io/assets/fonts/Marianne-Bold.woff2"
         },
         {
           "type": "unknown",
-          "url": "https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+          "url": "https://matchid.io/assets/fonts/Marianne-Regular.woff2"
+        },
+        {
+          "type": "unknown",
+          "url": "https://matchid.io/assets/dsfr/artwork/light.svg"
         },
         {
           "type": "unknown",
@@ -2555,6 +2537,10 @@
         {
           "type": "unknown",
           "url": "https://matchid.io/assets/images/frontend-validation-stats.svg"
+        },
+        {
+          "type": "unknown",
+          "url": "https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
         },
         {
           "type": "unknown",
@@ -2618,7 +2604,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://static1.dmcdn.net/playerv5/dmp.manifest.07f80e10bc42e12de103.js"
+          "url": "https://static1.dmcdn.net/playerv5/dmp.manifest.1f52f4698d3072ad9d59.js"
         },
         {
           "type": "unknown",
@@ -2642,11 +2628,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://www.dailymotion.com/player/metadata/video/x7okqx1?embedder=https%3A%2F%2Fmatchid.io%2F&referer=&dmTs=12440&is_native_app=0&dmV1st=A26214764EBDD9833BC3E8CDDBEF4EC1"
+          "url": "https://www.dailymotion.com/player/metadata/video/x7okqx1?embedder=https%3A%2F%2Fmatchid.io%2F&referer=&dmTs=616242&is_native_app=0&dmV1st=9E728370AE51BF5C3038FC049FA78532"
         },
         {
           "type": "unknown",
-          "url": "https://static1.dmcdn.net/playerv5/dmp.theme_neon.0bb175d7d87a57dce83a.js"
+          "url": "https://static1.dmcdn.net/playerv5/dmp.theme_neon.c6e0662aec912645ef39.js"
         },
         {
           "type": "unknown",
@@ -2662,14 +2648,6 @@
         },
         {
           "type": "unknown",
-          "url": "https://deces.matchid.io/fonts/Marianne-Bold.woff2"
-        },
-        {
-          "type": "unknown",
-          "url": "https://deces.matchid.io/fonts/Marianne-Regular.woff2"
-        },
-        {
-          "type": "unknown",
           "url": "https://deces.matchid.io/css/global.css"
         },
         {
@@ -2682,11 +2660,19 @@
         },
         {
           "type": "unknown",
-          "url": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+          "url": "https://deces.matchid.io/fonts/Marianne-Bold.woff2"
+        },
+        {
+          "type": "unknown",
+          "url": "https://deces.matchid.io/fonts/Marianne-Regular.woff2"
         },
         {
           "type": "unknown",
           "url": "https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+        },
+        {
+          "type": "unknown",
+          "url": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
         },
         {
           "type": "unknown",
@@ -2705,6 +2691,14 @@
           "url": "https://static1.dmcdn.net/playerv5/fonts/Retina-Regular.039feafb8e07151a9fa79dd01263f273.woff2"
         },
         {
+          "type": "unknown",
+          "url": "https://static1.dmcdn.net/playerv5/dmp.omweb.85403a9a491c48a88b7d.js"
+        },
+        {
+          "type": "unknown",
+          "url": "https://static1.dmcdn.net/playerv5/dmp.omid_session_client.275e715f5adf31c9675f.js"
+        },
+        {
           "type": "google",
           "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
           "details": {
@@ -2717,44 +2711,12 @@
           "url": "https://speedtest.dailymotion.com/latencies.js"
         },
         {
-          "type": "google",
-          "url": "https://imasdk.googleapis.com/js/sdkloader/ima3.js",
-          "details": {
-            "id": "google",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
           "type": "unknown",
           "url": "https://static1.dmcdn.net/playerv5/dmp.controls_seek.4af3e2378755d280fabb.js"
         },
         {
           "type": "unknown",
           "url": "https://static1.dmcdn.net/playerv5/dmp.interaction.5938238273d6dc43ff0d.js"
-        },
-        {
-          "type": "unknown",
-          "url": "https://pebed.dm-event.net/"
-        },
-        {
-          "type": "unknown",
-          "url": "https://deces.matchid.io/build/nomodule/main.js"
-        },
-        {
-          "type": "unknown",
-          "url": "https://matchid.io/assets/dsfr/dsfr.module.js"
-        },
-        {
-          "type": "unknown",
-          "url": "https://deces.matchid.io/cdn-cgi/rum?"
-        },
-        {
-          "type": "google analytics",
-          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TEGXVTN15T&gtm=2oe5p1&_p=1346062864&_z=ccd.tdB&cid=1506688641.1653787001&ul=en-us&sr=800x600&_s=1&sid=1653787001&sct=1&seg=0&dl=https%3A%2F%2Fmatchid.io%2F&dt=matchID&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1",
-          "details": {
-            "id": "google analytics",
-            "message": "Use hosted Matomo instance"
-          }
         },
         {
           "type": "google",
@@ -2770,7 +2732,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://api.iconify.design/ri.json?icons=github-line"
+          "url": "https://static1.dmcdn.net/playerv5/fonts/Retina-Regular.039feafb8e07151a9fa79dd01263f273.woff2"
+        },
+        {
+          "type": "unknown",
+          "url": "https://deces.matchid.io/build/nomodule/main.js"
         },
         {
           "type": "unknown",
@@ -2778,11 +2744,39 @@
         },
         {
           "type": "unknown",
+          "url": "https://pagead2.googlesyndication.com/omsdk/releases/live/omweb-v1.js"
+        },
+        {
+          "type": "unknown",
           "url": "https://pebed.dm-event.net/"
         },
         {
           "type": "unknown",
-          "url": "https://pagead2.googlesyndication.com/omsdk/releases/live/omweb-v1.js"
+          "url": "https://static1.dmcdn.net/playerv5/fonts/RetinaMedium.2811330fd8cd981352918b4059564b10.woff2"
+        },
+        {
+          "type": "unknown",
+          "url": "https://deces.matchid.io/cdn-cgi/rum?"
+        },
+        {
+          "type": "unknown",
+          "url": "https://matchid.io/assets/dsfr/dsfr.module.js"
+        },
+        {
+          "type": "google analytics",
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TEGXVTN15T&gtm=2oe610&_p=816163376&_z=ccd.tdB&cid=1409194501.1654391873&ul=en-us&sr=800x600&_s=1&sid=1654391872&sct=1&seg=0&dl=https%3A%2F%2Fmatchid.io%2F&dt=matchID&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1",
+          "details": {
+            "id": "google analytics",
+            "message": "Use hosted Matomo instance"
+          }
+        },
+        {
+          "type": "unknown",
+          "url": "https://api.iconify.design/ri.json?icons=github-line"
+        },
+        {
+          "type": "unknown",
+          "url": "https://matchid.io/cdn-cgi/rum?"
         },
         {
           "type": "unknown",
@@ -2795,10 +2789,6 @@
         {
           "type": "unknown",
           "url": "https://matchid.io/assets/dsfr/artwork/system.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://matchid.io/cdn-cgi/rum?"
         },
         {
           "type": "unknown",
@@ -2823,49 +2813,40 @@
         {
           "type": "unknown",
           "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Georges_Pompidou_1969_(cropped).jpg/80px-Georges_Pompidou_1969_(cropped).jpg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://pebed.dm-event.net/"
         }
       ],
       "cookies": [],
       "headers": {
-        "date": "Sun, 29 May 2022 01:16:40 GMT",
-        "content-type": "text/html; charset=utf-8",
-        "last-modified": "Sun, 02 Jan 2022 22:08:26 GMT",
         "access-control-allow-origin": "*",
-        "expires": "Sat, 28 May 2022 22:56:33 GMT",
+        "age": "137",
+        "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
         "cache-control": "max-age=600",
-        "x-proxy-cache": "MISS",
-        "x-github-request-id": "A040:6617:465625:759B9E:6292A649",
-        "via": "1.1 varnish",
-        "age": "170",
-        "x-served-by": "cache-lax10632-LGB",
-        "x-cache": "HIT",
-        "x-cache-hits": "2",
-        "x-timer": "S1653787000.173200,VS0,VE0",
-        "vary": "Accept-Encoding",
-        "x-fastly-request-id": "8e8974453966a1e4d1788c668e76b3aacddf0f56",
         "cf-cache-status": "DYNAMIC",
-        "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-        "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Di%2BWabG6j%2BmVBvUX%2BYMSqxYKWlONiCZMNVHquL1MoP4RdgQvkndZ4lGa8shST2GX%2BnUnXfLkjuYsCXKhl3BgxZ7oa%2BFYv0vdcEPW1qgxYINySzhiBXDUpgDYK6kE\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-        "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-        "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-        "x-content-type-options": "nosniff",
-        "server": "cloudflare",
-        "cf-ray": "712b62cf0a5c7dc5-LAX",
+        "cf-ray": "7165122dbe0731a3-LAX",
         "content-encoding": "br",
-        "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+        "content-type": "text/html; charset=utf-8",
+        "date": "Sun, 05 Jun 2022 01:17:51 GMT",
+        "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "expires": "Sat, 04 Jun 2022 14:40:43 GMT",
+        "last-modified": "Sun, 02 Jan 2022 22:08:26 GMT",
+        "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+        "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=NZKC14BxtaOWip6vvigCuSy1gnuNpvzrbcxa1TbS5m9Reo28d3iDqFszUnk%2Bbo3wm%2B4gpHckFAOQzxii6fwnLT2d85Dfrp85rnSzw94lDWx5RZbmU%2BPg1DV13MuU\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "server": "cloudflare",
+        "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+        "vary": "Accept-Encoding",
+        "via": "1.1 varnish",
+        "x-cache": "HIT",
+        "x-cache-hits": "3",
+        "x-content-type-options": "nosniff",
+        "x-fastly-request-id": "356e2d3e5c1bccef92b007fcfafd8d6794d8b795",
+        "x-github-request-id": "E772:0AE4:78F1CA:C4A9A5:629B6C93",
+        "x-proxy-cache": "MISS",
+        "x-served-by": "cache-lax10622-LGB",
+        "x-timer": "S1654391872.646362,VS0,VE0"
       },
       "endpoints": [
         {
           "hostname": "www.matchid.io",
-          "ip": "104.21.64.91",
-          "geoip": null
-        },
-        {
-          "hostname": "matchid.io",
           "ip": "172.67.179.218",
           "geoip": {
             "continent": {
@@ -2919,58 +2900,14 @@
           }
         },
         {
+          "hostname": "matchid.io",
+          "ip": "104.21.64.91",
+          "geoip": null
+        },
+        {
           "hostname": "static.cloudflareinsights.com",
-          "ip": "172.64.156.26",
-          "geoip": {
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "Vereinigte Staaten",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "Vereinigte Staaten",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
+          "ip": "104.18.47.230",
+          "geoip": null
         },
         {
           "hostname": "www.dailymotion.com",
@@ -3098,12 +3035,61 @@
         },
         {
           "hostname": "code.iconify.design",
-          "ip": "104.21.49.11",
-          "geoip": null
+          "ip": "172.67.188.195",
+          "geoip": {
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "Vereinigte Staaten",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 1000,
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "Vereinigte Staaten",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
         },
         {
           "hostname": "www.googletagmanager.com",
-          "ip": "142.250.217.136",
+          "ip": "142.250.72.232",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3157,7 +3143,7 @@
         },
         {
           "hostname": "static1.dmcdn.net",
-          "ip": "68.142.107.154",
+          "ip": "68.142.107.88",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3211,7 +3197,7 @@
         },
         {
           "hostname": "pebed.dm-event.net",
-          "ip": "188.65.124.58",
+          "ip": "188.65.124.59",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -3267,7 +3253,7 @@
         },
         {
           "hostname": "imasdk.googleapis.com",
-          "ip": "142.250.189.10",
+          "ip": "142.250.72.170",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3321,7 +3307,7 @@
         },
         {
           "hostname": "vendorlist.dmcdn.net",
-          "ip": "68.142.107.154",
+          "ip": "68.142.107.88",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3375,7 +3361,7 @@
         },
         {
           "hostname": "www.gstatic.com",
-          "ip": "142.250.68.99",
+          "ip": "142.250.72.163",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3498,8 +3484,8 @@
           }
         },
         {
-          "hostname": "www.google-analytics.com",
-          "ip": "142.250.217.142",
+          "hostname": "s0.2mdn.net",
+          "ip": "142.250.72.230",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3552,8 +3538,62 @@
           }
         },
         {
-          "hostname": "s0.2mdn.net",
-          "ip": "142.250.68.6",
+          "hostname": "pagead2.googlesyndication.com",
+          "ip": "142.250.72.226",
+          "geoip": {
+            "continent": {
+              "code": "NA",
+              "geoname_id": 6255149,
+              "names": {
+                "de": "Nordamerika",
+                "en": "North America",
+                "es": "Norteamérica",
+                "fr": "Amérique du Nord",
+                "ja": "北アメリカ",
+                "pt-BR": "América do Norte",
+                "ru": "Северная Америка",
+                "zh-CN": "北美洲"
+              }
+            },
+            "country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "Vereinigte Staaten",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 1000,
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
+            },
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "Vereinigte Staaten",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        },
+        {
+          "hostname": "www.google-analytics.com",
+          "ip": "142.251.40.46",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3608,60 +3648,6 @@
         {
           "hostname": "api.iconify.design",
           "ip": "172.67.188.195",
-          "geoip": {
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "Vereinigte Staaten",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "Vereinigte Staaten",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "pagead2.googlesyndication.com",
-          "ip": "142.250.68.34",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3972,7 +3958,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 29 May 2022 01:15:14",
+      "@generated": "Sun, 5 Jun 2022 01:16:55",
       "site": [
         {
           "@name": "https://www.matchid.io",
@@ -4093,109 +4079,9 @@
         "extracted-results": [
           "token\":\"2a9fe3aa012b4d008568071ef799dbed\""
         ],
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:11.55157822Z",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:22.77047596Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.matchid.io'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "technologies/waf-detect.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
-        "template-id": "waf-detect",
-        "info": {
-          "name": "WAF Detection",
-          "author": [
-            "dwisiswant0",
-            "lu4nx"
-          ],
-          "tags": [
-            "waf",
-            "tech",
-            "misc"
-          ],
-          "description": "A web application firewall was detected.",
-          "reference": [
-            "https://github.com/ekultek/whatwaf"
-          ],
-          "severity": "info",
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "matcher-name": "varnish",
-        "type": "http",
-        "host": "https://www.matchid.io",
-        "matched-at": "https://www.matchid.io/",
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:11.653697825Z",
-        "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.matchid.io' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.matchid.io/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "technologies/waf-detect.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
-        "template-id": "waf-detect",
-        "info": {
-          "name": "WAF Detection",
-          "author": [
-            "dwisiswant0",
-            "lu4nx"
-          ],
-          "tags": [
-            "waf",
-            "tech",
-            "misc"
-          ],
-          "description": "A web application firewall was detected.",
-          "reference": [
-            "https://github.com/ekultek/whatwaf"
-          ],
-          "severity": "info",
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "matcher-name": "cloudflare",
-        "type": "http",
-        "host": "https://www.matchid.io",
-        "matched-at": "https://www.matchid.io/",
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:11.653769223Z",
-        "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.matchid.io' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.matchid.io/'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-        "template-id": "tls-version",
-        "info": {
-          "name": "TLS Version",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl"
-          ],
-          "reference": null,
-          "severity": "info"
-        },
-        "type": "ssl",
-        "host": "https://www.matchid.io",
-        "matched-at": "https://www.matchid.io",
-        "extracted-results": [
-          "TLS13"
-        ],
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:11.744405808Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -4218,8 +4104,8 @@
         "type": "http",
         "host": "https://www.matchid.io",
         "matched-at": "https://www.matchid.io",
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:12.102823249Z",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:23.063502197Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
         "matcher-status": true,
         "matched-line": null
@@ -4249,8 +4135,8 @@
         "extracted-results": [
           "Jekyll v3.9.0"
         ],
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:12.103490633Z",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:23.076068251Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
         "matcher-status": true,
         "matched-line": null
@@ -4274,8 +4160,8 @@
         "type": "http",
         "host": "https://www.matchid.io",
         "matched-at": "https://www.matchid.io",
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:13.699195437Z",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:24.706023939Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
         "matcher-status": true,
         "matched-line": null
@@ -4299,8 +4185,470 @@
         "type": "http",
         "host": "https://www.matchid.io",
         "matched-at": "https://www.matchid.io",
-        "ip": "104.21.64.91",
-        "timestamp": "2022-05-29T01:20:14.062637656Z",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:25.046834603Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.497618494Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-methods",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.497843194Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-headers",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.497972993Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.498094993Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "referrer-policy",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.500857484Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-expose-headers",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.51439844Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-frame-options",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.514706939Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "clear-site-data",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.514975338Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-embedder-policy",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.515164737Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-opener-policy",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.515539036Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-max-age",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.515953535Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "permission-policy",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.516321833Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.516738532Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-credentials",
+        "type": "http",
+        "host": "https://www.matchid.io",
+        "matched-at": "https://www.matchid.io",
+        "ip": "172.67.179.218",
+        "timestamp": "2022-06-05T01:21:26.516989931Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: http://matchid.io/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://matchid.io/'",
         "matcher-status": true,
         "matched-line": null
@@ -4309,7 +4657,7 @@
     "lhr": {
       "requestedUrl": "https://www.matchid.io/",
       "finalUrl": "https://matchid.io/",
-      "fetchTime": "2022-05-29T01:15:23.897Z",
+      "fetchTime": "2022-06-05T01:17:03.781Z",
       "runWarnings": [
         "The page may not be loading as expected because your test URL (https://www.matchid.io/) was redirected to https://matchid.io/. Try testing the second URL directly."
       ],
@@ -4317,7 +4665,7 @@
         "performance": {
           "title": "Performance",
           "id": "performance",
-          "score": 0.27486610412597656
+          "score": 0.2707265853881836
         },
         "accessibility": {
           "title": "Accessibility",
@@ -4353,49 +4701,49 @@
           "description": "Collects all available metrics.",
           "score": null,
           "scoreDisplayMode": "informative",
-          "numericValue": 15128,
+          "numericValue": 15378,
           "numericUnit": "millisecond",
           "details": {
             "type": "debugdata",
             "items": [
               {
-                "firstContentfulPaint": 3519,
-                "firstMeaningfulPaint": 3744,
-                "largestContentfulPaint": 6043,
-                "firstCPUIdle": 3744,
-                "interactive": 15128,
-                "speedIndex": 6684,
-                "estimatedInputLatency": 52,
-                "totalBlockingTime": 594,
-                "maxPotentialFID": 265,
+                "firstContentfulPaint": 3197,
+                "firstMeaningfulPaint": 3197,
+                "largestContentfulPaint": 4838,
+                "firstCPUIdle": 13631,
+                "interactive": 15378,
+                "speedIndex": 7415,
+                "estimatedInputLatency": 60,
+                "totalBlockingTime": 619,
+                "maxPotentialFID": 266,
                 "cumulativeLayoutShift": 0.00011303710937499999,
                 "cumulativeLayoutShiftAllFrames": 0,
                 "observedTimeOrigin": 0,
-                "observedTimeOriginTs": 453088320,
+                "observedTimeOriginTs": 452445948,
                 "observedNavigationStart": 0,
-                "observedNavigationStartTs": 453088320,
-                "observedFirstPaint": 308,
-                "observedFirstPaintTs": 453396708,
-                "observedFirstContentfulPaint": 308,
-                "observedFirstContentfulPaintTs": 453396708,
-                "observedFirstMeaningfulPaint": 308,
-                "observedFirstMeaningfulPaintTs": 453396708,
-                "observedLargestContentfulPaint": 308,
-                "observedLargestContentfulPaintTs": 453396708,
-                "observedTraceEnd": 3818,
-                "observedTraceEndTs": 456906073,
-                "observedLoad": 1128,
-                "observedLoadTs": 454216178,
-                "observedDomContentLoaded": 259,
-                "observedDomContentLoadedTs": 453347453,
+                "observedNavigationStartTs": 452445948,
+                "observedFirstPaint": 265,
+                "observedFirstPaintTs": 452710655,
+                "observedFirstContentfulPaint": 265,
+                "observedFirstContentfulPaintTs": 452710655,
+                "observedFirstMeaningfulPaint": 265,
+                "observedFirstMeaningfulPaintTs": 452710655,
+                "observedLargestContentfulPaint": 265,
+                "observedLargestContentfulPaintTs": 452710655,
+                "observedTraceEnd": 2803,
+                "observedTraceEndTs": 455249147,
+                "observedLoad": 1634,
+                "observedLoadTs": 454079780,
+                "observedDomContentLoaded": 288,
+                "observedDomContentLoadedTs": 452733676,
                 "observedCumulativeLayoutShift": 0.00011303710937499999,
                 "observedCumulativeLayoutShiftAllFrames": 0,
-                "observedFirstVisualChange": 310,
-                "observedFirstVisualChangeTs": 453398320,
-                "observedLastVisualChange": 326,
-                "observedLastVisualChangeTs": 453414320,
-                "observedSpeedIndex": 310,
-                "observedSpeedIndexTs": 453398697
+                "observedFirstVisualChange": 269,
+                "observedFirstVisualChangeTs": 452714948,
+                "observedLastVisualChange": 302,
+                "observedLastVisualChangeTs": 452747948,
+                "observedSpeedIndex": 270,
+                "observedSpeedIndexTs": 452715557
               },
               {
                 "lcpInvalidated": false
@@ -4413,23 +4761,23 @@
             "type": "debugdata",
             "items": [
               {
-                "numRequests": 84,
-                "numScripts": 29,
+                "numRequests": 88,
+                "numScripts": 31,
                 "numStylesheets": 5,
                 "numFonts": 8,
-                "numTasks": 1420,
-                "numTasksOver10ms": 20,
-                "numTasksOver25ms": 5,
+                "numTasks": 1418,
+                "numTasksOver10ms": 15,
+                "numTasksOver25ms": 8,
                 "numTasksOver50ms": 4,
                 "numTasksOver100ms": 1,
                 "numTasksOver500ms": 0,
                 "rtt": 0,
-                "throughput": 24101964.00037469,
-                "maxRtt": 158.737,
-                "maxServerLatency": 344.465,
-                "totalByteWeight": 2228926,
-                "totalTaskTime": 912.4490000000008,
-                "mainDocumentTransferSize": 6149
+                "throughput": 58865216.07337764,
+                "maxRtt": 194.636,
+                "maxServerLatency": 586.7299999999998,
+                "totalByteWeight": 2250629,
+                "totalTaskTime": 913.6729999999993,
+                "mainDocumentTransferSize": 6207
               }
             ]
           }
@@ -4456,8 +4804,8 @@
       "cookiesGrade": "A",
       "cookiesCount": 0,
       "trackersGrade": "F",
-      "trackersCount": 74,
-      "lighthouse_performance": 0.27486610412597656,
+      "trackersCount": 75,
+      "lighthouse_performance": 0.2707265853881836,
       "lighthouse_performanceGrade": "E",
       "lighthouse_accessibility": 0.89,
       "lighthouse_accessibilityGrade": "A",
