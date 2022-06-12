@@ -7,24 +7,24 @@
   ],
   "cookies": [],
   "headers": {
-    "date": "Sun, 29 May 2022 01:16:45 GMT",
-    "content-type": "text/html",
-    "last-modified": "Fri, 13 May 2022 18:41:05 GMT",
-    "x-content-type-options": "nosniff",
-    "x-xss-protection": "1; mode=block",
-    "content-security-policy": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;",
-    "referrer-policy": "same-origin",
-    "feature-policy": "geolocation 'none';midi 'none';sync-xhr 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'self';accelerometer 'self';fullscreen 'self';payment 'none';",
-    "x-frame-options": "*.matchid.io",
+    "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
     "cf-cache-status": "DYNAMIC",
-    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
-    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=k3YnpYFuxG%2F2SSeXhHbmezreIwglhhb6bZZlemNK6kAOOcRKhkO166tyGMjxuSZzRlyP%2BGtMSi2Z1CYM%2BqEfK2GlHPWhliCeWVLh6bsxr%2FewIfHtw7jYXbfAOe8ht2uPj3Kp\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
-    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
-    "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
-    "server": "cloudflare",
-    "cf-ray": "712b62f17b0f9eb3-DFW",
+    "cf-ray": "719ebbf82b5e59c7-IAD",
     "content-encoding": "br",
-    "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    "content-security-policy": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;",
+    "content-type": "text/html",
+    "date": "Sun, 12 Jun 2022 01:15:14 GMT",
+    "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+    "feature-policy": "geolocation 'none';midi 'none';sync-xhr 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'self';accelerometer 'self';fullscreen 'self';payment 'none';",
+    "last-modified": "Fri, 13 May 2022 18:41:05 GMT",
+    "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+    "referrer-policy": "same-origin",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JyCFRcxapqNdg%2BZc0G6iQD8fFvEALaAFkyStCNjtJCruilBAUhdzYyUFWHuSTOY6xSEJmC9e5SZAbpWWbht65LCF56qzwAKvF%2FFU6isq8%2F67va3uan4ZEhKRGKswSQEb2HEl\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "server": "cloudflare",
+    "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "*.matchid.io",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
@@ -83,8 +83,57 @@
     },
     {
       "hostname": "static.cloudflareinsights.com",
-      "ip": "104.18.47.230",
-      "geoip": null
+      "ip": "172.64.156.26",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
     }
   ]
 }
