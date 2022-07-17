@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 10 Jul 2022 01:27:28",
+	"@generated": "Sun, 17 Jul 2022 01:26:35",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -14,28 +14,28 @@
 					"alert": "CSP: Wildcard Directive",
 					"name": "CSP: Wildcard Directive",
 					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						}
@@ -54,28 +54,28 @@
 					"alert": "CSP: script-src unsafe-inline",
 					"name": "CSP: script-src unsafe-inline",
 					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						}
@@ -94,28 +94,28 @@
 					"alert": "CSP: style-src unsafe-inline",
 					"name": "CSP: style-src unsafe-inline",
 					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
-							"param": "",
+							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;"
 						}
@@ -326,7 +326,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "23"
+					"sourceid": "24"
 				},
 				{
 					"pluginid": "10094",
@@ -339,90 +339,83 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"uri": "https://deces.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2F67hLejcMMm6Uvcvyt1hRXtMnedAm8d"
-						},
-						{
-							"uri": "https://deces.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2FSGMitQvvFQ1gCw3oZfMhsTPuiBLjTRuhvYGJ"
-						},
-						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BhgRsvY1yGSjtLlAqWXpihzTxPkfUqoezD"
+							"evidence": "2Bndc3wjOmRmsvHSjSNgtgvfCR6FCq"
 						},
 						{
 							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BxW44rgSNXdEG82SqEBbX5CigsrewUBB9ZsREKKlXxMS33a79OTwAH53IrhupXU"
+							"evidence": "4xYCbh9VDsdEWUiSb4CbmrzolRU3N9YKjos1RTEf4hW69ILYF69kfCs2"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/dsfr.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F7lE3gmMn7crnO7lce1uJFPyEGB99dR"
+							"evidence": "2FX8YfZiHcrTFRg8dg5g28Rj9Ama6NOaqFRvXv3"
+						},
+						{
+							"uri": "https://deces.matchid.io/css/global.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "m7eAIJovQ3pkB5xv23uXPPrY7OD0JV9qHpIeGOUZbr8BZsRp"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "YGhnnfdbN8YOpgi8l3AXvn0CLbuogzRUU4H0TGL2lJSamPq0lJQj6PpiqZOEcfYl1HF"
+							"evidence": "2FvTuQvJb7V8Gj7HzBw5Ydimv3OZjjSP8ztOKax"
 						},
 						{
-							"uri": "https://deces.matchid.io/favicon.svg",
+							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FiQBTT86PLaskMD5TTy6gXrdxaHQBiDwyZ7ih3l"
+							"evidence": "y6j8QQc7zHnu7LYGODFdJHDS3Hj06HLBWE4aWahY7kZlFGNza0vF1zg2CxF"
 						},
 						{
-							"uri": "https://deces.matchid.io/js/dsfr.min.js",
+							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "k0tEy1N8uUdw5kXrdh38PRLGEMqfUuz"
+							"evidence": "2FkPo0Leg63m7q5EpRDgsBKKVJ3beqpKgQbVcdi8It0vuVSucOtEKpHgCdQjsXHezL0m3idlkmeK"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FqDs68mRzYplVSUilAheMUA5JHP610o6zprLdNpKyj5h0"
+							"evidence": "2FT97GruyeyqKBRj58Z5p2JQ1K9RuExin4N2rOWWZ1BsfDx02CB"
 						},
 						{
 							"uri": "https://deces.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "bZyJdNUxosQilkVFiG8eeAQUkfw9ayCRlTH8nrGomJiysgJ0XwDrLCD1COIoYcKyHfk7WPOpPrep2hGNWrTKDFLYSQDTMqh8PImMC9sWZNIzq5t62Gj2O6vQqc"
+							"evidence": "2BEIb8TyYK7STl0BX3qDIU00popAo5"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F5Kn8fxCcVoLaynjSg04kSB7BH00m"
+							"evidence": "2Bl7obhJhmydTUJlikEGGSi09b4yC1jU4D"
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFDp\uFFFD&\uFFFDK\u073F+u\uFFFD\\x0015\uFFFD2w\uFFFD\\x0002o\\x001d</p>",
+					"otherinfo": "<p>\uFFFD\\x0019\uFFFDs|#:df\uFFFD\uFFFD\u048D#`\uFFFD\\x000b\uFFFD\t\\x001e\uFFFD</p><p></p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "19"
 				},
 				{
 					"pluginid": "10027",
@@ -465,21 +458,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"01285f2ca8887d648148c6eb-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"4704ceaed8710a269334a1a1-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"ba815bc6eb7d1450536266a4-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"785e7b9f654f3e987f3399fc-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"c50f122cea3556c56a43f0d4-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"c47a8f07d688582d55578253-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/dsfr.min.js",
@@ -493,7 +486,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"4f61fe4bf1360d3987cddf4a-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"c57f1edceae9f14288e8efee-text/javascript\"></script>"
 						}
 					],
 					"count": "5",
@@ -502,7 +495,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -573,72 +566,44 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 87"
-						},
-						{
-							"uri": "https://deces.matchid.io/css/dsfr.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 87"
-						},
-						{
-							"uri": "https://deces.matchid.io/css/global.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 86"
-						},
-						{
-							"uri": "https://deces.matchid.io/favicon-apple.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 87"
+							"evidence": "Age: 82"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 87"
+							"evidence": "Age: 82"
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 87"
+							"evidence": "Age: 82"
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 86"
+							"evidence": "Age: 82"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/dsfr.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 86"
-						},
-						{
-							"uri": "https://deces.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 87"
+							"evidence": "Age: 82"
 						}
 					],
-					"count": "9",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "27"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "10049",
@@ -672,13 +637,6 @@
 							"evidence": "max-age=86400"
 						},
 						{
-							"uri": "https://deces.matchid.io/css/dsfr.min.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=86400"
-						},
-						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
@@ -701,6 +659,13 @@
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=86400"
+						},
+						{
+							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
