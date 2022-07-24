@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 17 Jul 2022 01:26:34",
+	"@generated": "Sun, 24 Jul 2022 01:25:33",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -115,14 +115,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"2d8f78ccbbe5762d1bf58c2b-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"85573f732a05634fdd7cdc9b-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"2d8f78ccbbe5762d1bf58c2b-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"85573f732a05634fdd7cdc9b-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -188,14 +188,14 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"2d8f78ccbbe5762d1bf58c2b-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"85573f732a05634fdd7cdc9b-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"2d8f78ccbbe5762d1bf58c2b-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"85573f732a05634fdd7cdc9b-text/javascript\"></script>"
 						}
 					],
 					"count": "2",
@@ -247,37 +247,23 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ZvyNxegc5yyYF7GT1EYQ3zLfbMeqjrDGn0f4f3sn765UUNaiWSZh2Eep"
-						},
-						{
-							"uri": "https://www.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2Be51xuAxkcFKWa8jI4px4YIBo9LOpA"
-						},
-						{
-							"uri": "https://www.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2BRX5wBFHNYTnZmVULO1g7Dlh9guTaysRaBEts3tJ5RM4bDVEfcIepBRwuqTiuG2RiwfljpUAlhZ96gKyWlN0AF6OuQDem6Q"
+							"evidence": "2BAgOjgxAMCM646wzyeHJlDbM1HREA"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FpealpYvBPGUEinJW7SP55HMzwBJSOEzo27wM1xwzAj7O5pbhMmKgyA"
+							"evidence": "x93k7cjK3Ris9DQYuQe268j6AhghuyO1r7HVZSwttK"
 						}
 					],
-					"count": "4",
+					"count": "2",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>f\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD,\uFFFD\\x0017\uFFFD\uFFFD\uFFFDF\\x0010\uFFFD2\uFFFDl\u01EA\uFFFD\uFFFD\u019FG\uFFFD{'\uFFFDTP\u05A2Y&a\uFFFDG\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0010 :81\\x0000\uFFFD\uFFFD\uB3B0\uFFFD'\uFFFD&P\uFFFD3Q\uFFFD\\x0010</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -301,21 +287,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"72bf30a18f327ec3\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"72f8dcc8eee3819a\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"72bf30a17b117d76\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"72f8dcc8ec037fe7\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"72bf30a21c397d76\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"72f8dcc9b882819a\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						}
 					],
 					"count": "4",
@@ -367,14 +353,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "HIT"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "HIT"
+							"evidence": "Age: 64"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
@@ -386,7 +372,7 @@
 					],
 					"count": "3",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
-					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
+					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
