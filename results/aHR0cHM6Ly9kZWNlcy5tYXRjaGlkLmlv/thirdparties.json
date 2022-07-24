@@ -9,17 +9,17 @@
   "headers": {
     "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
     "cf-cache-status": "DYNAMIC",
-    "cf-ray": "72bf3232085c5746-IAD",
+    "cf-ray": "72f8dea11e2d57ca-IAD",
     "content-encoding": "br",
     "content-security-policy": "default-src https: 'self';script-src https: 'self' 'unsafe-inline';style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' data: https://a.basemaps.cartocdn.com https://b.basemaps.cartocdn.com https://c.basemaps.cartocdn.com https://upload.wikimedia.org;",
     "content-type": "text/html",
-    "date": "Sun, 17 Jul 2022 01:27:36 GMT",
+    "date": "Sun, 24 Jul 2022 01:26:47 GMT",
     "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
     "feature-policy": "geolocation 'none';midi 'none';sync-xhr 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'self';accelerometer 'self';fullscreen 'self';payment 'none';",
     "last-modified": "Sat, 09 Jul 2022 08:01:14 GMT",
     "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
     "referrer-policy": "same-origin",
-    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=IzpIDC2DjVUJIjq5uiaqNzO3jbGGd3PJff0N5CNyN5LLDkvfBRJj1BdF6eK2Sej42V4Pfvd8opg%2FgPyZkP67KffE1dou5%2F6kkl0blECch%2FwdmTdXaX529aQmtOJdHkC%2B60uC\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+    "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=rreonLj7pdnsEPYWmI8%2FoKes6GbWMTYeImQVFeoJhrUmcRip7%2FzaOOtiWmgRBfwu4o3BafUTu%2BqtKF%2Bp9O3dvV9yR9JaS7SsY4IkNinRqWPrkCLtSDOilVC7dOiWJ0CZ3PIQ\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
     "server": "cloudflare",
     "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
     "x-content-type-options": "nosniff",
@@ -29,8 +29,57 @@
   "endpoints": [
     {
       "hostname": "deces.matchid.io",
-      "ip": "104.21.64.91",
-      "geoip": null
+      "ip": "172.67.179.218",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
     },
     {
       "hostname": "static.cloudflareinsights.com",

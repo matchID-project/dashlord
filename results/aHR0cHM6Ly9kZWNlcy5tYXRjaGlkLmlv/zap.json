@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 17 Jul 2022 01:26:35",
+	"@generated": "Sun, 24 Jul 2022 01:25:24",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -152,7 +152,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "33"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10020",
@@ -339,83 +339,83 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
+							"uri": "https://deces.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2Bk8VI8loU3f4W6iE1KCueOeK4mPTq7zAPEEapt"
+						},
+						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Bndc3wjOmRmsvHSjSNgtgvfCR6FCq"
+							"evidence": "2BB2q6jpfa3G10WJ9dI3PhnmGX4Wns"
 						},
 						{
-							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+							"uri": "https://deces.matchid.io/build/module/bundle.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "4xYCbh9VDsdEWUiSb4CbmrzolRU3N9YKjos1RTEf4hW69ILYF69kfCs2"
+							"evidence": "2FT4gkAtUIMdVuvGmHGbNgp0o4MLdS6LkNgaRJqexBsmqBPKCV5bLP09"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/dsfr.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FX8YfZiHcrTFRg8dg5g28Rj9Ama6NOaqFRvXv3"
+							"evidence": "fJAwHHVqjENwLGrVL3YlVWHjOyFcQ7l5CpBAKvhS7VKSX5oC5eLg"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "m7eAIJovQ3pkB5xv23uXPPrY7OD0JV9qHpIeGOUZbr8BZsRp"
-						},
-						{
-							"uri": "https://deces.matchid.io/favicon-apple.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2FvTuQvJb7V8Gj7HzBw5Ydimv3OZjjSP8ztOKax"
+							"evidence": "ITvxKMm9WuOhVMF80gJOdITpdqAOqtVBnkSMHn9ujow0iSE0t9uU99gzjUVdZ61fYCp8cfVkccx"
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "y6j8QQc7zHnu7LYGODFdJHDS3Hj06HLBWE4aWahY7kZlFGNza0vF1zg2CxF"
+							"evidence": "zUD2pRaJQbU21bXo8JS8HzlYcZW24ufj51lT5iG0cFn2XoYfJO6GWyX5Gbvq0nJGmpg"
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FkPo0Leg63m7q5EpRDgsBKKVJ3beqpKgQbVcdi8It0vuVSucOtEKpHgCdQjsXHezL0m3idlkmeK"
+							"evidence": "2BmJ4njRGs6vYS9OOXEleG5taV23HtUxJOJNgICTI0GFTk0fWr"
+						},
+						{
+							"uri": "https://deces.matchid.io/js/dsfr.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "UGAvZRnNXDM8WXfAAORDUnCTjfoo2im3L948Bh79FKpHwNjcBrOCg2q"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FT97GruyeyqKBRj58Z5p2JQ1K9RuExin4N2rOWWZ1BsfDx02CB"
-						},
-						{
-							"uri": "https://deces.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2BEIb8TyYK7STl0BX3qDIU00popAo5"
+							"evidence": "DJXmmQ1QhV5Psx8q7JzFwCsy5OFLVoeCnK6I8PwMkrPHPmWS84EIGej9ncJu9Z"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Bl7obhJhmydTUJlikEGGSi09b4yC1jU4D"
+							"evidence": "2BS7KvQQ2Mxr0DDiudig58fUy4IBD7HGBRFRL4q0NpnEWZxH"
 						}
 					],
 					"count": "10",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0019\uFFFDs|#:df\uFFFD\uFFFD\u048D#`\uFFFD\\x000b\uFFFD\t\\x001e\uFFFD</p><p></p>",
+					"otherinfo": "<p>\uFFFD\\x0019<T\uFFFD%\uFFFDM\uFFFD\uFFFDn\uFFFD\\x0013R\uFFFD\uFFFD\uFFFD+\uFFFD\uFFFDN\uFFFD\uFFFD\\x0000\uFFFD\\x0004j\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "19"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10027",
@@ -458,21 +458,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"4704ceaed8710a269334a1a1-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"2453756517b7ab91e01b1839-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"785e7b9f654f3e987f3399fc-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"8d02f93b2ab1159122ed55db-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"c47a8f07d688582d55578253-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"7ba04fdb87ca4e134d6bb0a9-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/dsfr.min.js",
@@ -486,7 +486,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/dsfr.min.js' type=\"c57f1edceae9f14288e8efee-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/dsfr.min.js' type=\"9fe3ecde9443cc3df6ad5f58-text/javascript\"></script>"
 						}
 					],
 					"count": "5",
@@ -495,7 +495,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10015",
@@ -562,48 +562,27 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
-							"uri": "https://deces.matchid.io/build/module/bundle.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 82"
-						},
-						{
-							"uri": "https://deces.matchid.io/favicon.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 82"
-						},
-						{
-							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 82"
-						},
-						{
-							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 82"
-						},
-						{
 							"uri": "https://deces.matchid.io/js/dsfr.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 82"
+							"evidence": "Age: 85"
+						},
+						{
+							"uri": "https://deces.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 65"
 						}
 					],
-					"count": "5",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "26"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10049",
@@ -637,6 +616,13 @@
 							"evidence": "max-age=86400"
 						},
 						{
+							"uri": "https://deces.matchid.io/css/dsfr.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=86400"
+						},
+						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
@@ -659,13 +645,6 @@
 						},
 						{
 							"uri": "https://deces.matchid.io/fonts/Marianne-Bold.woff2",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=86400"
-						},
-						{
-							"uri": "https://deces.matchid.io/fonts/Marianne-Regular.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
