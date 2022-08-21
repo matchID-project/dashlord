@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 14 Aug 2022 01:19:37",
+	"@generated": "Sun, 21 Aug 2022 01:16:34",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -115,14 +115,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"aedb1e2553a0cf4cb3f63150-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"13c9373b6985bf7e332515ea-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"aedb1e2553a0cf4cb3f63150-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"13c9373b6985bf7e332515ea-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -167,11 +167,11 @@
 					],
 					"count": "3",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
-					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 541.</p>",
+					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 614.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10017",
@@ -188,14 +188,14 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"aedb1e2553a0cf4cb3f63150-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"13c9373b6985bf7e332515ea-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"aedb1e2553a0cf4cb3f63150-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-TEGXVTN15T\" type=\"13c9373b6985bf7e332515ea-text/javascript\"></script>"
 						}
 					],
 					"count": "2",
@@ -233,6 +233,46 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "63018714"
+						},
+						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "63018733"
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "63018770"
+						}
+					],
+					"count": "3",
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>63018714, which evaluates to: 1971-12-31 09:11:54</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
 					"pluginid": "10094",
 					"alertRef": "10094",
 					"alert": "Base64 Disclosure",
@@ -247,37 +287,37 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BI1gyGDgnPdwdwZY5pM8DFVawuDT08a5cisYOanWD7tPxuAEU36"
+							"evidence": "2BTWxsiGf8KpiGB1w7FtPV2E6rBPTBM4hXzad8y10n9aj7UftJk3GxjBFVaCU4w4"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FvhDu1FlBMNo6k7eXN6NY0a2aynWTv5hGuoDfCGEzlPHwVPng8k7Ez9mdD50IsCgJaici6nJq"
+							"evidence": "/cdn-cgi/apps/head/WYlNEhQdKlfjqmX9vJ2R13Htm44"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BqEbcbHx1xV2RImRvpEiTR7FskYRRgODRiJyT51eVEj0ypiYO3Yx9KPpc8KcPox5xPKMVOnlFK7YMRCPnI"
+							"evidence": "2F0WAWWh7W4dhXly8F5nPHMTsRRTpgoeyIgK2yuRcofWTMuYdZ9HaiaRBN9PHXwwijRsYvoqgeUnJr7ZUcGXDMPzcEzfQThh7lMzNWESRVw9kmVoUikYstiigyx1odw"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "3570JQpUW3S2psE9IVOWMbhmxIQOyxCRVNocClLqbtgwfXd4GR"
+							"evidence": "7n0KoNjNic4u0NGdscGjHtINm5jhr6QKbGfR5sfh"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x00125\uFFFD!\uFFFD\uFFFDs\uFFFD\uFFFD\uFFFD\\x0019c\uFFFDL\uFFFD1Uk\\x000b\uFFFDOO\\x001a\uFFFD\u022C`\uFFFDX>\uFFFD?\\x001b\uFFFD\\x0011M\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0014\uFFFD\uFFFD\u0206\u00A9\uFFFD`u\u00F1m=]\uFFFD\uFFFDOL\\x00138\uFFFD|\uFFFDw\u0335\uFFFDZ\uFFFD\uFFFD\\x001f\uFFFD\uFFFD7\\x001b\\x0018\uFFFD\\x0015V\uFFFDS\uFFFD8</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10109",
@@ -301,21 +341,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"73a5dcf92e860f2a\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script src=\"/cdn-cgi/apps/head/WYlNEhQdKlfjqmX9vJ2R13Htm44.js\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"73a5dcf93bd328dd\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script src=\"/cdn-cgi/apps/head/WYlNEhQdKlfjqmX9vJ2R13Htm44.js\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"73a5dcf9dfae0f2a\",\"version\":\"2022.6.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script src=\"/cdn-cgi/apps/head/WYlNEhQdKlfjqmX9vJ2R13Htm44.js\"></script>"
 						}
 					],
 					"count": "4",
@@ -374,7 +414,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 64"
+							"evidence": "Age: 61"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
