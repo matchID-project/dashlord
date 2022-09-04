@@ -213,14 +213,14 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "off by -3 seconds from your localtime"
+              "finding"      : "off by -4 seconds from your localtime"
           }
 ,         {
               "id"           : "certificate_compression",
@@ -353,7 +353,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "269 >= 60 days"
+              "finding"      : "262 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -521,21 +521,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+202 seconds from localtime"
+              "finding"      : "+114 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1661650066"
+              "finding"      : "1662254759"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "202 seconds"
+              "finding"      : "114 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -594,18 +594,11 @@
               "finding"      : "nosniff"
           }
 ,         {
-              "id"           : "Expect-CT",
-              "ip"           : "www.matchid.io/104.21.64.91",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "max-age=604800, report-uri='https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct'"
-          }
-,         {
               "id"           : "X-Served-By",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-dal21240-DAL"
+              "finding"      : "cache-bur-kbur8200105-BUR"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -613,7 +606,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 2"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
           }
 ,         {
               "id"           : "heartbleed",
@@ -1321,7 +1314,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -1461,7 +1454,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "269 >= 60 days"
+              "finding"      : "262 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1629,21 +1622,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+248 seconds from localtime"
+              "finding"      : "+244 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1661650112"
+              "finding"      : "1662254803"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "248 seconds"
+              "finding"      : "244 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1702,18 +1695,11 @@
               "finding"      : "nosniff"
           }
 ,         {
-              "id"           : "Expect-CT",
-              "ip"           : "www.matchid.io/172.67.179.218",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "max-age=604800, report-uri='https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct'"
-          }
-,         {
               "id"           : "X-Served-By",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-dal21243-DAL"
+              "finding"      : "cache-lax10679-LGB"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1721,7 +1707,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 4"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
           }
 ,         {
               "id"           : "heartbleed",
@@ -2220,6 +2206,6 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "93"
+              "finding"      : "99"
           }
 ]
