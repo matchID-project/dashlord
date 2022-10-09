@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 2 Oct 2022 01:48:01",
+	"@generated": "Sun, 9 Oct 2022 01:29:30",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -87,6 +87,93 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link type=\"application/atom+xml\" rel=\"alternate\" href=\"https://matchid.io/feed.xml\" title=\"matchID project\" />"
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"3095be87d19fbb6fb02b6f41-text/javascript\"></script>"
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"3095be87d19fbb6fb02b6f41-text/javascript\"></script>"
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"3095be87d19fbb6fb02b6f41-text/javascript\"></script>"
+						}
+					],
+					"count": "4",
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
+					"cweid": "345",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 541.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "6"
+				},
+				{
 					"pluginid": "10017",
 					"alertRef": "10017",
 					"alert": "Cross-Domain JavaScript Source File Inclusion",
@@ -101,21 +188,21 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"6e868b7934ab4fd5ead8c930-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"3095be87d19fbb6fb02b6f41-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"6e868b7934ab4fd5ead8c930-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"3095be87d19fbb6fb02b6f41-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"6e868b7934ab4fd5ead8c930-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"3095be87d19fbb6fb02b6f41-text/javascript\"></script>"
 						}
 					],
 					"count": "3",
@@ -124,6 +211,126 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2BC4Suiyjpo0hmtqrZB26OKfdbeoJ6KgTdOBIDMTgqfJUVmJaHsFrS8nVHZPPRnu"
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FEg2t3NRXUves8TRJHlmlLttFUOVsQZnKsfcp82Irl93Dk0XGFsXkE0WglccA6VaPGSe9Z54i1WDBi1wsgxCQ"
+						},
+						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2Bl9PZxo3GsJHx5dG6n6x5l8cox24p9JT0Ee"
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "EVdAD8OL7EhhRVA9yIDuNWBKvARHXxiFXlyYxQ6EixXc3fD3zrYU2vVahM"
+						}
+					],
+					"count": "4",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p>\uFFFD\\x0010\uFFFDJ\u8C8E\uFFFD4\uFFFDkj\uFFFD\uFFFDv\uFFFD\uFFFDu\uFFFD\uFFFD'\uFFFD\uFFFDM\u04C1 3\\x0013\uFFFD\uFFFD\uFFFDQY\uFFFDh{\\x0005\uFFFD/'TvO=\\x0019\uFFFD</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"fr-nav__link\" href=\"slides/#/3/8\" target=\"_self\">\nD\u00E9velopper des algorithmes d'appariement\n</a>"
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"75735868782e7ab4\",\"version\":\"2022.8.1\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+						},
+						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"7573586888457ba3\",\"version\":\"2022.8.1\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194\" integrity=\"sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==\" data-cf-beacon='{\"rayId\":\"7573586918c77ab4\",\"version\":\"2022.8.1\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+						}
+					],
+					"count": "4",
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
 					"sourceid": "1"
 				},
 				{
@@ -149,6 +356,86 @@
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10050",
+					"alertRef": "10050",
+					"alert": "Retrieved from Cache",
+					"name": "Retrieved from Cache",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HIT"
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						}
+					],
+					"count": "2",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Storable and Cacheable Content",
+					"name": "Storable and Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=600"
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=86400"
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "4",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
 					"wascid": "13",
 					"sourceid": "1"
 				}
