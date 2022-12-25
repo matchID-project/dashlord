@@ -178,7 +178,7 @@
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
+              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -346,7 +346,7 @@
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "157 >= 60 days"
+              "finding"      : "150 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -394,8 +394,15 @@
               "id"           : "OCSP_stapling",
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "not offered"
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cert_ocspRevoked",
+              "ip"           : "deces.matchid.io/104.21.64.91",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not revoked"
           }
 ,         {
               "id"           : "cert_mustStapleExtension",
@@ -507,7 +514,7 @@
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1671325364"
+              "finding"      : "1671930344"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -542,7 +549,7 @@
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Server-Timing: cf-q-config;dur=6.0000020312145e-06 cloudflare"
+              "finding"      : "Server-Timing: cf-q-config;dur=7.0000023697503e-06 cloudflare"
           }
 ,         {
               "id"           : "banner_application",
@@ -1272,7 +1279,7 @@
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
+              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -1440,7 +1447,7 @@
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "157 >= 60 days"
+              "finding"      : "150 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1488,8 +1495,15 @@
               "id"           : "OCSP_stapling",
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "not offered"
+              "severity"     : "OK",
+              "finding"      : "offered"
+          }
+,         {
+              "id"           : "cert_ocspRevoked",
+              "ip"           : "deces.matchid.io/172.67.179.218",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "not revoked"
           }
 ,         {
               "id"           : "cert_mustStapleExtension",
@@ -1601,7 +1615,7 @@
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1671325412"
+              "finding"      : "1671930387"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1636,7 +1650,7 @@
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Server-Timing: cf-q-config;dur=8.9999957708642e-06 cloudflare"
+              "finding"      : "Server-Timing: cf-q-config;dur=7.9999954323284e-06 cloudflare"
           }
 ,         {
               "id"           : "banner_application",
@@ -2192,6 +2206,6 @@
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "96"
+              "finding"      : "92"
           }
 ]
