@@ -1,18 +1,18 @@
-# Nmap 7.92 scan initiated Sun Dec 25 01:06:59 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln deces.matchid.io
+# Nmap 7.92 scan initiated Sun Jan  1 01:14:01 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln deces.matchid.io
 Nmap scan report for deces.matchid.io (104.21.64.91)
-Host is up (0.0089s latency).
-Other addresses for deces.matchid.io (not scanned): 172.67.179.218 2606:4700:3031::ac43:b3da 2606:4700:3030::6815:405b
+Host is up (0.0022s latency).
+Other addresses for deces.matchid.io (not scanned): 172.67.179.218 2606:4700:3030::6815:405b 2606:4700:3031::ac43:b3da
 Not shown: 996 filtered tcp ports (no-response)
 PORT     STATE SERVICE  VERSION
 80/tcp   open  http     Cloudflare http proxy
 |_http-server-header: cloudflare
 443/tcp  open  ssl/http Cloudflare http proxy
-|_http-trane-info: Problem with XML parsing of /evox/about
 |_http-server-header: cloudflare
+|_http-trane-info: Problem with XML parsing of /evox/about
 8080/tcp open  http     Cloudflare http proxy
 |_http-server-header: cloudflare
 8443/tcp open  ssl/http Cloudflare http proxy
 |_http-server-header: cloudflare
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Dec 25 01:07:38 2022 -- 1 IP address (1 host up) scanned in 38.80 seconds
+# Nmap done at Sun Jan  1 01:14:40 2023 -- 1 IP address (1 host up) scanned in 38.59 seconds
