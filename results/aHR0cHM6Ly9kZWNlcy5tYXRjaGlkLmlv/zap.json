@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 15 Jan 2023 01:07:52",
+	"@generated": "Sun, 22 Jan 2023 01:07:55",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -47,7 +47,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10055",
@@ -87,7 +87,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10055",
@@ -127,7 +127,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90003",
@@ -178,16 +178,9 @@
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": "*.matchid.io"
-						},
-						{
-							"uri": "https://deces.matchid.io/sitemap.xml",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": "*.matchid.io"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure a valid setting is used on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7034#section-2.1</p>",
@@ -240,7 +233,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/</p>",
 					"cweid": "16",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10063",
@@ -283,89 +276,82 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BkaxcrpcS8p08GPe0QGSu1pF10PvjLnkquPtF1tKE5kDTOc507D1Gr0gVuH5F6nFEtMvy3B5ZSAKMD84Y1B"
+							"evidence": "2BboADKDWYFcgoXbkOeA0xRQFomHtsgyp9NXvuEiR6r0sWbrjWE6YqSo"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FgevuvN4NzA1igN8TVzNdeBSNBFRwzeO8eaNSG7NZ5KiMWgBMnvpD73FnCL0e67PjEszt7F6U3WFHUWrqmhCSQ"
+							"evidence": "2FORbxd0qdzKz7GocfHKK43harYDEeMLkeXWeQpCgU3IYXbuJucVRe7kNk9UwqV7SbaMiDCErzKAttgN7YupjhvL"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BoVhWU7S3F8FPgjbzfRMSeSxkcr9tC8zO"
+							"evidence": "hWjrATL4mUsQsKZLka6eHunBJ3PGo7pVg8zWQUX"
 						},
 						{
 							"uri": "https://deces.matchid.io/build/module/bundle.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B8cwY40H3P70lgCXJ3eoTrAFaVz5GbQRc4pCESxFeq3Kl9V"
-						},
-						{
-							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "FwDiWwA8eYWfjUvy0O5pAhQxUnOWNoXRNVkJtYFh9PVpRb1flrwenE8o4dXEoaNvXLgTzE5ZsIvK5QRi8mjEWHgyP7aDkaZZxVMnmWcwq2qCm49g"
+							"evidence": "ONn1AOtHRiRcsursMmmnpadMyWj694gQjs9ybs29hgGcCXcFqg5f"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BpNYNXZUdezqq0cpornVgUe7fSk2tsx43g4Po0i"
+							"evidence": "psN7f2snAYo3QXIp90qFczf7mL0dQSEWvm4nIbySPcWTGEO0iNJ5"
+						},
+						{
+							"uri": "https://deces.matchid.io/css/matchid.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "h8DU5t1YEvgVV6aLCdpDobX8glfhrKXkAVjPQ4jq7WWVhwd99oj80boPRumNE89bDQqVNF"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "KS03JL2mSMtrM78wp8Jzy4rIzceXVl24cNfE8jvQsg4L7v2FH3te"
+							"evidence": "yvMUU5UuaVy3wDd59NqPhDh7LbLumWxhXTUA5kJ6B7"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "9lqtGOaWYwMVg22rUkRaOlaIl9ssS1Q7FknCjqZfDw8fMa0w0N22H0WmzOa"
-						},
-						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "DDDYKbioe1DMksfLVoa14Usd9Nu0y0uBOvsLzZP3kDYxcUwZTh1RwId5BRZy7c3rm5bXKIFkFmznzUO2sbx8FKzKI70"
+							"evidence": "2FQQ8RspmG0cjeCccRbfYPPkCO942qI5hSvCLrf"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BruoG4ebgJjiABo6NFKZAM37pXT4jc"
+							"evidence": "IhYSI7XGpGP6zy14oIDq2n8sP5yQCWVIJ0YC2qxyoDcYp6CV"
 						},
 						{
 							"uri": "https://deces.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "RVAHv6C0k5UdCvsBx9IzCwBZ7P8uWo01SioTNDs6WYszdYFen02y2sS9fMxosP"
+							"evidence": "2FxSWj3jCNw3b73X1SK5h11AiGZMkr6bWVWzbxL"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BkW4kCcBPuNbVpO2JXdpEFydWonARlUbeoKSt7Afo45gctlGujO"
+							"evidence": "DfU7aK53rKlM0bd4MG7hNTRPeqZefhwIJr2jKP"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0019\\x001a\uFFFD\uFFFD\uFFFDq/)\uFFFD\uFFFD\uFFFD{D\\x0006J\uFFFDi\\x0017]\\x000f\uFFFD2\u74AB\uFFFD\uFFFD]m(Nd\r3\uFFFD\uFFFDN\uFFFD\uFFFDj\uFFFD[\uFFFD\uFFFD^\uFFFD\\x0014KL\uFFFD-\uFFFD\u5500(\uFFFD\uFFFD\uFFFDA</p>",
+					"otherinfo": "<p>\uFFFD\\x0016\uFFFD\\x00002\uFFFDY\uFFFD\\\uFFFD\uFFFD\u06D0\uFFFD\uFFFD\\x0014P\\x0016\uFFFD\uFFFD\uFFFD\uFFFD2\uFFFD\uFFFDW\uFFFD\uFFFD\"G\uFFFD\uFFFD\uFFFDf\uFFFDa:b\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -412,28 +398,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"9ee1a9549b62e23570618d07-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"0aafbb4cd3529bdef6e7461d-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"c8a76073a333f438a43eb9b8-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"e1edab5888e3756da12b5946-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"54998218517422348647e052-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"594bc9e80158899340eaf920-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"344026f073a7766fcda95eb8-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"6d4eaf299bd77d9e77fa907b-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -476,13 +462,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "max-age=86400"
-						},
-						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -490,7 +469,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -513,16 +492,44 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 4283"
+							"evidence": "Age: 88"
+						},
+						{
+							"uri": "https://deces.matchid.io/css/global.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 143"
+						},
+						{
+							"uri": "https://deces.matchid.io/favicon-apple.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 143"
+						},
+						{
+							"uri": "https://deces.matchid.io/favicon.svg",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 144"
+						},
+						{
+							"uri": "https://deces.matchid.io/js/matchid.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 143"
 						}
 					],
-					"count": "1",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "24"
+					"sourceid": "25"
 				},
 				{
 					"pluginid": "10049",
@@ -570,6 +577,13 @@
 							"evidence": "max-age=86400"
 						},
 						{
+							"uri": "https://deces.matchid.io/css/matchid.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=86400"
+						},
+						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
@@ -612,13 +626,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				}
 			]
 		}
