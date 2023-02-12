@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 5 Feb 2023 01:12:16
+		Generated on Sun, 12 Feb 2023 01:09:36
 	</h3>
 
 	
@@ -152,7 +152,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>4</div>
+					<div>3</div>
 				</td>
 			</tr>
 			<tr>
@@ -204,11 +204,6 @@ td {
 				<td align="center">1</td>
 			</tr>
 			<tr>
-				<td><a href="#10020">Missing Anti-clickjacking Header</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">4</td>
@@ -246,7 +241,7 @@ td {
 			<tr>
 				<td><a href="#10050">Retrieved from Cache</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
@@ -442,88 +437,6 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-2"><a
-						id="10020"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Missing Anti-clickjacking Header</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</div>
-							<br />
-						
-							<div>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10020/">10020</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
 						id="90003"></a>
 						<div>Medium</div></th>
 					<th class="risk-2">Sub Resource Integrity Attribute Missing</th>
@@ -588,7 +501,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;d51685c3c33b8e56911fc985-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;7034f28fccad3695548ff761-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -614,7 +527,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;d51685c3c33b8e56911fc985-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;7034f28fccad3695548ff761-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -640,7 +553,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;d51685c3c33b8e56911fc985-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;7034f28fccad3695548ff761-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -847,7 +760,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;d51685c3c33b8e56911fc985-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;7034f28fccad3695548ff761-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -873,7 +786,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;d51685c3c33b8e56911fc985-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;7034f28fccad3695548ff761-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -899,7 +812,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;d51685c3c33b8e56911fc985-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;7034f28fccad3695548ff761-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -1066,7 +979,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">LZLldhK4atiVdkvmSK4qUGKzig3fQ8</td>
+						<td width="80%">VgPpWVKGxHzWBTHzzIfyBhRqyRHQhsb77IAXvKrY</td>
 					</tr>
 				
 					<tr>
@@ -1092,7 +1005,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2B74I44wB31wPZLpEoUZRlviCZPavVNGGg8mzBL</td>
+						<td width="80%">2FTJQWr2xHBFyaz5V7NaBq8coSbDV2</td>
 					</tr>
 				
 					<tr>
@@ -1118,7 +1031,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FKq89rD0h3XnsStER63AlTAhypBGRfOJHpJVP1D91Y7</td>
+						<td width="80%">o60iZWZoF3w0wE0RdcHsqPtMmnESw6BdrBarkSGGYIorEt</td>
 					</tr>
 				
 					<tr>
@@ -1144,7 +1057,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">xoH1ECOlQ78OdzhlaPN4ynnPNJmaQn71</td>
+						<td width="80%">2BNXW749eKHQ7jfFZVBRdwq71cJVGME1wxiQGmGBZQLiEfkX9B</td>
 					</tr>
 				
 				<tr>
@@ -1251,7 +1164,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993&quot; integrity=&quot;sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7947c6d2d9fc2b56&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993&quot; integrity=&quot;sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;79817085f8202cb7&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1277,7 +1190,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993&quot; integrity=&quot;sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7947c6d2d9a5524b&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993&quot; integrity=&quot;sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;79817085fafbea4f&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1303,7 +1216,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993&quot; integrity=&quot;sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7947c6d36b4a7aba&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993&quot; integrity=&quot;sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;798170869e5fe936&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -1469,6 +1382,32 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io/robots.txt">https://www.matchid.io/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">HIT</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
 					</tr>
 					<tr>
@@ -1494,7 +1433,7 @@ Développer des algorithmes d&#39;appariement
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
