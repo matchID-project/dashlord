@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 5 Feb 2023 01:11:09",
+	"@generated": "Sun, 12 Feb 2023 01:09:26",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -47,7 +47,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10055",
@@ -87,7 +87,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10055",
@@ -127,7 +127,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90003",
@@ -283,79 +283,93 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "d3XHJOmB7P3kqDfFshdbJu6Md3O78oooFrbIQUaIiWqFZZIURs"
+							"evidence": "2BBwSHn6tnG5l8RxhTTUOn8fDelKAdguANIwGguWHcJBd7wmrGHp3z9uaouQFkDqMBBSXEEVK9VOPQ9"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BeNNQdoXdFrNFsGEg0B8eNjPK4W77Uk1CUduB8u5UuBg4lZ2Zc3HCVyxb"
+							"evidence": "2FMT22QrVG8lQUjjLTd3036Ub7KibKvOU6UAIJrXum5720K4nCHmOByzDFsTc74fhf7fgG6dOboYYJZ"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FTcE2W7Xa1C6l4ySEGw8uL9atRClgJH8qCip0q7egBIc4rVbpT"
+							"evidence": "eZHKPV4a90rFmjRpkMpO6ufnZnuGkOgN6pmoceqUj6uIuBL"
+						},
+						{
+							"uri": "https://deces.matchid.io/build/module/bundle.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2Bb377eZRqvk3KjxIdEszlGvq6MDLPB9dy1Uxy"
 						},
 						{
 							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FG8JwaF0bi5549nkQKOAGfeSi3mfE9x"
+							"evidence": "2FjD5ijv0UVmN8LXGvv3NgTKot7k0Qfxyi99Jr1lOSmBP8uvXQxL"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/matchid.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FgUIbqLrPGROIzViefrLm85AFXoWXLVjXQX3Yf7U3KWh3Ussw"
+							"evidence": "khH2cY1NNLAZmdVc0i09IWLH2i8vGcWYgQc67NsnyErAxwY"
+						},
+						{
+							"uri": "https://deces.matchid.io/favicon-apple.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eM1K9I8O9XxMwjUFIhg9HZZnkrg0EAE1DkVUJrOKQKH3Gl9TGHyvDoxpNQmDJqPkN6jM6xYCAGUSFq"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BG4cHy1DOnv0eHVBGKGRUzfayu14CfX1G8GXBqXt9e"
+							"evidence": "2FSJQYVxHK3gjuUz02VSjGIe2UAx3IAcLUYCXZq8hx34wQe9"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/matchid.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BnHu663j47decaHS81wIPPNIsDqEjP33dhVI5nR"
+							"evidence": "2BQl0dE9RM9I25coFfdY1vFDWB0cI4NQ1u9rHT7T0Sv"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BwMW7o4YZQaobwTjFwO8uvnPqxk5uKWewpKb335"
+							"evidence": "2FJgib4hhMwu1tWPXDeH764mng7mk4uaI7xQrVM3GOxpSsg7DtnROdCcJukdN1z9lH6"
 						},
 						{
 							"uri": "https://deces.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FQzP4YMf5W40W7KdgOjhtsNjZ66C93SC11x8LfLEif0b70d9FSWF4QHgp3tbEmBouTTIjx0PkPvvz4Q1sDK2MmFML"
+							"evidence": "JGKbe3mO7MD3lElLbUmEaTaCl97UKiDs"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "33yFvNHkzHgG4O9qxSRGO7BMRsFZJsuVT8Fl2IVC"
+							"evidence": "2FgCz8utfJTsvqHfAsZ5uPQ8qMej3AV"
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>wu\uFFFD$\uFFFD\uFFFD\uFFFD\uFFFD7\u0172\\x0017[&\uFFFDws\uFFFD\uFFFD(\\x0016\uFFFD\uFFFDAF\uFFFD\uFFFDj\uFFFDe\uFFFD\\x0014F</p>",
+					"otherinfo": "<p>\uFFFD\\x0010pHy\uFFFD\uFFFDq\uFFFD\uFFFD\uFFFDq\uFFFD4\uFFFD:\\x001f\r\uFFFDJ\\x0001\uFFFD.\\x0000\uFFFD0\\x001a\\x000b\uFFFD\\x001d\uFFFDAw\uFFFD&\uFFFDa\uFFFD\uFFFD?nj\uFFFD\uFFFD\\x0016@\uFFFD0\\x0010R\\A\\x0015+\uFFFDN=\\x000f</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -398,28 +412,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"8c7a546e7e5251a80ba377f6-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"6db76fee55bedba09382762d-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"ffcefe59fcb3489e4423c5e2-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"9e5b90724ede270f6220cad5-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"e1d255d807972695168bf510-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"6230855cbdd4bfb5e332c37a-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"439d4c5a65187e8d267bc3ac-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"3f68b223140b320f2a51363a-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -482,7 +496,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10050",
@@ -495,27 +509,20 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
-							"uri": "https://deces.matchid.io/favicon.svg",
+							"uri": "https://deces.matchid.io/css/matchid.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 75"
-						},
-						{
-							"uri": "https://deces.matchid.io/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 80"
+							"evidence": "Age: 78"
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "18"
+					"sourceid": "24"
 				},
 				{
 					"pluginid": "10049",
@@ -563,6 +570,13 @@
 							"evidence": "max-age=86400"
 						},
 						{
+							"uri": "https://deces.matchid.io/css/matchid.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=86400"
+						},
+						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
@@ -571,13 +585,6 @@
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=86400"
-						},
-						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -611,7 +618,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				}
 			]
 		}
