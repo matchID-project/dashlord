@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 19 Mar 2023 01:11:03",
+	"@generated": "Sun, 26 Mar 2023 01:07:39",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -109,21 +109,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"3bbc776bd070853083512b2d-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"c515e2ccf6eec6ef631f1f95-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"3bbc776bd070853083512b2d-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"c515e2ccf6eec6ef631f1f95-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"3bbc776bd070853083512b2d-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"c515e2ccf6eec6ef631f1f95-text/javascript\"></script>"
 						}
 					],
 					"count": "4",
@@ -133,6 +133,46 @@
 					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 547.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10017",
@@ -149,21 +189,21 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"3bbc776bd070853083512b2d-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"c515e2ccf6eec6ef631f1f95-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"3bbc776bd070853083512b2d-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"c515e2ccf6eec6ef631f1f95-text/javascript\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"3bbc776bd070853083512b2d-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"c515e2ccf6eec6ef631f1f95-text/javascript\"></script>"
 						}
 					],
 					"count": "3",
@@ -215,37 +255,37 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "liDhK5UxwJBi8fpWHQiVP34cXHtrUynGJCvS9MvbGsgwpfXaI3JYD5"
+							"evidence": "2BpQljU9PU6W4cRq4exTZieuCGLoIsaFwO"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FcZioPLTjqonxfph58O3xsZRk8AU0Ns98MKn7erbHqOBguh8M"
+							"evidence": "7mKyk4ToRBf-9PLRfeJwO3N0NPLroTzdstUmkdrU0jE"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FNNtYge8EuG32IhIyw1G4QX6uu4Xu34Ubz0yHTSoiD9OwLIPLyijmL2"
+							"evidence": "2FNgry5R2QoqMEs8ICsFfNWISk4frohbuujKJa6JIEe0SPLB33anaxjGuQfrazLY0UCTUJFMTkgtrwTjfRnzAlawR0PRrwoJswhg6HSHLr2ufDw"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FkWIAtNewCIeqQwmLTceOeCWZnXMEaDtuhGRN7PV4A"
+							"evidence": "2F6jBwoj5EBHtX9BGE0yxH4Jo7vskgPmbZlSatjARU7nJnNHmYrPxcdNkc1CDCSJkx5S"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD \uFFFD+\uFFFD1\uFFFD\uFFFDb\uFFFD\uFFFDV\\x001d\\x0008\uFFFD?~\\x001c\\{kS)\uFFFD$+\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD0\uFFFD\uFFFD\uFFFD#rX\\x000f</p>",
+					"otherinfo": "<p>\uFFFD\\x001aP\uFFFD5==N\uFFFD\uFFFD\uFFFDj\uFFFD\uFFFDSf'\uFFFD\\x0008b\uFFFD\"\u0185\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10109",
@@ -269,21 +309,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993\" integrity=\"sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==\" data-cf-beacon='{\"rayId\":\"7aa1d6c19a0e5752\",\"version\":\"2023.2.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114\" integrity=\"sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==\" data-cf-beacon='{\"rayId\":\"7adb7f6bbf64cec9\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993\" integrity=\"sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==\" data-cf-beacon='{\"rayId\":\"7aa1d6c1a8b70593\",\"version\":\"2023.2.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114\" integrity=\"sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==\" data-cf-beacon='{\"rayId\":\"7adb7f6bb89897b8\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993\" integrity=\"sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==\" data-cf-beacon='{\"rayId\":\"7aa1d6c1a9a12072\",\"version\":\"2023.2.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114\" integrity=\"sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==\" data-cf-beacon='{\"rayId\":\"7adb7f6bbc139806\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
 						}
 					],
 					"count": "4",
@@ -342,7 +382,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "HIT"
+							"evidence": "Age: 64"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
@@ -358,7 +398,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
