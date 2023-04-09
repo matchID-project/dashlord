@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 2 Apr 2023 01:04:28",
+	"@generated": "Sun, 9 Apr 2023 01:00:21",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -24,7 +24,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -50,7 +51,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *"
+							"evidence": "Access-Control-Allow-Origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						}
 					],
 					"count": "1",
@@ -76,7 +78,8 @@
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -102,28 +105,32 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link type=\"application/atom+xml\" rel=\"alternate\" href=\"https://matchid.io/feed.xml\" title=\"matchID project\" />"
+							"evidence": "<link type=\"application/atom+xml\" rel=\"alternate\" href=\"https://matchid.io/feed.xml\" title=\"matchID project\" />",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"d07017fa2432733ac03dc7b6-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"d07017fa2432733ac03dc7b6-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"d07017fa2432733ac03dc7b6-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"otherinfo": ""
 						}
 					],
 					"count": "4",
@@ -149,21 +156,24 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "Location header URI length: 18 [http://matchid.io/].\nPredicted response size: 318.\nResponse Body Length: 547."
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "Location header URI length: 28 [http://matchid.io/robots.txt].\nPredicted response size: 328.\nResponse Body Length: 547."
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "Location header URI length: 29 [http://matchid.io/sitemap.xml].\nPredicted response size: 329.\nResponse Body Length: 547."
 						}
 					],
 					"count": "3",
@@ -189,21 +199,24 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"d07017fa2432733ac03dc7b6-text/javascript\"></script>"
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"d07017fa2432733ac03dc7b6-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"d07017fa2432733ac03dc7b6-text/javascript\"></script>"
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"otherinfo": ""
 						}
 					],
 					"count": "3",
@@ -229,7 +242,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -255,26 +269,37 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "7mKyk4ToRBf-9PLRfeJwO3N0NPLroTzdstUmkdrU0jE"
+							"evidence": "vlu46wlzJm226I0W406MsAbUM9yhQwkrjrHJkXHjrHpp4PLZ2tB",
+							"otherinfo": "\uFFFD[\uFFFD\uFFFD\ts&m\uFFFD\uFFFD\\x0016\uFFFDN\uFFFD\uFFFD\\x0006\uFFFD3\u0721C\t+\uFFFD\uFFFD\u0251q\uFFFDzi\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2Fy8QHOVFI6RlFQX6KJ4DOig1zRizevGoOQjPfx",
+							"otherinfo": "\uFFFD\\\uFFFD@s\uFFFD\\x0014\uFFFD\uFFFD\uFFFDT\\x0017\uFFFDx\\x000c\uFFFD\uFFFD4b\uFFFD\uFFFD\u01A0\uFFFD#=\uFFFD"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "obcsGUO2vaGvFK8acQ9wVUdY5JQxkdrHSglTNe8"
+							"evidence": "elHGq4pQCnbnWlyqdUNpAoANQ9jPsOeA9d48jiMCrn2BHXjESuA7bI4g7jMWpSxvytTYwxrBlNAmwg4La89",
+							"otherinfo": "zQ\u01AB\uFFFDP\nv\uFFFDZ\\\uFFFDuCi\\x0002\uFFFD\rC\uFFFD\u03F0\uFFFD\uFFFD\uFFFD<\uFFFD#\\x0002\uFFFD}\uFFFD\\x001dx\uFFFDJ\uFFFD;l\uFFFD \uFFFD3\\x0016\uFFFD,o\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD\uFFFD&\uFFFD\\x000e\\x000bk\uFFFD"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BLut4Z2WK2SjEE5Wu3rnlTKnlOh1yiJnXq7eg3wn3UVFNN2X43lAD47YbMtf4w1AU"
+							"evidence": "2BKQorQKc3CrEuY6syF6jULeKjsQIte4SjNmL4Z5SA",
+							"otherinfo": "\uFFFD\\x0012\uFFFD\uFFFD\uFFFD\nsp\uFFFD\\x0012\uFFFD:\uFFFD!z\uFFFDB\uFFFD*;\\x0010\"\u05F8J3f/\uFFFDyH"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFDb\uFFFD\uFFFD\uFFFD\uFFFDD\\x0017\uFFFD\uFFFD\uFFFD\uFFFD}\uFFFDp;st4\uFFFD\uFFFD<\u0772\uFFFD&\uFFFD\uFFFD\uFFFD\uFFFD1</p>",
+					"otherinfo": "<p>\uFFFD[\uFFFD\uFFFD\ts&m\uFFFD\uFFFD\\x0016\uFFFDN\uFFFD\uFFFD\\x0006\uFFFD3\u0721C\t+\uFFFD\uFFFD\u0251q\uFFFDzi\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -295,28 +320,32 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"fr-nav__link\" href=\"slides/#/3/8\" target=\"_self\">\nD\u00E9velopper des algorithmes d'appariement\n</a>"
+							"evidence": "<a class=\"fr-nav__link\" href=\"slides/#/3/8\" target=\"_self\">\nD\u00E9velopper des algorithmes d'appariement\n</a>",
+							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114\" integrity=\"sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==\" data-cf-beacon='{\"rayId\":\"7b1528618e1dfaaa\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b4ecff70bac2090\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114\" integrity=\"sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==\" data-cf-beacon='{\"rayId\":\"7b1528618cb624fc\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b4ecff70b5f579a\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114\" integrity=\"sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==\" data-cf-beacon='{\"rayId\":\"7b152861983696f5\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>"
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b4ecff70cf2399d\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
 					"count": "4",
@@ -342,7 +371,8 @@
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": "max-age=600"
+							"evidence": "max-age=600",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -368,31 +398,27 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "HIT"
-						},
-						{
-							"uri": "https://www.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "HIT",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "HIT"
+							"evidence": "HIT",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 0"
+							"evidence": "Age: 0",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -415,28 +441,32 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=600"
+							"evidence": "max-age=600",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
 					"count": "4",
