@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 2 Apr 2023 01:03:12",
+	"@generated": "Sun, 9 Apr 2023 01:00:37",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -24,21 +24,24 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nstyle-src, frame-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nstyle-src, frame-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nstyle-src, frame-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						}
 					],
 					"count": "3",
@@ -64,21 +67,24 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "script-src includes unsafe-inline."
 						}
 					],
 					"count": "3",
@@ -104,21 +110,24 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com"
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
 					"count": "3",
@@ -144,7 +153,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"'+i[s]+'\">"
+							"evidence": "<script src=\"'+i[s]+'\">",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -153,7 +163,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "24"
+					"sourceid": "33"
 				},
 				{
 					"pluginid": "10020",
@@ -170,21 +180,24 @@
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": "*.matchid.io"
+							"evidence": "*.matchid.io",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": "*.matchid.io"
+							"evidence": "*.matchid.io",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
-							"evidence": "*.matchid.io"
+							"evidence": "*.matchid.io",
+							"otherinfo": ""
 						}
 					],
 					"count": "3",
@@ -193,7 +206,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7034#section-2.1</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10063",
@@ -210,28 +223,32 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Feature-Policy"
+							"evidence": "Feature-Policy",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Feature-Policy"
+							"evidence": "Feature-Policy",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/js/matchid.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Feature-Policy"
+							"evidence": "Feature-Policy",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Feature-Policy"
+							"evidence": "Feature-Policy",
+							"otherinfo": ""
 						}
 					],
 					"count": "4",
@@ -257,7 +274,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "1",
@@ -283,82 +301,101 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BcXtcQqimnbI8MYueyUe30VJrqPw8lLpHRqC2cLR81syF4eAf0oCNdNMUHkyRRUpZY"
+							"evidence": "L2P0fjC8trz28sTsA04o9xpQDuM8XUhSwytd2mAg9X1En1fqtmt60oKeDnzrlYlaJu5yvfGg4dclmOwqEZvfAiOWcisaNk",
+							"otherinfo": "/c\uFFFD~0\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0003N(\uFFFD\\x001aP\\x000e\uFFFD<]HR\uFFFD+]\uFFFD` \uFFFD}D\uFFFDW\uFFFDkz\u0482\uFFFD\\x000e|\uB549Z&\uFFFDr\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFD\uFFFD*\\x0011\uFFFD\uFFFD\\x0002#\uFFFDr+\\x001a6"
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "pyPA6EOY6gmX2YCrQtHQa1gScyUFRbmtQTfsv3ABfvUd7zQaNdO4YLdxJxC"
+							"evidence": "2FXWbWRiMRIOCoyIy9XCCVRB2RkNvAb3sinjkbkfsII7ExU8vS9",
+							"otherinfo": "\uFFFDU\uFFFDmdb1\\x0012\\x000e\n\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\tTA\uFFFD\\x0019\r\uFFFD\\x0006\uFFFD\uFFFD)\u3479\\x001f\uFFFD\uFFFD;\\x0013\\x0015<\uFFFD/"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ifDDvsgu8tAOqjcdwc6vHwo7Vp3GodXukJglCwdYKuTYErZY2W9iX0IEREFA3K1hrsvY1iI"
-						},
-						{
-							"uri": "https://deces.matchid.io/build/module/bundle.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2F6VET1N3B2Pbk4JwhA2RSaHWHYjT3MQUrchdlIuOlX"
+							"evidence": "2FosJXEKwJeVRV7AFzMSAUKbcc3SNuL97guE5jjhwc",
+							"otherinfo": "\uFFFDZ,%q\n\uFFFD\uFFFD\uFFFDE^\uFFFD\\x00173\\x0012\\x0001B\uFFFDq\uFFFD\uFFFD6\uFFFD\uFFFD\uFFFD\\x000b\uFFFD\uFFFD8\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "z5dHUVX7LyQhAZJbFkHG6jqWjdTEuMKiNul3J6pXJX"
+							"evidence": "wEGNVFxVlUp3sbKANV0Xrj2zLVvNbDHfrNapvzzRYBuPnqRDyml4J4C2",
+							"otherinfo": "\uFFFDA\uFFFDT\\U\uFFFDJw\uFFFD\uFFFD\uFFFD5]\\x0017\uFFFD=\uFFFD-[\uFFFDl1\u07EC\u05A9\uFFFD<\uFFFD`\\x001b\uFFFD\uFFFD\uFFFDC\uFFFDix'\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BlphFu419MqbxIWgOCPRiXZoAKzaY"
+							"evidence": "2BRNgdPE7iaosXM4ucdPuXCjWv6kxRVbbE5oRd24QMGrymOWpl",
+							"otherinfo": "\uFFFD\\x0014M\uFFFD\uFFFD\uFFFD\uFFFD&\uFFFD\uFFFDs8\uFFFD\uFFFDO\uFFFDp\uFFFDZ\uFFFD\uFFFD\uFFFD\\x0015[lNhE\u0778@\uFFFD\uFFFD\uFFFDc\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/matchid.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "xyP1GMdw039kFN9CNuHZNOFpnr4uaJGZvo0lFhZuwvcffSmk06xO7MJl6BHD69XnualmKkcohhaA5cEHN3lVZOAhpaEbTswlKzmmeoJ7772qRxP4oaC"
+							"evidence": "fSoMCJBXUODvHzjH3CJgze7ks7yBFk17n37Z8wdO9g3dGaKyF7l3x9oJ6t",
+							"otherinfo": "}*\\x000c\\x0008\uFFFDWP\uFFFD\uFFFD\\x001f8\uFFFD\uFFFD\"`\uFFFD\uFFFD\u4CFC\uFFFD\\x0016M{\uFFFD~\uFFFD\uFFFD\\x0007N\uFFFD\r\uFFFD\\x0019\uFFFD\uFFFD\\x0017\uFFFDw\uFFFD\uFFFD\t\uFFFD"
+						},
+						{
+							"uri": "https://deces.matchid.io/favicon-apple.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FJtH41NFkwIJ5cGo04LtRIXJLwq6OSpMvS",
+							"otherinfo": "\uFFFDRm\\x001f\uFFFDM\\x0016L\\x0008'\uFFFD\\x0006\uFFFDN\\x000b\uFFFD\\x0012\\x0017$\uFFFD*\uFFFD\uFFFD2\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FCiDAUrWZbMc8kx43YPAVdxpzKChabU6KfdkIAEvD438mQt1SH7"
+							"evidence": "2BE5E3DGgGhMwVlB4FPnnX89TabgShR0TKQJ7sB1DmVG",
+							"otherinfo": "\uFFFD\\x00119\\x0013p\u0180hL\uFFFDYA\uFFFDS\uFFFD=M\uFFFD\uFFFDJ\\x0014tL\uFFFD\t\uFFFD\uFFFDu\\x000eeF"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/matchid.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1u2wiuvKhBu0fz2kifPKNMLsCRhF7ME5N6"
+							"evidence": "2FVVNYmpA4GqvCh4t7KtuK1nl0eZ59qMEhODB9YvuSZ3AKWd11yQG9pClLVHAX86Gbi2uxP9eieiStMsWxB5oPFOEsaoM7R3RtU189YYHkpJp6g4XRgvmnh",
+							"otherinfo": "\uFFFDUU5\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\uFFFD(x\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDg\uFFFDG\uFFFD\uFFFD\u068C\\x0012\\x0013\uFFFD\\x0007\uFFFD/\uFFFD&w\\x0000\uFFFD\uFFFD\uFFFD\\\uFFFD\\x001b\uFFFDB\uFFFD\uFFFDG\\x0001:\\x0019\uFFFD\uFFFD\uFFFD\\x0013\uFFFDz'\uFFFDJ\uFFFD,[\\x0010y\uFFFD\uFFFDN\\x0012\u01A83\uFFFDwF\uFFFD5\uFFFD\uFFFD\\x0018\\x001eJI\uFFFD\uFFFD8]\\x0018/\uFFFDx"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FkF9yXfvu1Ud4uqBbSSxcFbxneDkGNIqBOFxSR2vzlfwtZxp7TbBYxsx951bmI"
+							"evidence": "2FAxq8skGOWXF8O13jEpMXDn5YHcI8",
+							"otherinfo": "\uFFFDP1\uFFFD\uFFFD$\\x0018\uFFFD\\x0017\u00F5\uFFFD1)1p\uFFFD\uFFFD\uFFFD#"
+						},
+						{
+							"uri": "https://deces.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "iLRgPLYBVd1KLAOVrNqp6Kkm8F07YcvjTW",
+							"otherinfo": "\uFFFD\uFFFD`<\uFFFD\\x0001U\uFFFDJ,\\x0003\uFFFD\uFFFD\u06A9\uFFFD&\uFFFD];a\uFFFD\uFFFDM"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BpFb74Oljtv62aNtCgLSS27SInwTLGSWNxEfnPu86s2XqYEpqIh6UV7Frgx9tgNclfW9UUt"
+							"evidence": "2BeTrQUHVb55aqmj6svpdblkpZZ3CC2VmPFur3esT8H",
+							"otherinfo": "\uFFFD\\x0017\uFFFD\uFFFD\\x0005\\x0007U\uFFFDyj\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDu\uFFFDd\uFFFD\uFFFDw\\x0008-\uFFFD\uFFFD\uFFFDn\uFFFDw\uFFFDO\uFFFD"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0017\\x0017\uFFFD\uFFFD*\uFFFDi\uFFFD#\uFFFD\\x0018\uFFFD\uFFFD{}\\x0015&\uFFFD\uFFFD\uFFFD\uFFFDK\uFFFDtj\\x000bg\\x000bG\uFFFDl\uFFFD^\\x001e\\x0001\uFFFD(\\x0008\uFFFDM1A\uFFFD\uFFFD\\x0014T\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>/c\uFFFD~0\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0003N(\uFFFD\\x001aP\\x000e\uFFFD<]HR\uFFFD+]\uFFFD` \uFFFD}D\uFFFDW\uFFFDkz\u0482\uFFFD\\x000e|\uB549Z&\uFFFDr\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFD\uFFFD*\\x0011\uFFFD\uFFFD\\x0002#\uFFFDr+\\x001a6</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -379,7 +416,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "from"
+							"evidence": "from",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in the element starting with: \"!function(){\"use strict\";function t(){return\"cf-marker-\"+Math.random().toString().slice(2)}function e(){for(var t=[],e=0;e<argum\", see evidence field for the suspicious comment/snippet."
 						}
 					],
 					"count": "1",
@@ -405,28 +443,32 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"5b19c52711edab508b293503-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"8fc5ef537584aced4e176e84-text/javascript\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"uri": "https://deces.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"b292282260bcf2b69b36113f-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"bc0221da6b3899cef1494f11-text/javascript\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"bc7e39f38eba8fe1ebc8b469-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"70c0fd4cf29e51d9de29339c-text/javascript\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src='/js/matchid.min.js' type=\"dae33d03706e18ffaa17ef39-text/javascript\"></script>"
+							"evidence": "<script defer src='/js/matchid.min.js' type=\"36b86a5aadc6417fa6c88e8c-text/javascript\"></script>",
+							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
 					"count": "4",
@@ -452,35 +494,40 @@
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
 					"count": "5",
@@ -489,7 +536,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10050",
@@ -502,20 +549,29 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
+							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 60"
+							"evidence": "Age: 92",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"uri": "https://deces.matchid.io/favicon-apple.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 97",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "24"
+					"sourceid": "19"
 				},
 				{
 					"pluginid": "10049",
@@ -532,77 +588,88 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://deces.matchid.io/build/module/bundle.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=172800"
+							"evidence": "max-age=172800",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/js/matchid.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://deces.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=86400"
+							"evidence": "max-age=86400",
+							"otherinfo": ""
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
 					"count": "11",
@@ -611,7 +678,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}
