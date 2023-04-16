@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 9 Apr 2023 01:00:21",
+	"@generated": "Sun, 16 Apr 2023 01:02:34",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -113,7 +113,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -121,7 +121,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -129,7 +129,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -157,7 +157,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "Location header URI length: 18 [http://matchid.io/].\nPredicted response size: 318.\nResponse Body Length: 547."
+							"otherinfo": "Location header URI length: 18 [http://matchid.io/].\nPredicted response size: 318.\nResponse Body Length: 553."
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
@@ -165,7 +165,7 @@
 							"param": "",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "Location header URI length: 28 [http://matchid.io/robots.txt].\nPredicted response size: 328.\nResponse Body Length: 547."
+							"otherinfo": "Location header URI length: 28 [http://matchid.io/robots.txt].\nPredicted response size: 328.\nResponse Body Length: 553."
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
@@ -173,16 +173,16 @@
 							"param": "",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "Location header URI length: 29 [http://matchid.io/sitemap.xml].\nPredicted response size: 329.\nResponse Body Length: 547."
+							"otherinfo": "Location header URI length: 29 [http://matchid.io/sitemap.xml].\nPredicted response size: 329.\nResponse Body Length: 553."
 						}
 					],
 					"count": "3",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
-					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 547.</p>",
+					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 553.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10017",
@@ -199,7 +199,7 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -207,7 +207,7 @@
 							"method": "GET",
 							"param": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -215,7 +215,7 @@
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"2c22913c8ee696a5583c9427-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -269,41 +269,41 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vlu46wlzJm226I0W406MsAbUM9yhQwkrjrHJkXHjrHpp4PLZ2tB",
-							"otherinfo": "\uFFFD[\uFFFD\uFFFD\ts&m\uFFFD\uFFFD\\x0016\uFFFDN\uFFFD\uFFFD\\x0006\uFFFD3\u0721C\t+\uFFFD\uFFFD\u0251q\uFFFDzi\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
+							"evidence": "4W4RSW5mPPVYFpX7o9LdaTZXvxlC2uxj",
+							"otherinfo": "\uFFFDn\\x0011Inf<\uFFFDX\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDi6W\uFFFD\\x0019B\uFFFD\uFFFDc"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fy8QHOVFI6RlFQX6KJ4DOig1zRizevGoOQjPfx",
-							"otherinfo": "\uFFFD\\\uFFFD@s\uFFFD\\x0014\uFFFD\uFFFD\uFFFDT\\x0017\uFFFDx\\x000c\uFFFD\uFFFD4b\uFFFD\uFFFD\u01A0\uFFFD#=\uFFFD"
+							"evidence": "2FJDrkks5XPIw3csb4XDRZcna9QWOTk",
+							"otherinfo": "\uFFFDRC\uFFFDI,\uFFFDs\uFFFD\uFFFDw,o\uFFFD\uFFFDE\uFFFD'k\uFFFD\\x001699"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "elHGq4pQCnbnWlyqdUNpAoANQ9jPsOeA9d48jiMCrn2BHXjESuA7bI4g7jMWpSxvytTYwxrBlNAmwg4La89",
-							"otherinfo": "zQ\u01AB\uFFFDP\nv\uFFFDZ\\\uFFFDuCi\\x0002\uFFFD\rC\uFFFD\u03F0\uFFFD\uFFFD\uFFFD<\uFFFD#\\x0002\uFFFD}\uFFFD\\x001dx\uFFFDJ\uFFFD;l\uFFFD \uFFFD3\\x0016\uFFFD,o\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD\uFFFD\uFFFD&\uFFFD\\x000e\\x000bk\uFFFD"
+							"evidence": "2B66gg51MxER5rbOeHOPZxKk7bfBAHw2K41NgsKzjVsummWWoTsYKHXNzWsPHdZoyYfJthyrhw7DIgmuuzd8sfrkd6SVrRdNiJA",
+							"otherinfo": "\uFFFD\\x001e\uFFFD\uFFFD\\x000eu3\\x0011\\x0011\uFFFD\uFFFDxs\uFFFDg\\x0012\uFFFD\uFFFD\uFFFD\\x0000|6+\uFFFDM\uFFFD\u00B3\uFFFD[.\uFFFDe\uFFFD\uFFFD;\\x0018(u\uFFFD\uFFFDk\\x000f\\x001d\uFFFDh\u0247\u0276\\x001c\uFFFD\uFFFD\\x000e\uFFFD\"\t\uFFFD\uFFFD7|\uFFFD\uFFFD\uFFFDw\uFFFD\uFFFD\uFFFD\\x0017M\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BKQorQKc3CrEuY6syF6jULeKjsQIte4SjNmL4Z5SA",
-							"otherinfo": "\uFFFD\\x0012\uFFFD\uFFFD\uFFFD\nsp\uFFFD\\x0012\uFFFD:\uFFFD!z\uFFFDB\uFFFD*;\\x0010\"\u05F8J3f/\uFFFDyH"
+							"evidence": "2BdPkikfUKQiVdAtjlA9UJBBOLpjkna2Z3",
+							"otherinfo": "\uFFFD\\x0017O\uFFFD)\\x001fP\uFFFD\"U\uFFFD-\uFFFDP=P\uFFFDA8\uFFFDc\uFFFDv\uFFFDg"
 						}
 					],
 					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD[\uFFFD\uFFFD\ts&m\uFFFD\uFFFD\\x0016\uFFFDN\uFFFD\uFFFD\\x0006\uFFFD3\u0721C\t+\uFFFD\uFFFD\u0251q\uFFFDzi\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFDn\\x0011Inf<\uFFFDX\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDi6W\uFFFD\\x0019B\uFFFD\uFFFDc</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10109",
@@ -320,7 +320,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"fr-nav__link\" href=\"slides/#/3/8\" target=\"_self\">\nD\u00E9velopper des algorithmes d'appariement\n</a>",
+							"evidence": "<a class=\"fr-nav__link\" href=\"slides/#/3/8\" target=\"_self\">\n                          D\u00E9velopper des algorithmes d'appariement\n                        </a>",
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
@@ -328,7 +328,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b4ecff70bac2090\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b8880d52e2b4798\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -336,7 +336,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b4ecff70b5f579a\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b8880d53b76aa27\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -344,7 +344,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b4ecff70cf2399d\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996\" integrity=\"sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==\" data-cf-beacon='{\"rayId\":\"7b8880d53ede0c1f\",\"version\":\"2023.3.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -406,8 +406,8 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "HIT",
-							"otherinfo": ""
+							"evidence": "Age: 56",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
@@ -424,7 +424,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
