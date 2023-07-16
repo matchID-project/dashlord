@@ -206,7 +206,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -346,7 +346,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -598,21 +598,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+187 seconds from localtime"
+              "finding"      : "+397 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1688865724"
+              "finding"      : "1689470935"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "187 seconds"
+              "finding"      : "397 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -675,7 +675,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000077-IAD"
+              "finding"      : "cache-sjc1000146-SJC"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1524,7 +1524,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1776,21 +1776,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+231 seconds from localtime"
+              "finding"      : "+441 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1688865768"
+              "finding"      : "1689470980"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "231 seconds"
+              "finding"      : "441 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1853,7 +1853,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000133-IAD"
+              "finding"      : "cache-sjc1000141-SJC"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1861,7 +1861,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 2"
           }
 ,         {
               "id"           : "heartbleed",
@@ -2360,6 +2360,6 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "89"
+              "finding"      : "93"
           }
 ]

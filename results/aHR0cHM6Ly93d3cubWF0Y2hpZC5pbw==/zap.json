@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
-	"@version": "2.12.0",
-	"@generated": "Sun, 9 Jul 2023 01:20:21",
+	"@version": "2.13.0",
+	"@generated": "Sun, 16 Jul 2023 01:23:56",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -76,7 +76,7 @@
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
-							"param": "X-Frame-Options",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
@@ -113,7 +113,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"0753cbbf148d4b694a8569ca-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"b1b83044530ff65168c28ac9-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -121,7 +121,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"0753cbbf148d4b694a8569ca-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"b1b83044530ff65168c28ac9-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -129,7 +129,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"0753cbbf148d4b694a8569ca-text/javascript\"></script>",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"b1b83044530ff65168c28ac9-text/javascript\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -182,7 +182,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10017",
@@ -199,7 +199,7 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"0753cbbf148d4b694a8569ca-text/javascript\"></script>",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"b1b83044530ff65168c28ac9-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -207,7 +207,7 @@
 							"method": "GET",
 							"param": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"0753cbbf148d4b694a8569ca-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"b1b83044530ff65168c28ac9-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -215,7 +215,7 @@
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"0753cbbf148d4b694a8569ca-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"b1b83044530ff65168c28ac9-text/javascript\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -269,41 +269,33 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fw3GxPjGAw9y75aUhqnbvdU5Iu3iO85c2aZC7NckV5Qa6XFYLbsIDZRVfmPpvdL42fqbNdyQwAJZ3epTJnLRoj54oO7",
-							"otherinfo": "\uFFFD\\7\\x001b\\x0013\uFFFD\\x0018\\x000c=\u02FEZR\\x001a\uFFFDn\uFFFDT\u42F7\uFFFD\uFFFD9sf\uFFFD\\x000b\uFFFD\\\uFFFD^Pk\uFFFD\uFFFD`\uFFFD\uFFFD 6QU\uFFFD\uFFFD\uFFFD\uFFFDK\uFFFDg\uFFFDl\uFFFDrC\\x0000\tgw\uFFFDL\uFFFD\uFFFDF\uFFFD\uFFFD\u20FB"
-						},
-						{
-							"uri": "https://www.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "7mKyk4ToRBf-9PLRfeJwO3N0NPLroTzdstUmkdrU0jE",
-							"otherinfo": "\uFFFDb\uFFFD\uFFFD\uFFFD\uFFFDD\\x0017\uFFFD\uFFFD\uFFFD\uFFFD}\uFFFDp;st4\uFFFD\uFFFD<\u0772\uFFFD&\uFFFD\uFFFD\uFFFD\uFFFD1"
+							"evidence": "2F0J6Csvn8C6iqazSjCiErbzHKgZEhQ8rVJd2EsZtNljh6P1pfCafVa556mYYPuM2G0VhcyqYFbqPq",
+							"otherinfo": "\uFFFD]\t\uFFFD+/\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDJ0\uFFFD\\x0012\uFFFD\uFFFD\\x001c\uFFFD\\x0019\\x0012\\x0014<\uFFFDR]\uFFFDK\\x0019\uFFFD\uFFFDc\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD}V\uFFFD\u7A58`\uFFFD\uFFFD\uFFFDm\\x0015\uFFFD\u032A`V\uFFFD>"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FEKgm1kRVBg7eFSEG2b88QQyYwAJgpr9VfSesbtwlmB2Z7UUuM",
-							"otherinfo": "\uFFFDQ\n\uFFFDmdEP`\uFFFD\uFFFDR\\x0010m\uFFFD\uFFFD\uFFFD\\x0010\u024C\\x0000&\nk\uFFFDW\uFFFDz\uFFFD\uFFFD\uFFFDY\uFFFD\u065E\uFFFDR\uFFFD"
+							"evidence": "2FjQvDk5dfrMRa2vwkS19KtEri3OMbF2EXAU9hYIz3s2ZU9e5MrvjgnYKQTR6ci1",
+							"otherinfo": "\uFFFDX\u043C99u\uFFFD\uFFFDE\uFFFD\uFFFD\uFFFDD\uFFFD\uFFFD\uFFFDD\uFFFD-\uFFFD1\uFFFDv\\x0011p\\x0014\uFFFD\\x0016\\x0008\uFFFD{6eO^\uFFFD\uFFFD\uFFFD\t\uFFFD)\\x0004\uFFFD\uFFFD\u0235"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BR8U9LPgQDz3UySFLmsXzxJl2JkiZuYCpjettYPc3meyuqSVKyh8zQtpCiyRplxMWCStSYdn58eycq4baRpuenS5v5ObJOORRm",
-							"otherinfo": "\uFFFD\\x0014|S\uFFFD\u03C1\\x0000\uFFFD\uFFFDL\uFFFD\\x0014\uFFFD\uFFFD_<I\uFFFDbd\uFFFD\uFFFD\uFFFD\n\uFFFD\u07B6\uFFFD\\x000fsy\uFFFD\uFFFD\uFFFDT\uFFFD\uFFFD\uFFFD4-\uFFFD(\uFFFDF\uFFFDq1`\uFFFD\uFFFD&\\x001d\uFFFD\uFFFD\\x001e\uFFFD\u02B8m\uFFFDi\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDNl\uFFFD\uFFFDE\\x0019"
+							"evidence": "2F65zDFfyGt6osweRGFMoMmlwBEEZBbQbEB2MNoSXE73xxXQOA4lnxapVmpv2QARpSN37mQy6BFue691dktcLw",
+							"otherinfo": "\uFFFD^\uFFFD\uFFFD1_\uFFFDkz\uFFFD\uFFFD\\x001eDaL\uFFFD\u0265\uFFFD\\x0011\\x0004d\\x0016\uFFFDl@v0\uFFFD\\x0012\\N\uFFFD\uFFFD\\x0015\uFFFD8\\x000e%\uFFFD\\x0016\uFFFDVjo\uFFFD\\x0000\\x0011\uFFFD#w\uFFFDd2\uFFFD\\x0011n{\uFFFDuvK\\/"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\7\\x001b\\x0013\uFFFD\\x0018\\x000c=\u02FEZR\\x001a\uFFFDn\uFFFDT\u42F7\uFFFD\uFFFD9sf\uFFFD\\x000b\uFFFD\\\uFFFD^Pk\uFFFD\uFFFD`\uFFFD\uFFFD 6QU\uFFFD\uFFFD\uFFFD\uFFFDK\uFFFDg\uFFFDl\uFFFDrC\\x0000\tgw\uFFFDL\uFFFD\uFFFDF\uFFFD\uFFFD\u20FB</p>",
+					"otherinfo": "<p>\uFFFD]\t\uFFFD+/\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDJ0\uFFFD\\x0012\uFFFD\uFFFD\\x001c\uFFFD\\x0019\\x0012\\x0014<\uFFFDR]\uFFFDK\\x0019\uFFFD\uFFFDc\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD}V\uFFFD\u7A58`\uFFFD\uFFFD\uFFFDm\\x0015\uFFFD\u032A`V\uFFFD></p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -328,7 +320,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816\" integrity=\"sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==\" data-cf-beacon='{\"rayId\":\"7e3cbe639aa89c54\",\"version\":\"2023.4.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039\" integrity=\"sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==\" data-cf-beacon='{\"rayId\":\"7e7671461e7e968e\",\"version\":\"2023.4.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -336,7 +328,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816\" integrity=\"sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==\" data-cf-beacon='{\"rayId\":\"7e3cbe63982a5791\",\"version\":\"2023.4.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039\" integrity=\"sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==\" data-cf-beacon='{\"rayId\":\"7e7671461de9ce68\",\"version\":\"2023.4.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -344,7 +336,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816\" integrity=\"sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==\" data-cf-beacon='{\"rayId\":\"7e3cbe63adfa828c\",\"version\":\"2023.4.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039\" integrity=\"sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==\" data-cf-beacon='{\"rayId\":\"7e7671461be997c3\",\"version\":\"2023.4.0\",\"r\":1,\"b\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"si\":100}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -369,7 +361,7 @@
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
-							"param": "Cache-Control",
+							"param": "cache-control",
 							"attack": "",
 							"evidence": "max-age=600",
 							"otherinfo": ""
@@ -424,7 +416,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
