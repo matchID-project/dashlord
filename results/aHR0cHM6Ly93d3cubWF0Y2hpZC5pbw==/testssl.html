@@ -21,16 +21,16 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az491-449:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az399-532:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
 <span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>172.67.179.218 104.21.64.91
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-07-30 01:04:44                --&gt;&gt; 172.67.179.218:443 (www.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-08-06 00:57:31                --&gt;&gt; 172.67.179.218:443 (www.matchid.io) &lt;&lt;--</span>
 
- Further IP addresses:   104.21.64.91 2606:4700:3030::6815:405b
-                         2606:4700:3031::ac43:b3da 
+ Further IP addresses:   104.21.64.91 2606:4700:3031::ac43:b3da
+                         2606:4700:3030::6815:405b 
  rDNS (172.67.179.218):  --
  Service detected:       HTTP
 
@@ -98,7 +98,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;compress_certificate/#27&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>64800 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: yes
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>0002/Brotli
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -114,7 +114,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">52 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">45 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://e1.o.lencr.org
@@ -133,15 +133,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  301 Moved Permanently, redirecting to &quot;<a href="http://matchid.io/" style="color:black;text-decoration:none;">http://matchid.io/</a>&quot;<span style="color:#e52207;"> -- Redirect to insecure URL (NOT ok)</span>
-<span style="font-weight:bold;"> HTTP clock skew              </span>+227 sec from localtime
-<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          227
+<span style="font-weight:bold;"> HTTP clock skew              </span>+196 sec from localtime
+<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          196
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">180 days</span>=15552000 s<span style="color:#008817;">, includeSubDomains</span><span style="color:#008817;">, preload</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>cloudflare
 <span style="font-weight:bold;"> Application banner           </span>--
 <span style="font-weight:bold;"> Cookie(s)                    </span>(none issued at &quot;/&quot;) -- maybe better try target URL of 30x
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              X-Served-By: cache-bur-kbur8200047-BUR
+                              X-Served-By: cache-iad-kiad7000090-IAD
 <span style="font-weight:bold;"> Reverse Proxy banner         </span><span style="color:#8a7237;font-weight:bold;">Via</span>: <span style="color:#8a7237;">1</span>.<span style="color:#8a7237;">1</span> varnish
                               <span style="color:#8a7237;font-weight:bold;">X-Cache</span>: HIT
                               <span style="color:#8a7237;font-weight:bold;">X-Cache</span>-Hits: <span style="color:#8a7237;">1</span>
@@ -221,13 +221,13 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>84
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-07-30 01:05:25 [  43s] --&gt;&gt; 172.67.179.218:443 (www.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-08-06 00:58:16 [  47s] --&gt;&gt; 172.67.179.218:443 (www.matchid.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-07-30 01:05:25                --&gt;&gt; 104.21.64.91:443 (www.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-08-06 00:58:16                --&gt;&gt; 104.21.64.91:443 (www.matchid.io) &lt;&lt;--</span>
 
- Further IP addresses:   172.67.179.218 2606:4700:3030::6815:405b
-                         2606:4700:3031::ac43:b3da 
+ Further IP addresses:   172.67.179.218 2606:4700:3031::ac43:b3da
+                         2606:4700:3030::6815:405b 
  rDNS (104.21.64.91):    --
  Service detected:       HTTP
 
@@ -311,7 +311,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">52 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">45 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://e1.o.lencr.org
@@ -330,15 +330,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  301 Moved Permanently, redirecting to &quot;<a href="http://matchid.io/" style="color:black;text-decoration:none;">http://matchid.io/</a>&quot;<span style="color:#e52207;"> -- Redirect to insecure URL (NOT ok)</span>
-<span style="font-weight:bold;"> HTTP clock skew              </span>+231 sec from localtime
-<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          231
+<span style="font-weight:bold;"> HTTP clock skew              </span>+241 sec from localtime
+<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          241
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">180 days</span>=15552000 s<span style="color:#008817;">, includeSubDomains</span><span style="color:#008817;">, preload</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>cloudflare
 <span style="font-weight:bold;"> Application banner           </span>--
 <span style="font-weight:bold;"> Cookie(s)                    </span>(none issued at &quot;/&quot;) -- maybe better try target URL of 30x
 <span style="font-weight:bold;"> Security headers             </span><span style="color:#008817;">X-Content-Type-Options</span>: nosniff
-                              X-Served-By: cache-lax10666-LGB
+                              X-Served-By: cache-iad-kiad7000115-IAD
 <span style="font-weight:bold;"> Reverse Proxy banner         </span><span style="color:#8a7237;font-weight:bold;">Via</span>: <span style="color:#8a7237;">1</span>.<span style="color:#8a7237;">1</span> varnish
                               <span style="color:#8a7237;font-weight:bold;">X-Cache</span>: HIT
                               <span style="color:#8a7237;font-weight:bold;">X-Cache</span>-Hits: <span style="color:#8a7237;">1</span>
@@ -418,7 +418,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>84
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-07-30 01:06:06 [  84s] --&gt;&gt; 104.21.64.91:443 (www.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-08-06 00:59:01 [  92s] --&gt;&gt; 104.21.64.91:443 (www.matchid.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>172.67.179.218 104.21.64.91
