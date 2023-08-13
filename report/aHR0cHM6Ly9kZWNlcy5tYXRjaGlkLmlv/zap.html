@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 6 Aug 2023 00:56:25
+		Generated on Sun, 13 Aug 2023 00:53:03
 	</h3>
 
 	<h3>
@@ -156,7 +156,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>5</div>
+					<div>6</div>
 				</td>
 			</tr>
 			<tr>
@@ -200,17 +200,22 @@ td {
 			<tr>
 				<td><a href="#10055">CSP: Wildcard Directive</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
+			</tr>
+			<tr>
+				<td><a href="#10055">CSP: script-src unsafe-eval</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: script-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
@@ -235,7 +240,7 @@ td {
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">8</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
@@ -255,7 +260,7 @@ td {
 			<tr>
 				<td><a href="#10050">Retrieved from Cache</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				<td align="center">4</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
@@ -330,33 +335,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
 					</tr>
 				
 					<tr>
@@ -382,12 +361,132 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a>
+							<br />
+						
+							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
+							<br />
+						
+							<a href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a>
+							<br />
+						
+							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
+							<br />
+						
+							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
+							<br />
+						
+							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-2"><a
+						id="10055"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">CSP: script-src unsafe-eval</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -476,33 +575,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
 					</tr>
 				
 					<tr>
@@ -528,12 +601,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -622,33 +695,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
 					</tr>
 				
 					<tr>
@@ -674,12 +721,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
+						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1209,6 +1256,84 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Ltso8x5GEZigmn7xq4x0ktNEcVCzNf7cLPJYtQpL4SDRKcDauu7CALkDj52xnRQ</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">2BkXvfZkzHDM0by4XNPo76EjanVT1uXjafMs7ClSYqIr7R8lGNN5N6U</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">2BIgemSaJF3THFsmeACNKls8Hj3xRoz1fgI</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://deces.matchid.io/build/module/bundle.css">https://deces.matchid.io/build/module/bundle.css</a></td>
 					</tr>
 					<tr>
@@ -1229,7 +1354,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BxtIOC1zexfqaqNPKAinM9xlHWbFI4I301nZfV4jOtGt09REKGd3H7E4IzhRjoGbCZZwLOKbP9YAK</td>
+						<td width="80%">nWOXLny4y68SdItihhv4bZLdlPqzVlf</td>
 					</tr>
 				
 					<tr>
@@ -1255,7 +1380,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FhhKTaSU1AYyde5QSjd7ZvBz6oemmoAnjYyQ4SzPfPi2b6Tbqv4Ys94ZW5cj7RXcmUYAhCt</td>
+						<td width="80%">2Bm2BKeOkTgo4lOiR3ro9RcnTqbgpMLF5Qoko95Z13R2Jfq8d398pDUi</td>
 					</tr>
 				
 					<tr>
@@ -1281,7 +1406,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">qti8JFRIsAxgGoHNbJgbJEKxDFkmbv83AWmkYmnnLQu98mAQ8H0qeQ4jti0hNr89SUIG</td>
+						<td width="80%">2F1jg07XxMbHHNwLHse0zrr5m8hqBXOAL6g9DpoEaSIPTxoQM0QIKqHR9bNrMGRppYHE4HUHUfxdqOWqV35Q3B2SLolWIYRWYLCFwMYdNZ</td>
 					</tr>
 				
 					<tr>
@@ -1307,7 +1432,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FWFJGfoFtmmn3gyDkOmTs6nxSvit8NvryQHFjJreju</td>
+						<td width="80%">WGHWhXqXtn7Dza79V1Ar8ZOvgybtQ2ACraebGE</td>
 					</tr>
 				
 					<tr>
@@ -1333,7 +1458,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BoIYNmLF2zZBrhneckjsRIjDLXzk2ioJoGEUq0zhXkj0cPqq24R4H1YZI</td>
+						<td width="80%">2Ffn5Wh1gTzV2MpbotdSqR8gWlMG0K</td>
 					</tr>
 				
 					<tr>
@@ -1359,33 +1484,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FgKhgs3XMp2snoo0wV3JrZnnD1x6ExqoSYdqX95capNwz0vk4uUHfMGNI3lYdf2BWrivhgLyTrXCo0Zf7</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/js/matchid.min.js">https://deces.matchid.io/js/matchid.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2BbYXxWjZhqyAuzHqSCv7XiJ58IB0eqHXMZOC3</td>
+						<td width="80%">7zb1iRa9oJBvlG9W1JEnDfvMh3y30xsSubRplu</td>
 					</tr>
 				
 					<tr>
@@ -1411,12 +1510,64 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">1AQRXVle6bMRAX8ixXxP6iqYJyW7flz5ZE</td>
+						<td width="80%">t6ozfMUjmDfXdYPJLojvUqAHjXVktkn26Rs3</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/robots.txt">https://deces.matchid.io/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">QQ7OreYqun0T0Lgf0aaPtM9SC40xrgX5u90Izf7LIKcPQ7IUDTsCAr4vYMPjgqkZXl2fafWDTvsTCFBqcObHi4NS1MCqeGWWXonTKPQy5UxNrm5fhK</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1vyOtKezcoWdttZI26SDjkUvnrY4vyhfQXsH3DaCA59Bnoz3ZBEwAUSwLN9aUOJv2dfhjeJ9MaFkwT2uzLPuRbrWFOHccDoP</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">8</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1566,7 +1717,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;4d20108e0b8d6aaac6faf3c5-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;865133885e947b01f124014f-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1592,7 +1743,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;c223c5043f2751796c417c06-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;9f5fb94ea6338e857c0cede2-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1618,7 +1769,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;da30101fd7d5b9836e20ca40-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;648ac6f94a760629c1be4455-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -1644,7 +1795,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;59a14bfc66a04a6fc23f1af5-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;1b5b8130078331e4a80b399a-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
@@ -1888,6 +2039,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/build/module/bundle.css">https://deces.matchid.io/build/module/bundle.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Age: 55</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://deces.matchid.io/css/global.css">https://deces.matchid.io/css/global.css</a></td>
 					</tr>
 					<tr>
@@ -1908,13 +2085,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 97</td>
+						<td width="80%">Age: 55</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/css/matchid.min.css">https://deces.matchid.io/css/matchid.min.css</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/favicon.svg">https://deces.matchid.io/favicon.svg</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1934,12 +2111,38 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 97</td>
+						<td width="80%">Age: 53</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/js/matchid.min.js">https://deces.matchid.io/js/matchid.min.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Age: 55</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">4</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2456,6 +2659,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://deces.matchid.io/build/module/bundle.css">https://deces.matchid.io/build/module/bundle.css</a></td>
 					</tr>
 					<tr>
@@ -2509,32 +2738,6 @@ td {
 						<td width="20%"
 							class="indent1">URL</td>
 						<td width="80%"><a href="https://deces.matchid.io/css/global.css">https://deces.matchid.io/css/global.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=86400</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/css/matchid.min.css">https://deces.matchid.io/css/matchid.min.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
