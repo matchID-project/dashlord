@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 6 Aug 2023 00:56:26",
+	"@generated": "Sun, 13 Aug 2023 00:53:04",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -24,15 +24,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
-							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nstyle-src, frame-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
-						},
-						{
-							"uri": "https://deces.matchid.io/",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nstyle-src, frame-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						},
 						{
@@ -40,13 +32,48 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: \nstyle-src, frame-ancestors, form-action\n\nThe directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>style-src, frame-ancestors, form-action</p><p></p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
+					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10055",
+					"alertRef": "10055-10",
+					"alert": "CSP: script-src unsafe-eval",
+					"name": "CSP: script-src unsafe-eval",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"uri": "https://deces.matchid.io",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "script-src includes unsafe-eval."
+						},
+						{
+							"uri": "https://deces.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "Content-Security-Policy",
+							"attack": "",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"otherinfo": "script-src includes unsafe-eval."
+						}
+					],
+					"count": "2",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "<p>script-src includes unsafe-eval.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
@@ -67,15 +94,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
-							"otherinfo": "script-src includes unsafe-inline."
-						},
-						{
-							"uri": "https://deces.matchid.io/",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
@@ -83,11 +102,11 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
 							"otherinfo": "script-src includes unsafe-inline."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -110,15 +129,7 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
-							"otherinfo": "style-src includes unsafe-inline."
-						},
-						{
-							"uri": "https://deces.matchid.io/",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
@@ -126,11 +137,11 @@
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
-							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
+							"evidence": "default-src 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval' static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: 'self' 'unsafe-inline';font-src 'self' data:;img-src 'self' matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src 'self' www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src 'self' matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com",
 							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -163,7 +174,7 @@
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "27"
+					"sourceid": "26"
 				},
 				{
 					"pluginid": "10020",
@@ -206,7 +217,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7034#section-2.1</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10063",
@@ -257,7 +268,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/</p>",
 					"cweid": "16",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -297,77 +308,109 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
+							"uri": "https://deces.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Ltso8x5GEZigmn7xq4x0ktNEcVCzNf7cLPJYtQpL4SDRKcDauu7CALkDj52xnRQ",
+							"otherinfo": ".\uFFFD(\uFFFD\\x001eF\\x0011\uFFFD\uFFFD\uFFFD~\uFFFDt\uFFFD\uFFFDDqP\uFFFD5\uFFFD\uFFFD,\uFFFDX\uFFFD\nK\uFFFD \uFFFD)\uFFFD\u06BA\uFFFD\uFFFD\\x0000\uFFFD\\x0003\uFFFD\uFFFD\uFFFD\uFFFD\\x0014"
+						},
+						{
+							"uri": "https://deces.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2BkXvfZkzHDM0by4XNPo76EjanVT1uXjafMs7ClSYqIr7R8lGNN5N6U",
+							"otherinfo": "\uFFFD\\x0019\\x0017\uFFFD\uFFFDd\uFFFDp\uFFFD\u047C\uFFFD\\\uFFFD\uFFFD\uFFFD#juS\uFFFD\uFFFD\uFFFDi\uFFFD,\uFFFD)Rb\uFFFD+\uFFFD\\x001f%\\x0018\uFFFDy7\uFFFD"
+						},
+						{
+							"uri": "https://deces.matchid.io/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2BIgemSaJF3THFsmeACNKls8Hj3xRoz1fgI",
+							"otherinfo": "\uFFFD\\x0012 zd\uFFFD$]\uFFFD\\x001c[&x\\x0000\uFFFD*[<\\x001e=\uFFFDF\uFFFD\uFFFD~\\x0002"
+						},
+						{
 							"uri": "https://deces.matchid.io/build/module/bundle.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BxtIOC1zexfqaqNPKAinM9xlHWbFI4I301nZfV4jOtGt09REKGd3H7E4IzhRjoGbCZZwLOKbP9YAK",
-							"otherinfo": "\uFFFD\\x001cm \uFFFD\uFFFD\uFFFD_\uFFFD\uFFFD\uFFFD<\uFFFD\"\uFFFD\uFFFDq\uFFFDu\uFFFD\\x0014\uFFFD\\x0008\uFFFDMge\uFFFDx\uFFFD\uFFFDF\uFFFDOQ\\x0010\uFFFD\uFFFD\uFFFD~\uFFFD\uFFFD\uFFFD\uFFFDF:\\x0006l&Y\uFFFD\uFFFD\uFFFDl\uFFFDX\\x0000"
+							"evidence": "nWOXLny4y68SdItihhv4bZLdlPqzVlf",
+							"otherinfo": "\uFFFDc\uFFFD.|\uFFFD\u02EF\\x0012t\uFFFDb\uFFFD\\x001b\uFFFDm\uFFFD\u0754\uFFFD\uFFFDVW"
 						},
 						{
 							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FhhKTaSU1AYyde5QSjd7ZvBz6oemmoAnjYyQ4SzPfPi2b6Tbqv4Ys94ZW5cj7RXcmUYAhCt",
-							"otherinfo": "\uFFFDXa)6\uFFFDSP\\x0018\uFFFD\u05F9A(\uFFFD\uFFFD\uFFFD\u03EA\\x001e\uFFFDj\\x0000\uFFFD62C\uFFFD\uFFFD=\uFFFD\uFFFD\u067E\uFFFDn\uFFFD\uFFFDb\uFFFDxen\\\uFFFD\uFFFDWre\\x0018\\x0002\\x0010\uFFFD"
+							"evidence": "2Bm2BKeOkTgo4lOiR3ro9RcnTqbgpMLF5Qoko95Z13R2Jfq8d398pDUi",
+							"otherinfo": "\uFFFD\\x0019\uFFFD\\x0004\uFFFD\uFFFD\uFFFD8(\uFFFDS\uFFFDGz\uFFFD\uFFFD\\x0017'N\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\n$\uFFFD\uFFFDY\uFFFDtv%\uFFFD\uFFFDw|\uFFFD5\""
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "qti8JFRIsAxgGoHNbJgbJEKxDFkmbv83AWmkYmnnLQu98mAQ8H0qeQ4jti0hNr89SUIG",
-							"otherinfo": "\uFFFD\u063C$TH\uFFFD\\x000c`\\x001a\uFFFD\uFFFDl\uFFFD\\x001b$B\uFFFD\\x000cY&n\uFFFD7\\x0001i\uFFFDbi\uFFFD-\\x000b\uFFFD\uFFFD`\\x0010\uFFFD}*y\\x000e#\uFFFD-!6\uFFFD=IB\\x0006"
+							"evidence": "2F1jg07XxMbHHNwLHse0zrr5m8hqBXOAL6g9DpoEaSIPTxoQM0QIKqHR9bNrMGRppYHE4HUHUfxdqOWqV35Q3B2SLolWIYRWYLCFwMYdNZ",
+							"otherinfo": "\uFFFD]c\uFFFDN\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD\\x000b\\x001e\u01F4\u03BA\uFFFD\uFFFD\uFFFDj\\x0005s\uFFFD/\uFFFD=\\x000e\uFFFD\\x0004i\"\\x000fO\\x001a\\x00103D\\x0008*\uFFFD\uFFFD\uFFFD\uFFFDk0di\uFFFD\uFFFD\uFFFD\uFFFDu\\x0007Q\uFFFD]\uFFFD\uFFFDW~P\uFFFD\\x001d\uFFFD.\uFFFDV!\uFFFDV`\uFFFD\uFFFD\uFFFD\uFFFD\\x001d5"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/matchid.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FWFJGfoFtmmn3gyDkOmTs6nxSvit8NvryQHFjJreju",
-							"otherinfo": "\uFFFDU\uFFFD$g\uFFFD\\x0016\u0666\uFFFDx2\\x000eC\uFFFDN\u03A7\uFFFD+\uFFFD\uFFFDo\uFFFD$\\x0007\\x00162kz;"
+							"evidence": "WGHWhXqXtn7Dza79V1Ar8ZOvgybtQ2ACraebGE",
+							"otherinfo": "Xa\u0585z\uFFFD\uFFFD~\uFFFD\u036E\uFFFDWP+\uD90E\uDFC3&\uFFFDC`\\x0002\uFFFD\uFFFD\uFFFD\\x0018"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BoIYNmLF2zZBrhneckjsRIjDLXzk2ioJoGEUq0zhXkj0cPqq24R4H1YZI",
-							"otherinfo": "\uFFFD\\x001a\\x0008`\u064B\\x0017l\uFFFD\\x0006\uFFFDgy\uFFFD#\uFFFD\\x0012#\\x000c\uFFFD\uFFFDh\uFFFD&\uFFFD\uFFFDR\uFFFD3\uFFFDy#\uFFFD\uFFFD\uFFFDn\\x0011\uFFFD}Xd"
+							"evidence": "2Ffn5Wh1gTzV2MpbotdSqR8gWlMG0K",
+							"otherinfo": "\uFFFDW\uFFFD\uFFFDhu\uFFFD<\uFFFD\uFFFD\uFFFD[\uFFFD\uFFFDR\uFFFD\\x001f ZS\\x0006\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FgKhgs3XMp2snoo0wV3JrZnnD1x6ExqoSYdqX95capNwz0vk4uUHfMGNI3lYdf2BWrivhgLyTrXCo0Zf7",
-							"otherinfo": "\uFFFDX\n\uFFFD\\x000b7\\\uFFFDv\uFFFDz(\uFFFD\\x0005w&\uFFFDg\uFFFD=q\uFFFDLj\uFFFD&\\x001d\uFFFDyq\uFFFDM\uFFFD=/\uFFFD\uFFFD\uFFFD\\x001d\uFFFD\\x00064\uFFFD\uFFFDa\uFFFD\uFFFD\\x0005j\uFFFD\\x0018\\x000b\uFFFD:\uFFFD\n\uFFFD\\x0019"
-						},
-						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2BbYXxWjZhqyAuzHqSCv7XiJ58IB0eqHXMZOC3",
-							"otherinfo": "\uFFFD\\x0016\uFFFD_\\x0015\uFFFDf\\x001a\uFFFD\\x0002\uFFFD\u01E9 \uFFFD\uFFFDx\uFFFD\uFFFD\uFFFD\\x0001\uFFFD\uFFFD\\\uFFFDN\\x000b"
+							"evidence": "7zb1iRa9oJBvlG9W1JEnDfvMh3y30xsSubRplu",
+							"otherinfo": "\uFFFD6\uFFFD\uFFFD\\x0016\uFFFD\uFFFD\uFFFDo\uFFFDoV\u0511'\r\uFFFD\u0307|\uFFFD\uFFFD\\x001b\\x0012\uFFFD\uFFFDi\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1AQRXVle6bMRAX8ixXxP6iqYJyW7flz5ZE",
-							"otherinfo": "\uFFFD\\x0004\\x0011]Y^\uFFFD\\x0011\\x0001\"\uFFFD|O\uFFFD*\uFFFD'%\uFFFD~\\\uFFFDd"
+							"evidence": "t6ozfMUjmDfXdYPJLojvUqAHjXVktkn26Rs3",
+							"otherinfo": "\uFFFD\uFFFD3|\uFFFD#\uFFFD7\uFFFDu\uFFFD\uFFFD.\uFFFD\uFFFDR\uFFFD\\x0007\uFFFDud\uFFFDI\uFFFD\uFFFD\\x001b7"
+						},
+						{
+							"uri": "https://deces.matchid.io/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "QQ7OreYqun0T0Lgf0aaPtM9SC40xrgX5u90Izf7LIKcPQ7IUDTsCAr4vYMPjgqkZXl2fafWDTvsTCFBqcObHi4NS1MCqeGWWXonTKPQy5UxNrm5fhK",
+							"otherinfo": "A\\x000e\u03AD\uFFFD*\uFFFD}\\x0013\u0438\\x001f\u0466\uFFFD\uFFFD\uFFFDR\\x000b\uFFFD1\uFFFD\\x0005\uFFFD\uFFFD\uFFFD\\x0008\uFFFD\uFFFD\uFFFD \uFFFD\\x000fC\uFFFD\\x0014\r;\\x0002\\x0002\uFFFD/`\uFFFD\u30A9\\x0019^]\uFFFDi\uFFFD\uFFFDN\uFFFD\\x0013\\x0008Pjp\uFFFD\u01CB\uFFFDR\uFFFD\uFFFD\uFFFDxe\uFFFD^\uFFFD\uFFFD(\uFFFD2\uFFFDLM\uFFFDn_\uFFFD"
+						},
+						{
+							"uri": "https://deces.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1vyOtKezcoWdttZI26SDjkUvnrY4vyhfQXsH3DaCA59Bnoz3ZBEwAUSwLN9aUOJv2dfhjeJ9MaFkwT2uzLPuRbrWFOHccDoP",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDr\uFFFD\uFFFD\uFFFD\uFFFDH\u06E4\uFFFD\uFFFDE/\uFFFD\uFFFD8\uFFFD(_A{\\x0007\uFFFD6\uFFFD\\x0003\uFFFDA\uFFFD\uFFFD\uFFFDd\\x00110\\x0001D\uFFFD,\uFFFDZP\uFFFDo\uFFFD\uFFFD\uFFFD\uFFFD}1\uFFFDd\uFFFD=\uFFFD\u0333\uFFFDE\uFFFD\uFFFD\\x0014\uFFFD\uFFFDp:\\x000f"
 						}
 					],
-					"count": "8",
+					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x001cm \uFFFD\uFFFD\uFFFD_\uFFFD\uFFFD\uFFFD<\uFFFD\"\uFFFD\uFFFDq\uFFFDu\uFFFD\\x0014\uFFFD\\x0008\uFFFDMge\uFFFDx\uFFFD\uFFFDF\uFFFDOQ\\x0010\uFFFD\uFFFD\uFFFD~\uFFFD\uFFFD\uFFFD\uFFFDF:\\x0006l&Y\uFFFD\uFFFD\uFFFDl\uFFFDX\\x0000</p>",
+					"otherinfo": "<p>.\uFFFD(\uFFFD\\x001eF\\x0011\uFFFD\uFFFD\uFFFD~\uFFFDt\uFFFD\uFFFDDqP\uFFFD5\uFFFD\uFFFD,\uFFFDX\uFFFD</p><p>K\uFFFD \uFFFD)\uFFFD\u06BA\uFFFD\uFFFD\\x0000\uFFFD\\x0003\uFFFD\uFFFD\uFFFD\uFFFD\\x0014</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "23"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10027",
@@ -411,7 +454,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"4d20108e0b8d6aaac6faf3c5-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"865133885e947b01f124014f-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -419,7 +462,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"c223c5043f2751796c417c06-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"9f5fb94ea6338e857c0cede2-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -427,7 +470,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"da30101fd7d5b9836e20ca40-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"648ac6f94a760629c1be4455-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -435,7 +478,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"59a14bfc66a04a6fc23f1af5-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"1b5b8130078331e4a80b399a-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -445,7 +488,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -504,7 +547,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10050",
@@ -517,29 +560,45 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
+							"uri": "https://deces.matchid.io/build/module/bundle.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 55",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 97",
+							"evidence": "Age: 55",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"uri": "https://deces.matchid.io/css/matchid.min.css",
+							"uri": "https://deces.matchid.io/favicon.svg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 97",
+							"evidence": "Age: 53",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"uri": "https://deces.matchid.io/js/matchid.min.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 55",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "26"
+					"sourceid": "22"
 				},
 				{
 					"pluginid": "90005",
@@ -609,7 +668,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -644,7 +703,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -700,6 +759,14 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
+							"uri": "https://deces.matchid.io/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
 							"uri": "https://deces.matchid.io/build/module/bundle.css",
 							"method": "GET",
 							"param": "",
@@ -717,14 +784,6 @@
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=86400",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://deces.matchid.io/css/matchid.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -786,7 +845,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				}
 			]
 		}

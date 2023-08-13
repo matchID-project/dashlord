@@ -21,13 +21,13 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az621-9:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az809-476:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
 <span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>172.67.179.218 104.21.64.91
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-08-06 00:57:47                --&gt;&gt; 172.67.179.218:443 (deces.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-08-13 00:54:43                --&gt;&gt; 172.67.179.218:443 (deces.matchid.io) &lt;&lt;--</span>
 
  Further IP addresses:   104.21.64.91 2606:4700:3031::ac43:b3da
                          2606:4700:3030::6815:405b 
@@ -98,7 +98,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;compress_certificate/#27&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>64800 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: yes
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>0002/Brotli
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -114,7 +114,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">45 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">38 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://e1.o.lencr.org
@@ -143,9 +143,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
                               <span style="color:#008817;">Content-Security-Policy</span>: default-src
                                 &apos;self&apos;;script-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                static.cloudflareinsights.com
+                                &apos;unsafe-eval&apos; static.cloudflareinsights.com
                                 ajax.cloudflare.com www.googletagmanager.com
-                                www.google-analytics.com
+                                fundingchoicesmessages.google.com
+                                www.google.com www.google.ca
+                                analytics.google.com www.google-analytics.com
                                 pagead2.googlesyndication.com
                                 partner.googleadservices.com
                                 tpc.googlesyndication.com
@@ -160,8 +162,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 stats.g.doubleclick.net
                                 www.google.fr;connect-src &apos;self&apos;
                                 www.data.gouv.fr cloudflareinsights.com
-                                www.google-analytics.com
-                                region1.analytics.google.com
+                                www.google-analytics.com analytics.google.com
+                                csi.gstatic.com region1.analytics.google.com
                                 stats.g.doubleclick.net
                                 pagead2.googlesyndication.com; frame-src &apos;self&apos;
                                 matchid.io www.google.com google.com
@@ -247,10 +249,10 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>84
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-08-06 00:58:37 [  52s] --&gt;&gt; 172.67.179.218:443 (deces.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-08-13 00:55:31 [  50s] --&gt;&gt; 172.67.179.218:443 (deces.matchid.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2023-08-06 00:58:37                --&gt;&gt; 104.21.64.91:443 (deces.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-08-13 00:55:31                --&gt;&gt; 104.21.64.91:443 (deces.matchid.io) &lt;&lt;--</span>
 
  Further IP addresses:   172.67.179.218 2606:4700:3031::ac43:b3da
                          2606:4700:3030::6815:405b 
@@ -321,7 +323,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;compress_certificate/#27&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>64800 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: yes
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Certificate Compression      </span>0002/Brotli
 <span style="font-weight:bold;"> Client Authentication        </span>none
@@ -337,7 +339,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">45 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">38 &gt;= 30 days</span> (2023-06-22 08:29 --&gt; 2023-09-20 08:29)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://e1.o.lencr.org
@@ -366,9 +368,11 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               <span style="color:#008817;">X-Content-Type-Options</span>: nosniff
                               <span style="color:#008817;">Content-Security-Policy</span>: default-src
                                 &apos;self&apos;;script-src &apos;self&apos; &apos;unsafe-inline&apos;
-                                static.cloudflareinsights.com
+                                &apos;unsafe-eval&apos; static.cloudflareinsights.com
                                 ajax.cloudflare.com www.googletagmanager.com
-                                www.google-analytics.com
+                                fundingchoicesmessages.google.com
+                                www.google.com www.google.ca
+                                analytics.google.com www.google-analytics.com
                                 pagead2.googlesyndication.com
                                 partner.googleadservices.com
                                 tpc.googlesyndication.com
@@ -383,8 +387,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                                 stats.g.doubleclick.net
                                 www.google.fr;connect-src &apos;self&apos;
                                 www.data.gouv.fr cloudflareinsights.com
-                                www.google-analytics.com
-                                region1.analytics.google.com
+                                www.google-analytics.com analytics.google.com
+                                csi.gstatic.com region1.analytics.google.com
                                 stats.g.doubleclick.net
                                 pagead2.googlesyndication.com; frame-src &apos;self&apos;
                                 matchid.io www.google.com google.com
@@ -470,7 +474,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>84
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-08-06 00:59:29 [ 104s] --&gt;&gt; 104.21.64.91:443 (deces.matchid.io) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-08-13 00:56:20 [  99s] --&gt;&gt; 104.21.64.91:443 (deces.matchid.io) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>172.67.179.218 104.21.64.91
