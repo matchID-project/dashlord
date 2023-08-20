@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 13 Aug 2023 00:53:40
+		Generated on Sun, 20 Aug 2023 00:53:12
 	</h3>
 
 	<h3>
@@ -220,7 +220,7 @@ td {
 			<tr>
 				<td><a href="#10044">Big Redirect Detected (Potential Sensitive Information Leak)</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">2</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
@@ -235,7 +235,7 @@ td {
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">3</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -325,6 +325,11 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -424,6 +429,11 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%">Access-Control-Allow-Origin: *</td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</td>
+					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
@@ -504,6 +514,11 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -588,57 +603,10 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%">&lt;link type=&quot;application/atom+xml&quot; rel=&quot;alternate&quot; href=&quot;https://matchid.io/feed.xml&quot; title=&quot;matchID project&quot; /&gt;</td>
 					</tr>
-				
 					<tr>
 						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;8ab042fe7ea61832c365f00a-text/javascript&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;8ab042fe7ea61832c365f00a-text/javascript&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 					<tr>
@@ -664,7 +632,74 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;8ab042fe7ea61832c365f00a-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;a8360e809681c56376db5e00-text/javascript&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;a8360e809681c56376db5e00-text/javascript&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;a8360e809681c56376db5e00-text/javascript&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 				<tr>
@@ -745,6 +780,13 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Location header URI length: 18 [http://matchid.io/].
+Predicted response size: 318.
+Response Body Length: 547.</td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -771,10 +813,50 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Location header URI length: 28 [http://matchid.io/robots.txt].
+Predicted response size: 328.
+Response Body Length: 547.</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Location header URI length: 29 [http://matchid.io/sitemap.xml].
+Predicted response size: 329.
+Response Body Length: 547.</td>
+					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -845,7 +927,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;8ab042fe7ea61832c365f00a-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;a8360e809681c56376db5e00-text/javascript&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
@@ -871,7 +958,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;8ab042fe7ea61832c365f00a-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;a8360e809681c56376db5e00-text/javascript&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
@@ -897,7 +989,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;8ab042fe7ea61832c365f00a-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;a8360e809681c56376db5e00-text/javascript&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 				<tr>
@@ -973,6 +1070,11 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -1064,7 +1166,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">HCM5bOTr4YScFCtTq8YahcjX3IOaDCIhzRoeJjPUMUtVI3DnNGurKD3gGiZ50ZJpOGiArfuSAgLuEsZMHe0xo7E3RVx5MunY3ykxDp8TTYjfnDoQutElsH48fo3t</td>
+						<td width="80%">2BP68zrYmZxmfpuAAEibHaiQsSitiokqOMBK9Y1</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">���:ؙ�f~�� H����(���*8�J��</td>
 					</tr>
 				
 					<tr>
@@ -1090,7 +1197,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BmGeFUGbUuEljyLBkq15uqj9EICaTEEN1xLjyWp4SFqYyABv6g8V5</td>
+						<td width="80%">2FPzfNW8dETMagdPbrGD6xRRVjtTjlImshDwwMro</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">�S�|ռtD�jOn���QV;S�R&amp;�����</td>
 					</tr>
 				
 					<tr>
@@ -1116,38 +1228,17 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FMvP7gYq7vie1YdrhuBsEC5aIIVfQ</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
+						<td width="80%">jK2ThVZcRF41UK7XSiO3mq1qgpWsod2oOoQxzXQ13nIwvp5</td>
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2FPoCpdkZ4f9K8abI2GI1vXu3AvPGwI</td>
+							class="indent2">Other Info</td>
+						<td width="80%">����V\D^5P��J#���j����ݨ:�1�t5�r0��</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">3</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1225,6 +1316,11 @@ td {
 Développer des algorithmes d&#39;appariement
 &lt;/a&gt;</td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">Links have been found with a target of &#39;_self&#39; - this is often used by modern frameworks to force a full page reload.</td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1249,7 +1345,12 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7f5cfb6d0c6e82a4&quot;,&quot;version&quot;:&quot;2023.7.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7f96a8628dbd4778&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No links have been found while there are scripts, which is an indication that this is a modern web application.</td>
 					</tr>
 				
 					<tr>
@@ -1275,7 +1376,12 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7f5cfb6d0f745b64&quot;,&quot;version&quot;:&quot;2023.7.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7f96a862998e2c8d&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No links have been found while there are scripts, which is an indication that this is a modern web application.</td>
 					</tr>
 				
 					<tr>
@@ -1301,7 +1407,12 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7f5cfb6d0ffa58d2&quot;,&quot;version&quot;:&quot;2023.7.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;7f96a862abab1448&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">No links have been found while there are scripts, which is an indication that this is a modern web application.</td>
 					</tr>
 				
 				<tr>
@@ -1377,6 +1488,11 @@ Développer des algorithmes d&#39;appariement
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">max-age=600</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 				<tr>
@@ -1463,6 +1579,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%">HIT</td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1487,7 +1608,12 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">HIT</td>
+						<td width="80%">Age: 72</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The presence of the &#39;Age&#39; header indicates that that a HTTP/1.1 compliant caching server is in use.</td>
 					</tr>
 				
 					<tr>
@@ -1514,6 +1640,11 @@ Développer des algorithmes d&#39;appariement
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%">Age: 0</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">The presence of the &#39;Age&#39; header indicates that that a HTTP/1.1 compliant caching server is in use.</td>
 					</tr>
 				
 				<tr>
@@ -1611,6 +1742,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1637,6 +1773,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1661,6 +1802,11 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -1742,6 +1888,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1768,6 +1919,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1792,6 +1948,11 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -1873,6 +2034,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1899,6 +2065,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1923,6 +2094,11 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -2004,6 +2180,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -2030,6 +2211,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -2054,6 +2240,11 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -2135,6 +2326,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%">max-age=600</td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -2160,6 +2356,11 @@ Développer des algorithmes d&#39;appariement
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
 					</tr>
 				
 					<tr>
@@ -2187,6 +2388,11 @@ Développer des algorithmes d&#39;appariement
 							class="indent2">Evidence</td>
 						<td width="80%">max-age=86400</td>
 					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -2212,6 +2418,11 @@ Développer des algorithmes d&#39;appariement
 						<td width="20%"
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
 					</tr>
 				
 				<tr>
