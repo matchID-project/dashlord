@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 3 Sep 2023 00:56:03
+		Generated on Sun, 10 Sep 2023 00:55:19
 	</h3>
 
 	<h3>
@@ -156,7 +156,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>4</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -200,42 +200,27 @@ td {
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
-				<td><a href="#10098">Cross-Domain Misconfiguration</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
-				<td><a href="#10020">Missing Anti-clickjacking Header</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
-				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">4</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10044">Big Redirect Detected (Potential Sensitive Information Leak)</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
-				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">3</td>
-			</tr>
-			<tr>
-				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
+				<td><a href="#10035">Strict-Transport-Security Header Not Set</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">1</td>
 			</tr>
 			<tr>
+				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
+				<td align="center" class="risk-1">Low</td>
+				<td align="center">2</td>
+			</tr>
+			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -243,14 +228,14 @@ td {
 				<td align="center">4</td>
 			</tr>
 			<tr>
-				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
+				<td><a href="#10049">Non-Storable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">1</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10050">Retrieved from Cache</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
@@ -275,7 +260,7 @@ td {
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">2</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -333,9 +318,40 @@ td {
 						<td width="80%"></td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">1</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -388,357 +404,6 @@ td {
 		
 			<table class="results">
 				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10098"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Cross-Domain Misconfiguration</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Access-Control-Allow-Origin: *</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</div>
-							<br />
-						
-							<div>Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy">https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/264.html">264</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">14</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10098/">10098</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10020"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Missing Anti-clickjacking Header</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</div>
-							<br />
-						
-							<div>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10020/">10020</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="90003"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Sub Resource Integrity Attribute Missing</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link type=&quot;application/atom+xml&quot; rel=&quot;alternate&quot; href=&quot;https://matchid.io/feed.xml&quot; title=&quot;matchID project&quot; /&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;3f43d8a9eb05459614230baa-text/javascript&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;3f43d8a9eb05459614230baa-text/javascript&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;3f43d8a9eb05459614230baa-text/javascript&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Provide a valid integrity attribute to the tag.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/90003/">90003</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
 					<th width="20%" class="risk-1"><a
 						id="10044"></a>
 						<div>Low</div></th>
@@ -754,39 +419,6 @@ td {
 				<TR vAlign="top">
 					<TD colspan="2"></TD>
 				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 18 [http://matchid.io/].
-Predicted response size: 318.
-Response Body Length: 547.</td>
-					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -821,42 +453,9 @@ Predicted response size: 328.
 Response Body Length: 547.</td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">Location header URI length: 29 [http://matchid.io/sitemap.xml].
-Predicted response size: 329.
-Response Body Length: 547.</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">1</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -889,14 +488,14 @@ Response Body Length: 547.</td>
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10017"></a>
+						id="10035"></a>
 						<div>Low</div></th>
-					<th class="risk-1">Cross-Domain JavaScript Source File Inclusion</th>
+					<th class="risk-1">Strict-Transport-Security Header Not Set</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The page includes one or more script files from a third-party domain.</div>
+							<div>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</div>
 							
 						</td>
 				</tr>
@@ -907,150 +506,7 @@ Response Body Length: 547.</td>
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://code.iconify.design/2/2.1.0/iconify.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;https://code.iconify.design/2/2.1.0/iconify.min.js&quot; type=&quot;3f43d8a9eb05459614230baa-text/javascript&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904&quot; crossorigin=&quot;anonymous&quot; type=&quot;3f43d8a9eb05459614230baa-text/javascript&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX&quot; type=&quot;3f43d8a9eb05459614230baa-text/javascript&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">3</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10017/">10017</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10063"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Permissions Policy Header Not Set</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
+						<td width="80%"><a href="https://www.matchid.io/cdn-cgi/styles/challenges.css">https://www.matchid.io/cdn-cgi/styles/challenges.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1085,33 +541,33 @@ Response Body Length: 547.</td>
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</div>
+							<div>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</a>
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a>
 							<br />
 						
-							<a href="https://developers.google.com/web/updates/2018/06/feature-policy">https://developers.google.com/web/updates/2018/06/feature-policy</a>
+							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
 							<br />
 						
-							<a href="https://scotthelme.co.uk/a-new-security-header-feature-policy/">https://scotthelme.co.uk/a-new-security-header-feature-policy/</a>
+							<a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a>
 							<br />
 						
-							<a href="https://w3c.github.io/webappsec-feature-policy/">https://w3c.github.io/webappsec-feature-policy/</a>
+							<a href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a>
 							<br />
 						
-							<a href="https://www.smashingmagazine.com/2018/12/feature-policy/">https://www.smashingmagazine.com/2018/12/feature-policy/</a>
+							<a href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+						href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
@@ -1120,7 +576,122 @@ Response Body Length: 547.</td>
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10063/">10063</a></td>
+						href="https://www.zaproxy.org/docs/alerts/10035/">10035</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
+						id="10096"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Timestamp Disclosure - Unix</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>A timestamp was disclosed by the application/web server - Unix</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1694307316</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1694307316, which evaluates to: 2023-09-10 00:55:16</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1694307316</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1694307316, which evaluates to: 2023-09-10 00:55:16</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10096/">10096</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1166,13 +737,12 @@ Response Body Length: 547.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BsFFiAK7n4hR9IbojTTVaCuxJf2hqcLfUvYtYnRL0sq</td>
+						<td width="80%">2BhmE5xSN6yvRKa7AzENvUWIgv2ezgg8sFO8Uo517ghpvxdljt</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">� 
-�~!G��4�U��ė���}Kص��/K*</td>
+						<td width="80%">�f�R7��D��1�E�����&lt;�S�R�u�i�e�</td>
 					</tr>
 				
 					<tr>
@@ -1198,12 +768,47 @@ Response Body Length: 547.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">mK0WLTWq5raCTmnyP0cYp6RMFnsfMJqQ4pYQeWMiAH9uV5b</td>
+						<td width="80%">2FArXlUmrDtRyGsbEZVojlqNcuYmyeeEUknKpnf8jNAFSfbmFQk06LANLo3j3n</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">��-5�涂Ni�?G��L{0���yc&quot; nW�</td>
+						<td width="80%">�P+^U&amp;�;Q�k�h�Z�r�&amp;��RIʦw���I��	4�.���</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io/cdn-cgi/styles/challenges.css">https://www.matchid.io/cdn-cgi/styles/challenges.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAPFBMVEUAAACvDwOyDwKyDwOvEACyDgOyDwKvDwKwDgCyDgKxDgOyDgKvDgKyDwKyDgOxDgKzDgKxDgKxEASyDwMgW5ZmAAAAE3RSTlMAQN+/EJDvMB9wYJ9Qz7CAf6CAtGoj/AAAAcFJREFUSMeVltu2gyAMRLlfBDxt+f9/PTq2VXSwmod2GdhkEoIiiPmYinK1VqXt4MUFk9bVxlTyvxBdienhNoJwoYMY+57hdMzBTA4v4/gRaykT1FuLNI0/j/1g3i2IJ8s9F+owNCx+2UlWQXbexQFjjTjN1/lGALS9xIm9QIXNOoowlFKrFssYTtmvuOXpp2HtT6lUE3f11bH1IQu9qbYUBEr7yq8zCxkWuva8+rtF4RrkP6ESxFPoj7rtW30+jI4UQlZuiejEwZ4cMg65RKjjUDz6NdwWvxw6nnLESEAl230O5cldUAdy8P44hJZTYh40DOIKzFw3QOI6hPk9aDiFHJc3nMirKERgEPd7FKKgiy5DEn3+5JsrAfHNtfjVRLucTPTaCA1rxFVz6AX8yYsIUlXoMqbPWFUeXF1Cyqz7Ej1PAXNBs1B1tsKWKpsX0yFhslTetL4mL8s4j2fyslTbjbT7Va2V7GCG5ukhftijXdsoQhGmzSI4QhHGhVufz4QJ/v6Hug6dK0EK3YuM8/3Lx5h3Z0STywe55oxRejM5Qo4aAtZ8eTBuWp6dl3IXgfnnLpyzBCFctHomnSopejLhH/3AMfEMndTJAAAAAElFTkSuQmCC</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">�PNG
+
+   IHDR   4   4   ���   &lt;PLTE   ���� ���� ����������� [�f   tRNS @߿��0p`�Pϰ����j#�  �IDATHǕ�۶� D�_&lt;m��=:�Ut���v�d�&quot;����r�V��������T�]���6�p�����t��L/��k)�[�4�?��`�-�&#39;�=�04,~�IVAv��c�8���F ��ĉ�@��:�0�R��Nٯ���a�O�Tw�ձ�!���J�ʯ3�����E��?��S菺�[}&gt;��BVn�����2�D��P&lt;�5��:�r�H@%�}��]Pr��8��Sb4�
+�\7@�:��=h8��7�ȫ(D`�{���.C}��+�͵��D��L��k�Us��ɋRU�2��XU\]Bʬ�=OsA�Pu�*��!a�T޴�&amp;/�8�g�Tۍ��U���`���!~أ]�(B��&quot;8Bƅ[�τ	�����+A
+݋����ǘwgD����Qz39B��|y0nZ���r���.��!\�z&amp;�*)z2���1����    IEND�B`�</td>
 					</tr>
 				
 					<tr>
@@ -1229,12 +834,12 @@ Response Body Length: 547.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2B6ijMbvRPAFEpHSp6rnE4psl8PW7nZdMuMNZNM</td>
+						<td width="80%">2FfSZSTZy0XylzsgtocUjn2DMPBJDz8vdDRThptWefFGPvdgBn3IXMREaBw1hIJR9Nu</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">�����D��ҧ���l����v]2�d�</td>
+						<td width="80%">�W�e$��E�; ���}�0�I?/t4S��Vy�F&gt;�`}�\�Dh5��Q��</td>
 					</tr>
 				
 					<tr>
@@ -1260,17 +865,17 @@ Response Body Length: 547.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">OHjT0F8nYFQUXuDUVGlEcJnvbtp14B8CifF6pl</td>
+						<td width="80%">2BHw9g5E9OeqrTlz4EZsd3zsJW2S0zwyi8Lo73mHmgI5UtdbQUfeAnK</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">8x��_&#39;`T^��TiDp��n�u���z�</td>
+						<td width="80%">���D�窭9s�Flw|�%m��&lt;2����y��9R�[AG�r</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1282,7 +887,7 @@ Response Body Length: 547.</td>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							<a href="https://projects.webappsec.org/w/page/13246936/Information%20Leakage">https://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
 							
 						</td>
 				</tr>
@@ -1344,14 +949,12 @@ Response Body Length: 547.</td>
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;fr-nav__link&quot; href=&quot;slides/#/3/8&quot; target=&quot;_self&quot;&gt;
-Développer des algorithmes d&#39;appariement
-&lt;/a&gt;</td>
+						<td width="80%">&lt;script&gt;(function(){window._cf_chl_opt={cvId: &#39;2&#39;,cZone: &#39;www.matchid.io&#39;,cType: &#39;managed&#39;,cNounce: &#39;21795&#39;,cRay: &#39;8043b458785182b0&#39;,cHash: &#39;dc49643f38e8af6&#39;,cUPMDTk: &quot;\/?__cf_chl_tk=j0dVq9u_n5s_Pnl_agnaTGiHQCKl67tJ9vLKWZTSx7A-1694307316-0-gaNycGzNCpA&quot;,cFPWv: &#39;b&#39;,cTTimeMs: &#39;1000&#39;,cMTimeMs: &#39;0&#39;,cTplV: 5,cTplB: &#39;cf&#39;,cK: &quot;visitor-time&quot;,fa: &quot;/?__cf_chl_f_tk=j0dVq9u_n5s_Pnl_agnaTGiHQCKl67tJ9vLKWZTSx7A-1694307316-0-gaNycGzNCpA&quot;,md: &quot;SRrW.0KE7RZfqmaFErETdw7Vd9TOsCuKeJnBePPRtqk-1694307316-0-AdPo50JaTRuocxejtZKxP-mGVHcdoqaXQus07B0fahZRlFQ7YW-YWHkgCYtRGuCki742tpYL2D3zUCOw9QGBABSn4euCXlRL47ilsNqtnRT3O1SXWUg1EJP-k8zhFIMLH0JPHEMx0zvqfuKlJDBxeHhJcHMOWMi893e0h-I5neJnOJUjxYL1UHVYvwj90cLCyUirkAce2jXS9K-dyrhMef-n4D4ZctcB3T7vDNzSHIo2JOPK9jOD9_ELnGcWSfRxthjQA-b_ZTxT2HZEphY_EFvDgrnQlGAoVzw2mmNv6-OMDhmC9pEuHRLAZ4bMwl9wp9e7WNG7Pyipo4xc7Em3gBqY4bArgkhuCgatNtAbPPLEDKSPABAG4wYdMSgMC-Qab4kiWyFdWvrc8Yhn08ouObdrpMk07OxrssofaDRMRMWlz4WlzmNgwVXqVIjyQaH-e_q-q80rwTfFRjMFP0BNaWrkGxappU2SyJmqGIDqK2Ct-5q4339d6Ll9VLVfCRNhui7n8uXBJ_Ar1s59bzofa6SUHGUtFojxsSfayx2hYdEHZwxtoCCyVgtveXwkSW7_Wc3rAyRnuONp--q2_IbmWAiyqYLufEGbin0xl6ibB_g8D6OjVgU88ISe7HXlsT1u6pCzTEdBsjGAM7W0cvZBZuCqE6qwCo9jiYkGvf8R9JNLjpE8HqzOzTLkeGipYURpC_GWBCQDBFuz47tcyrIshW43GAXNS_ckrAMDGSGezWrxHM4OK5mY_rna4q3AyOJaOP9CT0-mtwfV9SSCYrD3RG-A5pMrtnEbJm54WxGMDYGslBy2sKGz89UpNpKjiSt_4KqhDj4mNSynXCco34OsZ3DovOztOa3u6l1YMExvDVW_zo5PHfgx4C2zBTM7-9UbOTYKacQrpruR3bV20ZM5r6TghINKifdbIfw8wgRuJsq90JinRdQq65HqFTJxzg941w9wMdROsGcB2nZ0fFYdB41DNB0ic2LrpshkEMCcn-jshZ2Bb6UwzHoM0q6DIfZvD8LffMZYK4zKoDwVLFDGAoKcP5ZW_4Xtcr2HyycKq1GyWQcS-1bAx7aUJuwZ30tadEgRZH2HABbPvswIya-1bNGjwW_JR1Ocka_RNpY9dgonEosHOLwQIeRnQ9fFOJmgU7hqeeDP4lGmqy45MLhERxNm-w25iCJEL3zBHBUo_WmfNIYdfvAiSwUC7IOkq9rNcgUfXC_nkCgvPnfif72pKhmN1zKX50u__bx6IrNlOE9mm_IUsTtl-A13-0ZBZJPH0BXNL_-xo1Y0LjOKyL59PciDSrOeJlglXNjpi8I7AD8MXLQ5Mxn25SNjczDXstqDWMst_TFAS8QMV0LvR5MA7zco-9LkCKqEGXXR27w-vOgVmETkot_O1Uqg0SOTWbxT8eTHe9U3_X_ScpVbhKek9dXjorpcObFF0qkMEyCYLVzFa3OAQ_85aZ-dHvNYQ1LXJO1rjh1wJFrq17nrN4wWxwkhL0zcnjp-NF39q5u497oXFHN6_jNYUdDppQI5BKnR763sAqf7VTC_5c2gwP2EtZ1cf42lWgmwvpWZHOqnMDdTRD3gOKRhz9t30qfF8A0xI8eaUIGj9KfNcpw_bDn32J_eqLxNt6OJ2YO4Ofw9Wd9RGJSUco7W12OPUsplER7Pd8OD7tZbrWiOyPSvvZv0zDW_vqbdoFLYG3mcCWN9jGxGo729Kw69nyuqZ8xwPzUYKc1K_rbkYmLQB4pYXnB-1hZ2HcrPyTdN3UarflZZ-mOrxSH_1IVJTXbzDKW7ZZ7cLkrSTnUwbPgHIN8Lh9Nb-IFDv7N4BG2S4Mtd6S7E06fS7fhpJzKX3WVKae3nJtQXQ1v5Yq2wK1BxkZ5v2fRfitQ29RwjlWUaOoVY3QR_bTY3Madv6HsCBZZ8yNYmRZUh_pN5wfvD9bn1ZYe0jQgq7BxglHr2v9HiGKKhFv9y2FtiGjau0nk5uPxamY17-rvXeUidxHn7vBJhgJ3b-JvCZ9lO_s4A_g96xH6AyC6OswxD2ozJu9lJpwLNfIttY7NUo79eEPW5-ykhLiQ0g0o_NVj5RII42IU_vFYMi36b6XmZBtjNNmHqUTgTRKOJRrWheXsWT3M00RimugYD831bhw4I9Sh1O7OxguGZ2FGceAQuMvCOVIweGvgzFKu1X8M7eYHqG-39e8Lz2D088aFDMxgJ7YbcwwIevAh-zAmwSdVwf0Z54SEz1rI7SKax9FpHVaeMjbRgoq5QtXrr0HtHklwQ4ATjwR-YzTYjmIrWQfb-jmflQ4CQiYHeB3cCgym_p5ExLaUdGjKON-zuasAbQqoHravuUf5WSVPZFOQbJwJpR3w-53AMIBSjyj0NFfYO0sm4nYsmR__yOhXBD97nnQda9bHHgBKRHBUAIKCRttaS_L8FcjXL1_WlOQ0Ztpw2X0nfQJVSSpu1wVBP_WHQ_rNNwn6btRYDXggLzeGKZXGuapknAd0hGZ9v9l_PK0_5pQVTkrdfcomuXK9w6hQbRGVv418Ky2Q6ltnvreKckjo_nz51080k85a0GjvA8W5ROUFqXwry9P1ggh0jCK4J9GUUxdG-a1xDRO-MssK9i6AegrYWUUQyZeJ1HC1zh9GmORdPB8S81VcKRaB188hbR9Q&quot;,cRq: {ru: &#39;aHR0cHM6Ly93d3cubWF0Y2hpZC5pby8=&#39;,ra: &#39;TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNC4wLjAuMCBTYWZhcmkvNTM3LjM2&#39;,rm: &#39;R0VU&#39;,d: &#39;JqhYnLrKN8RLl9cejBOsG2iDnZPAIs8aNU9Od3R1UxzeeXI7AYIia1piehczGYXz2aDObKdbmL+gl3fZ5Em0+TzINIJCLzRVST7bZA6fk2qt7NLH9Mn4maP8fegrWDWe5ra2evQN6VcCKUs3PIwhpXBtMG1V6OSjN6Hr7y4foK35qTjj6b+8Pau986XL75395MxrVQFPCUVPJz/e4B91DRiAb5hBWLVM24CBARQaKVT31P5IWh4QSUXzoDZccz5UIBt3MrhWe6PE8yubi5kZiStPHm7RxeMqEnHMyoNtDBdzrJC9nnVirZjwiOa4FCE2yN8DMe+hSBUOtJTnkYq6VfR7JlvpA/35GreepbXBrYguowf8VgpyCgMhScc+HXrNAaOKswNloRYcyt6SSZzlEe5wkKIFdvk41yq2kHGTReMpMiqSiNnttWgdM1rxmoOjxOYRV4agNX+f1HlEc/Mm6sQgnmr6DiFqi87e6gv9q6lZk6yq+Em1553eYEUWPs+D&#39;,t: &#39;MTY5NDMwNzMxNi41NTAwMDA=&#39;,cT: Math.floor(Date.now() / 1000),m: &#39;CD8izUrEqk+m7wWqL6gn6Mm7sbVx3fPkktOgvkKvJWc=&#39;,i1: &#39;oBvCASjtp0uTEmpu2uLbBA==&#39;,i2: &#39;3CBnpnhLpq18YE6VzkGxRg==&#39;,zh: &#39;ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=&#39;,uh: &#39;0CF8H7M40rTpO3nQlHachgfkgE8HRlszEVlfLXI8vE4=&#39;,hh: &#39;4Z4zXcWMiiA1Xd8SbmnCyW9HMDAjKQya+bpsIHkReww=&#39;,}};var cpo = document.createElement(&#39;script&#39;);cpo.src = &#39;/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=8043b458785182b0&#39;;window._cf_chl_opt.cOgUHash = location.hash === &#39;&#39; &amp;&amp; location.href.indexOf(&#39;#&#39;) !== -1 ? &#39;#&#39; : location.hash;window._cf_chl_opt.cOgUQuery = location.search === &#39;&#39; &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf(&#39;?&#39;) !== -1 ? &#39;?&#39; : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, &quot;\/?__cf_chl_rt_tk=j0dVq9u_n5s_Pnl_agnaTGiHQCKl67tJ9vLKWZTSx7A-1694307316-0-gaNycGzNCpA&quot; + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName(&#39;head&#39;)[0].appendChild(cpo);}());&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">Links have been found with a target of &#39;_self&#39; - this is often used by modern frameworks to force a full page reload.</td>
+						<td width="80%">No links have been found while there are scripts, which is an indication that this is a modern web application.</td>
 					</tr>
 				
 					<tr>
@@ -1377,7 +980,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;800a07d09ea12366&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script&gt;(function(){window._cf_chl_opt={cvId: &#39;2&#39;,cZone: &#39;www.matchid.io&#39;,cType: &#39;managed&#39;,cNounce: &#39;96101&#39;,cRay: &#39;8043b457bf1681d3&#39;,cHash: &#39;045f9ed08a2259c&#39;,cUPMDTk: &quot;\/?__cf_chl_tk=4xPmoVMfH4GT6gAvXFZHUHk4WXNpfyPcle7EVjI__mM-1694307316-0-gaNycGzNCqU&quot;,cFPWv: &#39;b&#39;,cTTimeMs: &#39;1000&#39;,cMTimeMs: &#39;0&#39;,cTplV: 5,cTplB: &#39;cf&#39;,cK: &quot;visitor-time&quot;,fa: &quot;/?__cf_chl_f_tk=4xPmoVMfH4GT6gAvXFZHUHk4WXNpfyPcle7EVjI__mM-1694307316-0-gaNycGzNCqU&quot;,md: &quot;0f4P48cdpzuI9JF63j_V_yltGJtWRNuUwzR1EgdNehg-1694307316-0-AaofX8oyynMSIS4sEqnI_k6oNu1lINS6ZlsN_-zk93xPG25ECFwnCgVm2E-W1fTYJHXM6MCe3VpUsUApACXKgSML75QMMf4WgEAlfaz6Mm-Fjka6hNuJ2h0Lgzfxy3kIny9PFgq1L8aPBh8zEReQDqYP0Af6DxqeOlfXP25opu-nZUUnsscoaVncFGaqNtesMYoSgiyhhzyGSgbD_zM2Vn8Nl2tQqOkYiIPXQPXpz9Tg98W0OgggAIbWaUQ2wicpfPY_lauxETAvsoH-bX63rlSSVMu9UDBAoiefNcJjt-JgcSz5ybpIcEuV-Izg0YVcNqGfecLh4UiKBELsgY5eG-e9d5UxPIiVJ0lF9vTqkO-dqzHCPFakU_NVYlcPW6F1d94OeAMcuj7abnV44sWWjV9-zBT5PbXz3LtkyxTeu71ZQBIEfMBoHFMNpWaafbhBF6Ef29igZqf13TpiGv2KyzFzij9Dw62RRTOiKiqhm4zeIe-C6vaA74A9PhtyQC8KakHXCuQ4UPej963q2QkyJhm298DcYG1-Era-fD3icVoeTEbNk0prQiap2KIdQJh8h10v64AnS3LgRp3mWbips8KZFsJ_QfFmlALkb_WP5h6hY_QXkXwZMXkbRKSdYuOdpa3jYFFPOtWudPipi7a80MEENVRrQ-pEbdcAP_u5kV5wHOUeeIo4Wllcg31vz95T0z2q3SCjkRHviDR93uXs_zIguRr_PU9JxBkFA5ELC85yHZImQZez9msYOs9PyID0_rWJ1zZlOnyMmU2N_ScaJ_EefbksKxWmdFlmjf2xWjyqymAxZ2OtemY27sYnQTxYjL7FjwDNbYQiyWvYmCmZ_za-Km1bGKx4cKNgZWV1HJsEd8k2h8pt_gNBs2QV7iIfFgqtwXaq8W2Wyzhz9a-CzFb6bxTZ9o8ieIJPD_5xi_bVAAn6TjHUIsRFLScCLaBJNXbG6haOewJ-LAn-GmaPwyEUULwYOreIwsE8yqpq-2foRnlnIfXNNz9WLlg6DdY5mM4Ft3nf-JB8Edd1EEt-YrOEaAkYQFl50Rk0KWHWfVX4_xxEOPooiGBgQRIvxaqDaQR4C9nL8fQaq4Abw-hZpBqR1dHsX0O5z1yzjIEdeDUU1hOkmJrSAI48A76Y5988Ht312fnnaW9-oR4iRWSt9xuaTQ8S6VtNe0-yMz57ymUi0vVkPoKQDlOL9LnAsAkm5BRtM0U1r2_vxcm-JKvKT1pwIsRZP9CBs3zWpm780IWkZasOj2nYNFfNkyqbpN0XcZ7hH59vk3d7R0lazkd_PV3cAn28RI7hiqMIE1YUCqfbRtA4wPp_0Z5FP8hq-Ih1G4LzZCNm-0mTY_XHVvIJcVj09dTOzFz31ZWG3UE7kJyDua7rxMt6IDgE-70iXjy8wHFondgPe-WKheUkRc6CpQKZdcpzuDLK0HI5VwJn3kYzhSCsMC5NAiJdAbN5pg8KPQTiQDDtdJWN65X_ddNYmMxahztWmwY8Lg4UL-e8T01Y4eJMyIePl8BU6w7bZGmAqAkzCGJsqrrPxbOFGutxXPQ57231un7sQDtr0jM0eZfMF0obkeqqF9hnQRxj7Q5ScYunS5rKCUQXxAX3jQ5I0l9rGoi7n5fLFzhczmRgIAzsOAya7_pCfdjTETqV5ziu_bI4zPJhtn_l9NcNSTJVc4H5kVJ2CI0NpTK6oSsqlZ3n4dj7-_W9fjkInTz4XswzXXZoVhk4F2E0iXHsdmosL7h6EzIYrp5PI69Sl88Zh6P0KildyaHXTMeGdkAG8byhUCxxvDLeKeYcy_IgOLCuTnzcNQ2oFRnD81q7Br_jDvTgpqVJt5D4AMMPNh5zTuhfSV6WBJe9zIeM-C5cxL_TtqbBNBtBTGqRkGoxTnQok05zLA8J1ZqQGBC0paYbhQZZsHbNmgrlI-Gs1WTdp2mz5syaG03TDgPtHOKSfZtu1f88IwGR4o9kgJh2SXZATS1f7LqD8wJ6iPWRBX--hYqKAGocYQsd1_OleCG33JS9NURccmG2dBFJYBo7XcfRFmhd6tWpbzw3BWuM3SODAWxUcWHOFcUoz7fDBa4d4ligiiTVQX-fxeNkJFJLyRraJIR6bitUNaSxh3o1u2yXk_DIgfkOeaXtTxJI0Jz8bjtdEObGYgtvtq-3HFQ5LRT3BXpH2wS5U-bI9gpUo1CHk-lftoh74FO7d4fapP5uq4J-HqOrZwr0qMIaK-glfTOB5bPVbtE5oWKCQVZ_OVhX58zstXC4DGCx5AH3Q8l6xIef54tr93sDslFjX1fuACKYzgZO-nftMVhqUbgtrcQnLA2SY_BPpOEwVzxyyQyR-fk4BiKtdmP8Eh0tewO-XWxlVDd1HzZj9JmQJW9MwWiJcpBpmIgaZ6mRd3qeZEf5tnsd5qMTijij5Z0DHZPk5YLY8DBsrkndZ8XrArBT0F6FLbj9iD51KbRbh7sPCya_rWnl_E0X1O8pi7-E5AU8doJs6N-rnc1tbkZ8kyBl9BEsGiCtpiPV9NvqX6a_c1IFKLxdpvm2MdppHKUuhS1k9MRJ4mFUqhrSTOreOQrB8cn-cO8lrplM_u7CtIJ6aadeNlIwFHmZv-IP3JG9ybODVoBqoKzBsi29WVSIXOEeu6Xap5TwXgPsSw1y3Vueibw0wJUSPn_Y&quot;,cRq: {ru: &#39;aHR0cHM6Ly93d3cubWF0Y2hpZC5pby8=&#39;,ra: &#39;TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNC4wLjAuMCBTYWZhcmkvNTM3LjM2&#39;,rm: &#39;R0VU&#39;,d: &#39;mA+UTBid2N1Ad2Nao7lMJYd0ILz+2ybf8SrFenKAl9UJq3ZAuRgOcdmiSxuT4vTWHMV4Zm0IEuVJo/Xqemtf62xI2w5wsxpE5gFKfH7PV6+HT6X1FQpjq/4HGgmaoyYOsicsaOwWwGXNVsGHjM6JMUwpo1kaEYj2uvwqPG9Q//JIFxb+QvYBSwFs2cS7AF4VZstGULpX2Ayo3uzfyhesC6DfN/GYLSt/0ZqqrgYRfNlo1ZbSFfpOfRRvVBxdSDId71zHqppsAyw1fSsGhhv3mWQsi9EAXUBkBzklvqH7GptKaMnjZQn0KwR0TcsGf1xudEzTHVQRqXjr6Xai3SbZ/S7Ypczuy/YgCK5ufrZJI1TUfEydSIn33N07tFoKOcZODyuIQ0NOsNBL9s5bqDLzeP8aenp4k8g94INz3JbR8Q+HCMtFktcLLf9kDnrS2B+oo2vYemgjHJTg1ef8mx0ft59Yf5nc/2HjmkoKItgB9J/JhssmtVy4B/+vJ4ia5h0S&#39;,t: &#39;MTY5NDMwNzMxNi40MzEwMDA=&#39;,cT: Math.floor(Date.now() / 1000),m: &#39;PtEQp1BAGOfyDh8FWSYnsqSXQJj9w03/djxRnfYH9JE=&#39;,i1: &#39;hbNS1fbJsqEVhYhfu9nXMQ==&#39;,i2: &#39;kKRUIGr+NgGHjSEct0mPpA==&#39;,zh: &#39;ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=&#39;,uh: &#39;0CF8H7M40rTpO3nQlHachgfkgE8HRlszEVlfLXI8vE4=&#39;,hh: &#39;4Z4zXcWMiiA1Xd8SbmnCyW9HMDAjKQya+bpsIHkReww=&#39;,}};var cpo = document.createElement(&#39;script&#39;);cpo.src = &#39;/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=8043b457bf1681d3&#39;;window._cf_chl_opt.cOgUHash = location.hash === &#39;&#39; &amp;&amp; location.href.indexOf(&#39;#&#39;) !== -1 ? &#39;#&#39; : location.hash;window._cf_chl_opt.cOgUQuery = location.search === &#39;&#39; &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf(&#39;?&#39;) !== -1 ? &#39;?&#39; : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, &quot;\/?__cf_chl_rt_tk=4xPmoVMfH4GT6gAvXFZHUHk4WXNpfyPcle7EVjI__mM-1694307316-0-gaNycGzNCqU&quot; + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName(&#39;head&#39;)[0].appendChild(cpo);}());&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1408,7 +1011,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;800a07d089772314&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;8043b458686b38a6&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1439,7 +1042,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854&quot; integrity=&quot;sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==&quot; data-cf-beacon=&#39;{&quot;rayId&quot;:&quot;800a07d098d56446&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;b&quot;:1,&quot;token&quot;:&quot;2a9fe3aa012b4d008568071ef799dbed&quot;,&quot;si&quot;:100}&#39; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script&gt;(function(){window._cf_chl_opt={cvId: &#39;2&#39;,cZone: &#39;www.matchid.io&#39;,cType: &#39;managed&#39;,cNounce: &#39;22976&#39;,cRay: &#39;8043b45869852034&#39;,cHash: &#39;59ddc70486cb989&#39;,cUPMDTk: &quot;\/sitemap.xml?__cf_chl_tk=Gfu2bAURYHkzsKYezCfpmJv0bwVI4GZs_C51lRC6b5U-1694307316-0-gaNycGzNDGU&quot;,cFPWv: &#39;b&#39;,cTTimeMs: &#39;1000&#39;,cMTimeMs: &#39;0&#39;,cTplV: 5,cTplB: &#39;cf&#39;,cK: &quot;visitor-time&quot;,fa: &quot;/sitemap.xml?__cf_chl_f_tk=Gfu2bAURYHkzsKYezCfpmJv0bwVI4GZs_C51lRC6b5U-1694307316-0-gaNycGzNDGU&quot;,md: &quot;MlnCWLOlF3eZcrDzuQZJsO6QtRkEPM7TJDyxoHYE2Nk-1694307316-0-Ad0gGlxyGNmQ3gRFo4SzzfB_XtmDM_1HKu0GufHm3cOsYW_I4mrorg7mCQLZwJ7NxXSGyX3rysEM1xkHN1IH6CNU90FygS0hhiXIpA5888Xvtgxk1hCvwcaXqzIN1q_FVOno8lgqGqISMGBBCZXyaDI8VOuMJYRFWYUcdxQLTvtqf-3ukfF3vS1IIsQz01N1sZIugxKsJQFRlz9mG9pb4oSU7zffpduyh_mpJ3cMSvD9zo6RdpnXGpwXBX_iPqX6Ib0rrt9PrH9jUfVtV4LnSA_N6bFTlphtD5Sczi0R05GKIJJGFi83RRiJ7rpr0GP_qqQ9hzAVMHR8es55d7tDpARt8r_rLwkwXcHcozI-JdvkRm9hpEuLncHLRNw6qkKIsLnPXoHBusg8xMWDtyGvilXa5B0utO-V542OCJr7ZoIa9y46Lw78ImJgXPgEw-eIsRJ8n5HaW_9vG3NFybNuzCAua6of4ZWjYB4QaZTJRD7gdrletpUh4cMKX3KAoPhsmmVbn-DX0R_gfoHk40GRKp7_50F69q_frKQfOD-zffUIvuR5XesP9Z4ul9dtQkemg0garnkPzJ8yf0CjE_ZRJSfXruCLb5SBxN2Df9_JaNuPgYVqKcIDBDwln-Zln7cJ5Qdwl3lhFtgYtrewWldGwhIE-GGJs8_cSirsxTd41i1NPfOm5ix4ZrT25nfWkYA2rPumlPMY8XqXuop7CPE3wgFLWQAcJRVL1KzMU2FGyAE-UrbPK_pqwdEkldYV6OO3JyVlhQIzStrk3B49e9HJNyYzGJpkgQa4z8udwPcE7aY_zhFyPo5E0TKpbM2MZqeUL5gezwvu6MMZrGrgnzaHDxunBWbHrLXbJoJgCxZjDICO8ziursU0yaMtUaONI2veh_62-ZrrPsKKRc4LpiLK4uikYp4JdF0tbMz_1kC7EATEcvfCR1tcOV703ZZaFJ33Am8eVNg8DVWTXwkN2i5iIfA3u-x2uVzgG44O3qlN6pa_1S5mdmd6QfmrhYhs8kIn_mQlvaRK4AwJ99uCEn2AZdEPUQHs01yUnP2HDUvDayriHpY6vIeOqj6JoR1fbYCKtzCXW64RXZTK_W0tf2plfIHD5rz82y3EpOAKBBJzHgV4_KExsSfE44f2Jyb1AX46czEiTYVj7H_270xg0xDRIaSX8T6LGOaPdK_ExzoiGlwsPnQPDNA81aGdxdADGR6VpMjjL9H7al-jiiwoZKMbtCxkbZHLlONZ8E65INO0_X_hHQmHrnbo4bv3tdrE6Jz6okDnsgy8ozIbgbkJFN3ypWtP6-pZJg0lp-X_u4xyOCWGFFu-u6E2nvCiBB1ZE36Yy1UgxUn6nrC4sZrYTMFlNgXM7jCWXkIvk3brh3_59TKrO3UsNFKYCDV14I-W75C7mbTy2QDwoRvlpT9YecIL-sbcDLyHISznKsNGsQpZg4iYAa_NBo_MtY8PcyFvW4znbRIxWHE1xQbAmwJovSCKbg2EXQbphasNnKXm56hy23LnFv3pLFrACMqaMDWwgbA0SWc90SbIne4jDCb7utEwVy1LpCT2HRC2KrTRe6TGjn82qXiizO5EnJWZ52xM_OYWfzDzLlt8AO2Kni9UZ7az_JU6gQp8Rav7R3s6ZgtXYs_eL9t6Tr5EW7WxtKGNiFT0pkTlkLXGsxxxaYcimhMrxX3S3hMOnm7jnlDeGLN44fE4l6bya9wah4NNiQwuQc-YY-xeHTGYgY6fTwLp-lbQ55fBqRgastlEXST_ist-4lsrIotl923hMgTvz2yV48nZrEG954SmXEB1WMs7jCrmFy_Z_JMI_Al1bnLDvIMZrS4BxU6DLK5VWQVVxkuRf5cBEKVEsJ4pmc72cHR8hl8FfKTfo_NU6cIoC2BFcJNTfkhT6JRHiVieRK6ji_QLATPIvpeUIg2BuDY8eg6_sLd1HBtBTQ9j2w1Y_YeqWB90YUl17VIJsJoAPdCOqijyqjAflWFhXlU82slYP1Y0k7ivDChxFDSLjo30pgkehdZt5gy5uoRFMeC0wGhR4qGLbRU2pREt9qQDkSYFyIBopueqz-IJodTgSbllLY0I-TIdw7FoKTvU-w40ijMFrAvegelPhNNfppwFFzC_4GzKQGaUg_XKfrzWqtp-uW-JDCev_tLOZhVjEBWoNgG0eUzNGxqqnGJ5cXvJbl04B6YF9n8vyxc57O7xo8Ps95DSTCFFBxb3RiezlVaS2TyY0plKCtZTVk2Z9aXin5VGSnD2gb5Tx7amYYbu9rOuVUS98w47HeiDUSuKjTxSN0I1d3Pd0XMzn9-ep4bCd8rO8AR7mCGnnSZU_3oe0wH3C7lxKVcZq8twOmI7ua9HE4XQ4C2PMW222zIKrgvhtPDks1lMjW1538hgFnZE-_HmnGbwZRc5eThpHMsjrKQK4GtHAu9ikeTc1l-o-D3X-gNN2itpTGRK1kMtJ4ah7wOt-L4vzF_J-lf6-lG7oMDAjsD8YFFhjR3aDqHVUSNeksVHfbv2ZgUtkxEUxEWQsI085MS9fwuqKoG8hmkEi5KtzbKmi34YVwt7TvToO64qZntIwQ9bdIp_FSNVb_BibW8SCwatb33vGFZXtgG4VHR2E4o7feEQKS7nEMmQ_t_P6uOcpN9M7ppus3H0jEVqyVVI1XGBleRsl0-VQUCH3QYPZjSiu6nlDduGxwnRstHcc6IkNzWRHg-zxHr47FmzBkBeVnnMrRBBXmE9PqJKl8NciTb1GqmcmjVwPTbTksnxtPffNSukMBF5XzEhvKMX6yP4V0jZ9qEHOfAv1FvpWvtLJ3SQHUgpq2jmVllx2C19mPIpvEr9_P4bUknWASXFIIVRUqoGu5QXpc-0IuEiDlZEBYVxwN6tsRxEx_8TmaBFM9pfhKXWi33zScRFxfZ3Cn6zeVjU2l_JbRAHmBk-oWb6_pCl6jnKW1Dtx8Jg5LCbXzNom3_K--ZGhSn8aXXhehxFZJ-VfAAEAhm6Zdvjv-OCPQoL-2oxejiFcP6mASa7pvoJElez6X0lry40qBr7BpT73lNKH9cEU-jPpY1h6pLATvt7adIrEIjKGkTrkMcQYeaPbNKwAIsoCLIU2pO4gNNXAdbDkkrp78uD&quot;,cRq: {ru: &#39;aHR0cHM6Ly93d3cubWF0Y2hpZC5pby9zaXRlbWFwLnhtbA==&#39;,ra: &#39;TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNC4wLjAuMCBTYWZhcmkvNTM3LjM2&#39;,rm: &#39;R0VU&#39;,d: &#39;9JkIPf/ZnKFhmJAkX7NZvWJHDSt+VWeQ29YAN8cJGpgnCdbdyDwtx6oZXGdHXsJz85HxHfjEJV2wevtXlsnIJrLEpHExkNxp+xE8N3FlW64IsN1wq4CpwbgwdkCq9hNdJvEs2F3Yd9KDNj0mYZwEH4glKR4Qphsn78k8RJmhSnocClk/N6l4T/mMNb2QKcGr0QdVPKeL5esXup+aPJGioRRcUCul4MBt1RMavyLklC6AaexhtfEZAVaWtuRojmInPzXuszMovVIkHVgRCvhEqrW9UY9Ugf5wfbjHQwKWZuj/BTeuFsX0KByUAsSsBqDn3fxFClgsPFkdhn/je0o+FXYKkQ+22+MByPRKNTrG37w4fADEAVDhJDajHzcUcAo532wTw7kjsIy06naAoHXY0IHQbekqATNe1OGL6vWD+WWka4xX18lmJ5HtvPORSdOaMWiKNpvJnL4pQCQS6kmwfoDokwCmc9X4CzZxh2PI7owsT7880sKI4wL0EOaJF1km&#39;,t: &#39;MTY5NDMwNzMxNi41NDQwMDA=&#39;,cT: Math.floor(Date.now() / 1000),m: &#39;sYXvXmBJz/OfXZY0KCA3GsCIa34if6xLbyNexCZk93c=&#39;,i1: &#39;J6NHevgFm7uQXU1WuLw7Bw==&#39;,i2: &#39;1KfCRPLI7+WKeRceo2VG1Q==&#39;,zh: &#39;ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=&#39;,uh: &#39;0CF8H7M40rTpO3nQlHachgfkgE8HRlszEVlfLXI8vE4=&#39;,hh: &#39;4Z4zXcWMiiA1Xd8SbmnCyW9HMDAjKQya+bpsIHkReww=&#39;,}};var cpo = document.createElement(&#39;script&#39;);cpo.src = &#39;/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=8043b45869852034&#39;;window._cf_chl_opt.cOgUHash = location.hash === &#39;&#39; &amp;&amp; location.href.indexOf(&#39;#&#39;) !== -1 ? &#39;#&#39; : location.hash;window._cf_chl_opt.cOgUQuery = location.search === &#39;&#39; &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf(&#39;?&#39;) !== -1 ? &#39;?&#39; : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, &quot;\/sitemap.xml?__cf_chl_rt_tk=Gfu2bAURYHkzsKYezCfpmJv0bwVI4GZs_C51lRC6b5U-1694307316-0-gaNycGzNDGU&quot; + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName(&#39;head&#39;)[0].appendChild(cpo);}());&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1481,14 +1084,14 @@ Développer des algorithmes d&#39;appariement
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="10015"></a>
+						id="10049"></a>
 						<div>Informational</div></th>
-					<th class="risk-0">Re-examine Cache-control Directives</th>
+					<th class="risk-0">Non-Storable Content</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</div>
+							<div>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</div>
 							
 						</td>
 				</tr>
@@ -1509,7 +1112,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1519,7 +1122,38 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=600</td>
+						<td width="80%">no-store</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">no-store</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1529,32 +1163,65 @@ Développer des algorithmes d&#39;appariement
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">1</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</div>
+							<div>The content may be marked as storable by ensuring that the following conditions are satisfied:</div>
+							<br />
+						
+							<div>The request method must be understood by the cache and defined as being cacheable (&quot;GET&quot;, &quot;HEAD&quot;, and &quot;POST&quot; are currently defined as cacheable)</div>
+							<br />
+						
+							<div>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</div>
+							<br />
+						
+							<div>The &quot;no-store&quot; cache directive must not appear in the request or response header fields</div>
+							<br />
+						
+							<div>For caching by &quot;shared&quot; caches such as &quot;proxy&quot; caches, the &quot;private&quot; response directive must not appear in the response</div>
+							<br />
+						
+							<div>For caching by &quot;shared&quot; caches such as &quot;proxy&quot; caches, the &quot;Authorization&quot; header field must not appear in the request, unless the response explicitly allows it (using one of the &quot;must-revalidate&quot;, &quot;public&quot;, or &quot;s-maxage&quot; Cache-Control response directives)</div>
+							<br />
+						
+							<div>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</div>
+							<br />
+						
+							<div>It must contain an &quot;Expires&quot; header field</div>
+							<br />
+						
+							<div>It must contain a &quot;max-age&quot; response directive</div>
+							<br />
+						
+							<div>For &quot;shared&quot; caches such as &quot;proxy&quot; caches, it must contain a &quot;s-maxage&quot; response directive</div>
+							<br />
+						
+							<div>It must contain a &quot;Cache Control Extension&quot; that allows it to be cached</div>
+							<br />
+						
+							<div>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a>
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+						href="https://cwe.mitre.org/data/definitions/524.html">524</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
@@ -1563,7 +1230,7 @@ Développer des algorithmes d&#39;appariement
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10015/">10015</a></td>
+						href="https://www.zaproxy.org/docs/alerts/10049/">10049</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1585,37 +1252,6 @@ Développer des algorithmes d&#39;appariement
 				<TR vAlign="top">
 					<TD colspan="2"></TD>
 				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">HIT</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
 				
 					<tr>
 						<td width="20%"
@@ -1648,40 +1284,9 @@ Développer des algorithmes d&#39;appariement
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The presence of the &#39;Age&#39; header indicates that that a HTTP/1.1 compliant caching server is in use.</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">1</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2336,7 +1941,7 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
+						<td width="80%"><a href="https://www.matchid.io/cdn-cgi/styles/challenges.css">https://www.matchid.io/cdn-cgi/styles/challenges.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2356,43 +1961,12 @@ Développer des algorithmes d&#39;appariement
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=600</td>
+						<td width="80%">max-age=7200</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io">https://www.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
 					</tr>
 				
 					<tr>
@@ -2426,40 +2000,9 @@ Développer des algorithmes d&#39;appariement
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://www.matchid.io/sitemap.xml">https://www.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2483,13 +2026,13 @@ Développer des algorithmes d&#39;appariement
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
 							
 						</td>
 				</tr>
