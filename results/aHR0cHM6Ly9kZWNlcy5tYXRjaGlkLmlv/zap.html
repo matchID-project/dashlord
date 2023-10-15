@@ -127,11 +127,11 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 8 Oct 2023 00:56:10
+		Generated on Sun, 15 Oct 2023 00:56:33
 	</h3>
 
 	<h3>
-		ZAP Version: 2.13.0
+		ZAP Version: 2.14.0
 	</h3>
 
 	
@@ -156,7 +156,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>6</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -198,54 +198,24 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
-				<td><a href="#10055">CSP: Wildcard Directive</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
-			</tr>
-			<tr>
-				<td><a href="#10055">CSP: script-src unsafe-eval</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
-			</tr>
-			<tr>
-				<td><a href="#10055">CSP: script-src unsafe-inline</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
-			</tr>
-			<tr>
-				<td><a href="#10055">CSP: style-src unsafe-inline</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
-			</tr>
-			<tr>
-				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">1</td>
-			</tr>
-			<tr>
-				<td><a href="#10020">X-Frame-Options Setting Malformed</a></td>
+				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">3</td>
 			</tr>
 			<tr>
-				<td><a href="#10063">Deprecated Feature Policy Header Set</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">4</td>
-			</tr>
-			<tr>
-				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
+				<td><a href="#10035">Strict-Transport-Security Header Not Set</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">1</td>
+			</tr>
+			<tr>
+				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
+				<td align="center" class="risk-1">Low</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
-			</tr>
-			<tr>
-				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">1</td>
+				<td align="center">5</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -253,9 +223,14 @@ td {
 				<td align="center">4</td>
 			</tr>
 			<tr>
+				<td><a href="#10049">Non-Storable Content</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">3</td>
+			</tr>
+			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">5</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
@@ -280,7 +255,7 @@ td {
 			<tr>
 				<td><a href="#10049">Storable and Cacheable Content</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				<td align="center">2</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -292,14 +267,14 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-2"><a
-						id="10055"></a>
+						id="10038"></a>
 						<div>Medium</div></th>
-					<th class="risk-2">CSP: Wildcard Directive</th>
+					<th class="risk-2">Content Security Policy (CSP) Header Not Set</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
+							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
 							
 						</td>
 				</tr>
@@ -320,532 +295,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: 
-style-src, frame-ancestors, form-action
-
-The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: 
-style-src, frame-ancestors, form-action
-
-The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">2</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a>
-							<br />
-						
-							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
-							<br />
-						
-							<a href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a>
-							<br />
-						
-							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
-							<br />
-						
-							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
-							<br />
-						
-							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10055"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">CSP: script-src unsafe-eval</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">script-src includes unsafe-eval.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">script-src includes unsafe-eval.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">2</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a>
-							<br />
-						
-							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
-							<br />
-						
-							<a href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a>
-							<br />
-						
-							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
-							<br />
-						
-							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
-							<br />
-						
-							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10055"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">CSP: script-src unsafe-inline</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">script-src includes unsafe-inline.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">script-src includes unsafe-inline.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">2</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a>
-							<br />
-						
-							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
-							<br />
-						
-							<a href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a>
-							<br />
-						
-							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
-							<br />
-						
-							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
-							<br />
-						
-							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10055"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">CSP: style-src unsafe-inline</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">style-src includes unsafe-inline.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; static.cloudflareinsights.com ajax.cloudflare.com www.googletagmanager.com fundingchoicesmessages.google.com www.google.com www.google.ca analytics.google.com www.google-analytics.com pagead2.googlesyndication.com partner.googleadservices.com tpc.googlesyndication.com www.googletagservices.com adservice.google.com adservice.google.fr;style-src https: &#39;self&#39; &#39;unsafe-inline&#39;;font-src &#39;self&#39; data:;img-src &#39;self&#39; matchid.io a.basemaps.cartocdn.com b.basemaps.cartocdn.com c.basemaps.cartocdn.com upload.wikimedia.org pagead2.googlesyndication.com www.google-analytics.com stats.g.doubleclick.net www.google.fr;connect-src &#39;self&#39; www.data.gouv.fr cloudflareinsights.com www.google-analytics.com analytics.google.com csi.gstatic.com region1.analytics.google.com stats.g.doubleclick.net pagead2.googlesyndication.com; frame-src &#39;self&#39; matchid.io www.google.com google.com googleads.g.doubleclick.net tpc.googlesyndication.com</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">style-src includes unsafe-inline.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">2</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="http://www.w3.org/TR/CSP2/">http://www.w3.org/TR/CSP2/</a>
-							<br />
-						
-							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
-							<br />
-						
-							<a href="http://caniuse.com/#search=content+security+policy">http://caniuse.com/#search=content+security+policy</a>
-							<br />
-						
-							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
-							<br />
-						
-							<a href="https://github.com/shapesecurity/salvation">https://github.com/shapesecurity/salvation</a>
-							<br />
-						
-							<a href="https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources">https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10055/">10055</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="90003"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Sub Resource Integrity Attribute Missing</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/js/matchid.min.js">https://deces.matchid.io/js/matchid.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
 						<td width="80%"></td>
 					</tr>
 					<tr>
@@ -856,91 +305,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script src=&quot;&#39;+i[s]+&#39;&quot;&gt;</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Provide a valid integrity attribute to the tag.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/90003/">90003</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="10020"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">X-Frame-Options Setting Malformed</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>An X-Frame-Options header was present in the response but the value was not correctly set.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">*.matchid.io</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -961,7 +326,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -971,7 +336,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">*.matchid.io</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -992,7 +357,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1002,7 +367,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">*.matchid.io</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1017,201 +382,39 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Ensure a valid setting is used on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</div>
+							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7034#section-2.1">https://tools.ietf.org/html/rfc7034#section-2.1</a>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10020/">10020</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10063"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Deprecated Feature Policy Header Set</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The header has now been renamed to Permissions-Policy. </div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Feature-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Feature-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/js/matchid.min.js">https://deces.matchid.io/js/matchid.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Feature-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Feature-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">4</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header instead of the Feature-Policy header.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a>
 							<br />
 						
-							<a href="https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/">https://scotthelme.co.uk/goodbye-feature-policy-and-hello-permissions-policy/</a>
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a>
+							<br />
+						
+							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
+							<br />
+						
+							<a href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a>
+							<br />
+						
+							<a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a>
+							<br />
+						
+							<a href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a>
+							<br />
+						
+							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/16.html">16</a></td>
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
@@ -1220,7 +423,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10063/">10063</a></td>
+						href="https://www.zaproxy.org/docs/alerts/10038/">10038</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1228,14 +431,14 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10063"></a>
+						id="10035"></a>
 						<div>Low</div></th>
-					<th class="risk-1">Permissions Policy Header Not Set</th>
+					<th class="risk-1">Strict-Transport-Security Header Not Set</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</div>
+							<div>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</div>
 							
 						</td>
 				</tr>
@@ -1246,7 +449,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/cdn-cgi/styles/challenges.css">https://deces.matchid.io/cdn-cgi/styles/challenges.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1281,33 +484,33 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</div>
+							<div>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</a>
+							<a href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a>
 							<br />
 						
-							<a href="https://developer.chrome.com/blog/feature-policy/">https://developer.chrome.com/blog/feature-policy/</a>
+							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
 							<br />
 						
-							<a href="https://scotthelme.co.uk/a-new-security-header-feature-policy/">https://scotthelme.co.uk/a-new-security-header-feature-policy/</a>
+							<a href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a>
 							<br />
 						
-							<a href="https://w3c.github.io/webappsec-feature-policy/">https://w3c.github.io/webappsec-feature-policy/</a>
+							<a href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a>
 							<br />
 						
-							<a href="https://www.smashingmagazine.com/2018/12/feature-policy/">https://www.smashingmagazine.com/2018/12/feature-policy/</a>
+							<a href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+						href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
@@ -1316,7 +519,122 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10063/">10063</a></td>
+						href="https://www.zaproxy.org/docs/alerts/10035/">10035</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
+						id="10096"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Timestamp Disclosure - Unix</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>A timestamp was disclosed by the application/web server - Unix</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1697331390</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1697331390, which evaluates to: 2023-10-15 00:56:30</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">1697331390</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">1697331390, which evaluates to: 2023-10-15 00:56:30</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10096/">10096</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1362,12 +680,13 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FscdH5xbGr51Ir8nRN47KSDdOx5FaN47HzLsIyW4NdKNiGxO0PKSjJfzA5afDclTXHz5fXAbT6AA1gRgG7JJ49qDboZRN4Qz34JcfQl0quxexAwzclZ2o</td>
+						<td width="80%">tRlJEmfugMBB80uasnPZdgAKCyxV10</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">�[t~qlj�Ԋ��x줃t�y�x�|˰����J6!�;C�J2_�Z|7%Mq����m&gt;�X�n�&#39;�j�D��~	q�%ҫ�{0��Y�</td>
+						<td width="80%">�Ig��A�K��s�v 
+,U�</td>
 					</tr>
 				
 					<tr>
@@ -1393,18 +712,18 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FHWuvIMnmzebvbSJSoZT48FXqhCyDOvmJUDtO9rk7D4v4</td>
+						<td width="80%">2FQLCOlcvBpOBJ8Z0Krg02PWO4iyT9FHlhU0ebEf</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">�Qֺ��l�n��%*O�^�B�3�����k����</td>
+						<td width="80%">�T�\�N�Ъ��c�;��O�G�4y�</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/build/module/bundle.css">https://deces.matchid.io/build/module/bundle.css</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1424,18 +743,18 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">ESaqck84Sg13kY1jFoxR9Qipc6ymXCc3C146a6N5cPEStTvf9Hwo6RjqpHq2izeuRjx</td>
+						<td width="80%">XedUGpkixnICxSETPPP8Snx98hSDRnFNZhGx0GFeXaM7qHcBvZ6fJ0UH</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">&amp;�rO8Jw��c�Q��s��\&#39;7^:k�yp��;��|(��z��7�F&lt;</td>
+						<td width="80%">]�T�&quot;�r�!&lt;��J|}��FqMf��a^]�;�w���&#39;E</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/cdn-cgi/styles/challenges.css">https://deces.matchid.io/cdn-cgi/styles/challenges.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1455,199 +774,16 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BW6lrhLny6K1Ob4btH1LyHHou0kmRRa03C</td>
+						<td width="80%">iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAPFBMVEUAAACvDwOyDwKyDwOvEACyDgOyDwKvDwKwDgCyDgKxDgOyDgKvDgKyDwKyDgOxDgKzDgKxDgKxEASyDwMgW5ZmAAAAE3RSTlMAQN+/EJDvMB9wYJ9Qz7CAf6CAtGoj/AAAAcFJREFUSMeVltu2gyAMRLlfBDxt+f9/PTq2VXSwmod2GdhkEoIiiPmYinK1VqXt4MUFk9bVxlTyvxBdienhNoJwoYMY+57hdMzBTA4v4/gRaykT1FuLNI0/j/1g3i2IJ8s9F+owNCx+2UlWQXbexQFjjTjN1/lGALS9xIm9QIXNOoowlFKrFssYTtmvuOXpp2HtT6lUE3f11bH1IQu9qbYUBEr7yq8zCxkWuva8+rtF4RrkP6ESxFPoj7rtW30+jI4UQlZuiejEwZ4cMg65RKjjUDz6NdwWvxw6nnLESEAl230O5cldUAdy8P44hJZTYh40DOIKzFw3QOI6hPk9aDiFHJc3nMirKERgEPd7FKKgiy5DEn3+5JsrAfHNtfjVRLucTPTaCA1rxFVz6AX8yYsIUlXoMqbPWFUeXF1Cyqz7Ej1PAXNBs1B1tsKWKpsX0yFhslTetL4mL8s4j2fyslTbjbT7Va2V7GCG5ukhftijXdsoQhGmzSI4QhHGhVufz4QJ/v6Hug6dK0EK3YuM8/3Lx5h3Z0STywe55oxRejM5Qo4aAtZ8eTBuWp6dl3IXgfnnLpyzBCFctHomnSopejLhH/3AMfEMndTJAAAAAElFTkSuQmCC</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">����K�.����n��/!Ǣ�$�Z�p</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/css/global.css">https://deces.matchid.io/css/global.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">u0MKM6AUNhFzhEEwRVBcntVgANuzpsc36aBNGvlKxz9zoMlL5gbIC8mn8C</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�C
-3�6s�A0EP\��` ۳��7�M�J�?s��K��ɧ�</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/css/matchid.min.css">https://deces.matchid.io/css/matchid.min.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2FAeWMkHfw8w1bEWqvQXbLRnqOnSojdv2bFdMAEMlK1kNm225ao3IXe</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�PX�0ձ��l�g��Ң7oٱ]0��d6m��7!w</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/favicon.svg">https://deces.matchid.io/favicon.svg</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2FmNKGtZ8ELKMW9OzuxsEDNZLmQFVu5Jkx</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�Y�(kY�B�1oN��l3Y.dV�I�</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/js/matchid.min.js">https://deces.matchid.io/js/matchid.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2B1Y1psCINtkjcY3voPRFtcLG53ltlNW</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�X֛ �d��7������SV</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/manifest.json">https://deces.matchid.io/manifest.json</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2F3dwnRJmvFEbeTCfHiWXbhiF0z4W9fe8zqoLbp9uc3vNlTVN4n6Ii55Acuth908hwAF</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�]��tI��Dm��|x�]�bL�[���:�-�}���6T�7��&quot;.y˭��&lt;� </td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/robots.txt">https://deces.matchid.io/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">rWE9n3Die3iPObOfkBZ8B4LbQlmxSjpcVeov</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">�a=�p�{x�9���|��BY�J:\U�/</td>
+						<td width="80%">�PNG
+
+   IHDR   4   4   ���   &lt;PLTE   ���� ���� ����������� [�f   tRNS @߿��0p`�Pϰ����j#�  �IDATHǕ�۶� D�_&lt;m��=:�Ut���v�d�&quot;����r�V��������T�]���6�p�����t��L/��k)�[�4�?��`�-�&#39;�=�04,~�IVAv��c�8���F ��ĉ�@��:�0�R��Nٯ���a�O�Tw�ձ�!���J�ʯ3�����E��?��S菺�[}&gt;��BVn�����2�D��P&lt;�5��:�r�H@%�}��]Pr��8��Sb4�
+�\7@�:��=h8��7�ȫ(D`�{���.C}��+�͵��D��L��k�Us��ɋRU�2��XU\]Bʬ�=OsA�Pu�*��!a�T޴�&amp;/�8�g�Tۍ��U���`���!~أ]�(B��&quot;8Bƅ[�τ	�����+A
+݋����ǘwgD����Qz39B��|y0nZ���r���.��!\�z&amp;�*)z2���1����    IEND�B`�</td>
 					</tr>
 				
 					<tr>
@@ -1673,18 +809,19 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2F83GAqL2dmdtrFTMCU2I99TjHbOObmAuX</td>
+						<td width="80%">CgGrDKvik78y2oJm0Q1oDrJDWwoyxlkgGS7hEDiUmfqY</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
-						<td width="80%">�_7
-��ٝ��S0%6#�S�v�9���</td>
+						<td width="80%">
+��⓿2ڂf�h�C[
+2�Y .�8����</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">5</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1713,87 +850,6 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
-						id="10027"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Information Disclosure - Suspicious Comments</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;!function(){&quot;use strict&quot;;function t(){return&quot;cf-marker-&quot;+Math.random().toString().slice(2)}function e(){for(var t=[],e=0;e&lt;argum&quot;, see evidence field for the suspicious comment/snippet.</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10027/">10027</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1839,7 +895,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;cb99b281c718f502c60da669-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script&gt;(function(){window._cf_chl_opt={cvId: &#39;2&#39;,cZone: &quot;deces.matchid.io&quot;,cType: &#39;managed&#39;,cNounce: &#39;51213&#39;,cRay: &#39;81641a46df144770&#39;,cHash: &#39;35f141247583a9c&#39;,cUPMDTk: &quot;\/?__cf_chl_tk=ByAItjZ1gnsqFl159fdBYF8qf2D3pW8Q3Iebq8K4pgI-1697331390-0-gaNycGzNCrs&quot;,cFPWv: &#39;g&#39;,cTTimeMs: &#39;1000&#39;,cMTimeMs: &#39;0&#39;,cTplV: 5,cTplB: &#39;cf&#39;,cK: &quot;visitor-time&quot;,fa: &quot;\/?__cf_chl_f_tk=ByAItjZ1gnsqFl159fdBYF8qf2D3pW8Q3Iebq8K4pgI-1697331390-0-gaNycGzNCrs&quot;,md: &quot;2UuYDl1FQ4wHZcMf2GNVfMNSJ1Nq0D4TDpAjkeMrW_U-1697331390-0-Acf0B_eDUjhmUP15OtmxlKoC3l4MqfHQ53aVZyoMXQTt3LieVEbLTDzwr9p95TZiU6l3q3pGMV8JiHLwYZpBrSeSbQz2SGtmRS78ik6a3G2v8Axvuifgt59oGkpwSHrAB8WyJA2dILvyAxVR2rukDplmwfKVDRNetUMyUJ-zznxeScHuc6XIaFInajjU_TedkWHqsYiGdR-gtZocLDktmeJdTviFiEytzHZijsxcOB3FH_XTz18ZGS0yuOicDiH7pALHApYnFWUYY2nPNZRTY2YdlvfEdhRJgTj6gw6QJZ1Q1GqzceE9qbZQ9iOnoEF9XFJ00omoHJvX-LerKzrg4_i5_Oyw8HOFX_0m86NAMpLeapEBrtiKgJ12fsdsSCshhx04LztSjgZ26d16LfWpKS429hQit0zuq1tiN3jPBn3dlC4s7VMxwSkLfD0cIxgrnAVZSY05K4aeKPoOTUxz-VOIa2nGuKvbrdKgyU9nNm492ckxjVDyIm6gwJ6_skpDoL5FXSJtGgEQ6FW0HH2X2o3oSN0GXsJkXmIpQ2Cg64C2GelT18epXM5kNisKQBFbi3Ec0GJAUIDlmz6JIR2KnchTGKPdrg1gq0Mo2CXscrvLjulCBb7nDvjD09i3z8K6oQf3fNf_-_smfP83eo-r7Yu6KcABe7IzF4MLlPz-6a1S2U2cWNDxou-sTygGXtF2yHRnVoZW_z453As7eNfL-4DBIFKww8MM6gRUHd5YoyYDpIzPtYYjnKqQcX7m_FnJMSMhHd0CF5l002pqan9VGtLj-_EgMjuvyghsx51Odf90b9e7Juror5GIcxiDaT8KNEPEvapwBKavtZf7H6XnEV_S9bV7WRM2cLZr21maUiOFcRUNB5Z7WFX0EVTIMf3cH3QfIqy9IwRDQOUuqZ1AWJnxjYdnDakKaTpwFyIHweQkwjt432ciRsM4H1L4l9XPupTsxF4c17JD_vAhs2Sjx6mj6H-dp1TTR5nqPcw6NDsCIP7uKY0lG0SekolEHFJLag0oHui7_k9tFHhWI6c9fsi50B9_MU_w5R46A_x9H-AUqflIEgaYt-JgXRI7eaU9ZelLDqi_Fb9bd6caYXHdtT9x9knUPeQrswjgCigVdSns1gs-9zfneALUhqNX7vEyZPP1kzGuNOs9gC4k4nA08GMs1qQtr_m_t_-f4rWjT_S5lZYTYDD-L9TP5ImHAcHTfq5V8Z92WoqEacg5TE92qrCn5UhWEIQwW-J255R1Xi6XWWFPVE5i0YbRCMmv5kckyH8SDVUO5AbuUrxPX-jREr4diMp5JJEiwOURirjwOZ6rGQQkWsF6KEbsy0GDTYc5rIyrE3dIHOakC9k6vEI9ln2xFPa1e0NnTPU0qeyfBLNR3RnJKWdPDOWOeR7F5wKYMDYCXbOlWeuxhffCevYQx6bVg4ltswwZLFpu3U1O6-1zKZZgYllp9HlCtE99FNGpvKUwOY7_xfCLGW3FjjQbJwQMGaWdlvacojB4KE3hqy3A-gU3GzG11j0F_Z0RP4z--fU2RoeD8fwAYD6KXgKJp9cWRz8_Cpj92t8__Z64-9ntYdCiPhDSWWHtHEown7FD7Z7A8l28fmg3bIzJXjqDK3W62mwS7vjN-r31vAhoc-kfkluoJpeV9mFT_JqMqc3QGdUnRDedpAkMIyda21yEva4fHw_S2HbvvfSFdFReo_dfAZtanOvjMSh_x9qWVSfKO6cMY2U9LBW9I9gOGlbYRz1Iy83-wiWi6TW36J5TX3gADjgcst_Lej6QXLyiP2WkqJeVNF2Mugjw6tS1LK1_vBTkhyrCr1xCs84qNXjM0Px_R6TNd1rZKK1Dy9I8o5bFgurqNbtnmhkfp6WPgAJ5fVa7IYV9c48bI2seCTp9Mvf64PbMzH-IbXHBu5IM23W-vqnaMcZHPC_uzbhJ_YFhY6K4VRYcvvnvJYJS8skJgHld9AE0QemJyAH5eg58IAcDBq0Ju684TAjprol78jDcUTN3duyMAl4QG68M7p7wVzeZlTAgHRxP5Adpj52sLlr22Waizoj_DiziBq4kVKrkSHmtBjptbWZLIcL5oDza6fJbXgDBdFL4dx6f14Dy-uPhPL0zzeETr9YYMHAxjq0St92DQ3kbQxB3WKCBXa2wWATmgRbjHekV-vNl5_vtDfp_qEhyAGFoXPOSlqYDKG_hMJs3i9Hqj7WAGrIDQmJl6D8ERBVHlxm-81MywvJtKgmzaOQrMEh2IwnHUhEuZu1MgjnfYG2DqHYdAvKeCM15MrWvaXWEqdYRj_JE-6cu7XCcsR0s97MvjrYMtGQeNdtcfMePyYgPUjZ91LipoTuVgicWE0NgRHLCXn0EnyykMQZKA6_Eh8tcDfz093VrSFZdG84TXhouePAnzzc6F-hdXpp1bMyvorCEtnQm_CJW1EUd-gMaeOFlVa3ThOKAbXEATqbDE0ZaLF5T43-l201oBhNEEaS195gZvohtPcbeMt8eUGLJ6adl_Hb0OrfdGn505NxLpAQXW5y_JO3Lo2GiZNneDMMk6Rcs3pgDUkEJh-WanZt00usd5U5jRz-LhUdnw6mcTOLDmALFUdve1HxlUvD9i01FWMvNT_Dp2HpWv1voKgvyQq7plAQIBqy6mbzM_y9RoKvuER9zFBwQbMTcC2L3gscxc_kKzZNrDS35DH1QHA&quot;,cRq: {ru: &#39;aHR0cHM6Ly9kZWNlcy5tYXRjaGlkLmlvLw==&#39;,ra: &#39;TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNi4wLjAuMCBTYWZhcmkvNTM3LjM2&#39;,rm: &#39;R0VU&#39;,d: &#39;o/CDW9JQ7VNzaYbeGrppNuiMVTyOhn+Z7R8OerDCIR8Bcoqo/Vr7R1CUF7LwqAHEKS/UQAAcil7Z4BYJ14krlt+DqqOFt5WB4Es7v1rD5JzuYI/uEI+bda3jNaHH8p2TL+LToLGb6sdkwstLNCy7/KiPAnIf0pAF/y8ZZ/XrX8tF7Z0Jtupu5PK1BzistdCC5FZ+szKjCxHNVWsbmQfqz2GdpTuXE1eIdqyNMXKIQCZq3Q7m5/mR9sZImgL0BvsgfFOLF3wlSzxyXg8OsioAJERITQnANSb+fnK2Pvl2C5zxYTIkKQfB5I72kCqO1NXhjzPleeD4w6DYOotfGuiA7VQo7T/9jTacF8wkJTHwhGKKk3Otdfi9N4d3LCUNvXf5t7TUfM98Aw78z/Qh/+GQnhmdmYqZY+pyLbW4dGMZFGQs9SHNT7gik0/KzZDYcohx6ceocmJvoV6lzHqjaLFl1j4uSnZXr6AC0H7zQnLWaPKO4bVROMXBpvmT2mgvDdJi&#39;,t: &#39;MTY5NzMzMTM5MC41NDEwMDA=&#39;,cT: Math.floor(Date.now() / 1000),m: &#39;NtZcpIultCzLGNZB2Vl3+WzdRjVJJjIU7k4ayDIY+bo=&#39;,i1: &#39;mE6zNGTfmrReGcFZb9umuA==&#39;,i2: &#39;e8tFhi47lqxjJDleB2MPiQ==&#39;,zh: &#39;ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=&#39;,uh: &#39;9mPvDFNZ0y8VGO4IML6ngXc1m8uVnDSvugn0Dixn1yo=&#39;,hh: &#39;ka2KJBWM/eiCJyMAGrJTS6XcqbP3RTYZjhEzfeJpEfY=&#39;,}};var cpo = document.createElement(&#39;script&#39;);cpo.src = &#39;/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=81641a46df144770&#39;;window._cf_chl_opt.cOgUHash = location.hash === &#39;&#39; &amp;&amp; location.href.indexOf(&#39;#&#39;) !== -1 ? &#39;#&#39; : location.hash;window._cf_chl_opt.cOgUQuery = location.search === &#39;&#39; &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf(&#39;?&#39;) !== -1 ? &#39;?&#39; : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, &quot;\/?__cf_chl_rt_tk=ByAItjZ1gnsqFl159fdBYF8qf2D3pW8Q3Iebq8K4pgI-1697331390-0-gaNycGzNCrs&quot; + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName(&#39;head&#39;)[0].appendChild(cpo);}());&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1870,7 +926,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;e0f820ed444ae6c973b60a88-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script&gt;(function(){window._cf_chl_opt={cvId: &#39;2&#39;,cZone: &quot;deces.matchid.io&quot;,cType: &#39;managed&#39;,cNounce: &#39;88991&#39;,cRay: &#39;81641a460d10477b&#39;,cHash: &#39;fbee4878ea0b548&#39;,cUPMDTk: &quot;\/?__cf_chl_tk=ByAItjZ1gnsqFl159fdBYF8qf2D3pW8Q3Iebq8K4pgI-1697331390-0-gaNycGzNCrs&quot;,cFPWv: &#39;g&#39;,cTTimeMs: &#39;1000&#39;,cMTimeMs: &#39;0&#39;,cTplV: 5,cTplB: &#39;cf&#39;,cK: &quot;visitor-time&quot;,fa: &quot;\/?__cf_chl_f_tk=ByAItjZ1gnsqFl159fdBYF8qf2D3pW8Q3Iebq8K4pgI-1697331390-0-gaNycGzNCrs&quot;,md: &quot;.ozcy2YsbDhcveH.jcI1k7E_QdGSRAjxZ5oNuDfBLP0-1697331390-0-AfpF1Ro3lfrWODPiFVyVnE3HgO1dnQ_5sAeAproGDJ860PqLG4b3hZtOs1MQtiycaoU5lHoThXbXD8l2-CewHXGvLqkwUINpxbNbjlvKhw4_1LlzRV5cECkVXSgsX5BIYBakGzc-xyiHb0dfKCOxBku2ttC7L5etm_Tc5pAVyA-Yry0fRzAkIFfW0hn6lw9CsmTgPE9zQ9q1Yj1og4CtQSDflPROmVjAreDzITAzPVcZ4wz7KrRVTM9447_Nq4QRgBxI7glJfJINlv7LVPqMMjcEBPdQUyT2oi8gCop8sbC5p0Zjy50b0zSzDCsphZN55s9kdVAzYq3rcWk-yhb13UBBjEb5YSK2lDixBxnQUYE8lJdhRZg2zwhpXKXR-IESLlygxpIvSMU57y-1khpOEsrGdfiJACJxGRSmGNEyhk7HZImDvB9p1VPzZZhdCmuE3FYh8ylw38c-yJyZbwGn_h3LHvA4v_UK_yv9OkNLPh3khQ9-B40b4K6xuUYlGQeej7tDKqrMD0AT5DvLcDQfq_eFKSl4rvCPc4Ym_z2eGAurKr06mRiklaAueHSEqmKqXI03-GOywspTPycA0_Xfdg1Z962QDxlv9_nGUAZJpveA88vHvB7QOG1tdGCzebtQaA0eNVpF-7atd2rVbqVXQon_NIcprsJbgH1taet9_Fudi0GdCVAfPxrNBCKWCXf4yo1p7-hzjjTOilFYqQh5-VbVSHs4TphWEGPccck4KiN6Wg6I7kMkastEGM0f6-3j1KFk-FEzizIOE750uh9dsHOVqQRE81sYXMEIKV8PhiFXxalG31E_nvAW6Q_37GeV_T3dz3m9xHw_eah_GLl8ZpVnZtkYt0oO8mZbh8dURPGHr2NR0NMaXgbMu6BiEMNvOVfgyZ7OB_RGlBs-jfLeD3AUJlGylcslwpbS5KLPTUrUFHDf-_cbL-CxSxV0NzDEVaWIJbMpYbMNeVHcOvS8XjaiQ66OAyJwC_Nlxg1DlnyP096XLNPCEouzgKT_3FXc2zVb85qX7EDlcY5LVrJ8LOy4X0lB0eiq7r_eI2NS7e_MjT24QcjfLEj0zOoQTTSNxVOED0Fw37b8SQuQxRVTALLa1UGWDKz7_AuqZNYpbkmYqBh5KoMYSGundm0X0aplXw86ljnJKlSU3IO0Y2aoJArCU5rEOH6ra0pMVyykIjwg5h71btpEVZcAmtLQotJejrGLJbhzKMYnmi_Ft1PBjQe2KV4lDgdX7bsJZweB_1IvHYvjA_k5FHWF7jWdPpxp5bcWH-tXaeV-37XXkU0eoGr4VlfeAlTlU7GO1dfRXQPUhJRcRH8PYMaYZZKia5bpiIEuBiNpXrP5AHc4UwPSn1EteMQy9cCEsOYfk4g8QYi8Nfpn-DgG0di3Gr1AYfFBuo5j6Wf7-RhPW9xtC5F7eQV0CyRc-iw3e_9iqGKC_qInt2NiwkwbB4I4I2qaYE38KgR1ABi-hK1V2vSIQXApN59Zcc7qzBzaea1OKcvKrTTUvlovVfKZizwy3m-oO2zBzadhkmC5Gzwe49Ivcng38zfssnWT9iaoBl5_ZDWLoxMSSzdIyIvm0CBmV7PneA6SY1ZQzcDNABnAor-_4gFb8n6cYsZWqAER38PEpwjAfeY8w3fcu4j2w_GBnVkfZb_MMDMzawooqYnucpxPj3o5thaHVRHPMeNGOHGYnDA9nhiBELJvbWhvYi6HvxYW0GoT99Ozq-X2jKzUGmGwCzWux90rxFwSpukv899qucfbc_4xcy65tmNBizjNH8rSLgDHqrhvifDRng8acL0bil_mpoEQ5eDhyceu6Tjip5vVLmi6ZOjcfzD37hC22mSZmGRyfz92IlY_Y-rOJ-wSFClD5_8Tf6ozVVRhzHZlDck6XaHcLuQcEHZ9TYH1tUYOsHnFqFZdeMxC5pOlKL8Yl7UYXNlpT1zYArw1wRO9poiLxXtCpdO1x5RM6b5zCBspcm2N1O8Z85MqLmi9VFmV6qYqqcxDkDikkvJWuvWL8_ISaKUGvH5mmQf3QVvRc0UL7Xp7crnA-cTu8tzXNsRd_w69ymQTi39yQXE9vSNilubOmmpwKM3ZkG8GCboH5tEQH9yksTo82GkB9KgCBdHfXDPls8opYWw8yYxH8Rh_HKnoziX5_KQpMrCxo9wXI_KqSg7IbIQ8FXvmnYbu0YFK5AEizy1epLWhv2HUpUSZEtRluNbD5kZqmZNIPhJetJwSOcIXJIIzFCukWA0nUPlPLVdH9U1qI6IpNZU5upHi1YmfCjcv0xSbaKZZP2zmKfsR3zq-u7XFF47tTmK_nJwE8ZJIiiIiSvmrIUhA7AJ47a1P3ohRfHgD2_CXmNPytgCVsmDjDR1odftBRT9tJvzD2vd7RBP-UTIxIps8K4Ms-V2lCxokFEbrQWW3AWQ5AK-rtgrp6n7EwqzmFpHar1tweS_nURP1HYU6R7DZbvqH6jnI_pbQFtkKK5oSwx7g-R_fNUMBnxYJT6lkL_dCDpWG8eCzjd9Gd45BahxUZoJSo9QAyuy7wzjJCbyg1l0RmzyGvjXIhArv2PBeT2MIkFa0VWymVzAlmioygvDcF6EaSIOZI924WO7vMNmOU8JhbpAs7e_1bDztGR7NFNFgR60PMyeFynHX-PBlBmmfZkqLZjIu9WD-5JmRUPuEd9Sq0gbG7ANA0w&quot;,cRq: {ru: &#39;aHR0cHM6Ly9kZWNlcy5tYXRjaGlkLmlvLw==&#39;,ra: &#39;TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNi4wLjAuMCBTYWZhcmkvNTM3LjM2&#39;,rm: &#39;R0VU&#39;,d: &#39;UjZq8zubQ1elelOI2rPsAgJBvzethofkJm0NMQsgNQ8V+dPufmi2cR6hv8aZJuBP/HtQ0ymtuV/nxyDavH5YMXqiSnP0oynLU0KxOkSXzvZdFBTj7appvzGVuDZ3ITZ4TO9MFNynDxo+KnXXc/A7B++gWli4WqBJt8QuBdlY02XQaHdinBB2PKKC37FxgtHjvk53G+W3QViMfii+1yCq6HvkMw8rQiHT0Q3BL8M1fiZ01M4j3DQtV0PsRbm6NopyjoWsDWL0zh3ydD+zLDHn2XilE98/eHmr0ANhdF8PVMcCt3lq8FwexNjecKVNK3gmCYBI+2O+uk625WRNe63pfkCb12sLlcQrM8HWCMtcLhJ+UMZgFMoTkqeK1OMW7MJK25Ub64ou4AdY2/0krcIAA/oYzsI4eKVyUoe1mQzHs8+/dEShe4b9n+amVM9SXrkLo5U9C+gArfbVZmCj0qj0o9OFWEdVMwPULbdBwsTDf+aMTh0e1sfar1dZlcYEG38g&#39;,t: &#39;MTY5NzMzMTM5MC40MTMwMDA=&#39;,cT: Math.floor(Date.now() / 1000),m: &#39;HW8y6dJzkKOEBt7SOBTs6n9WKAujXVi4k+9cDyM1IwU=&#39;,i1: &#39;sx2AOsAQAjjGzgFiZ6lLlA==&#39;,i2: &#39;+2XAQjtrTr7yZJYuWsfbOQ==&#39;,zh: &#39;ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=&#39;,uh: &#39;9mPvDFNZ0y8VGO4IML6ngXc1m8uVnDSvugn0Dixn1yo=&#39;,hh: &#39;ka2KJBWM/eiCJyMAGrJTS6XcqbP3RTYZjhEzfeJpEfY=&#39;,}};var cpo = document.createElement(&#39;script&#39;);cpo.src = &#39;/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=81641a460d10477b&#39;;window._cf_chl_opt.cOgUHash = location.hash === &#39;&#39; &amp;&amp; location.href.indexOf(&#39;#&#39;) !== -1 ? &#39;#&#39; : location.hash;window._cf_chl_opt.cOgUQuery = location.search === &#39;&#39; &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf(&#39;?&#39;) !== -1 ? &#39;?&#39; : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, &quot;\/?__cf_chl_rt_tk=ByAItjZ1gnsqFl159fdBYF8qf2D3pW8Q3Iebq8K4pgI-1697331390-0-gaNycGzNCrs&quot; + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName(&#39;head&#39;)[0].appendChild(cpo);}());&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1901,7 +957,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;f9cd1b61c1d2993f30d962b3-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script&gt;(function(){window._cf_chl_opt={cvId: &#39;2&#39;,cZone: &quot;deces.matchid.io&quot;,cType: &#39;managed&#39;,cNounce: &#39;4640&#39;,cRay: &#39;81641a487bc4486e&#39;,cHash: &#39;2907ebacd792f01&#39;,cUPMDTk: &quot;\/?__cf_chl_tk=.kVqu9t3rhQkhkyV3DXbEHhZgt0kBQ5yqE_d7HqZtcE-1697331390-0-gaNycGzNCZA&quot;,cFPWv: &#39;g&#39;,cTTimeMs: &#39;1000&#39;,cMTimeMs: &#39;0&#39;,cTplV: 5,cTplB: &#39;cf&#39;,cK: &quot;visitor-time&quot;,fa: &quot;\/?__cf_chl_f_tk=.kVqu9t3rhQkhkyV3DXbEHhZgt0kBQ5yqE_d7HqZtcE-1697331390-0-gaNycGzNCZA&quot;,md: &quot;yvCPs445q3G8ytDBqCMnlTjreaYTU66T3ShiD7ehzPU-1697331390-0-AbOGR0vQInfeLvL3AogUKcDdC6XRwdEFqEieTryeq1AS25TOOBHETNSpYwKIVK2Jp0Z53UgmBiJzsXQUExycFzOC6duOlZLDAbMWipFX8maEJzP3HTADdjz82curnJOQKiZGjdtCcFDR1h5HmHhuGQvcbMEx-sQT_4eE9KJntSR4iJlIhx2zVaE7AjRjJyaMfusZmA8uQyWN7_klT6CyCxX9k8GGwYn37Fi12-m4mHWUXXGtbK6pO-1GSpr_tdTsYxVbpygdg1Y-YeVAgpjcWBW3CkUfrv7G_uUCxpnPXH00XcbprR6dxGkEgXZVtj3HKmQa-6b-Wq_PiNxx8KcKZCWIDwMSWH7vz0tFpFo0_OtWzSg8_JHWjFLhkCRWrjj5I4XYDZ_Kn182aMbmEYiKmo8DPWs6GZ0DxBIZ7u7UYo4HGfYA5AUna6emjcRolZRvr_RxsdF24bPIuWrSK5ZPePTdn9sr16AAqQYCegbXAUbtRPvGjZV-n5Vbh2dlsX8UhVAUuOD1HhHi3UUxG45zkhxTxIJ3BGfRJX4xFvAW9T5mhACwQhAPRWXHDpkl7IMaSZZg1cXrArF08A55tGp0eSV3wsi9XFUOoBYqAG1b2HtvbOZKNUqc61pr9UDydeXpucsDT22ZIgLom-9-QdwVRrylQty3P-Wb1GqOeimqJ03qGzkcdlsZsT86OWm0Hg-e4yK8cQdsYDdPhIAhuPc_cGMAAU5WLwr6HUaeBNDK7238yZrHdtyraGEarA7JkJ72TvfUtHBe0eq9nMiCFAEp1G-nAMolA0siE7UZLOwqw6EY3nPFOPpmtwPGvNMvEneW8nXqz-qzBDQY9CjIgSK2iirdBGAEifBWIXC0caBw0_TDrhEY1NJ7Xp3SBjIZtXBITYC6jHQKCj9au1ncCSWJ9f1g6kqrTsl-7ISDwjTrxxFjQMmeUu3eIsCCuYEZNy4_oojy_RlNjv72vRz8Nw1ALPp-8DXNcGo5VVjhEBKKD_-rl-GrlnqhRkTCRTowmoyeVojA-t1e1yVqgCuwWOJoNhmfjcS-ZF0kQEgcSJKEx1IDgmbRH8C-e1ErstRQpIarlqhpEIk7Ovlc7xY65BMLYAT3xt4D3X6OF3Rwy6f8JwJ8Gsf3Q3CXL_3EOgS_w3lltNk3CLHWyP41EE2mB1mDYRoRqANOtMDPRmJCJUK4xDbeuRklTwdawu6_j0Z0tXDDod68liBPy9U5hL4uqe2ZKlClIeSji434YDmQDbA3NvpCTW3SAUU20uiBok-_KAdXDplVoRSZujU029bybMA5KEy-EDxM_Ob3a9nphCwtnO13JTcNOGpNGXQ-SQAHh8SL8KxeeK6hMyZMCBGI4590t0aAdTn7dpz-Sv-8XHDnb4FnUiThtKXwX30HId8JVdw2ivR_Efgb4S89ZXV5afSoG6m8kjopXiI-JKiQplcPmucz2bttBjo9CTzwgC769vkRNCQRDxeP41y-bpj5bHzzC7yvKxdG54p0Ke8hhmSxNXQcgzyiLRBKFS8f0mPzX86oquTHxro-A-iLOeC2WMPsinD0Mv5jORNdLKPkjc5zgFkMCehhdC7u1XHzXfDSmOznvqBhC82u6y1tNhU3Cjc3EoLw5CGarSWz1n557x-J-Ts9z4VPXeco90Nsh3eMUWzhY359CgfKTLPyVOa3mLIRrgsGpNjHDuLV6uVRR-qBowHBffv7JbfDNa2n3UaWOJNf5A-r_OHjtAqvSUyawFOVEV_f1U75GB5G_SQqDprSm-BuCTj9mrqUybK5x37h4NIEyHANc-eSilCoRnzYnUxD5Ahj1NdB7hjj3FYB-Ol-G60Ezyhv5wMaHL0ISI82jkbee5LBKILCEIUFksv38WxWcc8bzcv9eCELAV9T26c-QMSdViuR8rjIG7Xu-BQKk6y82NF8Lhn-kLyrGx1GbJvF4jeLpkC4VqqmKzLbLxz7JdZVWTp7_dIepdyD29zfl9HG3SxgOEUdOCX1PqbIPcFxQKWj03FImJvJGu77J2uDi1tbzT-b2baTv2_wLNNc1dmA3mMnAg-yxiV31Jk_q6hTXA6bGBF2nfFnDk7wCF2TV63idnyqpjSBNW_ffY8eZpScaFFry7vilbP9uZ-9dFib7k6bMDUj9g2-Xc0ODX98KMl8bcSxTEtL9JK7J-NX5joYwFKLacpAZxwT1zc2PAfF3pvtxKeEugEYDEFv_Ger3-PXF5FY2gW-UEdqvBzCv0NvNVBlQKln7FWfgZ54U2FjGHZ9L2CPYGzwww4garbt2RTI9YXzgb2bFV_99Gz6xHZLIZUeQC5zDBdIVzPkuKTX8wqiKI-46TaM2P_NosqWgT9d6ya3fwaUzC0uejD1hRz7OIkgM3m2980II9s75DnCgQg&quot;,cRq: {ru: &#39;aHR0cHM6Ly9kZWNlcy5tYXRjaGlkLmlvLw==&#39;,ra: &#39;TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNi4wLjAuMCBTYWZhcmkvNTM3LjM2&#39;,rm: &#39;R0VU&#39;,d: &#39;yL14ZYJszaMZCog7bpPEzSXvJXmTYLKWskRQXQZLsvV0A8rdRlQrlOTY6OjBPmWSRiGG4eoSikp7PUszcCGnfiEquXvk05c7sl+d5cbdtKuvfn+t4NrUAAn0nHgWCEGmdJ6INrgQB14ldNoAeka1Q3BBKylLupbhWhzA4/nXvABvmpPQFTkpk8VqisWPVObsH9NZvj8q4hCD0sflK1VTG0DftvZecuArvg6r5aO2sWUWDZK5BpIqput1ngoA7XQSx93CV/IBD9hhX7irozYVG75GBXsc8Xp0Z2PWHCuzLtBe4CEx3r1ppU6CMyVUnHLVjJjGpAFgIODwOKxWEFi3xVr3PGinbTfeyYNF7K0KbTfYJCSKLJQeCRQocOZhNf9CCYuVnbSNJVuRkw20+gHw2eRjZFwCBLahn7NdrvtVd2B1FZM930JqDvt3KiHIuRdsO1QhmtKq1HemdvEVHco395g9exZzQyPYVUBlDASms7u1aOcD1YWwGV+AVXbKgz5n&#39;,t: &#39;MTY5NzMzMTM5MC43OTUwMDA=&#39;,cT: Math.floor(Date.now() / 1000),m: &#39;igHnlkyP+Tm2iKDgEEh+pYt5FhGFlxNVtmRzMxHJ/t0=&#39;,i1: &#39;VkF6buHRpiUruM2DMdcj/Q==&#39;,i2: &#39;0xHnO5Zy34QUfIKPyrdvQA==&#39;,zh: &#39;ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=&#39;,uh: &#39;9mPvDFNZ0y8VGO4IML6ngXc1m8uVnDSvugn0Dixn1yo=&#39;,hh: &#39;ka2KJBWM/eiCJyMAGrJTS6XcqbP3RTYZjhEzfeJpEfY=&#39;,}};var cpo = document.createElement(&#39;script&#39;);cpo.src = &#39;/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=81641a487bc4486e&#39;;window._cf_chl_opt.cOgUHash = location.hash === &#39;&#39; &amp;&amp; location.href.indexOf(&#39;#&#39;) !== -1 ? &#39;#&#39; : location.hash;window._cf_chl_opt.cOgUQuery = location.search === &#39;&#39; &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf(&#39;?&#39;) !== -1 ? &#39;?&#39; : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, &quot;\/?__cf_chl_rt_tk=.kVqu9t3rhQkhkyV3DXbEHhZgt0kBQ5yqE_d7HqZtcE-1697331390-0-gaNycGzNCZA&quot; + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName(&#39;head&#39;)[0].appendChild(cpo);}());&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1932,7 +988,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script defer src=&quot;/js/matchid.min.js&quot; type=&quot;f7b152a08c2d78e2d04fcd64-text/javascript&quot;&gt;&lt;/script&gt;</td>
+						<td width="80%">&lt;script&gt;(function(){window._cf_chl_opt={cvId: &#39;2&#39;,cZone: &quot;deces.matchid.io&quot;,cType: &#39;managed&#39;,cNounce: &#39;1179&#39;,cRay: &#39;81641a46edd3315a&#39;,cHash: &#39;e1ccc9e74d033c0&#39;,cUPMDTk: &quot;\/sitemap.xml?__cf_chl_tk=9nZwv5t_xcqjWuTJHVDIEDr0XpaN.SH2DiSt0U3Sc7E-1697331390-0-gaNycGzNCtA&quot;,cFPWv: &#39;g&#39;,cTTimeMs: &#39;1000&#39;,cMTimeMs: &#39;0&#39;,cTplV: 5,cTplB: &#39;cf&#39;,cK: &quot;visitor-time&quot;,fa: &quot;\/sitemap.xml?__cf_chl_f_tk=9nZwv5t_xcqjWuTJHVDIEDr0XpaN.SH2DiSt0U3Sc7E-1697331390-0-gaNycGzNCtA&quot;,md: &quot;2NelDtHHKSuZl23a0Yfq3mPGvJj_7VpNgAGbxwik.88-1697331390-0-AaZurnHoadxmA25-URu4Ty7Xblc83O4B0NxEB9RlZ_02oy1Y6gx0pnLjqS55rq2ewrjNIigq97Tdp41U1Ouj_TxlsVu3OE3n6-ZQF2bGHevfgJcR9VDnm9h1mNqb2VxP_NJeHT0T67cxDPxL8ufQcnF0L_q-JbG7nVWUbRBYddCLFN59OcE6qkp8ZQC4XiVBUPe4-2kP0elg3x5BFMLtjP8Pq8rMrtYqOHyZDA3smqeMG_NQuCx8_TOJhaLHNTZu9Kg0VRVAdylhjdcIke0Cht6WLNoBq1QxI_9YW11ZD2PazOS_whTsfMz_Acklj_YtntIyk6O8DZ8Y_YgfxpuFE-ce1e1J5o5sC3QPtiAoajzOGsp8l7QkYS2I4sPf5r6IXDcC5rahQEUildl43-aYlQAqz43aip5sWHGiAWRf7jtbK2-b2crVzGCZz4eqCYwGf76IzdwNVH_ILWzbIpDvuPj0vl0VWPfs6AIJeJJnlar2sLKF6NgaOHMBqOaz7DCeZgMbv3CxkcCQcVyOcn-7At8kyZgINsgV2nrPII2Iad83ndcf5vn0dUUf2SKY6xENKvCucpizN28fpC4ZqqO0nlBfnLBsoxfiZfzvrnXscyPWjn8klon2CGVo3MnOxCbQJBisD1T26MsNEGnZRmK5QglXIbMOa3AxuVaJjZlBTXyHrF7uuGHz8S8fOGCED-2KLC2TkM50fnMq4ozkmIGgwHWd3k-jFjXgcPP-AxcJ0tCMT64v1v2UpWNQD3o50ygLbJ0SLORd2L0gioSaMwtLCw5A5lYUuBEARJSOKoKwg4AHqelSv2e_UPKYJZj4T5c2-r-C_9SCWtoTtJNgj6aXdFSunTMn9Uqwi_W4RtbU6AG1nIuavcuHzcVY51NjL26lea6O789zg6LjkRrvTXrfObZlbJEzwC6lFDUKDMdlQrKUnhM2qMU_cbfOfCBhnIgWCVUl2HghyEupxm8PUD9RM8rtjXYIuKPv5HmLlMM4olWaA7QVqS0gIHnJfLhU8HNhY3O6tyQWvaTyycYnGNH9_6mIE9V2y2lersisCWoPl-X53-td2Ntw5qScBnn5zPc_BRbs1A5dwTCAqYyR9S8VKU8p1yQD8NHrfaXjS-LZToPZH4knNPCNcKR-E8FAZ715tNNDUyqDsXO-Fkqer-3iVsIYbdI8WVZ7ggyqrcBSHmjFrXGGHvm0ubxMLaBOQo5coSUNqdGexeEhVKrtKlJoEeZbV_mE4L3W46udbmkhkKhOdj8VeY91X9zguxSdNZLRnwzrt9ZxH5i64ejNLuUwxdFG5d6gCIAfW5hpmIHjiRhrRhBaVRY9bau-mQnN2LksZu1VbJVe6DofJzyfP1UW-7YWYSf3dn3PWTJ6A7s-HSLjp1JSfvTf_iC4qdpQvRLcB9HTUiFzJ3kVeZ1RPX3I8kx-6MyEFrA4HMPrZIGdodETS1yMKAfLeZHMf1Js4ckiS97daY_nTLlfZAGzo6O73dhmHwFCPf9MY8v7GB4BmEbV1R7K_q-4mqzMjyMitTZZfj4vnW_Q9hJCFl5pZgctWjwSvIaM6h7CodOsXLreAsBSfFBuoK61wkKoZiiPJ2G6R7RoKsvX128Lx4fUbTsmqXey8AmGBZR3L8gLt_HNOx8tFb-KU0PimqsvgLadolzhPoCafdq7QNn4jwCAUlokIGTpl55Gnp-D4O5ydjfyntLAuaW5fY7UpVYJT6WrTgpQpf-qiH7KnsrFRs1adu36unlDho90gIhSB0BkvTbw3msQmzYPd5ZjDsLLc0VnoJyCmevUbTmuMkqdJEXaMC9jWEBEA4tHsPbLtGXvFBmb-H9VvJJKuMRX_XXe6F6zxsKfVpi7uHqfp9E5MHwdj3oAwkFNOW0tnZMPT4aP2RnZKFpf8Wah3RBaUvqiZu2In6QQCrrsswmrxAsHt1HXa0GVTaiUCF9nbW6tHtJjLij9-_ojbuRij6DdSIitbLSML4GuUMxLy7tSYhlrT9ijkueg0xByFL5dp0ixKZED7vrBl60-DpbnLWJND6Vvb9wCB37J854OBi8hh_P7MafBmmqG0JgBR9sy-kF_UYM6NeMGxXb1RraM7-Mh92B7h2IvenCaGCShxvYscSZ0c8PvghAwNV4S3npEQj-yxC9hbYWGkow9KiVz95bhdkU9JUifzxeJkdmTo7iTbs2I_vQQlqpYm_GJSaeXc86t6Acxd4UVuoI0WLPxuZyp6TQ-KejvdNlhE9KwyOcGmiowJMrYkpF1O8DA3XiqQzyQTsjjklp-nkfhZ8aifUPE81e98nE2Gd7bn7ldxxEZzXA8YARyBmd6t0R6MtQYFn-yHyTM4CUt6hdfhwlrI76xJY_CP4AXZb3WZabwjdIQ3-NhY5hgD2NzWzRBNrzQKm-akVmhJJdOqczICSMXkQir0Dgu3APZxXb2VnxOGHMZPJIHzdXTl8kGjNKOh_Ldv035PEkYiakrF_1hI2DQRU0p91IRd1xLTiZmWTxWLbUwvQAWTWf7-rnwcn3P6mk6R1zD3dEDsanForf-3ESbAjjgejK7KrZBD5dl_qCi7mysuxJ0ur53OqFITXf6ANDQO7KvYahGNGFNNNNHw-MUVHTfHZs7vWKTJvTrGYD4Er0cjO_ZuYzoEpzkOlzRwBp4VYE04YLWOPjZmsaunegc0xIUFXiqA1ZlEX7yUpEKdGZ_ul0uGSua2CX1hsg&quot;,cRq: {ru: &#39;aHR0cHM6Ly9kZWNlcy5tYXRjaGlkLmlvL3NpdGVtYXAueG1s&#39;,ra: &#39;TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNi4wLjAuMCBTYWZhcmkvNTM3LjM2&#39;,rm: &#39;R0VU&#39;,d: &#39;8qlfXhLswQtszZc/3K0l1msO3B68VqxDDHOR6i+Y4cbutURuIruLqccuO50fCkTWC6FmJXWHNtI8OfKJctqEfOkNHpr36Yd2vzA8Fja1bFyWjvrgBI50gn6R/F3Su9Jypih9/czXzOp02+s7+ka5X0fda89wUNTFONrqZ3JBtPwS/2N4/30m9v2PeUHmVjMTF4/riC0q04rvHBFP4co+50oDBSERd3iiUN9n42dzZ4HF6F1TrmVLCLKay959m1eGv2fICAfCRvVzOkPuJoYYPZYrv7C/0vo5uHuPcBvd4bqip4qKGV23E5ILd/HF/SuvN+2Rq2748x/yAsReYOsqQ4SEpgjl39qaBOMdJ7W8DhXF5ywQXRWcvsmIhVr6BofNfJ0OO/N80s4vYbbjGE8vp/kVmdlX3Ef/xb7uncUd81F7Y+3BFjsBJAExM4C0PRajCkx7+h8c58UvPDccl7dgzwy15umhJUufBaSj0P7tS3T29C+QXpCP7pPBgVoBVRaw&#39;,t: &#39;MTY5NzMzMTM5MC41NDYwMDA=&#39;,cT: Math.floor(Date.now() / 1000),m: &#39;nf6Q4IOoXsQ9vFDIjLbVxIBXbD21JcNjTM4MbWAq9vY=&#39;,i1: &#39;OLsLR3PY4NXjUtn8b7o0FA==&#39;,i2: &#39;vwErIIG+XEomTjkKyG1nSQ==&#39;,zh: &#39;ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=&#39;,uh: &#39;9mPvDFNZ0y8VGO4IML6ngXc1m8uVnDSvugn0Dixn1yo=&#39;,hh: &#39;ka2KJBWM/eiCJyMAGrJTS6XcqbP3RTYZjhEzfeJpEfY=&#39;,}};var cpo = document.createElement(&#39;script&#39;);cpo.src = &#39;/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=81641a46edd3315a&#39;;window._cf_chl_opt.cOgUHash = location.hash === &#39;&#39; &amp;&amp; location.href.indexOf(&#39;#&#39;) !== -1 ? &#39;#&#39; : location.hash;window._cf_chl_opt.cOgUQuery = location.search === &#39;&#39; &amp;&amp; location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf(&#39;?&#39;) !== -1 ? &#39;?&#39; : location.search;if (window.history &amp;&amp; window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, &quot;\/sitemap.xml?__cf_chl_rt_tk=9nZwv5t_xcqjWuTJHVDIEDr0XpaN.SH2DiSt0U3Sc7E-1697331390-0-gaNycGzNCtA&quot; + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName(&#39;head&#39;)[0].appendChild(cpo);}());&lt;/script&gt;</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1974,14 +1030,14 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="10015"></a>
+						id="10049"></a>
 						<div>Informational</div></th>
-					<th class="risk-0">Re-examine Cache-control Directives</th>
+					<th class="risk-0">Non-Storable Content</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</div>
+							<div>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</div>
 							
 						</td>
 				</tr>
@@ -2002,7 +1058,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2012,7 +1068,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">no-store</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2033,7 +1089,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2043,7 +1099,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">no-store</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2054,7 +1110,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/manifest.json">https://deces.matchid.io/manifest.json</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2064,7 +1120,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
+						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2074,13 +1130,105 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
+						<td width="80%">no-store</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">3</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>The content may be marked as storable by ensuring that the following conditions are satisfied:</div>
+							<br />
+						
+							<div>The request method must be understood by the cache and defined as being cacheable (&quot;GET&quot;, &quot;HEAD&quot;, and &quot;POST&quot; are currently defined as cacheable)</div>
+							<br />
+						
+							<div>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</div>
+							<br />
+						
+							<div>The &quot;no-store&quot; cache directive must not appear in the request or response header fields</div>
+							<br />
+						
+							<div>For caching by &quot;shared&quot; caches such as &quot;proxy&quot; caches, the &quot;private&quot; response directive must not appear in the response</div>
+							<br />
+						
+							<div>For caching by &quot;shared&quot; caches such as &quot;proxy&quot; caches, the &quot;Authorization&quot; header field must not appear in the request, unless the response explicitly allows it (using one of the &quot;must-revalidate&quot;, &quot;public&quot;, or &quot;s-maxage&quot; Cache-Control response directives)</div>
+							<br />
+						
+							<div>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</div>
+							<br />
+						
+							<div>It must contain an &quot;Expires&quot; header field</div>
+							<br />
+						
+							<div>It must contain a &quot;max-age&quot; response directive</div>
+							<br />
+						
+							<div>For &quot;shared&quot; caches such as &quot;proxy&quot; caches, it must contain a &quot;s-maxage&quot; response directive</div>
+							<br />
+						
+							<div>It must contain a &quot;Cache Control Extension&quot; that allows it to be cached</div>
+							<br />
+						
+							<div>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
+							<br />
+						
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
+							<br />
+						
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/524.html">524</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10049/">10049</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="10015"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Re-examine Cache-control Directives</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
 				
 					<tr>
 						<td width="20%"
@@ -2113,40 +1261,9 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">cache-control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					<td width="80%">1</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2237,7 +1354,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/robots.txt">https://deces.matchid.io/robots.txt</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2352,7 +1469,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/robots.txt">https://deces.matchid.io/robots.txt</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2467,7 +1584,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/robots.txt">https://deces.matchid.io/robots.txt</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2582,7 +1699,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/robots.txt">https://deces.matchid.io/robots.txt</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2666,7 +1783,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io">https://deces.matchid.io</a></td>
+						<td width="80%"><a href="https://deces.matchid.io/cdn-cgi/styles/challenges.css">https://deces.matchid.io/cdn-cgi/styles/challenges.css</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2686,260 +1803,12 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/">https://deces.matchid.io/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/build/module/bundle.css">https://deces.matchid.io/build/module/bundle.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=86400</td>
+						<td width="80%">max-age=7200</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js">https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=172800</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/css/global.css">https://deces.matchid.io/css/global.css</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=86400</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/favicon-apple.png">https://deces.matchid.io/favicon-apple.png</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=86400</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/favicon.svg">https://deces.matchid.io/favicon.svg</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=86400</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/js/matchid.min.js">https://deces.matchid.io/js/matchid.min.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=86400</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/manifest.json">https://deces.matchid.io/manifest.json</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
 					</tr>
 				
 					<tr>
@@ -2973,40 +1842,9 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://deces.matchid.io/sitemap.xml">https://deces.matchid.io/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
