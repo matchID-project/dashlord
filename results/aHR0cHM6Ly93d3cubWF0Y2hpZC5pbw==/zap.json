@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 22 Oct 2023 00:56:22",
+	"@generated": "Sun, 29 Oct 2023 00:56:27",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -26,21 +26,118 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10098",
+					"alertRef": "10098",
+					"alert": "Cross-Domain Misconfiguration",
+					"name": "Cross-Domain Misconfiguration",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</p>",
+					"instances":[ 
 						{
-							"uri": "https://www.matchid.io/sitemap.xml",
+							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *",
+							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
+						}
+					],
+					"count": "1",
+					"solution": "<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p><p>Configure the \"Access-Control-Allow-Origin\" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>",
+					"otherinfo": "<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>",
+					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
+					"cweid": "264",
+					"wascid": "14",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020-1",
+					"alert": "Missing Anti-clickjacking Header",
+					"name": "Missing Anti-clickjacking Header",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "x-frame-options",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
+					"count": "1",
+					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
-					"cweid": "693",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link type=\"application/atom+xml\" rel=\"alternate\" href=\"https://matchid.io/feed.xml\" title=\"matchID project\" />",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"f99a89a322f612e186918ad8-text/javascript\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"f99a89a322f612e186918ad8-text/javascript\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"f99a89a322f612e186918ad8-text/javascript\"></script>",
+							"otherinfo": ""
+						}
+					],
+					"count": "4",
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
+					"cweid": "345",
 					"wascid": "15",
 					"sourceid": "1"
 				},
@@ -55,34 +152,93 @@
 					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
 					"instances":[ 
 						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 18 [http://matchid.io/].\nPredicted response size: 318.\nResponse Body Length: 539."
+						},
+						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "Location header URI length: 28 [http://matchid.io/robots.txt].\nPredicted response size: 328.\nResponse Body Length: 539."
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "Location header URI length: 29 [http://matchid.io/sitemap.xml].\nPredicted response size: 329.\nResponse Body Length: 539."
 						}
 					],
-					"count": "1",
+					"count": "3",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
-					"otherinfo": "<p>Location header URI length: 28 [http://matchid.io/robots.txt].</p><p>Predicted response size: 328.</p><p>Response Body Length: 539.</p>",
+					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 539.</p>",
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
-					"pluginid": "10035",
-					"alertRef": "10035",
-					"alert": "Strict-Transport-Security Header Not Set",
-					"name": "Strict-Transport-Security Header Not Set",
+					"pluginid": "10017",
+					"alertRef": "10017",
+					"alert": "Cross-Domain JavaScript Source File Inclusion",
+					"name": "Cross-Domain JavaScript Source File Inclusion",
 					"riskcode": "1",
-					"confidence": "3",
-					"riskdesc": "Low (High)",
-					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.matchid.io/cdn-cgi/styles/challenges.css",
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
+							"attack": "",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"f99a89a322f612e186918ad8-text/javascript\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904",
+							"attack": "",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"f99a89a322f612e186918ad8-text/javascript\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX",
+							"attack": "",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"f99a89a322f612e186918ad8-text/javascript\"></script>",
+							"otherinfo": ""
+						}
+					],
+					"count": "3",
+					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "829",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063-1",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -91,46 +247,11 @@
 						}
 					],
 					"count": "1",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
-					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
-					"cweid": "319",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "10"
-				},
-				{
-					"pluginid": "10096",
-					"alertRef": "10096",
-					"alert": "Timestamp Disclosure - Unix",
-					"name": "Timestamp Disclosure - Unix",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
-					"instances":[ 
-						{
-							"uri": "https://www.matchid.io",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1697936179",
-							"otherinfo": "1697936179, which evaluates to: 2023-10-22 00:56:19"
-						},
-						{
-							"uri": "https://www.matchid.io/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1697936179",
-							"otherinfo": "1697936179, which evaluates to: 2023-10-22 00:56:19"
-						}
-					],
-					"count": "2",
-					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1697936179, which evaluates to: 2023-10-22 00:56:19</p>",
-					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
 					"sourceid": "1"
 				},
 				{
@@ -148,37 +269,29 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BqHF9mle4SgwfUcGod0YRHIrqvbyUFPrYTAx13SOXqZ8JKwBfaK8BV",
-							"otherinfo": "\uFFFD\\x001a\uFFFD\\x0017\u0665{\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\\x001a\uFFFDta\\x0011\u022E\uFFFD\uFFFD\uFFFDAO\uFFFD\uFFFD\uFFFD\uFFFD]\uFFFD9z\uFFFD\uFFFD\\x0005\uFFFD\uFFFD\uFFFD\\x0015"
+							"evidence": "2Bgfe2PB3Embd1IRRRLstQQvQjzbqm4wEvf9aeg",
+							"otherinfo": "\uFFFD\\x0018\\x001f{c\uFFFD\uFFFDI\uFFFDwR\\x0011E\\x0012\uFFFD\\x0004/B<\u06EAn0\\x0012\uFFFD\uFFFDi\uFFFD"
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fr0D9tOFsYWP62IjS1rTFbbJlvPNvwD3s4kSA802wZNsV2Rg6AA",
-							"otherinfo": "\uFFFDZ\uFFFD\\x000f\uFFFDN\\x0016\uFFFD\\x0016?\uFFFD\uFFFD\uFFFD-kLV\uFFFD&[\uFFFD6\uFFFD\\x0003\uFFFD\uFFFD$H\\x000f4\uFFFD\\x0006M\uFFFD]\uFFFD\uFFFD\uFFFD\\x0000"
+							"evidence": "2FDTKvr84zPRZLpJ0oVtajtwsy9FXAAbTrHQGrNDNbnD8Yq0ZcqF5j5qvoZMhpJxjH9c5nq9iFmXzKkMrLdg8lqQcm02DFTe",
+							"otherinfo": "\uFFFDP\uFFFD*\uFFFD\uFFFD\uFFFD3\uFFFDd\uFFFDI\u0485mj;p\uFFFD/E\\\\x0000\\x001bN\uFFFD\uFFFD\\x001a\uFFFDC5\uFFFD\uFFFD\uFFFDe\u0285\uFFFD>j\uFFFD\uFFFDL\uFFFD\uFFFDq\uFFFD\\\uFFFDz\uFFFD\uFFFDY\uFFFD\u0329\\x000c\uFFFD\uFFFD`\uFFFDZ\uFFFDrm6\\x000cT\uFFFD"
 						},
 						{
-							"uri": "https://www.matchid.io/cdn-cgi/styles/challenges.css",
+							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAPFBMVEUAAACvDwOyDwKyDwOvEACyDgOyDwKvDwKwDgCyDgKxDgOyDgKvDgKyDwKyDgOxDgKzDgKxDgKxEASyDwMgW5ZmAAAAE3RSTlMAQN+/EJDvMB9wYJ9Qz7CAf6CAtGoj/AAAAcFJREFUSMeVltu2gyAMRLlfBDxt+f9/PTq2VXSwmod2GdhkEoIiiPmYinK1VqXt4MUFk9bVxlTyvxBdienhNoJwoYMY+57hdMzBTA4v4/gRaykT1FuLNI0/j/1g3i2IJ8s9F+owNCx+2UlWQXbexQFjjTjN1/lGALS9xIm9QIXNOoowlFKrFssYTtmvuOXpp2HtT6lUE3f11bH1IQu9qbYUBEr7yq8zCxkWuva8+rtF4RrkP6ESxFPoj7rtW30+jI4UQlZuiejEwZ4cMg65RKjjUDz6NdwWvxw6nnLESEAl230O5cldUAdy8P44hJZTYh40DOIKzFw3QOI6hPk9aDiFHJc3nMirKERgEPd7FKKgiy5DEn3+5JsrAfHNtfjVRLucTPTaCA1rxFVz6AX8yYsIUlXoMqbPWFUeXF1Cyqz7Ej1PAXNBs1B1tsKWKpsX0yFhslTetL4mL8s4j2fyslTbjbT7Va2V7GCG5ukhftijXdsoQhGmzSI4QhHGhVufz4QJ/v6Hug6dK0EK3YuM8/3Lx5h3Z0STywe55oxRejM5Qo4aAtZ8eTBuWp6dl3IXgfnnLpyzBCFctHomnSopejLhH/3AMfEMndTJAAAAAElFTkSuQmCC",
-							"otherinfo": "\uFFFDPNG\r\n\\x001a\n\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x00004\\x0000\\x0000\\x00004\\x0008\\x0003\\x0000\\x0000\\x0000\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000<PLTE\\x0000\\x0000\\x0000\uFFFD\\x000f\\x0003\uFFFD\\x000f\\x0002\uFFFD\\x000f\\x0003\uFFFD\\x0010\\x0000\uFFFD\\x000e\\x0003\uFFFD\\x000f\\x0002\uFFFD\\x000f\\x0002\uFFFD\\x000e\\x0000\uFFFD\\x000e\\x0002\uFFFD\\x000e\\x0003\uFFFD\\x000e\\x0002\uFFFD\\x000e\\x0002\uFFFD\\x000f\\x0002\uFFFD\\x000e\\x0003\uFFFD\\x000e\\x0002\uFFFD\\x000e\\x0002\uFFFD\\x000e\\x0002\uFFFD\\x0010\\x0004\uFFFD\\x000f\\x0003 [\uFFFDf\\x0000\\x0000\\x0000\\x0013tRNS\\x0000@\u07FF\\x0010\uFFFD\uFFFD0\\x001fp`\uFFFDP\u03F0\uFFFD\uFFFD\uFFFD\uFFFDj#\uFFFD\\x0000\\x0000\\x0001\uFFFDIDATH\u01D5\uFFFD\u06F6\uFFFD \\x000cD\uFFFD_\\x0004<m\uFFFD\uFFFD=:\uFFFDUt\uFFFD\uFFFD\uFFFDv\\x0019\uFFFDd\\x0012\uFFFD\"\uFFFD\uFFFD\uFFFD\uFFFDr\uFFFDV\uFFFD\uFFFD\uFFFD\uFFFD\\x0005\uFFFD\uFFFD\uFFFD\uFFFDT\uFFFD\\x0010]\uFFFD\uFFFD\uFFFD6\uFFFDp\uFFFD\uFFFD\\x0018\uFFFD\uFFFD\uFFFDt\uFFFD\uFFFDL\\x000e/\uFFFD\uFFFD\\x0011k)\\x0013\uFFFD[\uFFFD4\uFFFD?\uFFFD\uFFFD`\uFFFD-\uFFFD'\uFFFD=\\x0017\uFFFD04,~\uFFFDIVAv\uFFFD\uFFFD\\x0001c\uFFFD8\uFFFD\uFFFD\uFFFDF\\x0000\uFFFD\uFFFD\u0109\uFFFD@\uFFFD\uFFFD:\uFFFD0\uFFFDR\uFFFD\\x0016\uFFFD\\x0018N\u066F\uFFFD\uFFFD\uFFFDa\uFFFDO\uFFFDT\\x0013w\uFFFD\u0571\uFFFD!\\x000b\uFFFD\uFFFD\uFFFD\\x0014\\x0004J\uFFFD\u02AF3\\x000b\\x0019\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDE\uFFFD\\x001a\uFFFD?\uFFFD\\x0012\uFFFDS\u83FA\uFFFD[}>\uFFFD\uFFFD\\x0014BVn\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001c2\\x000e\uFFFDD\uFFFD\uFFFDP<\uFFFD5\uFFFD\\x0016\uFFFD\\x001c:\uFFFDr\uFFFDH@%\uFFFD}\\x000e\uFFFD\uFFFD]P\\x0007r\uFFFD\uFFFD8\uFFFD\uFFFDSb\\x001e4\\x000c\uFFFD\n\uFFFD\\7@\uFFFD:\uFFFD\uFFFD=h8\uFFFD\\x001c\uFFFD7\uFFFD\u022B(D`\\x0010\uFFFD{\\x0014\uFFFD\uFFFD\uFFFD.C\\x0012}\uFFFD\uFFFD+\\x0001\uFFFD\u0375\uFFFD\uFFFDD\uFFFD\uFFFDL\uFFFD\uFFFD\\x0008\rk\uFFFDUs\uFFFD\\x0005\uFFFD\u024B\\x0008RU\uFFFD2\uFFFD\uFFFDXU\\x001e\\]B\u02AC\uFFFD\\x0012=O\\x0001sA\uFFFDPu\uFFFD\u0096*\uFFFD\\x0017\uFFFD!a\uFFFDT\u07B4\uFFFD&/\uFFFD8\uFFFDg\uFFFDT\u06CD\uFFFD\uFFFDU\uFFFD\uFFFD\uFFFD`\uFFFD\uFFFD\uFFFD!~\u0623]\uFFFD(B\\x0011\uFFFD\uFFFD\"8B\\x0011\u0185[\uFFFD\u03C4\t\uFFFD\uFFFD\uFFFD\uFFFD\\x000e\uFFFD+A\n\u074B\uFFFD\uFFFD\uFFFD\uFFFD\u01D8wgD\uFFFD\uFFFD\\x0007\uFFFD\uFFFDQz39B\uFFFD\\x001a\\x0002\uFFFD|y0nZ\uFFFD\uFFFD\uFFFDr\\x0017\uFFFD\uFFFD\uFFFD.\uFFFD\uFFFD\\x0004!\\\uFFFDz&\uFFFD*)z2\uFFFD\\x001f\uFFFD\uFFFD1\uFFFD\\x000c\uFFFD\uFFFD\uFFFD\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD"
-						},
-						{
-							"uri": "https://www.matchid.io/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2FjGr9zdRSMtGWkJM3SHOp27ZVxZFpvYUXhmeGpNft77Eac6oo",
-							"otherinfo": "\uFFFDX\u01AF\uFFFD\uFFFDE#-\\x0019i\t3t\uFFFD:\uFFFD\uFFFDe\\Y\\x0016\uFFFD\uFFFDQxfxjM~\uFFFD\uFFFD\\x0011\uFFFD:\uFFFD"
+							"evidence": "UN0E0UkKnuNcsV6lUIGSgNS44xq2HyTmCHbJNQDRRBOOo9VvIifYJGSOR4FYgkoaaQ1b53BhIgp",
+							"otherinfo": "P\uFFFD\\x0004\uFFFDI\n\uFFFD\uFFFD\\\uFFFD^\uFFFDP\uFFFD\uFFFD\uFFFD\u0538\uFFFD\\x001a\uFFFD\\x001f$\uFFFD\\x0008v\uFFFD5\\x0000\uFFFDD\\x0013\uFFFD\uFFFD\uFFFDo\"'\uFFFD$d\uFFFDG\uFFFDX\uFFFDJ\\x001ai\r[\uFFFDpa\"\n"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x001a\uFFFD\\x0017\u0665{\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\\x001a\uFFFDta\\x0011\u022E\uFFFD\uFFFD\uFFFDAO\uFFFD\uFFFD\uFFFD\uFFFD]\uFFFD9z\uFFFD\uFFFD\\x0005\uFFFD\uFFFD\uFFFD\\x0015</p>",
+					"otherinfo": "<p>\uFFFD\\x0018\\x001f{c\uFFFD\uFFFDI\uFFFDwR\\x0011E\\x0012\uFFFD\\x0004/B<\u06EAn0\\x0012\uFFFD\uFFFDi\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -199,15 +312,15 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script>(function(){window._cf_chl_opt={cvId: '2',cZone: \"www.matchid.io\",cType: 'managed',cNounce: '10490',cRay: '819dc7a16ee259cd',cHash: '4e8366fc5b3b17f',cUPMDTk: \"\\/?__cf_chl_tk=N49nGWfWWR79bQg2FlZwqD9Ex56fk6ydfTRQ82SVxhU-1697936179-0-gaNycGzNDFA\",cFPWv: 'b',cTTimeMs: '1000',cMTimeMs: '0',cTplV: 5,cTplB: 'cf',cK: \"visitor-time\",fa: \"\\/?__cf_chl_f_tk=N49nGWfWWR79bQg2FlZwqD9Ex56fk6ydfTRQ82SVxhU-1697936179-0-gaNycGzNDFA\",md: \"UbWnEZbkjudPJqhh6xZnPbG4VVPjcHJAST1z112sOlY-1697936179-0-Ae3P3Cs69XCyMFAzswNhAk3WPSjoJ4auPlgtFEELYAaVX4CGkv-m9KYk13puwGZMqIdHwkF4f8pcIa5SAGeShxdpNRFUUPw4aJ3wVrHwibaEoLiCEAL7z3zUWES9S6qeuh4s3NRpTZwi7Ny-cdxZcR9NtWVsRQOhZZOhfGN4ORLS6FwHYwjeMbkwWXAx-jfIDJz8mHpumGltNcK8-Bshwvu9RDFXuP3ltVaMvSFbsuaeItfPg1ykVejZZG8U4p1B3bcOhz8jbRbv6QpPgqs75jwSUy8Ms67hYs3lSbjeGkfu3hdc1loFAJ2frNjEIVzldtdY8cuHcFtCAz72XJ4ynKNt8aY21hDy-WGzAFSsb9Vq98V7XVpZy5jsJCi2YJ-QVbeVAklwrYCmSZfFpCdPwOoAovHrlSIBNw9Ohgs7SmmM3O-XdkROIPN6j5U82bfCiEiuh1OGNZrur-Kf824vl7GpaDQwEEZtfmjLN-uHf_mDP2iiEKjwU4tH8ahysvd1fpaRrcSCl3Vbu173q06D7r5ejk6yopP9MPuJLSpnX-yLhtw9U04fFe7aeFL1mJ9nkSn-bLh1dLVK7wzGwxjtsLq4-gmzQexmRCLTeb_GtYBiUl8dC76VygABmCblRrsrtyhiSbTpauvKeslTlKe3EuakFh-2xhC7Tx1qrAG_4_EWp6PLPOTRHlvIRufxY0SrKITjhNX8LWcnZwUWZpqN4aZCQkJFKJN3tk6P6DAuhBoBUwUizT-mFpWL1Pfna_-qkNouOM0lOKEDX62HhrQKv-i7Vl0wrjsn-soNvcGjmG56jzVImLu8J8ubgAHfV6HBP4STMsVEWxME1LSgkJNWmXqzfXOQ68UGbIoTNS5ZZA83bQKzPfKFstH0JkiAh6nsO3OMfwGSxzYqK4XKCQnQqcXWz0u7xH1WJ1-U-yG1mXh1pEoV5Xr-lw43Ra0d2wF1vO5MvWD7FAEAROPBnlLpOTPMmlx6SjUZrnp3Ph8Bv34zi8QEEaAub-xHy3co3T4WE3OneQTbiQ1_4hiTUs2aC2jThE74ho3gNajOPnb2avMW1qgBFPYg5niRnfkSUAyDrqpHwn8_1mrSG7OPmlY-t4FqsD_210riHHyzkgK0c_0KmDsY45peufjsivkgfp7lA90oRHZ0CVJQOzmsDggeycS_9AQwRXbaxG_rj9CN2O63BqjD3NmtJT-SUm8zhrlg3Ktfs9QCcU7UoG-q0pydkZCYH4d63rQNTxfCzCB4IkWU4Qd_JzaC1m6H6EwYslXWMmVNMGlL1TamwZA0yJAKtjd6jT8hr1z16MGw3dsibvPolaOREeexrqPU-XVuKJgPdVmYbOfMW0bzz44Ra2cCp4eedQVAA_o3yoxdjLeSKwhm7uvePTiObhTZWwXGOaYA9KTcyPRHBrSoKfTpYp09RFlmib0Lrhnc4Qvkk_YiVlexgD9aIawR5nWt8fzLm8U2de-Y58YCVnAALU2fnzLorLV7ghHkMwb_jl-vdP6IPzFRjupXI5SGcGvwzfhOCyFrBPgRrlthgm60__4jsYp_4e_GTuUg6FfQxRZwwlPQKsJMHVRFyK6uhdXqAEyc3hPhm3xyBxwU4COmN7wpD_Un4YqtFc1OIrb3RRohDElzzPX67rnBKh1I11mR-egVhIWyxaeyt4MLrcmP-Rv6CbCiO5gb1CyjJRZz1i2ogeojAMcDPHvMSxObg8-J7aBfZ63f4t7BK0T4u3f1f6YDN0lQe4HTuovV7m-dXBdJZPh8BxepcYObC0LLczZcM3-Vy0yvhFxUGYPNq0cJI743D6rKHCOXREGXVdSyVZPehS2rB4QNAtNKdt0lKIdrf0GVL3Wm0tK7A2y87oRnOGtCeO9Mpbst5zNz91S5hkUlQMA1Y42iyZUP1eeWKAKpBtIlMz209phxUC7LIVO05lMXD7DWIOXyQiOW31xfO2lI3bBMA17vVAO_6RN8umoTFTD0FXgSP_CNxWbf3IVE4AXlrYvgdPOsGKMQimwlZ175ovKunp_3rLHk2NKybWczwMtwZnJzNwTvGOy6nRjFzQxLmawvwmI7KLXQlGorEVn1ilzhV6Qj3UqU_rZ4HOmxqXx7v0AVCVWbzF8QEHv_wcGjiU6WA2FTNMolVUAbVnNOG_GAMnRSZJAtFSeF0CtPCMLuA8ifQ8655O_M-ecyGEeZGCTBboP8lI0OMeZ1tgEGb1uq3FLs1zacUcpTLKtx_2uOYrnirHkOdVJpmUQWyR7gCAlAs0oKF6K2TFHtrG2tK5aJe0Tl0BocrbsYGql1pp9iL9WAvsPLG93gxn0l3LBmhvqcKSY9jjx5SbNGtyWhtnzxtvygNMdOcWGeONuempF5EqNCD99w_r5iC0pR7_Uc3Qgsndqw9XfkfgKZFR47cWNJLkoskmLFZDEIsshoilm8N6l01HdYJgzZC0AUCs66CyHSRlB2vr9ZTOa1pXOLfZBx7rpzpr5QGh9vLjSL9Zkb5l5_Ooa_ZiOSbYD1Db_NwaiLb-K7kgCjdzc7l3RTBa2u1eJ-IhQh3H8-tTo7xyKwWesZVA8PkZGNxkiW1oiBe4h3Wcf2f4KaDa441K3ewVfdKMrftHzpWrZWv0q578Cvq8UsL4eJ-oST0KXSOtO_N6sQTYRawIX2Kc_OxDElkBetXBWTgdFq7gn-bk3xGodtVuiHvNiLJNmnXGfoKMSwAZgoAe8SZhGBRIUd6MDwx_jtZpfYoZ17Oq6G5J5T6fboXtlqsjq5Fd82pIdltD-DfTPEy0R1NnfffD34CU29WJ86tw7YxGhilv7zfxhPMQ7wMSnihXLrdIeTQJqKJ9CAbZZHYf1C51Xx5a_-RAYJaksYnTA0BRmpv3L00PZDqIOuDNx5t_3OLRZyyzGtXbB5eDISEX7TD7osWZNSyXb_3SVIjNlE1ddumVKNroC_ZheU2rYTeNV1pMfLMLkHSg_8wBVmoMqEDK0FvqVsoJwr8Z2n0XwAHFXr0ENLqOWfGkd5dJXg7f_i6G92wVtcsFsGPrHdlAa-SR5u1r7C7UxrVRbAZygdQGV8PqE1d42kCdkRIfbeLOs8-KE-tka2BY4PXJSzwGo\",cRq: {ru: 'aHR0cHM6Ly93d3cubWF0Y2hpZC5pby8=',ra: 'TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNi4wLjAuMCBTYWZhcmkvNTM3LjM2',rm: 'R0VU',d: 'TDtEnRq3pfWRspUkHado+dB5UwSIZyC+iOtLHK3R+DxgBW+AewuH8XoGQxlEqihP3HGiVJPH407xaS2YHjOWuZ0QjgrVg7iJpplJF8bbOyvrS7Tl1x4R4n4/3M1gt4KrdVvn2ps4uKkyY+1uJzVqNO/O7MbKKKXEsPPtxmMO5sB0dwDsBl8LTD0JXQmtr30a+abwY+h5survBi2nok2dtQ8Wrr+iUszijwcT3ZHFdDpsa0XFpxn0CzS+L/py+oUfI8m1P0SB3sbzF8i+ONRtwFlYpb+EoUkJ4CFu7ak8G9pYIo6LR4MTLMcIUAwRkw1TXnvwJOTQ5dZ2Nl59uB+6tvHRhYG59+fDph+/JiX5KjCt48uR3yvFKGjH/qwr2aX5Y/4U6j5+Txz7T6OdHPMn7JZ6mSbK2Y9adFms0lzNugMRYdNegQAyFcmJifK1u0WFP7G1GX1rbN78cpiiRCHu1figSkO6NY+HVhDT/2PgBDcMf+mQE/+1RrrwfuTBWrhz',t: 'MTY5NzkzNjE3OS40MjgwMDA=',cT: Math.floor(Date.now() / 1000),m: 'EB0Mw6jneTkZ4onC3NWd9Y3JlG3vC8uhhHS6kTT3z10=',i1: 'bNxqa7ayStSpfc6oVITmUA==',i2: '3YpW0pVO4Eau3VWz4FBeog==',zh: 'ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=',uh: '9mPvDFNZ0y8VGO4IML6ngXc1m8uVnDSvugn0Dixn1yo=',hh: '4Z4zXcWMiiA1Xd8SbmnCyW9HMDAjKQya+bpsIHkReww=',}};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=819dc7a16ee259cd';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, \"\\/?__cf_chl_rt_tk=N49nGWfWWR79bQg2FlZwqD9Ex56fk6ydfTRQ82SVxhU-1697936179-0-gaNycGzNDFA\" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+							"evidence": "<a class=\"fr-nav__link\" href=\"slides/#/3/8\" target=\"_self\">\nD\u00E9velopper des algorithmes d'appariement\n</a>",
+							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script>(function(){window._cf_chl_opt={cvId: '2',cZone: \"www.matchid.io\",cType: 'managed',cNounce: '68685',cRay: '819dc7a0b9a057d0',cHash: 'dfe6995ac6a33a3',cUPMDTk: \"\\/?__cf_chl_tk=0zCOatBGaVkRRQEBGuRfuwly9LAGprgyePdHFUV9arA-1697936179-0-gaNycGzNCqU\",cFPWv: 'b',cTTimeMs: '1000',cMTimeMs: '0',cTplV: 5,cTplB: 'cf',cK: \"visitor-time\",fa: \"\\/?__cf_chl_f_tk=0zCOatBGaVkRRQEBGuRfuwly9LAGprgyePdHFUV9arA-1697936179-0-gaNycGzNCqU\",md: \"dJzA0sPR99O_8qCqGfhqs2lPpqJVxXrBGHIfMnriQLs-1697936179-0-AaWg_ggnsnl1lfNnNVBAYKsFMSlh1K8BQkw7nmZ3iYXDG2bPpfU5-9Xz6AGbtccVpzyKLLehMkLXRdyZN-w_u0o8Ez3ytr4080DCtwkZthoMEeGBjXXRadlXadIG31JKrE9okW4BIdhyDr3Ya3qRlOY5inEJNp0kFgnYjlDEzVY-7ty73bl-tKkJlxqy8Cid7u2n4iSm0TcpbEsiMV-Tg2nJKOT88qpgOdtlo83h7xJVfi95azX2H7H5LRDO55hIAdIRzfAt1-nowFPKJ9rquVx7obrfw2LX8lIX0lFJxpdhCmCn6EPFOtBJfB2tNHPAJa7-_yT1PqgbYv2sFblLuJWI03gR8DuoD1kkoXUrejChI3ck_xBtn0f4LXNk24HZW448W_FLUeZ1oeuieWHsb2l0Ea5ihsRrA-EyqBDSnnnaEECj8a_0kkaFoQ0Hni6OzltXuML8zHe1VxXAcHGrTpfx2F4-s4B8syMFPliXvuWN-vrF9Aom-LtKiBKQV5636Y3tHS0ndDoXYu3HKkTuJIB8nNLWsKsYS5pmeH3BoCrWlh9o9gsUgOHjkbo5b6fDItObs6AyTGxj8ZtCUjpmgnHhrZRplsuFUeNi-oc_v3Pj1dQFHIkK6zPsKM37YdIqbrqZzoHhakLss48-ESdURxPvmYnZLf4KJxnottZGOkDA2_0IG4ftD4ddtXLFxFv2uCgwhbd_f_MwN3wS6V2D4lG_myDIHuTbPiQu-5X3aAGyAylDWuday_V6r4MFmfmGPxyIRaSRq1UYCSxRVTQa47AVAGgAQpFWC_j18-QchHTTkXKd4vdjZXlsVisFthhFPjyLQxBYk4b0hCkzb2rjOCAtI62q_8oU8moBkEPWg3J9eiCRZPFeRqpuDI04e_EcsoJQAdYfJawv4mKv0tpRDXFN8BaCaSTAl4byhIz5vekBoO9a5zIZAD5gxkbMAws9uwTlWQTZrEon_XmLtszY9na9YQNU1hHaiDCQRbkI2vz0lRhgk-mbwcOOmTkHSyQF7aEDC-MdAQ6jxnuLWrQx8_1kDvUpWyhCZHjTlXm5sUQQzgK3Rcl8VNKyg3uvBVuveMEDiwubKFxTbcCemV8VKxDGIIW8pAIR4RWzVIK-n3sq2PvLEySGnNndpmD24fzzmhz4X3EISKcPOK23b1YHaO-mVNXgaMWu7LcID46szitgOJZHLad53hWAQJCEW-ENKEB5aG5sr47u2xkTetrWPeYk1kMgPwqhqhW1-z15TA2pyeedLJFoeutJ9MwsL0m6o15IDPxTrbcC3izbYKonLe2BFUEVpNG7ib4ttJUKfexGNLOnGBbGIf8xx3-3Y2tHtY9XtFQLKst6QLX1c_xxsldtfJliEb7dV0gx_CVw0P-BLs9U7FEFxNBTQMSzzNSMnaSiod2TeAUAzkXkPW_h0K4WCr23M8A5XEB336Xgd2uVJRSN9iCARs9-m-zzOpbNNQnKFFcFSJwzI6R97e3Sr1M_kRyEufvb54s8KzsNXsIBxPEc4HOAHFXDK3y-iqZodd8QflqSO_fc8sRmHLO57ERcqeQeQrRxiPjlnaagSMvREBAZMIh-VME-ErQXzwBMKxyc8QEZno61xMgZ1BTZdIv5BjGemarBom_MypmcbGNzXpA34oglvV6jbWN5fAkJPAdcJJ0IQhx6ExHuoB6v1BfX2ciIjYJRWvv938ribm0yUzj18wkB2byJGSGtRocP0ZCX52jPb6A3g0MzR4s2sSBwnEHAbkflvJto5fO7LsrRoyrWA3Q-Wl3NFFAdsCNavZTjIuLJx9wy0XJZq3qiaSZjdU-ugdaByPf-D3puyPrPDxSlkQaZedrJiycJGON3lAecZzpC-q25GVF9g5z2bN96MYDw0YxAQnvlyzeFb2OKG7xfaUgyrWU03Pv4tCJIt8zE7dk45-PbU-GM3ro9w8rs90_4ZRPdhf1kZ2-xprG-DoemBLBwR_3aSEsutqr1Nfd-m8ukXLQBAceZNptf5MY3hURIM5BM8SIkq0OVemdVn1cxFMOLklTm4FfKiGnLhOpF6f3rFTZ1mRgHiaPy_IYTGtqizGvqKQBDQgnGJ6ePHBXcZ4Ar_9dYMbwKAX2vAisy9yB-BJ7bmvSTCFYBseO79fefmfHbWc1Oz-hYE_k4SLTQq2IBWVWJv4nQoXh_D7q9uu2tk2-eCoQTOuC4PVexGijqtNAHEWkNze9Qasg2Vo_U1DgegTTY6AVvIFopZ1k40B7fCM3IX_esKz-MUxTOXXOEAkM68ySH21sHb6ppIdhzVeYl7f-s0OOIyz2VAGMZTGfFxo_lcUApCWeMYIUluDQqPb2euMIsf9ZXr5k3_PQgLOERIFbDFUOXxyY30Jt2LshaSpPyYzGM3kFhd9PkSoGe46RPiQjsWj7uKZef5s-ybHWDIEm7FT0uxM37pSWIbgeHxQwF4Wti926yV6Yg0LQGahPFCdIP2TAmP2l-gdAl9kM0bO4tUq1gWxOeg3c6knZurSN6IUjnxhCrAqAK28guWt_HtME81yoKmiGS3YeJ5sDqsr46viGwv3TiFIyh_2qQyehITyGkwXL3HnyKp7l8Nv2WYeDMjJOP7nZwCVZjq5CJI_DXG6y18bYHwt-OLqKhF6vJPZjle48RiMF0Z33RHGAM5eHkYdEmRHTa\",cRq: {ru: 'aHR0cHM6Ly93d3cubWF0Y2hpZC5pby8=',ra: 'TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNi4wLjAuMCBTYWZhcmkvNTM3LjM2',rm: 'R0VU',d: 'PhHW+Yjind89fbecjo/i5/NtTCr/qqRk4L1/Lhhr0rlzpWOTjo4GER9iYdlxgblfbIOH34Owb7Ctrtn4NzITx1ryohxTkEBK//H2JG5SH+JVygr2+RfWDQMUHPK0zdAt4SLycPcYA1lQsASYtIYYL3a27cXB+pbSZ3QdsoIlMWN1v4Jzlt2KqSVjUhs/OjIN8sL4K02lz0ZvjrkVEpYxv0Zdi25/oI8dLuA9tyssiXmj99tDniH8/sY99f9HWB19/fT3AMH3a6DdGX5JnndRaAuNxYu7bnnMP7BUpkmuKyELxfve0NrK+7XxHuWAWwL/R+69DADDOeBZK/708Gu+7dMY2xt8/ozJ3h2nVA4MyyzKk/DsW9KCttAkJlrCZQt7zyLJZOBLY6e2JvfDV96GkWo0eOyH4thVm/mM805DcKjInjy+hVtySECzeK4DBnUX9Xqo8hYm8UdZ+DsE4b4GAxaVsUf1YQVGhweDFUC0VwlEx+R4AerffSrbRREl4q38',t: 'MTY5NzkzNjE3OS4zMTUwMDA=',cT: Math.floor(Date.now() / 1000),m: 'i+ffxdkzza9aa+/KyyGgSozeYZAtyaGSqmINXRz+k/M=',i1: 'rmRs+ROp9txL8bf/Sf+NDA==',i2: 'E04dpl/TelDZq5WADbBoIQ==',zh: 'ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=',uh: '9mPvDFNZ0y8VGO4IML6ngXc1m8uVnDSvugn0Dixn1yo=',hh: '4Z4zXcWMiiA1Xd8SbmnCyW9HMDAjKQya+bpsIHkReww=',}};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=819dc7a0b9a057d0';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, \"\\/?__cf_chl_rt_tk=0zCOatBGaVkRRQEBGuRfuwly9LAGprgyePdHFUV9arA-1697936179-0-gaNycGzNCqU\" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"81d775655c252021\",\"version\":\"2023.10.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -215,7 +328,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"819dc7a16e865734\",\"version\":\"2023.10.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"81d775654c0e3b6c\",\"version\":\"2023.10.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -223,50 +336,42 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script>(function(){window._cf_chl_opt={cvId: '2',cZone: \"www.matchid.io\",cType: 'managed',cNounce: '75435',cRay: '819dc7a16faa0843',cHash: 'e9ea743d4f93603',cUPMDTk: \"\\/sitemap.xml?__cf_chl_tk=F0uVi.HmXc2scuFRTuwcluE0EbkTqa3bnbbu6i2YL7A-1697936179-0-gaNycGzNCrs\",cFPWv: 'b',cTTimeMs: '1000',cMTimeMs: '0',cTplV: 5,cTplB: 'cf',cK: \"visitor-time\",fa: \"\\/sitemap.xml?__cf_chl_f_tk=F0uVi.HmXc2scuFRTuwcluE0EbkTqa3bnbbu6i2YL7A-1697936179-0-gaNycGzNCrs\",md: \"7GqxSMhpgbDrtJ7ize2fzLyeS3SU0em8HdBRC0OLd.Y-1697936179-0-AdmOVTqaTQ3bB0COfN-I9M5A_CI-3mjsPOuTo8BEqEMLTAmPzdsPo6yM_WVUxEPB1lqCGKNZwr8Xdl2AyDt8GfQt-Gie5f7iIVdshgkU7L_J2N8OYqhv_lUsOGYzfFvKec-sGqt0JzB7j0vQXPmSiATLa1wLOWVE1GjJo3sbvbTtANZbx1EjdWioidrWQTxBwJrgSCNChEnw4rnKtyXPqa3X4sOmnZUjlvr24Nj_7Eeu9UBROZAJNJR84HAgaN41QXXBiIHNgsBmOkLRCn314srD-h5Evnpx9Y1tKD5fbxYRFQ-JCZn5HAj3IOPdol6tyYrjYBgjFY35LrU2tlsQnNS8hWcWJb4d7e6rCGytyX79g1J3l0OghGyXJs4vxIheqmrGnOS6_pyvnD-KOQXcB3XxtuTG-oD-RGG9m8C7zoSUNzNyY4-y68XUUOBe5VmWcqfAIeHQkAhd3huodlwNIOtt_38TaimEedkMiDKk5nu3fZWis55953B_b3XL4MD3pF4AGcNKDlATSRtehzWE8ahJpSYNXXfi-jjY_ilCNj4U5KVKvzgXWCmnRiFZ2YJslV1vZWSejsLH-HYLOGprsKD9vfLfQZQFBof-w2RqwxdtnRjfgXVGPW0IxGZXWPnSSJV1NFsLneA9vneJ423wb0xqw2EwI9AyTfjWpDstJw0Kdwe_Bm_G7_faoHXXDra3ph9NdtlyTEzalklty37VSUsHAgUMLhPhO8AbW6upBtnE8Hgugh-RVuac4VzMxnQXKRX5qJduiRpLPZVpRScoJuY7duhkZyOixXjSRLn7HDL0xYHcZMYoxYRyxBb3c0lsrGFlbJhmhr6cOP-R5UXXDY9XjL8fo4ttVTUNNj1HTZGJ3dQF76c9Y8pHoSEmDZkWt3cXvmrckN8VWEES7zOarZqyD_4QbXp_GMx0TW6G7f-aeF39RttoFHKdrz9HeyqaiFSUgOgchgKGsjmhbu-v8ZuyHMfVgSubyF0AADJVkk-7RAu0qsydE4QSBvolAQgLt_bh106buEpcD-zKXOjGQBB--WYC78dxdMgAcWJsST2t9jY6uX_81uBGBjOxfcZw6XAU0Ngy7o2tleGB-sWMV1MvCqzjwwXnff9Q0UBlz16a03axgPqRpEf6e2NKJDrueXxPkGT0Qlidfy2hNYnlPu8LWYovfg5bGjkHouZKeD_x7budOc5jtTbMPirio3oOrHHzIXcW4yxUi9zEvCQtY3NbXUUEDRbn8NjWP102pQ_QfAmRCebfo1Nyf6uXbh_lV8CuMeyC-ouhFtU_enbj7Djk8T0aZZXTTmR0eKSr5MIjawxHG1NWQY4MykhBbirW6NezETgeCZ9vHlTEibRTPoxkZJt_QxjsH00Pv7HIRe0kTa3z9Re_xJGTux-NNdcoTeKc3TBZQ78dasc_iPiNR2XahmJ2-7g3tL4hkFd5Pana1DmvJKQDxhPBlO0QEzJo4-uCZKwZeHt5aXiz6C3f_NProGWBFM28lPxqwzt9eBtjNMQ8DuPsgEV_VRpxVLCLwIKEtWfDMIymFnbuLE_pm7v3QlH8Bv74ZlfeoyEabCEwT7HtpH662kuckkRA20VShcAMniWbO5Azv7SOsglUJP6uQvBv7puzGCy7dokxe0J3zoa0zJ7IbXtoTGXK_jtGo3VM7gHbMJrPvMeTljrqDvnIfR5JSBR7XMYeI0lX4d708PoUkDGmuFlt_HohDyz7i5g7lZGCtw9xl6YSKpsD-sRz13q18bbxis0SK2zbODCQQEWAhkAZ9YQb60E-96Gv1nySjaO5Jan78QT8W1F-1Vv7CUVeDCBInWpVYn2jikZjLSXEiDI6ShwcGXjEJkdxF4wyT2Su9c36woWIya2hdobhVy0_31JA8ToayvbeYu_nKy3Sjxxo8kqvfFxBuLEA4KGBrUb5qXvxb_A1eFIhHO8tmYFGnh46ARzSKx7F9HcSoTkpU06hoc-SBFY88axTauOfeQpQP1ERqiwOeNeSD2iIcRON4PWJ6AI2H33tnjdRp8BToveNS7Hph7KYyKXj-VLAnaM20sU_23LOplOMhzJdSPktbtJPVLF72lAoA8zjO0i5ZUOUuQtAVxRHCUjeymwx61igB78O5kASt9Tfr2xV39uB9HQPAeMoHwgPpQOhmpjlJY7R1n5C4Ep-1HjDtJf7431L2WjAB6QnXIqB-cQPDowStsyyB85D6e4eAWttMl2YycCYxlK74E2sL_vTO2qH6_5GVoMULY7XDjCUhoMuN2Wi3BITJLo699iwRtvWL_bjjU8EixDrSngn2g22FvToeNgbBPfWxdZCdCveAp3S79u6oKU9_oPCCGAqw_ouv5l_1-oVvUNmrMlfPL1Yaoenhvu_8Ivl4Nza9jHIt1U2Sh13lTzrRm8uNbd8HvWfx1hAUg6eFCzISzjpTctnsgGcAoiunpSRgetubjcr5ayQGSNO6NTBB0CymzpX8EoaiFbIpHGl3msmBXUU735haWqylfiI1PpKPaFKMzpSRocuWnTXmcx853iZI_NA94ZYP80mnG8aw1zPbcHK08Q6EsrQPITKRf9--4-NIIA111Mf_wFkupy9MJGfxb_q-ZcdypMBXejP10KqkDAb36WdVnl-1lAI_vcunyR7QhaiAgLY0PB3awyIpa9S-nyswIPQuelvgz6YMkgd7TcXCkP2pQ\",cRq: {ru: 'aHR0cHM6Ly93d3cubWF0Y2hpZC5pby9zaXRlbWFwLnhtbA==',ra: 'TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzExNi4wLjAuMCBTYWZhcmkvNTM3LjM2',rm: 'R0VU',d: 'GE4RFmHnm+FsoxMdUUEgm9JUbBYEdgKUaxgTrU1SSqfmVeuERlV/ToxUyNp9FkqOkKeBzyZUmS2seEYyE+6L35idnOGPuu6h+dJ9d8AJU47mtvWNz1KqsRx7bus7ikjftJ7SmPtyTZ0qKaFgrsPYS55+3kxwosK4X+X4s9dAXegDwlI5wNtllfrWu6VGEocVcTjUou8V0UcR0QHE6SCuKIs2PxwP8fO6qZsZdRcN74PlLY4J49qeJ4oJU8ChrbdM36X13xG/S/JfCoyI9TgOAW69hCOMexARFMaG0fornWaIZeuskWOuCRw3exETy82nWRGgrZYGnYr2aImQ31CmhRVUCvSAazVuj4jVEWQ2ZTMnRbe7VoSlj8AVO/VY+LMxk/nT8SEWoGOZaVe4cvfPHFCkhlud6Etfbns2Fs+3TtQvEOLrDMduHS4PmNqHwqxVBU8TGsDQ6SQN+G3Wm87dZ1jEofkJy69OZ+00USzDqpJVaETDo4pt6sJN6BhyUx3u',t: 'MTY5NzkzNjE3OS40MzEwMDA=',cT: Math.floor(Date.now() / 1000),m: 'le0KHJ312bVHuyjsceQ0Ywc23hyzsJMKA68+Z96Ky/k=',i1: 'eMtxGPe2xDYNjDznGf8uuQ==',i2: 'ZI50igB8GO8BaH/jNSVnIQ==',zh: 'ovFXo48JQg7jBgcz/9ORIyXuydJGnBJdml9n5pSR7g0=',uh: '9mPvDFNZ0y8VGO4IML6ngXc1m8uVnDSvugn0Dixn1yo=',hh: '4Z4zXcWMiiA1Xd8SbmnCyW9HMDAjKQya+bpsIHkReww=',}};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=819dc7a16faa0843';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, \"\\/sitemap.xml?__cf_chl_rt_tk=F0uVi.HmXc2scuFRTuwcluE0EbkTqa3bnbbu6i2YL7A-1697936179-0-gaNycGzNCrs\" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"81d775655e818226\",\"version\":\"2023.10.0\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
 					"count": "4",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
-					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"otherinfo": "<p>Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload.</p>",
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
-					"pluginid": "10049",
-					"alertRef": "10049",
-					"alert": "Non-Storable Content",
-					"name": "Non-Storable Content",
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Re-examine Cache-control Directives",
+					"name": "Re-examine Cache-control Directives",
 					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
 							"uri": "https://www.matchid.io",
 							"method": "GET",
-							"param": "",
+							"param": "cache-control",
 							"attack": "",
-							"evidence": "no-store",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://www.matchid.io/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store",
+							"evidence": "max-age=600",
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
-					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
+					"count": "1",
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
-					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
-					"cweid": "524",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
+					"cweid": "525",
 					"wascid": "13",
 					"sourceid": "1"
 				},
@@ -281,21 +386,37 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
 					"instances":[ 
 						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HIT",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "HIT",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
-					"count": "1",
+					"count": "3",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -338,7 +459,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -381,7 +502,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -424,7 +545,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -467,7 +588,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
@@ -480,12 +601,20 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"uri": "https://www.matchid.io/cdn-cgi/styles/challenges.css",
+							"uri": "https://www.matchid.io",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=7200",
+							"evidence": "max-age=600",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
@@ -494,15 +623,23 @@
 							"attack": "",
 							"evidence": "max-age=86400",
 							"otherinfo": ""
+						},
+						{
+							"uri": "https://www.matchid.io/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "10"
+					"sourceid": "1"
 				}
 			]
 		}
