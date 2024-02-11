@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 4 Feb 2024 00:56:40",
+	"@generated": "Sun, 11 Feb 2024 00:56:52",
 	"site":[ 
 		{
 			"@name": "https://deces.matchid.io",
@@ -174,7 +174,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "18"
+					"sourceid": "29"
 				},
 				{
 					"pluginid": "10020",
@@ -295,7 +295,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "23"
+					"sourceid": "18"
 				},
 				{
 					"pluginid": "10094",
@@ -312,97 +312,105 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "aCffbeTDwUAagW73WbN9iExyjscPHQUHzyOKl2340ZHPVfYF1CuSGgFmT6h1R2Vk",
-							"otherinfo": "h'\uFFFDm\uFFFD\uFFFD\uFFFD@\\x001a\uFFFDn\uFFFDY\uFFFD}\uFFFDLr\uFFFD\uFFFD\\x000f\\x001d\\x0005\\x0007\uFFFD#\uFFFD\uFFFDm\uFFFD\u0451\uFFFDU\uFFFD\\x0005\uFFFD+\uFFFD\\x001a\\x0001fO\uFFFDuGed"
+							"evidence": "2BnhaCDnzZUVDrfozE6zARO5GVowtQQk54pGAJv4sULQE50cjv2x",
+							"otherinfo": "\uFFFD\\x0019\uFFFDh \uFFFD\u0355\\x0015\\x000e\uFFFD\uFFFD\uFFFDN\uFFFD\\x0001\\x0013\uFFFD\\x0019Z0\uFFFD\\x0004$\uFFFDF\\x0000\uFFFD\uFFFD\uFFFDB\uFFFD\\x0013\uFFFD\\x001c\uFFFD\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://deces.matchid.io",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2F90bpdnyalHymB68odBGRupzPpoa2JeTjb1",
+							"otherinfo": "\uFFFD_tn\uFFFDg\u0269G\uFFFD`z\uFFFDA\\x0019\\x001b\uFFFD\uFFFD\uFFFDhkb^N6\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "pjArWezwhJpwiuVZ3MTE5Gqpsefxq8pyc8n8ZGsqo3nAzHhu22WPXAT7RNqlMYnI9pPW0jCFYfw4pWzwVMxWkBOnCfQ4PSBmeSG6keYkH9evWpj2yahGOp6xuAngouTllCg9",
-							"otherinfo": "\uFFFD0+Y\uFFFD\uFFFD\uFFFD\uFFFDp\uFFFD\uFFFDY\uFFFD\uFFFD\uFFFD\uFFFDj\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDrs\uFFFD\uFFFDdk*\uFFFDy\uFFFD\uFFFDxn\uFFFDe\uFFFD\\\\x0004\uFFFDD\u06A51\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD0\uFFFDa\uFFFD8\uFFFDl\uFFFDT\uFFFDV\uFFFD\\x0013\uFFFD\t\uFFFD8= fy!\uFFFD\uFFFD\uFFFD$\\x001f\u05EFZ\uFFFD\uFFFD\u0268F:\uFFFD\uFFFD\uFFFD\t\uFFFD\uFFFD\uFFFD(="
+							"evidence": "2Fvkp9Y4hRZ0xuFBqR3DfONqnDpilRt4xasCwEcXeOttr8WQIwoMGzg4mKN",
+							"otherinfo": "\uFFFD[\uFFFD\uFFFD8\uFFFD\\x0016t\uFFFD\uFFFDA\uFFFD\\x001d\uFFFD|\uFFFDj\uFFFD:b\uFFFD\\x001bx\u016B\\x0002\uFFFDG\\x0017x\uFFFDm\uFFFD\u0150#\n\\x000c\\x001b88\uFFFD\uFFFD"
+						},
+						{
+							"uri": "https://deces.matchid.io/build/module/bundle.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FcnEdi0SJZqwL3u1kzPA6ERqDpwwrHWbQRoBfKxwmnEJjb6FZcWfiIiqd",
+							"otherinfo": "\uFFFDW'\\x0011\u0634H\uFFFDj\uFFFD\uFFFD\uFFFD\uFFFDL\uFFFD\\x0003\uFFFD\\x0011\uFFFD:p\u00B1\uFFFDm\\x0004h\\x0005\uFFFD\uFFFDi\uFFFD&6\uFFFD\\x0015\uFFFD\\x0016~\"\"\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FFZoOCYEdcGRE13F6f2FLiluD1ZNrPDL4ptfAu7Wop2tV",
-							"otherinfo": "\uFFFDQY\uFFFD\uFFFD\uFFFD\\x0011\uFFFD\\x0006DMw\\x0017\uFFFD\uFFFD\\x0014\uFFFD\uFFFD\uFFFD=Y6\uFFFD\uFFFD/\uFFFDm|\\x000b\uFFFDZ\uFFFDv\uFFFD"
+							"evidence": "2F8717xcMs0BwHvhG6UDZj0GN00TwM2Q3DfI23sxcGKrLsVHOLzxMyjU",
+							"otherinfo": "\uFFFD_;\u05FC\\2\uFFFD\\x0001\uFFFD{\uFFFD\\x001b\uFFFD\\x0003f=\\x00067M\\x0013\uFFFD\u0350\uFFFD7\uFFFD\uFFFD{1pb\uFFFD.\uFFFDG8\uFFFD\uFFFD3(\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/global.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BYGyXUKumProWKG1B2Qu8uTTtJmaq6v1gdP",
-							"otherinfo": "\uFFFD\\x0016\\x0006\uFFFDu\n\uFFFDc\uFFFDb\uFFFD\uFFFD\\x001d\uFFFD\uFFFD\u02D3N\uFFFDfj\uFFFD\uFFFD\uFFFD\\x0007O"
+							"evidence": "2BCePWdy4N08GuUqS0fVuztZhKKTa9WT3BmiVTfyb6pbZV8OTaRKJYd1hTx5kT67cZINSLDz9pU9lYRi8OLMctW1nZdSIwBMP5EW58F8ei",
+							"otherinfo": "\uFFFD\\x0010\uFFFD=gr\uFFFD\uFFFD<\\x001a\uFFFD*KG\u057B;Y\uFFFD\uFFFD\uFFFDk\u0553\uFFFD\\x0019\uFFFDU7\uFFFDo\uFFFD[e_\\x000eM\uFFFDJ%\uFFFDu\uFFFD<y\uFFFD>\uFFFDq\uFFFD\rH\uFFFD\uFFFD\uFFFD\uFFFD=\uFFFD\uFFFDb\uFFFD\uFFFD\uFFFDr\u0575\uFFFD\uFFFDR#\\x0000L?\uFFFD\\x0016\uFFFD\uFFFD|z"
 						},
 						{
 							"uri": "https://deces.matchid.io/css/matchid.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fy17JwdT1GLbGwlubDaVLZFKCNXtqSyNP",
-							"otherinfo": "\uFFFD\\\uFFFD\uFFFD\\x001dOQ\uFFFDll%\uFFFD\uFFFD\uFFFDT\uFFFDE(#W\uFFFD\uFFFD\uFFFD4"
+							"evidence": "Hp0SfShTrOxGFLlO8tqmlCeelNzgFlnSVQst",
+							"otherinfo": "\\x001e\uFFFD\\x0012}(S\uFFFD\uFFFDF\\x0014\uFFFDN\uFFFD\u06A6\uFFFD'\uFFFD\uFFFD\uFFFD\uFFFD\\x0016Y\uFFFDU\\x000b-"
 						},
 						{
 							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BNpiHGVhpe42lxgOi6cnjR1oLbozqBHO45HekH0wjMZa848T3a",
-							"otherinfo": "\uFFFD\\x0013i\uFFFDq\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\`:.\uFFFD\uFFFD4u\uFFFD\uFFFD\uFFFD\u03A0G;\uFFFDGzA\uFFFD\uFFFD3\\x0019k\uFFFD<Ov"
-						},
-						{
-							"uri": "https://deces.matchid.io/favicon.svg",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2BsnzfFaYrhoRAVHxa8gxNY1BqRQHUhKfoQfawYAmhymNbD6S8MmGdEluT5te9HvZgJrL4Nq",
-							"otherinfo": "\uFFFD\\x001b'\uFFFD\uFFFDZb\uFFFDhD\\x0005G\u016F \uFFFD\uFFFD5\\x0006\uFFFDP\\x001dHJ~\uFFFD\\x001fk\\x0006\\x0000\uFFFD\\x001c\uFFFD5\uFFFD\uFFFDK\uFFFD&\\x0019\uFFFD%\uFFFD>m{\uFFFD\uFFFDf\\x0002k/\uFFFDj"
+							"evidence": "2FKdmrCW14d1iQagrVi6VfQQ57sEQSbMFoxwVnE",
+							"otherinfo": "\uFFFDR\uFFFD\uFFFD\uFFFD\uFFFD\u05C7u\uFFFD\\x0006\uFFFD\uFFFDX\uFFFDU\uFFFD\\x0010\uFFFD\\x0004A&\uFFFD\\x0016\uFFFDpVq"
 						},
 						{
 							"uri": "https://deces.matchid.io/js/matchid.min.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "8dvJn0rNERJgFlQ6aJPW1rfHtt5HcfvB85JQaTrZ6SODtAaxUPQ43irT2vSEj0CQ",
-							"otherinfo": "\uFFFD\uFFFD\u025FJ\uFFFD\\x0011\\x0012`\\x0016T:h\uFFFD\uFFFD\u05B7\u01F6\uFFFDGq\uFFFD\uFFFD\uFFFDPi:\uFFFD\uFFFD#\uFFFD\uFFFD\\x0006\uFFFDP\uFFFD8\uFFFD*\uFFFD\uFFFD\uFFFD@\uFFFD"
+							"evidence": "2BjBmcbMA5kBMCBLYVIRDlcTCWaOXYhltSCnLoy6YBRXZBpv6Ybp9JaGFOgWNcBRHDjVW4qeWx34SE",
+							"otherinfo": "\uFFFD\\x0018\uFFFD\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\\x00010 KaR\\x0011\\x000eW\\x0013\tf\uFFFD]\uFFFDe\uFFFD \uFFFD.\uFFFD\uFFFD`\\x0014Wd\\x001ao\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0014\uFFFD\\x00165\uFFFDQ\\x001c8\uFFFD[\uFFFD\uFFFD[\\x001d\uFFFDH"
 						},
 						{
 							"uri": "https://deces.matchid.io/manifest.json",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "tJYNSIVPCgROzG46dg9cpikhzScJ3WFqb5XET4pd7k0",
-							"otherinfo": "\uFFFD\uFFFD\rH\uFFFDO\n\\x0004N\uFFFDn:v\\x000f\\\uFFFD)!\uFFFD'\t\uFFFDajo\uFFFD\uFFFDO\uFFFD]\uFFFDM"
+							"evidence": "2FkJKY4nfdIWtGB2PZpyil39Ep6BV4twfEX2KYHyiVZ0Cjeck8nV",
+							"otherinfo": "\uFFFDY\t)\uFFFD'}\uFFFD\\x0016\uFFFD`v=\uFFFDr\uFFFD]\uFFFD\\x0012\uFFFD\uFFFDW\uFFFDp|E\uFFFD)\uFFFD\uFFFDVt\n7\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "XN8CslLjK1odoFGkChFVcXlxTAGWYWpZoffOez4kgVPCrSGnLKZBhsbi7NjVdewMQJbh0znIYssdWPaXz0rAJUVrokBVXW4SurrxXp",
-							"otherinfo": "\\\uFFFD\\x0002\uFFFDR\uFFFD+Z\\x001d\uFFFDQ\uFFFD\n\\x0011UqyqL\\x0001\uFFFDajY\uFFFD\uFFFD\uFFFD{>$\uFFFDS\u00AD!\uFFFD,\uFFFDA\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDu\uFFFD\\x000c@\uFFFD\uFFFD\uFFFD9\uFFFDb\uFFFD\\x001dX\uFFFD\uFFFD\uFFFDJ\uFFFD%Ek\uFFFD@U]n\\x0012\uFFFD\uFFFD\uFFFD^"
+							"evidence": "2B6Hai8tR4D7Cv2jO4tjdseSlqrpUw34y1Vfhn6RuJIfmuCOOqGq",
+							"otherinfo": "\uFFFD\\x001e\uFFFDj/-G\uFFFD\uFFFD\n\uFFFD\uFFFD;\uFFFDcv\u01D2\uFFFD\uFFFD\uFFFDS\r\uFFFD\uFFFDU_\uFFFD~\uFFFD\uFFFD\uFFFD\\x001f\uFFFD\uFFFD\uFFFD:\uFFFD\uFFFD"
 						},
 						{
 							"uri": "https://deces.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B1f7BOEcF2k245nanin7oRKSao7CUZ2WqUY4bplAtZ8",
-							"otherinfo": "\uFFFD\\x001d_\uFFFD\\x0013\uFFFDp]\uFFFD\u06CEgjx\uFFFD\uFFFDJI\uFFFD;\tFvZ\uFFFD\\x0018\uFFFDe\\x0002\uFFFD|"
+							"evidence": "EwKQ37Y9ArMdYUqhHjgQh1I0Py4noFyU",
+							"otherinfo": "\\x0013\\x0002\uFFFD\u07F6=\\x0002\uFFFD\\x001daJ\uFFFD\\x001e8\\x0010\uFFFDR4?.'\uFFFD\\\uFFFD"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>h'\uFFFDm\uFFFD\uFFFD\uFFFD@\\x001a\uFFFDn\uFFFDY\uFFFD}\uFFFDLr\uFFFD\uFFFD\\x000f\\x001d\\x0005\\x0007\uFFFD#\uFFFD\uFFFDm\uFFFD\u0451\uFFFDU\uFFFD\\x0005\uFFFD+\uFFFD\\x001a\\x0001fO\uFFFDuGed</p>",
+					"otherinfo": "<p>\uFFFD\\x0019\uFFFDh \uFFFD\u0355\\x0015\\x000e\uFFFD\uFFFD\uFFFDN\uFFFD\\x0001\\x0013\uFFFD\\x0019Z0\uFFFD\\x0004$\uFFFDF\\x0000\uFFFD\uFFFD\uFFFDB\uFFFD\\x0013\uFFFD\\x001c\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10027",
@@ -429,7 +437,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "23"
+					"sourceid": "18"
 				},
 				{
 					"pluginid": "10109",
@@ -446,7 +454,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"89720e1e09f6542a46ffe542-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"00bc4f0c4c82c86f3ee97f1e-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -454,7 +462,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"f5be2ed36828483975b79eca-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"e69a5e367f1600f999170546-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -462,7 +470,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"ca20e2ceebfbcef0e46d9969-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"b66a6513f4e6e846ecf27f6c-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -470,7 +478,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"4fa8f718061c3421116070d2-text/javascript\"></script>",
+							"evidence": "<script defer src=\"/js/matchid.min.js\" type=\"0e1448256f47fb5ce026cd43-text/javascript\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
@@ -480,7 +488,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10015",
@@ -556,7 +564,23 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 85",
+							"evidence": "Age: 75",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"uri": "https://deces.matchid.io/css/global.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 5037",
+							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"uri": "https://deces.matchid.io/css/matchid.min.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 87",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
@@ -564,17 +588,17 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 84",
+							"evidence": "Age: 74",
 							"otherinfo": "The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
-					"count": "2",
+					"count": "4",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>https://www.rfc-editor.org/rfc/rfc9110.html</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "20"
+					"sourceid": "25"
 				},
 				{
 					"pluginid": "90005",
@@ -595,7 +619,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
+							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -638,7 +662,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
+							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -681,7 +705,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
+							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -724,7 +748,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/js/matchid.min.js",
+							"uri": "https://deces.matchid.io/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -799,7 +823,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/favicon-apple.png",
+							"uri": "https://deces.matchid.io/css/matchid.min.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -807,7 +831,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://deces.matchid.io/favicon.svg",
+							"uri": "https://deces.matchid.io/favicon-apple.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
