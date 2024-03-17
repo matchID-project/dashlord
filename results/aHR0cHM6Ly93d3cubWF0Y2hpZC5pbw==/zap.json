@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 10 Mar 2024 00:56:25",
+	"@generated": "Sun, 17 Mar 2024 00:56:09",
 	"site":[ 
 		{
 			"@name": "https://www.matchid.io",
@@ -113,7 +113,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"9cbf83169e56a02929c012c3-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"6b411071a32298e9e151a3ec-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -121,7 +121,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"9cbf83169e56a02929c012c3-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"6b411071a32298e9e151a3ec-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -129,7 +129,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"9cbf83169e56a02929c012c3-text/javascript\"></script>",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"6b411071a32298e9e151a3ec-text/javascript\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -166,17 +166,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": "Location header URI length: 28 [http://matchid.io/robots.txt].\nPredicted response size: 328.\nResponse Body Length: 538."
-						},
-						{
-							"uri": "https://www.matchid.io/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "Location header URI length: 29 [http://matchid.io/sitemap.xml].\nPredicted response size: 329.\nResponse Body Length: 538."
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
 					"otherinfo": "<p>Location header URI length: 18 [http://matchid.io/].</p><p>Predicted response size: 318.</p><p>Response Body Length: 538.</p>",
 					"reference": "",
@@ -199,7 +191,7 @@
 							"method": "GET",
 							"param": "https://code.iconify.design/2/2.1.0/iconify.min.js",
 							"attack": "",
-							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"9cbf83169e56a02929c012c3-text/javascript\"></script>",
+							"evidence": "<script src=\"https://code.iconify.design/2/2.1.0/iconify.min.js\" type=\"6b411071a32298e9e151a3ec-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -207,7 +199,7 @@
 							"method": "GET",
 							"param": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904",
 							"attack": "",
-							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"9cbf83169e56a02929c012c3-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6277851622494904\" crossorigin=\"anonymous\" type=\"6b411071a32298e9e151a3ec-text/javascript\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -215,7 +207,7 @@
 							"method": "GET",
 							"param": "https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX",
 							"attack": "",
-							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"9cbf83169e56a02929c012c3-text/javascript\"></script>",
+							"evidence": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-49J1J0GERX\" type=\"6b411071a32298e9e151a3ec-text/javascript\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -269,29 +261,29 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FK9eWLLXSKGgfhmnF97XEcFYxB9h9Jk9qbKB5DjfNaREZUVgDwlRJTONOuammVq",
-							"otherinfo": "\uFFFDR\uFFFDyb\uFFFD]\"\uFFFD\uFFFD\uFFFDf\uFFFD_{\\G\\x0005c\\x0010}\uFFFD\uFFFDd\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD|\u0591\\x0011\uFFFD\\x0015\uFFFD<%D\uFFFD\uFFFD4\uB69Aej"
+							"evidence": "2BW6nVPwnIujITncsEw15qoZAPjyVOiHXemX",
+							"otherinfo": "\uFFFD\\x0015\uFFFD\uFFFDS\uD830\uDEE3!9\u0730L5\uFFFD\\x0019\\x0000\uFFFD\uFFFDT\uFFFD]\uFFFD"
 						},
 						{
 							"uri": "https://www.matchid.io/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BkO2Gy4z34V8SfvAKOickIW07A1TeRZCTu53jWShDmkez",
-							"otherinfo": "\uFFFD\\x0019\\x000e\uFFFDl\uFFFD\uFFFD~\\x0015\uFFFD'\uFFFD\\x0000\uFFFD\uFFFDrB\\x0016\u04F05M\uFFFDY\t;\uFFFD\uFFFD5\uFFFD\uFFFD9\uFFFD{"
+							"evidence": "2FhK6SeJjcLHcKgTK8aplYdZyBwKVP",
+							"otherinfo": "\uFFFDXJ\uFFFD'\uFFFD\uFFFD\uFFFD\uFFFDp\uFFFD\\x0013+\u01A9\uFFFD\uFFFDY\uFFFD\\x001c\nT"
 						},
 						{
 							"uri": "https://www.matchid.io/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "7549xdlwExUooJdxGbLCjOgudJ5mg1Kn481edq9aqUvX",
-							"otherinfo": "\uFFFD=\uFFFD\uFFFDp\\x0013\\x0015(\uFFFD\uFFFDq\\x0019\uFFFD\u008C\uFFFD.t\uFFFDf\uFFFDR\uFFFD\uFFFD\uFFFD^v\uFFFDZ\uFFFDK\uFFFD"
+							"evidence": "dE2ZrFXr3G4g6ZLqg81pnP0jwkIhUGjSIDbWrVIff3BORw",
+							"otherinfo": "tM\uFFFD\uFFFDU\uFFFD\uFFFDn \uFFFD\uFFFD\uFFFDi\uFFFD\uFFFD#\uFFFDB!Ph\uFFFD 6\u05ADR\\x001fpNG"
 						}
 					],
 					"count": "3",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFDR\uFFFDyb\uFFFD]\"\uFFFD\uFFFD\uFFFDf\uFFFD_{\\G\\x0005c\\x0010}\uFFFD\uFFFDd\uFFFD\uFFFD\uFFFD\\x0007\uFFFD\uFFFD|\u0591\\x0011\uFFFD\\x0015\uFFFD<%D\uFFFD\uFFFD4\uB69Aej</p>",
+					"otherinfo": "<p>\uFFFD\\x0015\uFFFD\uFFFDS\uD830\uDEE3!9\u0730L5\uFFFD\\x0019\\x0000\uFFFD\uFFFDT\uFFFD]\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -320,7 +312,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"861f583b5c076ffe\",\"version\":\"2024.2.4\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"86590572986e29b2\",\"version\":\"2024.2.4\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
@@ -328,19 +320,11 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"861f583b5f0b395c\",\"version\":\"2024.2.4\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://www.matchid.io/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"861f583b5a0328ae\",\"version\":\"2024.2.4\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
+							"evidence": "<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"865905729a6b201c\",\"version\":\"2024.2.4\",\"r\":1,\"token\":\"2a9fe3aa012b4d008568071ef799dbed\",\"b\":1}' crossorigin=\"anonymous\"></script>",
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>This is an informational alert and so no changes are required.</p>",
 					"otherinfo": "<p>Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload.</p>",
 					"reference": "",
@@ -416,7 +400,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>https://www.rfc-editor.org/rfc/rfc9110.html</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -459,7 +443,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -502,7 +486,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -545,7 +529,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -588,7 +572,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
