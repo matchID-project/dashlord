@@ -353,7 +353,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "37 >= 30 days"
+              "finding"      : "30 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -605,21 +605,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "+190 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1712451586"
+              "finding"      : "1713057016"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds"
+              "finding"      : "190 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -682,7 +682,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-lax-kwhp1940108-LAX"
+              "finding"      : "cache-sjc10061-SJC"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -690,7 +690,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: MISSX-Cache-Hits: 0"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 2"
           }
 ,         {
               "id"           : "heartbleed",
@@ -1538,7 +1538,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "37 >= 30 days"
+              "finding"      : "30 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1790,21 +1790,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+39 seconds from localtime"
+              "finding"      : "+228 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1712451626"
+              "finding"      : "1713057052"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "39 seconds"
+              "finding"      : "228 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1867,7 +1867,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-lax-kwhp1940054-LAX"
+              "finding"      : "cache-sjc10072-SJC"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -2374,6 +2374,6 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "80"
+              "finding"      : "76"
           }
 ]
