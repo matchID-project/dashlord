@@ -178,7 +178,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
+              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'signed certificate timestamps/#18' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -206,7 +206,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -269,7 +269,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03E0920D134B5EE9B562EB2CF4D58300B889"
+              "finding"      : "03E0EF77080B9B482D65BDAC841D9267E315"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "32E4FFF84A2AED7F55C75968A7813C79BE9FE9DE"
+              "finding"      : "AEB2583F9CE4B6A883F055CDF412745981D79FCF"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5EF4365D64D5D14DD7380946FFD65FCBCDC3BB141139C9614514CD19CE1919D7"
+              "finding"      : "BB6A1D1094BBA695159C18EAC8302E91E14A36C3A1892840F40F41882D8A0CBD"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDhDCCAwqgAwIBAgISA+CSDRNLXum1Yuss9NWDALiJMAoGCCqGSM49BAMDMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJFMTAeFw0yNDAyMTUwMDU0MzNaFw0yNDA1MTUwMDU0MzJaMBUxEzARBgNVBAMTCm1hdGNoaWQuaW8wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQQaYByNW2msk2cqYkbEYx/MVIjcxv5vbW5uNp77oWYhbaZoTHolznpLtVHCi8Z/kGJBqn/yB3mk9e2qaNZAIrbo4ICGzCCAhcwDgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRTvntFBl3XlEhyehETdufDTGS72zAfBgNVHSMEGDAWgBRa8+0r/DbCN3m5UjDqVG/PVcsurDBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9lMS5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL2UxLmkubGVuY3Iub3JnLzAjBgNVHREEHDAaggwqLm1hdGNoaWQuaW+CCm1hdGNoaWQuaW8wEwYDVR0gBAwwCjAIBgZngQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAY2qeQCQAAAEAwBHMEUCIQDt11WKuUIwG7Yp29+cEy42uH/+2E25K/i2yd5zPcyq8QIgVk9ivl79K+vMZa1fxf29stDjpAZSUH/bix601HjB+YwAdwBIsONr2qZHNA/lagL6nTDrHFIBy1bdLIHZu7+rOdiEcwAAAY2qeQIkAAAEAwBIMEYCIQDnQxhqQB1WBdyyq0YxvhzeyelyQMQctEczPyJ4rVXx1QIhAJCZ7w4dkDBXknI3K8x5XD9nGK56lVpgcuV5rw8+6Ek3MAoGCCqGSM49BAMDA2gAMGUCMQDPtPKAfEwmuoIFDcp2BDyQLOtzSxW8DolmDFOAl0JwPL3SQjScGXERLJET7O3My40CMGmhQxYqCKYdWFmuM4ax50HMQBqjm43nPAHZ8fvKuNZRn5TEW5X2qMriBf9A94Xm/w==\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDhDCCAwqgAwIBAgISA+DvdwgLm0gtZb2shB2SZ+MVMAoGCCqGSM49BAMDMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJFMTAeFw0yNDA0MTQwMTE5NDNaFw0yNDA3MTMwMTE5NDJaMBUxEzARBgNVBAMTCm1hdGNoaWQuaW8wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAR/LIlKvgZJwezw2A7AeLDN9HRTSMfLknSdXC5F4fb6h9A1+e/JF605AZ6SOBb5rsAxIfEaqfee9jFLpTjzR3hao4ICGzCCAhcwDgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQgSvJnkQLpeGKgmrOnpRO5amtLpjAfBgNVHSMEGDAWgBRa8+0r/DbCN3m5UjDqVG/PVcsurDBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9lMS5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL2UxLmkubGVuY3Iub3JnLzAjBgNVHREEHDAaggwqLm1hdGNoaWQuaW+CCm1hdGNoaWQuaW8wEwYDVR0gBAwwCjAIBgZngQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgAZmBBxCfDWUi4wgNKeP2S7g24ozPkPUo7u385KPxa0ygAAAY7aZ0C/AAAEAwBHMEUCIEJbBCcawPcEiBabr68vVbeQ3XvZa5+eE6S+k5aN/J3EAiEA0Wpll0MIfQDOgN109z5fJSb/o6tyEPukVKbE/TUguJ8AdwA7U3d1Pi25gE6LMFsG/kA7Z9hPw/THvQANLXJv4frUFwAAAY7aZ0C/AAAEAwBIMEYCIQDSCpvOArasxp820ldXbJ/2SYOWIU/Fw10uybtoqkcQAwIhAOHqMz9fdLnxHdgSb9Zbg1ov9v0xwMwMc3VnYLIOg++jMAoGCCqGSM49BAMDA2gAMGUCMQDXQYtLJ6aDaoLVBEdXdXHGRUKSLyWXwxDGfb0Bpz9X+G4moer8+gYAr14itqqhJ5sCMEY87yOkAzzT/oA/DAzY9ewiHK6Sn25DWX0djfrArjLYsehscHUFVXvz3qiKRmiLTg==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "30 >= 30 days"
+              "finding"      : "83 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-02-15 00:54"
+              "finding"      : "2024-04-14 01:19"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-05-15 00:54"
+              "finding"      : "2024-07-13 01:19"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -605,21 +605,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+190 seconds from localtime"
+              "finding"      : "+142 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1713057016"
+              "finding"      : "1713661149"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "190 seconds"
+              "finding"      : "142 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -682,7 +682,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-sjc10061-SJC"
+              "finding"      : "cache-iad-kiad7000061-IAD"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -690,7 +690,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 2"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
           }
 ,         {
               "id"           : "heartbleed",
@@ -1363,7 +1363,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
+              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'next protocol/#13172' 'signed certificate timestamps/#18' 'key share/#51' 'supported versions/#43' 'extended master secret/#23' 'application layer protocol negotiation/#16' 'compress_certificate/#27'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -1454,7 +1454,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "03E0920D134B5EE9B562EB2CF4D58300B889"
+              "finding"      : "03E0EF77080B9B482D65BDAC841D9267E315"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -1468,21 +1468,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "32E4FFF84A2AED7F55C75968A7813C79BE9FE9DE"
+              "finding"      : "AEB2583F9CE4B6A883F055CDF412745981D79FCF"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5EF4365D64D5D14DD7380946FFD65FCBCDC3BB141139C9614514CD19CE1919D7"
+              "finding"      : "BB6A1D1094BBA695159C18EAC8302E91E14A36C3A1892840F40F41882D8A0CBD"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDhDCCAwqgAwIBAgISA+CSDRNLXum1Yuss9NWDALiJMAoGCCqGSM49BAMDMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJFMTAeFw0yNDAyMTUwMDU0MzNaFw0yNDA1MTUwMDU0MzJaMBUxEzARBgNVBAMTCm1hdGNoaWQuaW8wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQQaYByNW2msk2cqYkbEYx/MVIjcxv5vbW5uNp77oWYhbaZoTHolznpLtVHCi8Z/kGJBqn/yB3mk9e2qaNZAIrbo4ICGzCCAhcwDgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRTvntFBl3XlEhyehETdufDTGS72zAfBgNVHSMEGDAWgBRa8+0r/DbCN3m5UjDqVG/PVcsurDBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9lMS5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL2UxLmkubGVuY3Iub3JnLzAjBgNVHREEHDAaggwqLm1hdGNoaWQuaW+CCm1hdGNoaWQuaW8wEwYDVR0gBAwwCjAIBgZngQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAY2qeQCQAAAEAwBHMEUCIQDt11WKuUIwG7Yp29+cEy42uH/+2E25K/i2yd5zPcyq8QIgVk9ivl79K+vMZa1fxf29stDjpAZSUH/bix601HjB+YwAdwBIsONr2qZHNA/lagL6nTDrHFIBy1bdLIHZu7+rOdiEcwAAAY2qeQIkAAAEAwBIMEYCIQDnQxhqQB1WBdyyq0YxvhzeyelyQMQctEczPyJ4rVXx1QIhAJCZ7w4dkDBXknI3K8x5XD9nGK56lVpgcuV5rw8+6Ek3MAoGCCqGSM49BAMDA2gAMGUCMQDPtPKAfEwmuoIFDcp2BDyQLOtzSxW8DolmDFOAl0JwPL3SQjScGXERLJET7O3My40CMGmhQxYqCKYdWFmuM4ax50HMQBqjm43nPAHZ8fvKuNZRn5TEW5X2qMriBf9A94Xm/w==\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDhDCCAwqgAwIBAgISA+DvdwgLm0gtZb2shB2SZ+MVMAoGCCqGSM49BAMDMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJFMTAeFw0yNDA0MTQwMTE5NDNaFw0yNDA3MTMwMTE5NDJaMBUxEzARBgNVBAMTCm1hdGNoaWQuaW8wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAR/LIlKvgZJwezw2A7AeLDN9HRTSMfLknSdXC5F4fb6h9A1+e/JF605AZ6SOBb5rsAxIfEaqfee9jFLpTjzR3hao4ICGzCCAhcwDgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQgSvJnkQLpeGKgmrOnpRO5amtLpjAfBgNVHSMEGDAWgBRa8+0r/DbCN3m5UjDqVG/PVcsurDBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9lMS5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL2UxLmkubGVuY3Iub3JnLzAjBgNVHREEHDAaggwqLm1hdGNoaWQuaW+CCm1hdGNoaWQuaW8wEwYDVR0gBAwwCjAIBgZngQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHzAPEAdgAZmBBxCfDWUi4wgNKeP2S7g24ozPkPUo7u385KPxa0ygAAAY7aZ0C/AAAEAwBHMEUCIEJbBCcawPcEiBabr68vVbeQ3XvZa5+eE6S+k5aN/J3EAiEA0Wpll0MIfQDOgN109z5fJSb/o6tyEPukVKbE/TUguJ8AdwA7U3d1Pi25gE6LMFsG/kA7Z9hPw/THvQANLXJv4frUFwAAAY7aZ0C/AAAEAwBIMEYCIQDSCpvOArasxp820ldXbJ/2SYOWIU/Fw10uybtoqkcQAwIhAOHqMz9fdLnxHdgSb9Zbg1ov9v0xwMwMc3VnYLIOg++jMAoGCCqGSM49BAMDA2gAMGUCMQDXQYtLJ6aDaoLVBEdXdXHGRUKSLyWXwxDGfb0Bpz9X+G4moer8+gYAr14itqqhJ5sCMEY87yOkAzzT/oA/DAzY9ewiHK6Sn25DWX0djfrArjLYsehscHUFVXvz3qiKRmiLTg==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -1538,21 +1538,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "30 >= 30 days"
+              "finding"      : "83 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-02-15 00:54"
+              "finding"      : "2024-04-14 01:19"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-05-15 00:54"
+              "finding"      : "2024-07-13 01:19"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -1790,21 +1790,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+228 seconds from localtime"
+              "finding"      : "+180 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1713057052"
+              "finding"      : "1713661187"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "228 seconds"
+              "finding"      : "180 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1867,7 +1867,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-sjc10072-SJC"
+              "finding"      : "cache-iad-kiad7000061-IAD"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1875,7 +1875,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 1"
+              "finding"      : "Via: 1.1 varnishX-Cache: HITX-Cache-Hits: 2"
           }
 ,         {
               "id"           : "heartbleed",
@@ -2374,6 +2374,6 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "76"
+              "finding"      : "77"
           }
 ]
