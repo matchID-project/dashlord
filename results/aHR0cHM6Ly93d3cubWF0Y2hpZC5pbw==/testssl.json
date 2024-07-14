@@ -352,8 +352,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "65 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (58)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -366,7 +366,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-09-10 03:39"
           }
 ,         {
@@ -563,21 +563,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+211 seconds from localtime"
+              "finding"      : "+252 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1720314421"
+              "finding"      : "1720919311"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "211 seconds"
+              "finding"      : "252 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -640,7 +640,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-sjc1000125-SJC"
+              "finding"      : "cache-chi-klot8100116-CHI"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1495,8 +1495,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "65 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (58)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1509,7 +1509,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-09-10 03:39"
           }
 ,         {
@@ -1706,21 +1706,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+245 seconds from localtime"
+              "finding"      : "+287 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1720314456"
+              "finding"      : "1720919345"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "245 seconds"
+              "finding"      : "287 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1783,7 +1783,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-sjc1000091-SJC"
+              "finding"      : "cache-chi-klot8100174-CHI"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -2290,6 +2290,6 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "70"
+              "finding"      : "71"
           }
 ]
