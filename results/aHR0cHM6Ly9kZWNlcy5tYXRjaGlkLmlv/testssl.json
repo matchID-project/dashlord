@@ -352,8 +352,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "65 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (58)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -366,7 +366,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-09-10 03:39"
           }
 ,         {
@@ -563,7 +563,7 @@
               "ip"           : "deces.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1720314431"
+              "finding"      : "1720919322"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1502,8 +1502,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "65 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (58)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1516,7 +1516,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-09-10 03:39"
           }
 ,         {
@@ -1713,7 +1713,7 @@
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1720314469"
+              "finding"      : "1720919363"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2304,6 +2304,6 @@
               "ip"           : "deces.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "79"
+              "finding"      : "80"
           }
 ]
