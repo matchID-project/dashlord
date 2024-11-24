@@ -206,7 +206,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -353,7 +353,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (50)"
+              "finding"      : "expires < 60 days (43)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -563,21 +563,21 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+271 seconds from localtime"
+              "finding"      : "+2479 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1731806395"
+              "finding"      : "1732411243"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "271 seconds"
+              "finding"      : "2479 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -612,7 +612,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cloudflareserver-timing: cfL4;desc='?proto=TCP&rtt=5487&sent=5&recv=6&lost=0&retrans=0&sent_bytes=2994&recv_bytes=723&delivery_rate=511919&cwnd=218&unsent_bytes=0&cid=1aedf67cf9e2c228&ts=69&x=0'"
+              "finding"      : "cloudflareserver-timing: cfL4;desc='?proto=TCP&rtt=5338&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2995&recv_bytes=723&delivery_rate=550183&cwnd=252&unsent_bytes=0&cid=aa935dce1400147e&ts=39&x=0'"
           }
 ,         {
               "id"           : "banner_application",
@@ -640,7 +640,7 @@
               "ip"           : "www.matchid.io/172.67.179.218",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000120-IAD"
+              "finding"      : "cache-iad-kiad7000139-IAD"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1496,7 +1496,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (50)"
+              "finding"      : "expires < 60 days (43)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1706,21 +1706,21 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+308 seconds from localtime"
+              "finding"      : "+2516 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1731806432"
+              "finding"      : "1732411279"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "308 seconds"
+              "finding"      : "2516 seconds"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1755,7 +1755,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cloudflareserver-timing: cfL4;desc='?proto=TCP&rtt=5522&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2995&recv_bytes=723&delivery_rate=535132&cwnd=252&unsent_bytes=0&cid=e37d1f7ea016f430&ts=32&x=0'"
+              "finding"      : "cloudflareserver-timing: cfL4;desc='?proto=TCP&rtt=5244&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2995&recv_bytes=723&delivery_rate=555533&cwnd=252&unsent_bytes=0&cid=5c73fdf35743af3e&ts=43&x=0'"
           }
 ,         {
               "id"           : "banner_application",
@@ -1783,7 +1783,7 @@
               "ip"           : "www.matchid.io/104.21.64.91",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "cache-iad-kiad7000049-IAD"
+              "finding"      : "cache-iad-kiad7000155-IAD"
           }
 ,         {
               "id"           : "banner_reverseproxy",
